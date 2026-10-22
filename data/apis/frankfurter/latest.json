@@ -1,0 +1,126 @@
+{
+  "id": "frankfurter",
+  "name": "Frankfurter: FX rates",
+  "category": "Money",
+  "url": "https://api.frankfurter.dev/v1/latest?from=USD&to=INR,EUR,GBP",
+  "host": "api.frankfurter.dev",
+  "method": "GET",
+  "docs": "https://frankfurter.dev/",
+  "description": "ECB reference rates for USD against INR, EUR and GBP.",
+  "checkedAt": "2026-10-22T22:22:40.000Z",
+  "ok": true,
+  "status": 200,
+  "latencyMs": 138,
+  "sizeBytes": 97,
+  "contentType": "application/json; charset=utf-8",
+  "error": null,
+  "engine": "api-drift/shape@1",
+  "fingerprint": "5657fe79bb8cb50c",
+  "contract": {
+    "type": "object",
+    "properties": {
+      "amount": {
+        "type": "integer"
+      },
+      "base": {
+        "type": "string"
+      },
+      "date": {
+        "type": "string",
+        "format": "date"
+      },
+      "rates": {
+        "type": "object",
+        "properties": {
+          "EUR": {
+            "type": "number"
+          },
+          "GBP": {
+            "type": "number"
+          },
+          "INR": {
+            "type": "number"
+          }
+        }
+      }
+    }
+  },
+  "shape": {
+    "kind": "object",
+    "count": 2,
+    "properties": {
+      "amount": {
+        "kind": "integer",
+        "count": 2
+      },
+      "base": {
+        "kind": "string",
+        "count": 2,
+        "formats": [
+          "plain"
+        ]
+      },
+      "date": {
+        "kind": "string",
+        "count": 2,
+        "formats": [
+          "date"
+        ]
+      },
+      "rates": {
+        "kind": "object",
+        "count": 2,
+        "properties": {
+          "EUR": {
+            "kind": "number",
+            "count": 2,
+            "integral": 0
+          },
+          "GBP": {
+            "kind": "number",
+            "count": 2,
+            "integral": 0
+          },
+          "INR": {
+            "kind": "number",
+            "count": 2,
+            "integral": 0
+          }
+        }
+      }
+    }
+  },
+  "fieldCount": 7,
+  "samples": 2,
+  "firstSeenAt": "2026-10-22T21:45:36.000Z",
+  "contractSince": "2026-10-22T22:15:39.000Z",
+  "weather": {
+    "condition": "sunny",
+    "headline": "Clear skies",
+    "reason": "Contract unchanged and responding normally.",
+    "since": "2026-10-22T21:45:36.000Z"
+  },
+  "stats": {
+    "d1": {
+      "checks": 5,
+      "ok": 5,
+      "uptime": 1,
+      "p50": 120,
+      "p95": 407
+    },
+    "d7": {
+      "checks": 5,
+      "ok": 5,
+      "uptime": 1,
+      "p50": 120,
+      "p95": 407
+    },
+    "d30": {
+      "checks": 5,
+      "ok": 5,
+      "uptime": 1,
+      "p50": 120,
+      "p95": 407
+    }
+  }
+}

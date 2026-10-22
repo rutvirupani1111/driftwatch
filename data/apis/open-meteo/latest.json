@@ -1,0 +1,329 @@
+{
+  "id": "open-meteo",
+  "name": "Open-Meteo: forecast",
+  "category": "Sky & science",
+  "url": "https://api.open-meteo.com/v1/forecast?latitude=19.08&longitude=72.88&current=temperature_2m,relative_humidity_2m,wind_speed_10m,weather_code&hourly=temperature_2m&forecast_days=1&timezone=Asia%2FKolkata",
+  "host": "api.open-meteo.com",
+  "method": "GET",
+  "docs": "https://open-meteo.com/en/docs",
+  "description": "Today's forecast for Mumbai. A real weather API, watched for weather.",
+  "checkedAt": "2026-10-22T22:22:39.000Z",
+  "ok": true,
+  "status": 200,
+  "latencyMs": 609,
+  "sizeBytes": 1154,
+  "contentType": "application/json; charset=utf-8",
+  "error": null,
+  "engine": "api-drift/shape@1",
+  "fingerprint": "ee2828aae1e73b1b",
+  "contract": {
+    "type": "object",
+    "properties": {
+      "current": {
+        "type": "object",
+        "properties": {
+          "interval": {
+            "type": "integer"
+          },
+          "relative_humidity_2m": {
+            "type": "integer"
+          },
+          "temperature_2m": {
+            "type": "integer"
+          },
+          "time": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "weather_code": {
+            "type": "integer"
+          },
+          "wind_speed_10m": {
+            "type": "number"
+          }
+        }
+      },
+      "current_units": {
+        "type": "object",
+        "properties": {
+          "interval": {
+            "type": "string"
+          },
+          "relative_humidity_2m": {
+            "type": "string"
+          },
+          "temperature_2m": {
+            "type": "string"
+          },
+          "time": {
+            "type": "string"
+          },
+          "weather_code": {
+            "type": "string"
+          },
+          "wind_speed_10m": {
+            "type": "string"
+          }
+        }
+      },
+      "elevation": {
+        "type": "integer"
+      },
+      "generationtime_ms": {
+        "type": "number"
+      },
+      "hourly": {
+        "type": "object",
+        "properties": {
+          "temperature_2m": {
+            "type": "array",
+            "items": {
+              "type": "number"
+            }
+          },
+          "time": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "format": "date-time"
+            }
+          }
+        }
+      },
+      "hourly_units": {
+        "type": "object",
+        "properties": {
+          "temperature_2m": {
+            "type": "string"
+          },
+          "time": {
+            "type": "string"
+          }
+        }
+      },
+      "latitude": {
+        "type": "number"
+      },
+      "longitude": {
+        "type": "number"
+      },
+      "timezone": {
+        "type": "string"
+      },
+      "timezone_abbreviation": {
+        "type": "string"
+      },
+      "utc_offset_seconds": {
+        "type": "integer"
+      }
+    }
+  },
+  "shape": {
+    "kind": "object",
+    "count": 2,
+    "properties": {
+      "current": {
+        "kind": "object",
+        "count": 2,
+        "properties": {
+          "interval": {
+            "kind": "integer",
+            "count": 2
+          },
+          "relative_humidity_2m": {
+            "kind": "integer",
+            "count": 2
+          },
+          "temperature_2m": {
+            "kind": "integer",
+            "count": 2
+          },
+          "time": {
+            "kind": "string",
+            "count": 2,
+            "formats": [
+              "date-time"
+            ]
+          },
+          "weather_code": {
+            "kind": "integer",
+            "count": 2
+          },
+          "wind_speed_10m": {
+            "kind": "number",
+            "count": 2,
+            "integral": 0
+          }
+        }
+      },
+      "current_units": {
+        "kind": "object",
+        "count": 2,
+        "properties": {
+          "interval": {
+            "kind": "string",
+            "count": 2,
+            "formats": [
+              "plain"
+            ]
+          },
+          "relative_humidity_2m": {
+            "kind": "string",
+            "count": 2,
+            "formats": [
+              "plain"
+            ]
+          },
+          "temperature_2m": {
+            "kind": "string",
+            "count": 2,
+            "formats": [
+              "plain"
+            ]
+          },
+          "time": {
+            "kind": "string",
+            "count": 2,
+            "formats": [
+              "plain"
+            ]
+          },
+          "weather_code": {
+            "kind": "string",
+            "count": 2,
+            "formats": [
+              "plain"
+            ]
+          },
+          "wind_speed_10m": {
+            "kind": "string",
+            "count": 2,
+            "formats": [
+              "plain"
+            ]
+          }
+        }
+      },
+      "elevation": {
+        "kind": "integer",
+        "count": 2
+      },
+      "generationtime_ms": {
+        "kind": "number",
+        "count": 2,
+        "integral": 0
+      },
+      "hourly": {
+        "kind": "object",
+        "count": 2,
+        "properties": {
+          "temperature_2m": {
+            "kind": "array",
+            "count": 2,
+            "minItems": 24,
+            "maxItems": 24,
+            "items": {
+              "kind": "number",
+              "count": 48,
+              "integral": 2
+            }
+          },
+          "time": {
+            "kind": "array",
+            "count": 2,
+            "minItems": 24,
+            "maxItems": 24,
+            "items": {
+              "kind": "string",
+              "count": 48,
+              "formats": [
+                "date-time"
+              ]
+            }
+          }
+        }
+      },
+      "hourly_units": {
+        "kind": "object",
+        "count": 2,
+        "properties": {
+          "temperature_2m": {
+            "kind": "string",
+            "count": 2,
+            "formats": [
+              "plain"
+            ]
+          },
+          "time": {
+            "kind": "string",
+            "count": 2,
+            "formats": [
+              "plain"
+            ]
+          }
+        }
+      },
+      "latitude": {
+        "kind": "number",
+        "count": 2,
+        "integral": 0
+      },
+      "longitude": {
+        "kind": "number",
+        "count": 2,
+        "integral": 0
+      },
+      "timezone": {
+        "kind": "string",
+        "count": 2,
+        "formats": [
+          "plain"
+        ]
+      },
+      "timezone_abbreviation": {
+        "kind": "string",
+        "count": 2,
+        "formats": [
+          "plain"
+        ]
+      },
+      "utc_offset_seconds": {
+        "kind": "integer",
+        "count": 2
+      }
+    }
+  },
+  "fieldCount": 27,
+  "samples": 2,
+  "firstSeenAt": "2026-10-22T21:45:35.000Z",
+  "contractSince": "2026-10-22T22:15:39.000Z",
+  "weather": {
+    "condition": "sunny",
+    "headline": "Clear skies",
+    "reason": "Contract unchanged and responding normally.",
+    "since": "2026-10-22T21:45:35.000Z"
+  },
+  "stats": {
+    "d1": {
+      "checks": 5,
+      "ok": 5,
+      "uptime": 1,
+      "p50": 635,
+      "p95": 690
+    },
+    "d7": {
+      "checks": 5,
+      "ok": 5,
+      "uptime": 1,
+      "p50": 635,
+      "p95": 690
+    },
+    "d30": {
+      "checks": 5,
+      "ok": 5,
+      "uptime": 1,
+      "p50": 635,
+      "p95": 690
+    }
+  }
+}

@@ -1,0 +1,172 @@
+{
+  "id": "iss-position",
+  "name": "Where the ISS at: position",
+  "category": "Sky & science",
+  "url": "https://api.wheretheiss.at/v1/satellites/25544",
+  "host": "api.wheretheiss.at",
+  "method": "GET",
+  "docs": "https://wheretheiss.at/w/developer",
+  "description": "Live position and velocity of the International Space Station.",
+  "checkedAt": "2026-10-22T22:22:40.000Z",
+  "ok": true,
+  "status": 200,
+  "latencyMs": 1412,
+  "sizeBytes": 311,
+  "contentType": "application/json",
+  "error": null,
+  "engine": "api-drift/shape@1",
+  "fingerprint": "632a99dea1e88ec5",
+  "contract": {
+    "type": "object",
+    "properties": {
+      "altitude": {
+        "type": "number"
+      },
+      "daynum": {
+        "type": "number"
+      },
+      "footprint": {
+        "type": "number"
+      },
+      "id": {
+        "type": "integer"
+      },
+      "latitude": {
+        "type": "number"
+      },
+      "longitude": {
+        "type": "number"
+      },
+      "name": {
+        "type": "string"
+      },
+      "solar_lat": {
+        "type": "number"
+      },
+      "solar_lon": {
+        "type": "number"
+      },
+      "timestamp": {
+        "type": "integer"
+      },
+      "units": {
+        "type": "string"
+      },
+      "velocity": {
+        "type": "number"
+      },
+      "visibility": {
+        "type": "string"
+      }
+    }
+  },
+  "shape": {
+    "kind": "object",
+    "count": 2,
+    "properties": {
+      "altitude": {
+        "kind": "number",
+        "count": 2,
+        "integral": 0
+      },
+      "daynum": {
+        "kind": "number",
+        "count": 2,
+        "integral": 0
+      },
+      "footprint": {
+        "kind": "number",
+        "count": 2,
+        "integral": 0
+      },
+      "id": {
+        "kind": "integer",
+        "count": 2
+      },
+      "latitude": {
+        "kind": "number",
+        "count": 2,
+        "integral": 0
+      },
+      "longitude": {
+        "kind": "number",
+        "count": 2,
+        "integral": 0
+      },
+      "name": {
+        "kind": "string",
+        "count": 2,
+        "formats": [
+          "plain"
+        ]
+      },
+      "solar_lat": {
+        "kind": "number",
+        "count": 2,
+        "integral": 0,
+        "negative": true
+      },
+      "solar_lon": {
+        "kind": "number",
+        "count": 2,
+        "integral": 0
+      },
+      "timestamp": {
+        "kind": "integer",
+        "count": 2
+      },
+      "units": {
+        "kind": "string",
+        "count": 2,
+        "formats": [
+          "plain"
+        ]
+      },
+      "velocity": {
+        "kind": "number",
+        "count": 2,
+        "integral": 0
+      },
+      "visibility": {
+        "kind": "string",
+        "count": 2,
+        "formats": [
+          "plain"
+        ]
+      }
+    }
+  },
+  "fieldCount": 13,
+  "samples": 2,
+  "firstSeenAt": "2026-10-22T21:45:36.000Z",
+  "contractSince": "2026-10-22T22:15:39.000Z",
+  "weather": {
+    "condition": "sunny",
+    "headline": "Clear skies",
+    "reason": "Contract unchanged and responding normally.",
+    "since": "2026-10-22T21:45:36.000Z"
+  },
+  "stats": {
+    "d1": {
+      "checks": 5,
+      "ok": 5,
+      "uptime": 1,
+      "p50": 1246,
+      "p95": 1412
+    },
+    "d7": {
+      "checks": 5,
+      "ok": 5,
+      "uptime": 1,
+      "p50": 1246,
+      "p95": 1412
+    },
+    "d30": {
+      "checks": 5,
+      "ok": 5,
+      "uptime": 1,
+      "p50": 1246,
+      "p95": 1412
+    }
+  }
+}

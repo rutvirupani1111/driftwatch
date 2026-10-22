@@ -1,0 +1,182 @@
+{
+  "id": "nager-date",
+  "name": "Nager.Date: next holidays",
+  "category": "Open data",
+  "url": "https://date.nager.at/api/v3/NextPublicHolidays/GB",
+  "host": "date.nager.at",
+  "method": "GET",
+  "docs": "https://date.nager.at/Api",
+  "description": "Upcoming UK public holidays. Nager.Date has no data for India (it answers 204), so the UK stands in.",
+  "checkedAt": "2026-10-22T22:22:40.000Z",
+  "ok": true,
+  "status": 200,
+  "latencyMs": 857,
+  "sizeBytes": 2448,
+  "contentType": "application/json; charset=utf-8",
+  "error": null,
+  "engine": "api-drift/shape@1",
+  "fingerprint": "4256436cc057080c",
+  "contract": {
+    "type": "array",
+    "items": {
+      "type": "object",
+      "properties": {
+        "counties": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "nullable": true
+        },
+        "countryCode": {
+          "type": "string"
+        },
+        "date": {
+          "type": "string",
+          "format": "date"
+        },
+        "fixed": {
+          "type": "boolean"
+        },
+        "global": {
+          "type": "boolean"
+        },
+        "launchYear": {
+          "type": "null"
+        },
+        "localName": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "types": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  },
+  "shape": {
+    "kind": "array",
+    "count": 2,
+    "minItems": 13,
+    "maxItems": 13,
+    "items": {
+      "kind": "object",
+      "count": 26,
+      "properties": {
+        "counties": {
+          "kind": "union",
+          "variants": [
+            {
+              "kind": "null",
+              "count": 10
+            },
+            {
+              "kind": "array",
+              "count": 16,
+              "minItems": 1,
+              "maxItems": 4,
+              "items": {
+                "kind": "string",
+                "count": 30,
+                "formats": [
+                  "plain"
+                ]
+              }
+            }
+          ]
+        },
+        "countryCode": {
+          "kind": "string",
+          "count": 26,
+          "formats": [
+            "plain"
+          ]
+        },
+        "date": {
+          "kind": "string",
+          "count": 26,
+          "formats": [
+            "date"
+          ]
+        },
+        "fixed": {
+          "kind": "boolean",
+          "count": 26
+        },
+        "global": {
+          "kind": "boolean",
+          "count": 26
+        },
+        "launchYear": {
+          "kind": "null",
+          "count": 26
+        },
+        "localName": {
+          "kind": "string",
+          "count": 26,
+          "formats": [
+            "plain"
+          ]
+        },
+        "name": {
+          "kind": "string",
+          "count": 26,
+          "formats": [
+            "plain"
+          ]
+        },
+        "types": {
+          "kind": "array",
+          "count": 26,
+          "minItems": 1,
+          "maxItems": 1,
+          "items": {
+            "kind": "string",
+            "count": 26,
+            "formats": [
+              "plain"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "fieldCount": 9,
+  "samples": 2,
+  "firstSeenAt": "2026-10-22T21:45:36.000Z",
+  "contractSince": "2026-10-22T22:15:40.000Z",
+  "weather": {
+    "condition": "sunny",
+    "headline": "Clear skies",
+    "reason": "Contract unchanged and responding normally.",
+    "since": "2026-10-22T21:45:36.000Z"
+  },
+  "stats": {
+    "d1": {
+      "checks": 5,
+      "ok": 5,
+      "uptime": 1,
+      "p50": 388,
+      "p95": 857
+    },
+    "d7": {
+      "checks": 5,
+      "ok": 5,
+      "uptime": 1,
+      "p50": 388,
+      "p95": 857
+    },
+    "d30": {
+      "checks": 5,
+      "ok": 5,
+      "uptime": 1,
+      "p50": 388,
+      "p95": 857
+    }
+  }
+}
