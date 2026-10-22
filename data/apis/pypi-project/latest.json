@@ -1,0 +1,978 @@
+{
+  "id": "pypi-project",
+  "name": "PyPI JSON: requests",
+  "category": "Package registries",
+  "url": "https://pypi.org/pypi/requests/json",
+  "host": "pypi.org",
+  "method": "GET",
+  "docs": "https://docs.pypi.org/api/json/",
+  "description": "Project metadata, release files and vulnerabilities for requests. Release versions are collapsed into a <version> map.",
+  "checkedAt": "2026-10-22T22:22:38.000Z",
+  "ok": true,
+  "status": 200,
+  "latencyMs": 93,
+  "sizeBytes": 192973,
+  "contentType": "application/json",
+  "error": null,
+  "engine": "api-drift/shape@1",
+  "fingerprint": "3fc6aa9b91500e3a",
+  "contract": {
+    "type": "object",
+    "properties": {
+      "info": {
+        "type": "object",
+        "properties": {
+          "author": {
+            "type": "null"
+          },
+          "author_email": {
+            "type": "string"
+          },
+          "bugtrack_url": {
+            "type": "null"
+          },
+          "classifiers": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "description": {
+            "type": "string"
+          },
+          "description_content_type": {
+            "type": "string"
+          },
+          "docs_url": {
+            "type": "null"
+          },
+          "download_url": {
+            "type": "null"
+          },
+          "downloads": {
+            "type": "object",
+            "properties": {
+              "last_day": {
+                "type": "integer"
+              },
+              "last_month": {
+                "type": "integer"
+              },
+              "last_week": {
+                "type": "integer"
+              }
+            }
+          },
+          "dynamic": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "home_page": {
+            "type": "null"
+          },
+          "keywords": {
+            "type": "null"
+          },
+          "license": {
+            "type": "string"
+          },
+          "license_expression": {
+            "type": "null"
+          },
+          "license_files": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "maintainer": {
+            "type": "null"
+          },
+          "maintainer_email": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "package_url": {
+            "type": "string",
+            "format": "uri"
+          },
+          "platform": {
+            "type": "null"
+          },
+          "project_url": {
+            "type": "string",
+            "format": "uri"
+          },
+          "project_urls": {
+            "type": "object",
+            "properties": {
+              "Documentation": {
+                "type": "string",
+                "format": "uri"
+              },
+              "Source": {
+                "type": "string",
+                "format": "uri"
+              }
+            }
+          },
+          "provides_extra": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "release_url": {
+            "type": "string",
+            "format": "uri"
+          },
+          "requires_dist": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "requires_python": {
+            "type": "string"
+          },
+          "summary": {
+            "type": "string"
+          },
+          "version": {
+            "type": "string",
+            "format": "semver"
+          },
+          "yanked": {
+            "type": "boolean"
+          },
+          "yanked_reason": {
+            "type": "null"
+          }
+        }
+      },
+      "last_serial": {
+        "type": "integer"
+      },
+      "ownership": {
+        "type": "object",
+        "properties": {
+          "organization": {
+            "type": "null"
+          },
+          "roles": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "role": {
+                  "type": "string"
+                },
+                "user": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      },
+      "releases": {
+        "type": "object",
+        "properties": {
+          "<version>": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "comment_text": {
+                  "type": "string",
+                  "format": "empty"
+                },
+                "core-metadata": {
+                  "type": "union",
+                  "anyOf": [
+                    {
+                      "type": "boolean"
+                    },
+                    {
+                      "type": "object",
+                      "properties": {
+                        "sha256": {
+                          "type": "string"
+                        }
+                      }
+                    }
+                  ]
+                },
+                "digests": {
+                  "type": "object",
+                  "properties": {
+                    "blake2b_256": {
+                      "type": "string"
+                    },
+                    "md5": {
+                      "type": "string"
+                    },
+                    "sha256": {
+                      "type": "string"
+                    }
+                  }
+                },
+                "downloads": {
+                  "type": "integer"
+                },
+                "filename": {
+                  "type": "string"
+                },
+                "has_sig": {
+                  "type": "boolean"
+                },
+                "md5_digest": {
+                  "type": "string"
+                },
+                "packagetype": {
+                  "type": "string"
+                },
+                "python_version": {
+                  "type": "string"
+                },
+                "requires_python": {
+                  "type": "string"
+                },
+                "size": {
+                  "type": "integer"
+                },
+                "upload_time": {
+                  "type": "string",
+                  "format": "date-time"
+                },
+                "upload_time_iso_8601": {
+                  "type": "string",
+                  "format": "date-time"
+                },
+                "url": {
+                  "type": "string",
+                  "format": "uri"
+                },
+                "yanked": {
+                  "type": "boolean"
+                },
+                "yanked_reason": {
+                  "type": "null"
+                }
+              }
+            }
+          }
+        }
+      },
+      "urls": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "comment_text": {
+              "type": "null"
+            },
+            "core-metadata": {
+              "type": "union",
+              "anyOf": [
+                {
+                  "type": "boolean"
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "sha256": {
+                      "type": "string"
+                    }
+                  }
+                }
+              ]
+            },
+            "digests": {
+              "type": "object",
+              "properties": {
+                "blake2b_256": {
+                  "type": "string"
+                },
+                "md5": {
+                  "type": "string"
+                },
+                "sha256": {
+                  "type": "string"
+                }
+              }
+            },
+            "downloads": {
+              "type": "integer"
+            },
+            "filename": {
+              "type": "string"
+            },
+            "has_sig": {
+              "type": "boolean"
+            },
+            "md5_digest": {
+              "type": "string"
+            },
+            "packagetype": {
+              "type": "string"
+            },
+            "python_version": {
+              "type": "string"
+            },
+            "requires_python": {
+              "type": "string"
+            },
+            "size": {
+              "type": "integer"
+            },
+            "upload_time": {
+              "type": "string",
+              "format": "date-time"
+            },
+            "upload_time_iso_8601": {
+              "type": "string",
+              "format": "date-time"
+            },
+            "url": {
+              "type": "string",
+              "format": "uri"
+            },
+            "yanked": {
+              "type": "boolean"
+            },
+            "yanked_reason": {
+              "type": "null"
+            }
+          }
+        }
+      },
+      "vulnerabilities": {
+        "type": "array"
+      }
+    }
+  },
+  "shape": {
+    "kind": "object",
+    "count": 2,
+    "properties": {
+      "info": {
+        "kind": "object",
+        "count": 2,
+        "properties": {
+          "author": {
+            "kind": "null",
+            "count": 2
+          },
+          "author_email": {
+            "kind": "string",
+            "count": 2,
+            "formats": [
+              "plain"
+            ]
+          },
+          "bugtrack_url": {
+            "kind": "null",
+            "count": 2
+          },
+          "classifiers": {
+            "kind": "array",
+            "count": 2,
+            "minItems": 20,
+            "maxItems": 20,
+            "items": {
+              "kind": "string",
+              "count": 40,
+              "formats": [
+                "plain"
+              ]
+            }
+          },
+          "description": {
+            "kind": "string",
+            "count": 2,
+            "formats": [
+              "plain"
+            ]
+          },
+          "description_content_type": {
+            "kind": "string",
+            "count": 2,
+            "formats": [
+              "plain"
+            ]
+          },
+          "docs_url": {
+            "kind": "null",
+            "count": 2
+          },
+          "download_url": {
+            "kind": "null",
+            "count": 2
+          },
+          "downloads": {
+            "kind": "object",
+            "count": 2,
+            "properties": {
+              "last_day": {
+                "kind": "integer",
+                "count": 2,
+                "negative": true
+              },
+              "last_month": {
+                "kind": "integer",
+                "count": 2,
+                "negative": true
+              },
+              "last_week": {
+                "kind": "integer",
+                "count": 2,
+                "negative": true
+              }
+            }
+          },
+          "dynamic": {
+            "kind": "array",
+            "count": 2,
+            "minItems": 1,
+            "maxItems": 1,
+            "items": {
+              "kind": "string",
+              "count": 2,
+              "formats": [
+                "plain"
+              ]
+            }
+          },
+          "home_page": {
+            "kind": "null",
+            "count": 2
+          },
+          "keywords": {
+            "kind": "null",
+            "count": 2
+          },
+          "license": {
+            "kind": "string",
+            "count": 2,
+            "formats": [
+              "plain"
+            ]
+          },
+          "license_expression": {
+            "kind": "null",
+            "count": 2
+          },
+          "license_files": {
+            "kind": "array",
+            "count": 2,
+            "minItems": 2,
+            "maxItems": 2,
+            "items": {
+              "kind": "string",
+              "count": 4,
+              "formats": [
+                "plain"
+              ]
+            }
+          },
+          "maintainer": {
+            "kind": "null",
+            "count": 2
+          },
+          "maintainer_email": {
+            "kind": "string",
+            "count": 2,
+            "formats": [
+              "plain"
+            ]
+          },
+          "name": {
+            "kind": "string",
+            "count": 2,
+            "formats": [
+              "plain"
+            ]
+          },
+          "package_url": {
+            "kind": "string",
+            "count": 2,
+            "formats": [
+              "uri"
+            ]
+          },
+          "platform": {
+            "kind": "null",
+            "count": 2
+          },
+          "project_url": {
+            "kind": "string",
+            "count": 2,
+            "formats": [
+              "uri"
+            ]
+          },
+          "project_urls": {
+            "kind": "object",
+            "count": 2,
+            "properties": {
+              "Documentation": {
+                "kind": "string",
+                "count": 2,
+                "formats": [
+                  "uri"
+                ]
+              },
+              "Source": {
+                "kind": "string",
+                "count": 2,
+                "formats": [
+                  "uri"
+                ]
+              }
+            }
+          },
+          "provides_extra": {
+            "kind": "array",
+            "count": 2,
+            "minItems": 3,
+            "maxItems": 3,
+            "items": {
+              "kind": "string",
+              "count": 6,
+              "formats": [
+                "plain"
+              ]
+            }
+          },
+          "release_url": {
+            "kind": "string",
+            "count": 2,
+            "formats": [
+              "uri"
+            ]
+          },
+          "requires_dist": {
+            "kind": "array",
+            "count": 2,
+            "minItems": 6,
+            "maxItems": 6,
+            "items": {
+              "kind": "string",
+              "count": 12,
+              "formats": [
+                "plain"
+              ]
+            }
+          },
+          "requires_python": {
+            "kind": "string",
+            "count": 2,
+            "formats": [
+              "plain"
+            ]
+          },
+          "summary": {
+            "kind": "string",
+            "count": 2,
+            "formats": [
+              "plain"
+            ]
+          },
+          "version": {
+            "kind": "string",
+            "count": 2,
+            "formats": [
+              "semver"
+            ]
+          },
+          "yanked": {
+            "kind": "boolean",
+            "count": 2
+          },
+          "yanked_reason": {
+            "kind": "null",
+            "count": 2
+          }
+        }
+      },
+      "last_serial": {
+        "kind": "integer",
+        "count": 2
+      },
+      "ownership": {
+        "kind": "object",
+        "count": 2,
+        "properties": {
+          "organization": {
+            "kind": "null",
+            "count": 2
+          },
+          "roles": {
+            "kind": "array",
+            "count": 2,
+            "minItems": 3,
+            "maxItems": 3,
+            "items": {
+              "kind": "object",
+              "count": 6,
+              "properties": {
+                "role": {
+                  "kind": "string",
+                  "count": 6,
+                  "formats": [
+                    "plain"
+                  ]
+                },
+                "user": {
+                  "kind": "string",
+                  "count": 6,
+                  "formats": [
+                    "plain"
+                  ]
+                }
+              }
+            }
+          }
+        }
+      },
+      "releases": {
+        "kind": "object",
+        "count": 2,
+        "properties": {
+          "<version>": {
+            "kind": "array",
+            "count": 2,
+            "minItems": 3,
+            "maxItems": 3,
+            "items": {
+              "kind": "object",
+              "count": 6,
+              "properties": {
+                "comment_text": {
+                  "kind": "string",
+                  "count": 6,
+                  "formats": [
+                    "empty"
+                  ]
+                },
+                "core-metadata": {
+                  "kind": "union",
+                  "variants": [
+                    {
+                      "kind": "boolean",
+                      "count": 4
+                    },
+                    {
+                      "kind": "object",
+                      "count": 2,
+                      "properties": {
+                        "sha256": {
+                          "kind": "string",
+                          "count": 2,
+                          "formats": [
+                            "plain"
+                          ]
+                        }
+                      }
+                    }
+                  ]
+                },
+                "digests": {
+                  "kind": "object",
+                  "count": 6,
+                  "properties": {
+                    "blake2b_256": {
+                      "kind": "string",
+                      "count": 6,
+                      "formats": [
+                        "plain"
+                      ]
+                    },
+                    "md5": {
+                      "kind": "string",
+                      "count": 6,
+                      "formats": [
+                        "plain"
+                      ]
+                    },
+                    "sha256": {
+                      "kind": "string",
+                      "count": 6,
+                      "formats": [
+                        "plain"
+                      ]
+                    }
+                  }
+                },
+                "downloads": {
+                  "kind": "integer",
+                  "count": 6,
+                  "negative": true
+                },
+                "filename": {
+                  "kind": "string",
+                  "count": 6,
+                  "formats": [
+                    "plain"
+                  ]
+                },
+                "has_sig": {
+                  "kind": "boolean",
+                  "count": 6
+                },
+                "md5_digest": {
+                  "kind": "string",
+                  "count": 6,
+                  "formats": [
+                    "plain"
+                  ]
+                },
+                "packagetype": {
+                  "kind": "string",
+                  "count": 6,
+                  "formats": [
+                    "plain"
+                  ]
+                },
+                "python_version": {
+                  "kind": "string",
+                  "count": 6,
+                  "formats": [
+                    "numeric-string",
+                    "plain"
+                  ]
+                },
+                "requires_python": {
+                  "kind": "string",
+                  "count": 6,
+                  "formats": [
+                    "plain"
+                  ]
+                },
+                "size": {
+                  "kind": "integer",
+                  "count": 6
+                },
+                "upload_time": {
+                  "kind": "string",
+                  "count": 6,
+                  "formats": [
+                    "date-time"
+                  ]
+                },
+                "upload_time_iso_8601": {
+                  "kind": "string",
+                  "count": 6,
+                  "formats": [
+                    "date-time"
+                  ]
+                },
+                "url": {
+                  "kind": "string",
+                  "count": 6,
+                  "formats": [
+                    "uri"
+                  ]
+                },
+                "yanked": {
+                  "kind": "boolean",
+                  "count": 6
+                },
+                "yanked_reason": {
+                  "kind": "null",
+                  "count": 6
+                }
+              }
+            }
+          }
+        }
+      },
+      "urls": {
+        "kind": "array",
+        "count": 2,
+        "minItems": 2,
+        "maxItems": 2,
+        "items": {
+          "kind": "object",
+          "count": 4,
+          "properties": {
+            "comment_text": {
+              "kind": "null",
+              "count": 4
+            },
+            "core-metadata": {
+              "kind": "union",
+              "variants": [
+                {
+                  "kind": "boolean",
+                  "count": 2
+                },
+                {
+                  "kind": "object",
+                  "count": 2,
+                  "properties": {
+                    "sha256": {
+                      "kind": "string",
+                      "count": 2,
+                      "formats": [
+                        "plain"
+                      ]
+                    }
+                  }
+                }
+              ]
+            },
+            "digests": {
+              "kind": "object",
+              "count": 4,
+              "properties": {
+                "blake2b_256": {
+                  "kind": "string",
+                  "count": 4,
+                  "formats": [
+                    "plain"
+                  ]
+                },
+                "md5": {
+                  "kind": "string",
+                  "count": 4,
+                  "formats": [
+                    "plain"
+                  ]
+                },
+                "sha256": {
+                  "kind": "string",
+                  "count": 4,
+                  "formats": [
+                    "plain"
+                  ]
+                }
+              }
+            },
+            "downloads": {
+              "kind": "integer",
+              "count": 4,
+              "negative": true
+            },
+            "filename": {
+              "kind": "string",
+              "count": 4,
+              "formats": [
+                "plain"
+              ]
+            },
+            "has_sig": {
+              "kind": "boolean",
+              "count": 4
+            },
+            "md5_digest": {
+              "kind": "string",
+              "count": 4,
+              "formats": [
+                "plain"
+              ]
+            },
+            "packagetype": {
+              "kind": "string",
+              "count": 4,
+              "formats": [
+                "plain"
+              ]
+            },
+            "python_version": {
+              "kind": "string",
+              "count": 4,
+              "formats": [
+                "plain"
+              ]
+            },
+            "requires_python": {
+              "kind": "string",
+              "count": 4,
+              "formats": [
+                "plain"
+              ]
+            },
+            "size": {
+              "kind": "integer",
+              "count": 4
+            },
+            "upload_time": {
+              "kind": "string",
+              "count": 4,
+              "formats": [
+                "date-time"
+              ]
+            },
+            "upload_time_iso_8601": {
+              "kind": "string",
+              "count": 4,
+              "formats": [
+                "date-time"
+              ]
+            },
+            "url": {
+              "kind": "string",
+              "count": 4,
+              "formats": [
+                "uri"
+              ]
+            },
+            "yanked": {
+              "kind": "boolean",
+              "count": 4
+            },
+            "yanked_reason": {
+              "kind": "null",
+              "count": 4
+            }
+          }
+        }
+      },
+      "vulnerabilities": {
+        "kind": "array",
+        "count": 2,
+        "minItems": 0,
+        "maxItems": 0
+      }
+    }
+  },
+  "fieldCount": 86,
+  "samples": 2,
+  "firstSeenAt": "2026-10-22T21:45:34.000Z",
+  "contractSince": "2026-10-22T22:15:37.000Z",
+  "weather": {
+    "condition": "sunny",
+    "headline": "Clear skies",
+    "reason": "Contract unchanged and responding normally.",
+    "since": "2026-10-22T21:45:34.000Z"
+  },
+  "stats": {
+    "d1": {
+      "checks": 5,
+      "ok": 5,
+      "uptime": 1,
+      "p50": 93,
+      "p95": 276
+    },
+    "d7": {
+      "checks": 5,
+      "ok": 5,
+      "uptime": 1,
+      "p50": 93,
+      "p95": 276
+    },
+    "d30": {
+      "checks": 5,
+      "ok": 5,
+      "uptime": 1,
+      "p50": 93,
+      "p95": 276
+    }
+  }
+}

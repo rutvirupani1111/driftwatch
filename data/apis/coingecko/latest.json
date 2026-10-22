@@ -1,0 +1,164 @@
+{
+  "id": "coingecko",
+  "name": "CoinGecko: simple price",
+  "category": "Money",
+  "url": "https://api.coingecko.com/api/v3/simple/price?ids=bitcoin,ethereum&vs_currencies=usd,inr&include_24hr_change=true&include_last_updated_at=true",
+  "host": "api.coingecko.com",
+  "method": "GET",
+  "docs": "https://docs.coingecko.com/reference/simple-price",
+  "description": "Bitcoin and Ether prices in USD and INR from the keyless public API.",
+  "checkedAt": "2026-10-22T22:22:40.000Z",
+  "ok": true,
+  "status": 200,
+  "latencyMs": 444,
+  "sizeBytes": 284,
+  "contentType": "application/json; charset=utf-8",
+  "error": null,
+  "engine": "api-drift/shape@1",
+  "fingerprint": "ed33e32e283835dd",
+  "contract": {
+    "type": "object",
+    "properties": {
+      "bitcoin": {
+        "type": "object",
+        "properties": {
+          "inr": {
+            "type": "integer"
+          },
+          "inr_24h_change": {
+            "type": "number"
+          },
+          "last_updated_at": {
+            "type": "integer"
+          },
+          "usd": {
+            "type": "integer"
+          },
+          "usd_24h_change": {
+            "type": "number"
+          }
+        }
+      },
+      "ethereum": {
+        "type": "object",
+        "properties": {
+          "inr": {
+            "type": "integer"
+          },
+          "inr_24h_change": {
+            "type": "number"
+          },
+          "last_updated_at": {
+            "type": "integer"
+          },
+          "usd": {
+            "type": "number"
+          },
+          "usd_24h_change": {
+            "type": "number"
+          }
+        }
+      }
+    }
+  },
+  "shape": {
+    "kind": "object",
+    "count": 2,
+    "properties": {
+      "bitcoin": {
+        "kind": "object",
+        "count": 2,
+        "properties": {
+          "inr": {
+            "kind": "integer",
+            "count": 2
+          },
+          "inr_24h_change": {
+            "kind": "number",
+            "count": 2,
+            "integral": 0,
+            "negative": true
+          },
+          "last_updated_at": {
+            "kind": "integer",
+            "count": 2
+          },
+          "usd": {
+            "kind": "integer",
+            "count": 2
+          },
+          "usd_24h_change": {
+            "kind": "number",
+            "count": 2,
+            "integral": 0,
+            "negative": true
+          }
+        }
+      },
+      "ethereum": {
+        "kind": "object",
+        "count": 2,
+        "properties": {
+          "inr": {
+            "kind": "integer",
+            "count": 2
+          },
+          "inr_24h_change": {
+            "kind": "number",
+            "count": 2,
+            "integral": 0,
+            "negative": true
+          },
+          "last_updated_at": {
+            "kind": "integer",
+            "count": 2
+          },
+          "usd": {
+            "kind": "number",
+            "count": 2,
+            "integral": 0
+          },
+          "usd_24h_change": {
+            "kind": "number",
+            "count": 2,
+            "integral": 0,
+            "negative": true
+          }
+        }
+      }
+    }
+  },
+  "fieldCount": 12,
+  "samples": 2,
+  "firstSeenAt": "2026-10-22T21:45:36.000Z",
+  "contractSince": "2026-10-22T22:15:39.000Z",
+  "weather": {
+    "condition": "sunny",
+    "headline": "Clear skies",
+    "reason": "Contract unchanged and responding normally.",
+    "since": "2026-10-22T21:45:36.000Z"
+  },
+  "stats": {
+    "d1": {
+      "checks": 5,
+      "ok": 5,
+      "uptime": 1,
+      "p50": 435,
+      "p95": 503
+    },
+    "d7": {
+      "checks": 5,
+      "ok": 5,
+      "uptime": 1,
+      "p50": 435,
+      "p95": 503
+    },
+    "d30": {
+      "checks": 5,
+      "ok": 5,
+      "uptime": 1,
+      "p50": 435,
+      "p95": 503
+    }
+  }
+}

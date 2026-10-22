@@ -1,0 +1,393 @@
+{
+  "id": "docker-hub",
+  "name": "Docker Hub: repository",
+  "category": "Developer platforms",
+  "url": "https://hub.docker.com/v2/repositories/library/node/",
+  "host": "hub.docker.com",
+  "method": "GET",
+  "docs": "https://docs.docker.com/reference/api/hub/latest/",
+  "description": "The official node image repository.",
+  "checkedAt": "2026-10-22T22:22:37.000Z",
+  "ok": true,
+  "status": 200,
+  "latencyMs": 377,
+  "sizeBytes": 12233,
+  "contentType": "application/json",
+  "error": null,
+  "engine": "api-drift/shape@1",
+  "fingerprint": "da4c1be66dc74745",
+  "contract": {
+    "type": "object",
+    "properties": {
+      "affiliation": {
+        "type": "null"
+      },
+      "categories": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "name": {
+              "type": "string"
+            },
+            "slug": {
+              "type": "string"
+            }
+          }
+        }
+      },
+      "collaborator_count": {
+        "type": "integer"
+      },
+      "content_types": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      },
+      "date_registered": {
+        "type": "string",
+        "format": "date-time"
+      },
+      "description": {
+        "type": "string"
+      },
+      "full_description": {
+        "type": "string"
+      },
+      "has_starred": {
+        "type": "boolean"
+      },
+      "hub_user": {
+        "type": "string"
+      },
+      "immutable_tags_settings": {
+        "type": "object",
+        "properties": {
+          "enabled": {
+            "type": "boolean"
+          },
+          "rules": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      },
+      "is_automated": {
+        "type": "boolean"
+      },
+      "is_private": {
+        "type": "boolean"
+      },
+      "last_modified": {
+        "type": "string",
+        "format": "date-time"
+      },
+      "last_updated": {
+        "type": "string",
+        "format": "date-time"
+      },
+      "media_types": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      },
+      "name": {
+        "type": "string"
+      },
+      "namespace": {
+        "type": "string"
+      },
+      "permissions": {
+        "type": "object",
+        "properties": {
+          "admin": {
+            "type": "boolean"
+          },
+          "read": {
+            "type": "boolean"
+          },
+          "write": {
+            "type": "boolean"
+          }
+        }
+      },
+      "pull_count": {
+        "type": "integer"
+      },
+      "repository_type": {
+        "type": "string"
+      },
+      "source": {
+        "type": "null"
+      },
+      "star_count": {
+        "type": "integer"
+      },
+      "status": {
+        "type": "integer"
+      },
+      "status_description": {
+        "type": "string"
+      },
+      "storage_size": {
+        "type": "integer"
+      },
+      "user": {
+        "type": "string"
+      }
+    }
+  },
+  "shape": {
+    "kind": "object",
+    "count": 2,
+    "properties": {
+      "affiliation": {
+        "kind": "null",
+        "count": 2
+      },
+      "categories": {
+        "kind": "array",
+        "count": 2,
+        "minItems": 1,
+        "maxItems": 1,
+        "items": {
+          "kind": "object",
+          "count": 2,
+          "properties": {
+            "name": {
+              "kind": "string",
+              "count": 2,
+              "formats": [
+                "plain"
+              ]
+            },
+            "slug": {
+              "kind": "string",
+              "count": 2,
+              "formats": [
+                "plain"
+              ]
+            }
+          }
+        }
+      },
+      "collaborator_count": {
+        "kind": "integer",
+        "count": 2
+      },
+      "content_types": {
+        "kind": "array",
+        "count": 2,
+        "minItems": 2,
+        "maxItems": 2,
+        "items": {
+          "kind": "string",
+          "count": 4,
+          "formats": [
+            "plain"
+          ]
+        }
+      },
+      "date_registered": {
+        "kind": "string",
+        "count": 2,
+        "formats": [
+          "date-time"
+        ]
+      },
+      "description": {
+        "kind": "string",
+        "count": 2,
+        "formats": [
+          "plain"
+        ]
+      },
+      "full_description": {
+        "kind": "string",
+        "count": 2,
+        "formats": [
+          "plain"
+        ]
+      },
+      "has_starred": {
+        "kind": "boolean",
+        "count": 2
+      },
+      "hub_user": {
+        "kind": "string",
+        "count": 2,
+        "formats": [
+          "plain"
+        ]
+      },
+      "immutable_tags_settings": {
+        "kind": "object",
+        "count": 2,
+        "properties": {
+          "enabled": {
+            "kind": "boolean",
+            "count": 2
+          },
+          "rules": {
+            "kind": "array",
+            "count": 2,
+            "minItems": 1,
+            "maxItems": 1,
+            "items": {
+              "kind": "string",
+              "count": 2,
+              "formats": [
+                "plain"
+              ]
+            }
+          }
+        }
+      },
+      "is_automated": {
+        "kind": "boolean",
+        "count": 2
+      },
+      "is_private": {
+        "kind": "boolean",
+        "count": 2
+      },
+      "last_modified": {
+        "kind": "string",
+        "count": 2,
+        "formats": [
+          "date-time"
+        ]
+      },
+      "last_updated": {
+        "kind": "string",
+        "count": 2,
+        "formats": [
+          "date-time"
+        ]
+      },
+      "media_types": {
+        "kind": "array",
+        "count": 2,
+        "minItems": 5,
+        "maxItems": 5,
+        "items": {
+          "kind": "string",
+          "count": 10,
+          "formats": [
+            "plain"
+          ]
+        }
+      },
+      "name": {
+        "kind": "string",
+        "count": 2,
+        "formats": [
+          "plain"
+        ]
+      },
+      "namespace": {
+        "kind": "string",
+        "count": 2,
+        "formats": [
+          "plain"
+        ]
+      },
+      "permissions": {
+        "kind": "object",
+        "count": 2,
+        "properties": {
+          "admin": {
+            "kind": "boolean",
+            "count": 2
+          },
+          "read": {
+            "kind": "boolean",
+            "count": 2
+          },
+          "write": {
+            "kind": "boolean",
+            "count": 2
+          }
+        }
+      },
+      "pull_count": {
+        "kind": "integer",
+        "count": 2
+      },
+      "repository_type": {
+        "kind": "string",
+        "count": 2,
+        "formats": [
+          "plain"
+        ]
+      },
+      "source": {
+        "kind": "null",
+        "count": 2
+      },
+      "star_count": {
+        "kind": "integer",
+        "count": 2
+      },
+      "status": {
+        "kind": "integer",
+        "count": 2
+      },
+      "status_description": {
+        "kind": "string",
+        "count": 2,
+        "formats": [
+          "plain"
+        ]
+      },
+      "storage_size": {
+        "kind": "integer",
+        "count": 2
+      },
+      "user": {
+        "kind": "string",
+        "count": 2,
+        "formats": [
+          "plain"
+        ]
+      }
+    }
+  },
+  "fieldCount": 33,
+  "samples": 2,
+  "firstSeenAt": "2026-10-22T21:45:34.000Z",
+  "contractSince": "2026-10-22T22:15:37.000Z",
+  "weather": {
+    "condition": "sunny",
+    "headline": "Clear skies",
+    "reason": "Contract unchanged and responding normally.",
+    "since": "2026-10-22T21:45:34.000Z"
+  },
+  "stats": {
+    "d1": {
+      "checks": 5,
+      "ok": 5,
+      "uptime": 1,
+      "p50": 365,
+      "p95": 770
+    },
+    "d7": {
+      "checks": 5,
+      "ok": 5,
+      "uptime": 1,
+      "p50": 365,
+      "p95": 770
+    },
+    "d30": {
+      "checks": 5,
+      "ok": 5,
+      "uptime": 1,
+      "p50": 365,
+      "p95": 770
+    }
+  }
+}

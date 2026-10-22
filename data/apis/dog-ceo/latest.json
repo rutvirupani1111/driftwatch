@@ -1,0 +1,84 @@
+{
+  "id": "dog-ceo",
+  "name": "Dog CEO: random image",
+  "category": "Playground APIs",
+  "url": "https://dog.ceo/api/breeds/image/random",
+  "host": "dog.ceo",
+  "method": "GET",
+  "docs": "https://dog.ceo/dog-api/documentation/",
+  "description": "A random dog photo URL, the friendliest envelope on the web.",
+  "checkedAt": "2026-10-22T22:22:41.000Z",
+  "ok": true,
+  "status": 200,
+  "latencyMs": 622,
+  "sizeBytes": 94,
+  "contentType": "application/json",
+  "error": null,
+  "engine": "api-drift/shape@1",
+  "fingerprint": "e7b8cdfbaac8060a",
+  "contract": {
+    "type": "object",
+    "properties": {
+      "message": {
+        "type": "string",
+        "format": "uri"
+      },
+      "status": {
+        "type": "string"
+      }
+    }
+  },
+  "shape": {
+    "kind": "object",
+    "count": 2,
+    "properties": {
+      "message": {
+        "kind": "string",
+        "count": 2,
+        "formats": [
+          "uri"
+        ]
+      },
+      "status": {
+        "kind": "string",
+        "count": 2,
+        "formats": [
+          "plain"
+        ]
+      }
+    }
+  },
+  "fieldCount": 2,
+  "samples": 2,
+  "firstSeenAt": "2026-10-22T21:45:37.000Z",
+  "contractSince": "2026-10-22T22:15:40.000Z",
+  "weather": {
+    "condition": "sunny",
+    "headline": "Clear skies",
+    "reason": "Contract unchanged and responding normally.",
+    "since": "2026-10-22T21:45:37.000Z"
+  },
+  "stats": {
+    "d1": {
+      "checks": 5,
+      "ok": 5,
+      "uptime": 1,
+      "p50": 597,
+      "p95": 629
+    },
+    "d7": {
+      "checks": 5,
+      "ok": 5,
+      "uptime": 1,
+      "p50": 597,
+      "p95": 629
+    },
+    "d30": {
+      "checks": 5,
+      "ok": 5,
+      "uptime": 1,
+      "p50": 597,
+      "p95": 629
+    }
+  }
+}

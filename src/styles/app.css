@@ -1,0 +1,482 @@
+@import 'tailwindcss';
+
+@custom-variant day (&:where([data-theme='day'], [data-theme='day'] *));
+
+@theme {
+  --font-serif: 'Instrument Serif', ui-serif, Georgia, 'Times New Roman', serif;
+  --font-sans: 'Inter Variable', 'Inter', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-mono: 'JetBrains Mono Variable', 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  --breakpoint-xs: 26rem;
+  --ease-out-soft: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* ---------------------------------------------------------------------------
+   Theme tokens. Night sky is the default; daylight is opt-in.
+   --------------------------------------------------------------------------- */
+:root,
+[data-theme='night'] {
+  color-scheme: dark;
+  --bg-0: #050915;
+  --bg-1: #091027;
+  --bg-2: #0f1934;
+  --panel: rgb(148 163 255 / 0.045);
+  --panel-2: rgb(148 163 255 / 0.08);
+  --panel-solid: #0c1430;
+  --line: rgb(173 186 255 / 0.1);
+  --line-strong: rgb(173 186 255 / 0.2);
+  --ink: #edf1fd;
+  --ink-2: #b2bad6;
+  --ink-3: #7c86a8;
+  --accent: #c9bcff;
+  --accent-ink: #120c2b;
+  --sun: #ffc95e;
+  --cloud: #8db7ff;
+  --storm: #ff6f91;
+  --fog: #a3adc4;
+  --breaking: #ff7896;
+  --risky: #ffb547;
+  --info: #7cc4ff;
+  --ok: #5fe0a8;
+  --shadow: 0 1px 0 rgb(255 255 255 / 0.04) inset, 0 20px 40px -24px rgb(0 0 0 / 0.7);
+
+  /* glyph paints */
+  --g-sun-a: #ffe39a;
+  --g-sun-b: #ffb648;
+  --g-ray: #ffcf6e;
+  --g-cloud-a: #eef3ff;
+  --g-cloud-b: #a9bbe6;
+  --g-storm-a: #8d97b8;
+  --g-storm-b: #4a5373;
+  --g-bolt: #ffd166;
+  --g-rain: #8db7ff;
+  --g-fog: #c3cbe0;
+}
+
+[data-theme='day'] {
+  color-scheme: light;
+  --bg-0: #eef3fb;
+  --bg-1: #f5f7fc;
+  --bg-2: #ffffff;
+  --panel: rgb(255 255 255 / 0.72);
+  --panel-2: #ffffff;
+  --panel-solid: #ffffff;
+  --line: rgb(20 32 72 / 0.09);
+  --line-strong: rgb(20 32 72 / 0.18);
+  --ink: #0c1430;
+  --ink-2: #47537a;
+  --ink-3: #5a6583;
+  --accent: #5a45d4;
+  --accent-ink: #ffffff;
+  --sun: #9a5c00;
+  --cloud: #2563d6;
+  --storm: #cf2e5a;
+  --fog: #56627c;
+  --breaking: #c92a55;
+  --risky: #9a5b00;
+  --info: #1f5fcf;
+  --ok: #0f7a50;
+  --shadow: 0 1px 2px rgb(16 24 64 / 0.04), 0 16px 32px -20px rgb(16 24 64 / 0.25);
+
+  --g-sun-a: #ffd76a;
+  --g-sun-b: #f59f1a;
+  --g-ray: #f5a524;
+  --g-cloud-a: #ffffff;
+  --g-cloud-b: #c9d7ef;
+  --g-storm-a: #7d88a8;
+  --g-storm-b: #475070;
+  --g-bolt: #f5b400;
+  --g-rain: #3f7fe8;
+  --g-fog: #8e99b3;
+}
+
+@theme inline {
+  --color-bg: var(--bg-0);
+  --color-bg-1: var(--bg-1);
+  --color-bg-2: var(--bg-2);
+  --color-panel: var(--panel);
+  --color-panel-2: var(--panel-2);
+  --color-panel-solid: var(--panel-solid);
+  --color-line: var(--line);
+  --color-line-strong: var(--line-strong);
+  --color-ink: var(--ink);
+  --color-ink-2: var(--ink-2);
+  --color-ink-3: var(--ink-3);
+  --color-accent: var(--accent);
+  --color-accent-ink: var(--accent-ink);
+  --color-sun: var(--sun);
+  --color-cloud: var(--cloud);
+  --color-storm: var(--storm);
+  --color-fog: var(--fog);
+  --color-breaking: var(--breaking);
+  --color-risky: var(--risky);
+  --color-info: var(--info);
+  --color-ok: var(--ok);
+}
+
+/* ---------------------------------------------------------------------------
+   Base
+   --------------------------------------------------------------------------- */
+@layer base {
+  html {
+    background: var(--bg-0);
+    color: var(--ink);
+    -webkit-text-size-adjust: 100%;
+    text-rendering: optimizeLegibility;
+    scroll-padding-top: 5rem;
+  }
+  body {
+    min-height: 100dvh;
+    font-family: var(--font-sans);
+    font-feature-settings: 'cv11', 'ss01';
+    -webkit-font-smoothing: antialiased;
+    background: transparent;
+    overflow-x: hidden;
+  }
+  ::selection {
+    background: color-mix(in oklab, var(--accent) 35%, transparent);
+  }
+  :focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 3px;
+    border-radius: 6px;
+  }
+  code,
+  kbd,
+  pre,
+  .font-mono {
+    font-feature-settings: 'zero', 'calt' 0;
+  }
+  .tabular {
+    font-variant-numeric: tabular-nums;
+  }
+  h1,
+  h2,
+  h3 {
+    text-wrap: balance;
+  }
+  p {
+    text-wrap: pretty;
+  }
+}
+
+/* ---------------------------------------------------------------------------
+   Sky backdrop
+   --------------------------------------------------------------------------- */
+.sky {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  overflow: hidden;
+  background:
+    radial-gradient(120% 70% at 85% -10%, rgb(108 92 231 / 0.22), transparent 60%),
+    radial-gradient(90% 60% at 0% 0%, rgb(32 120 190 / 0.18), transparent 55%),
+    linear-gradient(180deg, var(--bg-1) 0%, var(--bg-0) 55%, var(--bg-0) 100%);
+}
+.sky-stars {
+  position: absolute;
+  inset: 0;
+  opacity: 0.9;
+}
+.sky-stars .twinkle {
+  animation: twinkle 5s ease-in-out infinite;
+}
+.sky-horizon {
+  position: absolute;
+  inset: auto 0 0 0;
+  height: 40vh;
+  background: linear-gradient(180deg, transparent, var(--bg-0));
+}
+.sky-day {
+  display: none;
+}
+[data-theme='day'] .sky {
+  background:
+    radial-gradient(60% 50% at 88% -8%, rgb(255 205 120 / 0.55), transparent 60%),
+    radial-gradient(80% 60% at 10% -10%, rgb(160 200 255 / 0.55), transparent 60%),
+    linear-gradient(180deg, #dce9ff 0%, #e9f0fb 40%, var(--bg-0) 100%);
+}
+[data-theme='day'] .sky-stars,
+[data-theme='day'] .sky-horizon {
+  display: none;
+}
+[data-theme='day'] .sky-day {
+  display: block;
+  position: absolute;
+  inset: 0;
+}
+.sky-cloud {
+  animation: drift-x 90s linear infinite;
+  filter: blur(6px);
+}
+.sky-cloud.slow {
+  animation-duration: 140s;
+}
+
+@keyframes twinkle {
+  0%,
+  100% {
+    opacity: 0.25;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+@keyframes drift-x {
+  from {
+    transform: translateX(-10%);
+  }
+  to {
+    transform: translateX(110%);
+  }
+}
+
+/* ---------------------------------------------------------------------------
+   Weather glyph animations (SVG). Subtle by design.
+   --------------------------------------------------------------------------- */
+.glyph .rays {
+  transform-origin: 32px 32px;
+  transform-box: view-box;
+  animation: spin 48s linear infinite;
+}
+.glyph .rays.small {
+  transform-origin: 23px 22px;
+}
+.glyph .halo {
+  transform-origin: 32px 32px;
+  transform-box: view-box;
+  animation: breathe 5s ease-in-out infinite;
+}
+.glyph .cloud-drift {
+  animation: bob 7s ease-in-out infinite alternate;
+}
+.glyph .bolt {
+  animation: flash 5.5s steps(1, end) infinite;
+}
+.glyph .drop {
+  animation: fall 1.6s linear infinite;
+}
+.glyph .drop:nth-of-type(2) {
+  animation-delay: -0.55s;
+}
+.glyph .drop:nth-of-type(3) {
+  animation-delay: -1.1s;
+}
+.glyph .fog-line {
+  animation: fog-slide 6s ease-in-out infinite alternate;
+}
+.glyph .fog-line:nth-of-type(2) {
+  animation-duration: 8s;
+  animation-delay: -2s;
+}
+.glyph .fog-line:nth-of-type(3) {
+  animation-duration: 7s;
+  animation-delay: -4s;
+}
+.glyph .fog-line:nth-of-type(4) {
+  animation-duration: 9s;
+  animation-delay: -1s;
+}
+
+.glyph.still * {
+  animation: none !important;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes breathe {
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 0.55;
+  }
+  50% {
+    transform: scale(1.08);
+    opacity: 0.85;
+  }
+}
+@keyframes bob {
+  from {
+    transform: translateX(-1.5px);
+  }
+  to {
+    transform: translateX(1.5px);
+  }
+}
+@keyframes flash {
+  0%,
+  86%,
+  100% {
+    opacity: 0.35;
+  }
+  88% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 0.45;
+  }
+  92% {
+    opacity: 1;
+  }
+  95% {
+    opacity: 0.6;
+  }
+}
+@keyframes fall {
+  from {
+    transform: translate(0, -3px);
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  to {
+    transform: translate(-2px, 9px);
+    opacity: 0;
+  }
+}
+@keyframes fog-slide {
+  from {
+    transform: translateX(-3px);
+  }
+  to {
+    transform: translateX(3px);
+  }
+}
+
+/* ---------------------------------------------------------------------------
+   Components
+   --------------------------------------------------------------------------- */
+@layer components {
+  .panel {
+    background: var(--panel);
+    border: 1px solid var(--line);
+    border-radius: 1.25rem;
+    box-shadow: var(--shadow);
+    backdrop-filter: blur(14px) saturate(130%);
+    -webkit-backdrop-filter: blur(14px) saturate(130%);
+  }
+  .kicker {
+    font-family: var(--font-mono);
+    font-size: 0.6875rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--ink-3);
+  }
+  .chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    border: 1px solid var(--line);
+    background: var(--panel);
+    color: var(--ink-2);
+    border-radius: 999px;
+    padding: 0.3rem 0.75rem;
+    font-size: 0.8125rem;
+    line-height: 1.2;
+    white-space: nowrap;
+    transition:
+      background-color 160ms,
+      border-color 160ms,
+      color 160ms;
+  }
+  .chip:hover {
+    border-color: var(--line-strong);
+    color: var(--ink);
+  }
+  .chip[aria-pressed='true'],
+  .chip[aria-selected='true'],
+  .chip[aria-current='page'] {
+    background: var(--ink);
+    border-color: var(--ink);
+    color: var(--bg-0);
+  }
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    border-radius: 999px;
+    padding: 0.55rem 1rem;
+    font-size: 0.875rem;
+    font-weight: 550;
+    border: 1px solid var(--line-strong);
+    background: var(--panel-2);
+    color: var(--ink);
+    transition:
+      transform 160ms var(--ease-out-soft),
+      background-color 160ms,
+      border-color 160ms;
+  }
+  .btn:hover {
+    border-color: color-mix(in oklab, var(--accent) 60%, var(--line-strong));
+  }
+  .btn:active {
+    transform: translateY(1px);
+  }
+  .btn-primary {
+    background: var(--accent);
+    border-color: var(--accent);
+    color: var(--accent-ink);
+  }
+  .btn-primary:hover {
+    filter: brightness(1.06);
+  }
+  .field {
+    width: 100%;
+    border-radius: 0.75rem;
+    border: 1px solid var(--line-strong);
+    background: color-mix(in oklab, var(--bg-0) 55%, transparent);
+    color: var(--ink);
+    padding: 0.55rem 0.75rem;
+    font-size: 0.875rem;
+  }
+  [data-theme='day'] .field {
+    background: #fff;
+  }
+  .field::placeholder {
+    color: var(--ink-3);
+  }
+  .field:focus {
+    outline: 2px solid color-mix(in oklab, var(--accent) 70%, transparent);
+    outline-offset: 1px;
+  }
+  .link {
+    color: var(--ink);
+    text-decoration: underline;
+    text-decoration-color: color-mix(in oklab, var(--accent) 55%, transparent);
+    text-underline-offset: 3px;
+    text-decoration-thickness: 1px;
+  }
+  .link:hover {
+    text-decoration-color: var(--accent);
+  }
+  .code-surface {
+    background: color-mix(in oklab, var(--bg-0) 70%, transparent);
+    border: 1px solid var(--line);
+    border-radius: 0.9rem;
+  }
+  [data-theme='day'] .code-surface {
+    background: #f6f8fd;
+  }
+}
+
+/* Thin scrollbars inside code and scroll areas */
+.scroll-thin {
+  scrollbar-width: thin;
+  scrollbar-color: var(--line-strong) transparent;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}

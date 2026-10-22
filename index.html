@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en" data-theme="night">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>Driftwatch: the weather report for the APIs the internet runs on</title>
+    <meta
+      name="description"
+      content="Zero-infrastructure API contract monitoring. GitHub Actions watches public JSON APIs, learns the shape of every response with api-drift and reports when it drifts. Shapes, never values."
+    />
+    <meta name="theme-color" content="#050915" />
+    <meta property="og:title" content="Driftwatch" />
+    <meta property="og:description" content="The weather report for the APIs the internet runs on." />
+    <meta property="og:type" content="website" />
+    <link rel="icon" type="image/svg+xml" href="%BASE_URL%favicon.svg" />
+    <link rel="alternate" type="application/atom+xml" title="Driftwatch: API contract changes" href="%BASE_URL%feed.xml" />
+    <script>
+      (function () {
+        try {
+          var t = localStorage.getItem('driftwatch-theme');
+          if (t === 'day' || t === 'night') document.documentElement.setAttribute('data-theme', t);
+        } catch (e) {}
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <noscript>
+      <p style="font-family: system-ui; padding: 2rem; color: #edf1fd; background: #050915">
+        Driftwatch needs JavaScript for the dashboard. The raw data is in <a href="data/index.json" style="color: #c9bcff">data/index.json</a>
+        and changes are published as an <a href="feed.xml" style="color: #c9bcff">Atom feed</a>.
+      </p>
+    </noscript>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

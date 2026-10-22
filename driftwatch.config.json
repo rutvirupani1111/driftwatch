@@ -1,0 +1,223 @@
+{
+  "$schema": "./driftwatch.schema.json",
+  "site": {
+    "title": "Driftwatch",
+    "description": "The weather report for the APIs the internet runs on.",
+    "url": "https://rutvirupani1111.github.io/driftwatch/",
+    "repo": "rutvirupani1111/driftwatch"
+  },
+  "schedule": "17 */3 * * *",
+  "timeoutMs": 15000,
+  "concurrency": 4,
+  "monitors": [
+    {
+      "id": "github-repo",
+      "name": "GitHub REST: repository",
+      "category": "Developer platforms",
+      "url": "https://api.github.com/repos/react/react",
+      "headers": {
+        "Authorization": "Bearer ${GITHUB_TOKEN}",
+        "X-GitHub-Api-Version": "2022-11-28"
+      },
+      "docs": "https://docs.github.com/en/rest/repos/repos#get-a-repository",
+      "description": "Repository metadata for react/react. Uses the workflow token when available."
+    },
+    {
+      "id": "gitlab-project",
+      "name": "GitLab: project",
+      "category": "Developer platforms",
+      "url": "https://gitlab.com/api/v4/projects/gitlab-org%2Fgitlab",
+      "docs": "https://docs.gitlab.com/api/projects/#get-a-single-project",
+      "description": "Public project metadata for gitlab-org/gitlab."
+    },
+    {
+      "id": "stack-exchange",
+      "name": "Stack Exchange: site info",
+      "category": "Developer platforms",
+      "url": "https://api.stackexchange.com/2.3/info?site=stackoverflow",
+      "docs": "https://api.stackexchange.com/docs/info",
+      "description": "Totals and rates for Stack Overflow, wrapped in the Stack Exchange envelope."
+    },
+    {
+      "id": "docker-hub",
+      "name": "Docker Hub: repository",
+      "category": "Developer platforms",
+      "url": "https://hub.docker.com/v2/repositories/library/node/",
+      "docs": "https://docs.docker.com/reference/api/hub/latest/",
+      "description": "The official node image repository."
+    },
+    {
+      "id": "npm-registry",
+      "name": "npm registry: react@latest",
+      "category": "Package registries",
+      "url": "https://registry.npmjs.org/react/latest",
+      "docs": "https://github.com/npm/registry/blob/main/docs/REGISTRY-API.md",
+      "description": "The packument of the latest react release."
+    },
+    {
+      "id": "pypi-project",
+      "name": "PyPI JSON: requests",
+      "category": "Package registries",
+      "url": "https://pypi.org/pypi/requests/json",
+      "docs": "https://docs.pypi.org/api/json/",
+      "description": "Project metadata, release files and vulnerabilities for requests. Release versions are collapsed into a <version> map."
+    },
+    {
+      "id": "crates-io",
+      "name": "crates.io: serde",
+      "category": "Package registries",
+      "url": "https://crates.io/api/v1/crates/serde?include=keywords,categories",
+      "docs": "https://crates.io/data-access",
+      "description": "Crate metadata for serde (crates.io requires a User-Agent)."
+    },
+    {
+      "id": "homebrew",
+      "name": "Homebrew formula: wget",
+      "category": "Package registries",
+      "url": "https://formulae.brew.sh/api/formula/wget.json",
+      "docs": "https://formulae.brew.sh/docs/api/",
+      "description": "Formula metadata, bottles and dependencies for wget."
+    },
+    {
+      "id": "jsdelivr",
+      "name": "jsDelivr: package stats",
+      "category": "Package registries",
+      "url": "https://data.jsdelivr.com/v1/stats/packages/npm/react?period=month",
+      "docs": "https://www.jsdelivr.com/docs/data.jsdelivr.com",
+      "description": "Monthly CDN hits and bandwidth for react. Daily keys are collapsed into a <date> map."
+    },
+    {
+      "id": "deps-dev",
+      "name": "deps.dev: package version",
+      "category": "Security & supply chain",
+      "url": "https://api.deps.dev/v3/systems/npm/packages/react/versions/18.3.1",
+      "docs": "https://docs.deps.dev/api/v3/",
+      "description": "Open Source Insights data for react 18.3.1."
+    },
+    {
+      "id": "osv-query",
+      "name": "OSV: vulnerability query",
+      "category": "Security & supply chain",
+      "url": "https://api.osv.dev/v1/query",
+      "method": "POST",
+      "body": {
+        "package": { "name": "lodash", "ecosystem": "npm" },
+        "version": "4.17.20"
+      },
+      "docs": "https://google.github.io/osv.dev/post-v1-query/",
+      "description": "Known vulnerabilities for lodash 4.17.20 (a POST endpoint)."
+    },
+    {
+      "id": "wikipedia-random",
+      "name": "Wikipedia REST: random summary",
+      "category": "Knowledge",
+      "url": "https://en.wikipedia.org/api/rest_v1/page/random/summary",
+      "docs": "https://en.wikipedia.org/api/rest_v1/",
+      "description": "A different article on every call, so optional fields (coordinates, thumbnails) come and go: the learned contract has to cope."
+    },
+    {
+      "id": "open-library",
+      "name": "Open Library: work",
+      "category": "Knowledge",
+      "url": "https://openlibrary.org/works/OL45804W.json",
+      "docs": "https://openlibrary.org/dev/docs/api/books",
+      "description": "The work record for Fantastic Mr Fox."
+    },
+    {
+      "id": "hacker-news",
+      "name": "Hacker News: item",
+      "category": "Knowledge",
+      "url": "https://hacker-news.firebaseio.com/v0/item/8863.json",
+      "docs": "https://github.com/HackerNews/API",
+      "description": "The canonical example item from the official Firebase API."
+    },
+    {
+      "id": "hugging-face",
+      "name": "Hugging Face Hub: model",
+      "category": "Knowledge",
+      "url": "https://huggingface.co/api/models/google-bert/bert-base-uncased",
+      "docs": "https://huggingface.co/docs/hub/api",
+      "description": "Model card metadata for bert-base-uncased."
+    },
+    {
+      "id": "open-meteo",
+      "name": "Open-Meteo: forecast",
+      "category": "Sky & science",
+      "url": "https://api.open-meteo.com/v1/forecast?latitude=19.08&longitude=72.88&current=temperature_2m,relative_humidity_2m,wind_speed_10m,weather_code&hourly=temperature_2m&forecast_days=1&timezone=Asia%2FKolkata",
+      "docs": "https://open-meteo.com/en/docs",
+      "description": "Today's forecast for Mumbai. A real weather API, watched for weather."
+    },
+    {
+      "id": "sunrise-sunset",
+      "name": "Sunrise-Sunset: Mumbai",
+      "category": "Sky & science",
+      "url": "https://api.sunrise-sunset.org/json?lat=19.0760&lng=72.8777&formatted=0",
+      "docs": "https://sunrise-sunset.org/api",
+      "description": "Sunrise, sunset and twilight times for Mumbai."
+    },
+    {
+      "id": "iss-position",
+      "name": "Where the ISS at: position",
+      "category": "Sky & science",
+      "url": "https://api.wheretheiss.at/v1/satellites/25544",
+      "docs": "https://wheretheiss.at/w/developer",
+      "description": "Live position and velocity of the International Space Station."
+    },
+    {
+      "id": "frankfurter",
+      "name": "Frankfurter: FX rates",
+      "category": "Money",
+      "url": "https://api.frankfurter.dev/v1/latest?from=USD&to=INR,EUR,GBP",
+      "docs": "https://frankfurter.dev/",
+      "description": "ECB reference rates for USD against INR, EUR and GBP."
+    },
+    {
+      "id": "coingecko",
+      "name": "CoinGecko: simple price",
+      "category": "Money",
+      "url": "https://api.coingecko.com/api/v3/simple/price?ids=bitcoin,ethereum&vs_currencies=usd,inr&include_24hr_change=true&include_last_updated_at=true",
+      "docs": "https://docs.coingecko.com/reference/simple-price",
+      "description": "Bitcoin and Ether prices in USD and INR from the keyless public API."
+    },
+    {
+      "id": "nager-date",
+      "name": "Nager.Date: next holidays",
+      "category": "Open data",
+      "url": "https://date.nager.at/api/v3/NextPublicHolidays/GB",
+      "docs": "https://date.nager.at/Api",
+      "description": "Upcoming UK public holidays. Nager.Date has no data for India (it answers 204), so the UK stands in."
+    },
+    {
+      "id": "open-food-facts",
+      "name": "Open Food Facts: product",
+      "category": "Open data",
+      "url": "https://world.openfoodfacts.org/api/v2/product/3017624010701.json?fields=code,product_name,brands,nutriscore_grade,nutriments,categories_tags,image_url",
+      "docs": "https://openfoodfacts.github.io/openfoodfacts-server/api/",
+      "description": "A selected set of fields for one well-known product."
+    },
+    {
+      "id": "pokeapi",
+      "name": "PokeAPI: pokemon",
+      "category": "Playground APIs",
+      "url": "https://pokeapi.co/api/v2/pokemon/ditto",
+      "docs": "https://pokeapi.co/docs/v2",
+      "description": "Ditto: the classic PokeAPI example resource."
+    },
+    {
+      "id": "jsonplaceholder",
+      "name": "JSONPlaceholder: post",
+      "category": "Playground APIs",
+      "url": "https://jsonplaceholder.typicode.com/posts/1",
+      "docs": "https://jsonplaceholder.typicode.com/guide/",
+      "description": "The fake REST API everyone has used in a tutorial."
+    },
+    {
+      "id": "dog-ceo",
+      "name": "Dog CEO: random image",
+      "category": "Playground APIs",
+      "url": "https://dog.ceo/api/breeds/image/random",
+      "docs": "https://dog.ceo/dog-api/documentation/",
+      "description": "A random dog photo URL, the friendliest envelope on the web."
+    }
+  ]
+}

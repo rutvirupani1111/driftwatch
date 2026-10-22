@@ -1,0 +1,46 @@
+{
+  "name": "driftwatch",
+  "version": "0.1.0",
+  "private": true,
+  "description": "The weather report for the APIs the internet runs on. Zero-infrastructure API contract monitoring on GitHub Actions + Pages, powered by api-drift.",
+  "author": "Rutvi Rupani",
+  "license": "MIT",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "dev": "vite --port 5185 --strictPort",
+    "build": "vite build",
+    "preview": "vite preview --port 5185 --strictPort",
+    "typecheck": "tsc -p tsconfig.app.json --noEmit && tsc -p tsconfig.node.json --noEmit && tsc -p tsconfig.e2e.json --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "monitor": "tsx --tsconfig tsconfig.node.json monitor/cli.ts",
+    "e2e": "playwright test --project=smoke",
+    "screenshots": "playwright test --project=screenshots",
+    "check": "npm run typecheck && npm test && npm run build"
+  },
+  "dependencies": {
+    "@fontsource-variable/inter": "5.3.0",
+    "@fontsource-variable/jetbrains-mono": "5.3.0",
+    "@fontsource/instrument-serif": "5.3.0",
+    "motion": "12.43.0",
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
+    "react-router": "7.18.4"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.64.1",
+    "@tailwindcss/vite": "4.3.3",
+    "@types/node": "22.20.5",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "@vitejs/plugin-react": "5.2.0",
+    "tailwindcss": "4.3.3",
+    "tsx": "4.23.15",
+    "typescript": "5.9.3",
+    "vite": "7.3.7",
+    "vitest": "3.2.7"
+  }
+}

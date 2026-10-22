@@ -1,0 +1,472 @@
+{
+  "id": "wikipedia-random",
+  "name": "Wikipedia REST: random summary",
+  "category": "Knowledge",
+  "url": "https://en.wikipedia.org/api/rest_v1/page/random/summary",
+  "host": "en.wikipedia.org",
+  "method": "GET",
+  "docs": "https://en.wikipedia.org/api/rest_v1/",
+  "description": "A different article on every call, so optional fields (coordinates, thumbnails) come and go: the learned contract has to cope.",
+  "checkedAt": "2026-10-22T22:22:38.000Z",
+  "ok": true,
+  "status": 200,
+  "latencyMs": 1124,
+  "sizeBytes": 2329,
+  "contentType": "application/json; charset=utf-8; profile=\"https://www.mediawiki.org/wiki/Specs/Summary/1.5.0\"",
+  "error": null,
+  "engine": "api-drift/shape@1",
+  "fingerprint": "0288cfd41b459c45",
+  "contract": {
+    "type": "object",
+    "properties": {
+      "content_urls": {
+        "type": "object",
+        "properties": {
+          "desktop": {
+            "type": "object",
+            "properties": {
+              "edit": {
+                "type": "string",
+                "format": "uri"
+              },
+              "page": {
+                "type": "string",
+                "format": "uri"
+              },
+              "revisions": {
+                "type": "string",
+                "format": "uri"
+              },
+              "talk": {
+                "type": "string",
+                "format": "uri"
+              }
+            }
+          },
+          "mobile": {
+            "type": "object",
+            "properties": {
+              "edit": {
+                "type": "string",
+                "format": "uri"
+              },
+              "page": {
+                "type": "string",
+                "format": "uri"
+              },
+              "revisions": {
+                "type": "string",
+                "format": "uri"
+              },
+              "talk": {
+                "type": "string",
+                "format": "uri"
+              }
+            }
+          }
+        }
+      },
+      "description": {
+        "type": "string"
+      },
+      "description_source": {
+        "type": "string"
+      },
+      "dir": {
+        "type": "string"
+      },
+      "displaytitle": {
+        "type": "string"
+      },
+      "extract": {
+        "type": "string"
+      },
+      "extract_html": {
+        "type": "string"
+      },
+      "lang": {
+        "type": "string"
+      },
+      "namespace": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer"
+          },
+          "text": {
+            "type": "string",
+            "format": "empty"
+          }
+        }
+      },
+      "originalimage": {
+        "type": "object",
+        "properties": {
+          "height": {
+            "type": "integer"
+          },
+          "source": {
+            "type": "string",
+            "format": "uri"
+          },
+          "width": {
+            "type": "integer"
+          }
+        }
+      },
+      "pageid": {
+        "type": "integer"
+      },
+      "revision": {
+        "type": "string",
+        "format": "numeric-string"
+      },
+      "thumbnail": {
+        "type": "object",
+        "properties": {
+          "height": {
+            "type": "integer"
+          },
+          "source": {
+            "type": "string",
+            "format": "uri"
+          },
+          "width": {
+            "type": "integer"
+          }
+        }
+      },
+      "tid": {
+        "type": "string",
+        "format": "uuid"
+      },
+      "timestamp": {
+        "type": "string",
+        "format": "date-time"
+      },
+      "title": {
+        "type": "string"
+      },
+      "titles": {
+        "type": "object",
+        "properties": {
+          "canonical": {
+            "type": "string"
+          },
+          "display": {
+            "type": "string"
+          },
+          "normalized": {
+            "type": "string"
+          }
+        }
+      },
+      "type": {
+        "type": "string"
+      },
+      "wikibase_item": {
+        "type": "string"
+      }
+    }
+  },
+  "shape": {
+    "kind": "object",
+    "count": 2,
+    "properties": {
+      "content_urls": {
+        "kind": "object",
+        "count": 2,
+        "properties": {
+          "desktop": {
+            "kind": "object",
+            "count": 2,
+            "properties": {
+              "edit": {
+                "kind": "string",
+                "count": 2,
+                "formats": [
+                  "uri"
+                ]
+              },
+              "page": {
+                "kind": "string",
+                "count": 2,
+                "formats": [
+                  "uri"
+                ]
+              },
+              "revisions": {
+                "kind": "string",
+                "count": 2,
+                "formats": [
+                  "uri"
+                ]
+              },
+              "talk": {
+                "kind": "string",
+                "count": 2,
+                "formats": [
+                  "uri"
+                ]
+              }
+            }
+          },
+          "mobile": {
+            "kind": "object",
+            "count": 2,
+            "properties": {
+              "edit": {
+                "kind": "string",
+                "count": 2,
+                "formats": [
+                  "uri"
+                ]
+              },
+              "page": {
+                "kind": "string",
+                "count": 2,
+                "formats": [
+                  "uri"
+                ]
+              },
+              "revisions": {
+                "kind": "string",
+                "count": 2,
+                "formats": [
+                  "uri"
+                ]
+              },
+              "talk": {
+                "kind": "string",
+                "count": 2,
+                "formats": [
+                  "uri"
+                ]
+              }
+            }
+          }
+        }
+      },
+      "description": {
+        "kind": "string",
+        "count": 2,
+        "formats": [
+          "plain"
+        ]
+      },
+      "description_source": {
+        "kind": "string",
+        "count": 2,
+        "formats": [
+          "plain"
+        ]
+      },
+      "dir": {
+        "kind": "string",
+        "count": 2,
+        "formats": [
+          "plain"
+        ]
+      },
+      "displaytitle": {
+        "kind": "string",
+        "count": 2,
+        "formats": [
+          "plain"
+        ]
+      },
+      "extract": {
+        "kind": "string",
+        "count": 2,
+        "formats": [
+          "plain"
+        ]
+      },
+      "extract_html": {
+        "kind": "string",
+        "count": 2,
+        "formats": [
+          "plain"
+        ]
+      },
+      "lang": {
+        "kind": "string",
+        "count": 2,
+        "formats": [
+          "plain"
+        ]
+      },
+      "namespace": {
+        "kind": "object",
+        "count": 2,
+        "properties": {
+          "id": {
+            "kind": "integer",
+            "count": 2
+          },
+          "text": {
+            "kind": "string",
+            "count": 2,
+            "formats": [
+              "empty"
+            ]
+          }
+        }
+      },
+      "originalimage": {
+        "kind": "object",
+        "count": 2,
+        "properties": {
+          "height": {
+            "kind": "integer",
+            "count": 2
+          },
+          "source": {
+            "kind": "string",
+            "count": 2,
+            "formats": [
+              "uri"
+            ]
+          },
+          "width": {
+            "kind": "integer",
+            "count": 2
+          }
+        }
+      },
+      "pageid": {
+        "kind": "integer",
+        "count": 2
+      },
+      "revision": {
+        "kind": "string",
+        "count": 2,
+        "formats": [
+          "numeric-string"
+        ]
+      },
+      "thumbnail": {
+        "kind": "object",
+        "count": 2,
+        "properties": {
+          "height": {
+            "kind": "integer",
+            "count": 2
+          },
+          "source": {
+            "kind": "string",
+            "count": 2,
+            "formats": [
+              "uri"
+            ]
+          },
+          "width": {
+            "kind": "integer",
+            "count": 2
+          }
+        }
+      },
+      "tid": {
+        "kind": "string",
+        "count": 2,
+        "formats": [
+          "uuid"
+        ]
+      },
+      "timestamp": {
+        "kind": "string",
+        "count": 2,
+        "formats": [
+          "date-time"
+        ]
+      },
+      "title": {
+        "kind": "string",
+        "count": 2,
+        "formats": [
+          "plain"
+        ]
+      },
+      "titles": {
+        "kind": "object",
+        "count": 2,
+        "properties": {
+          "canonical": {
+            "kind": "string",
+            "count": 2,
+            "formats": [
+              "plain"
+            ]
+          },
+          "display": {
+            "kind": "string",
+            "count": 2,
+            "formats": [
+              "plain"
+            ]
+          },
+          "normalized": {
+            "kind": "string",
+            "count": 2,
+            "formats": [
+              "plain"
+            ]
+          }
+        }
+      },
+      "type": {
+        "kind": "string",
+        "count": 2,
+        "formats": [
+          "plain"
+        ]
+      },
+      "wikibase_item": {
+        "kind": "string",
+        "count": 2,
+        "formats": [
+          "plain"
+        ]
+      }
+    }
+  },
+  "fieldCount": 40,
+  "samples": 2,
+  "firstSeenAt": "2026-10-22T21:50:47.000Z",
+  "contractSince": "2026-10-22T22:15:38.000Z",
+  "lastChange": {
+    "id": "wikipedia-random@2026-10-22T22:09:00.000Z",
+    "at": "2026-10-22T22:09:00.000Z",
+    "severity": "breaking",
+    "summary": "$.coordinates was removed (1 breaking)"
+  },
+  "weather": {
+    "condition": "storm",
+    "headline": "Storm",
+    "reason": "$.coordinates was removed (1 breaking)",
+    "since": "2026-10-22T22:09:00.000Z"
+  },
+  "stats": {
+    "d1": {
+      "checks": 4,
+      "ok": 4,
+      "uptime": 1,
+      "p50": 1101,
+      "p95": 1761
+    },
+    "d7": {
+      "checks": 4,
+      "ok": 4,
+      "uptime": 1,
+      "p50": 1101,
+      "p95": 1761
+    },
+    "d30": {
+      "checks": 4,
+      "ok": 4,
+      "uptime": 1,
+      "p50": 1101,
+      "p95": 1761
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "lib": [
+      "ES2023"
+    ],
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "types": [
+      "node"
+    ],
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+    "skipLibCheck": true,
+    "isolatedModules": true,
+    "verbatimModuleSyntax": true,
+    "resolveJsonModule": true,
+    "allowImportingTsExtensions": false,
+    "noEmit": true,
+    "paths": {
+      "api-drift/core": [
+        "../api-drift/src/core/index.ts",
+        "./node_modules/api-drift/dist/core.d.ts"
+      ]
+    }
+  },
+  "include": [
+    "monitor",
+    "tests",
+    "scripts",
+    "build",
+    "vite.config.ts",
+    "vitest.config.ts",
+    "src/env.d.ts"
+  ]
+}

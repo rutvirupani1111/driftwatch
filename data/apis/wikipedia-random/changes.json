@@ -1,0 +1,32 @@
+[
+  {
+    "id": "wikipedia-random@2026-10-22T22:09:00.000Z",
+    "apiId": "wikipedia-random",
+    "apiName": "Wikipedia REST: random summary",
+    "at": "2026-10-22T22:09:00.000Z",
+    "severity": "breaking",
+    "summary": "$.coordinates was removed (1 breaking)",
+    "fingerprintBefore": "1bfd0dd2d027a5cf",
+    "fingerprintAfter": "a160383cfee096dd",
+    "changes": [
+      {
+        "path": "$.coordinates",
+        "kind": "field-removed",
+        "severity": "breaking",
+        "message": "$.coordinates was removed",
+        "before": "{ lat, lon }",
+        "beforeNode": {
+          "type": "object",
+          "properties": {
+            "lat": {
+              "type": "number"
+            },
+            "lon": {
+              "type": "number"
+            }
+          }
+        }
+      }
+    ]
+  }
+]
