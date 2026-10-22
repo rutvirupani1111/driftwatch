@@ -1,0 +1,148 @@
+{
+  "id": "hacker-news",
+  "name": "Hacker News: item",
+  "category": "Knowledge",
+  "url": "https://hacker-news.firebaseio.com/v0/item/8863.json",
+  "host": "hacker-news.firebaseio.com",
+  "method": "GET",
+  "docs": "https://github.com/HackerNews/API",
+  "description": "The canonical example item from the official Firebase API.",
+  "checkedAt": "2026-10-22T22:22:39.000Z",
+  "ok": true,
+  "status": 200,
+  "latencyMs": 661,
+  "sizeBytes": 375,
+  "contentType": "application/json; charset=utf-8",
+  "error": null,
+  "engine": "api-drift/shape@1",
+  "fingerprint": "c46e8725edf0d243",
+  "contract": {
+    "type": "object",
+    "properties": {
+      "by": {
+        "type": "string"
+      },
+      "descendants": {
+        "type": "integer"
+      },
+      "id": {
+        "type": "integer"
+      },
+      "kids": {
+        "type": "array",
+        "items": {
+          "type": "integer"
+        }
+      },
+      "score": {
+        "type": "integer"
+      },
+      "time": {
+        "type": "integer"
+      },
+      "title": {
+        "type": "string"
+      },
+      "type": {
+        "type": "string"
+      },
+      "url": {
+        "type": "string",
+        "format": "uri"
+      }
+    }
+  },
+  "shape": {
+    "kind": "object",
+    "count": 2,
+    "properties": {
+      "by": {
+        "kind": "string",
+        "count": 2,
+        "formats": [
+          "plain"
+        ]
+      },
+      "descendants": {
+        "kind": "integer",
+        "count": 2
+      },
+      "id": {
+        "kind": "integer",
+        "count": 2
+      },
+      "kids": {
+        "kind": "array",
+        "count": 2,
+        "minItems": 33,
+        "maxItems": 33,
+        "items": {
+          "kind": "integer",
+          "count": 66
+        }
+      },
+      "score": {
+        "kind": "integer",
+        "count": 2
+      },
+      "time": {
+        "kind": "integer",
+        "count": 2
+      },
+      "title": {
+        "kind": "string",
+        "count": 2,
+        "formats": [
+          "plain"
+        ]
+      },
+      "type": {
+        "kind": "string",
+        "count": 2,
+        "formats": [
+          "plain"
+        ]
+      },
+      "url": {
+        "kind": "string",
+        "count": 2,
+        "formats": [
+          "uri"
+        ]
+      }
+    }
+  },
+  "fieldCount": 9,
+  "samples": 2,
+  "firstSeenAt": "2026-10-22T21:45:35.000Z",
+  "contractSince": "2026-10-22T22:15:38.000Z",
+  "weather": {
+    "condition": "sunny",
+    "headline": "Clear skies",
+    "reason": "Contract unchanged and responding normally.",
+    "since": "2026-10-22T21:45:35.000Z"
+  },
+  "stats": {
+    "d1": {
+      "checks": 5,
+      "ok": 5,
+      "uptime": 1,
+      "p50": 698,
+      "p95": 1187
+    },
+    "d7": {
+      "checks": 5,
+      "ok": 5,
+      "uptime": 1,
+      "p50": 698,
+      "p95": 1187
+    },
+    "d30": {
+      "checks": 5,
+      "ok": 5,
+      "uptime": 1,
+      "p50": 698,
+      "p95": 1187
+    }
+  }
+}

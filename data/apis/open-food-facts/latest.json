@@ -1,0 +1,590 @@
+{
+  "id": "open-food-facts",
+  "name": "Open Food Facts: product",
+  "category": "Open data",
+  "url": "https://world.openfoodfacts.org/api/v2/product/3017624010701.json?fields=code,product_name,brands,nutriscore_grade,nutriments,categories_tags,image_url",
+  "host": "world.openfoodfacts.org",
+  "method": "GET",
+  "docs": "https://openfoodfacts.github.io/openfoodfacts-server/api/",
+  "description": "A selected set of fields for one well-known product.",
+  "checkedAt": "2026-10-22T22:22:40.000Z",
+  "ok": true,
+  "status": 200,
+  "latencyMs": 473,
+  "sizeBytes": 1551,
+  "contentType": "application/json; charset=utf-8",
+  "error": null,
+  "engine": "api-drift/shape@1",
+  "fingerprint": "c9c7d0161d86383a",
+  "contract": {
+    "type": "object",
+    "properties": {
+      "code": {
+        "type": "string",
+        "format": "numeric-string"
+      },
+      "product": {
+        "type": "object",
+        "properties": {
+          "brands": {
+            "type": "string"
+          },
+          "categories_tags": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "code": {
+            "type": "string",
+            "format": "numeric-string"
+          },
+          "image_url": {
+            "type": "string",
+            "format": "uri"
+          },
+          "nutriments": {
+            "type": "object",
+            "properties": {
+              "added-sugars": {
+                "type": "integer"
+              },
+              "added-sugars_100g": {
+                "type": "integer"
+              },
+              "added-sugars_modifier": {
+                "type": "string"
+              },
+              "added-sugars_unit": {
+                "type": "string"
+              },
+              "added-sugars_value": {
+                "type": "integer"
+              },
+              "carbohydrates": {
+                "type": "number"
+              },
+              "carbohydrates_100g": {
+                "type": "number"
+              },
+              "carbohydrates_unit": {
+                "type": "string"
+              },
+              "carbohydrates_value": {
+                "type": "number"
+              },
+              "energy": {
+                "type": "integer"
+              },
+              "energy-kcal": {
+                "type": "integer"
+              },
+              "energy-kcal_100g": {
+                "type": "integer"
+              },
+              "energy-kcal_unit": {
+                "type": "string"
+              },
+              "energy-kcal_value": {
+                "type": "integer"
+              },
+              "energy-kj": {
+                "type": "integer"
+              },
+              "energy-kj_100g": {
+                "type": "integer"
+              },
+              "energy-kj_unit": {
+                "type": "string"
+              },
+              "energy-kj_value": {
+                "type": "integer"
+              },
+              "energy_100g": {
+                "type": "integer"
+              },
+              "energy_unit": {
+                "type": "string"
+              },
+              "energy_value": {
+                "type": "integer"
+              },
+              "fat": {
+                "type": "number"
+              },
+              "fat_100g": {
+                "type": "number"
+              },
+              "fat_unit": {
+                "type": "string"
+              },
+              "fat_value": {
+                "type": "number"
+              },
+              "fruits-vegetables-legumes-estimate-from-ingredients_100g": {
+                "type": "integer"
+              },
+              "fruits-vegetables-nuts-estimate-from-ingredients_100g": {
+                "type": "integer"
+              },
+              "proteins": {
+                "type": "number"
+              },
+              "proteins_100g": {
+                "type": "number"
+              },
+              "proteins_unit": {
+                "type": "string"
+              },
+              "proteins_value": {
+                "type": "number"
+              },
+              "salt": {
+                "type": "number"
+              },
+              "salt_100g": {
+                "type": "number"
+              },
+              "salt_unit": {
+                "type": "string"
+              },
+              "salt_value": {
+                "type": "number"
+              },
+              "saturated-fat": {
+                "type": "number"
+              },
+              "saturated-fat_100g": {
+                "type": "number"
+              },
+              "saturated-fat_unit": {
+                "type": "string"
+              },
+              "saturated-fat_value": {
+                "type": "number"
+              },
+              "sodium": {
+                "type": "number"
+              },
+              "sodium_100g": {
+                "type": "number"
+              },
+              "sodium_unit": {
+                "type": "string"
+              },
+              "sodium_value": {
+                "type": "number"
+              },
+              "sugars": {
+                "type": "number"
+              },
+              "sugars_100g": {
+                "type": "number"
+              },
+              "sugars_unit": {
+                "type": "string"
+              },
+              "sugars_value": {
+                "type": "number"
+              }
+            }
+          },
+          "nutriscore_grade": {
+            "type": "string"
+          },
+          "nutrition_data": {
+            "type": "string"
+          },
+          "nutrition_data_prepared_per": {
+            "type": "string"
+          },
+          "product_name": {
+            "type": "string"
+          }
+        }
+      },
+      "status": {
+        "type": "integer"
+      },
+      "status_verbose": {
+        "type": "string"
+      }
+    }
+  },
+  "shape": {
+    "kind": "object",
+    "count": 2,
+    "properties": {
+      "code": {
+        "kind": "string",
+        "count": 2,
+        "formats": [
+          "numeric-string"
+        ]
+      },
+      "product": {
+        "kind": "object",
+        "count": 2,
+        "properties": {
+          "brands": {
+            "kind": "string",
+            "count": 2,
+            "formats": [
+              "plain"
+            ]
+          },
+          "categories_tags": {
+            "kind": "array",
+            "count": 2,
+            "minItems": 8,
+            "maxItems": 8,
+            "items": {
+              "kind": "string",
+              "count": 16,
+              "formats": [
+                "plain"
+              ]
+            }
+          },
+          "code": {
+            "kind": "string",
+            "count": 2,
+            "formats": [
+              "numeric-string"
+            ]
+          },
+          "image_url": {
+            "kind": "string",
+            "count": 2,
+            "formats": [
+              "uri"
+            ]
+          },
+          "nutriments": {
+            "kind": "object",
+            "count": 2,
+            "properties": {
+              "added-sugars": {
+                "kind": "integer",
+                "count": 2
+              },
+              "added-sugars_100g": {
+                "kind": "integer",
+                "count": 2
+              },
+              "added-sugars_modifier": {
+                "kind": "string",
+                "count": 2,
+                "formats": [
+                  "plain"
+                ]
+              },
+              "added-sugars_unit": {
+                "kind": "string",
+                "count": 2,
+                "formats": [
+                  "plain"
+                ]
+              },
+              "added-sugars_value": {
+                "kind": "integer",
+                "count": 2
+              },
+              "carbohydrates": {
+                "kind": "number",
+                "count": 2,
+                "integral": 0
+              },
+              "carbohydrates_100g": {
+                "kind": "number",
+                "count": 2,
+                "integral": 0
+              },
+              "carbohydrates_unit": {
+                "kind": "string",
+                "count": 2,
+                "formats": [
+                  "plain"
+                ]
+              },
+              "carbohydrates_value": {
+                "kind": "number",
+                "count": 2,
+                "integral": 0
+              },
+              "energy": {
+                "kind": "integer",
+                "count": 2
+              },
+              "energy-kcal": {
+                "kind": "integer",
+                "count": 2
+              },
+              "energy-kcal_100g": {
+                "kind": "integer",
+                "count": 2
+              },
+              "energy-kcal_unit": {
+                "kind": "string",
+                "count": 2,
+                "formats": [
+                  "plain"
+                ]
+              },
+              "energy-kcal_value": {
+                "kind": "integer",
+                "count": 2
+              },
+              "energy-kj": {
+                "kind": "integer",
+                "count": 2
+              },
+              "energy-kj_100g": {
+                "kind": "integer",
+                "count": 2
+              },
+              "energy-kj_unit": {
+                "kind": "string",
+                "count": 2,
+                "formats": [
+                  "plain"
+                ]
+              },
+              "energy-kj_value": {
+                "kind": "integer",
+                "count": 2
+              },
+              "energy_100g": {
+                "kind": "integer",
+                "count": 2
+              },
+              "energy_unit": {
+                "kind": "string",
+                "count": 2,
+                "formats": [
+                  "plain"
+                ]
+              },
+              "energy_value": {
+                "kind": "integer",
+                "count": 2
+              },
+              "fat": {
+                "kind": "number",
+                "count": 2,
+                "integral": 0
+              },
+              "fat_100g": {
+                "kind": "number",
+                "count": 2,
+                "integral": 0
+              },
+              "fat_unit": {
+                "kind": "string",
+                "count": 2,
+                "formats": [
+                  "plain"
+                ]
+              },
+              "fat_value": {
+                "kind": "number",
+                "count": 2,
+                "integral": 0
+              },
+              "fruits-vegetables-legumes-estimate-from-ingredients_100g": {
+                "kind": "integer",
+                "count": 2
+              },
+              "fruits-vegetables-nuts-estimate-from-ingredients_100g": {
+                "kind": "integer",
+                "count": 2
+              },
+              "proteins": {
+                "kind": "number",
+                "count": 2,
+                "integral": 0
+              },
+              "proteins_100g": {
+                "kind": "number",
+                "count": 2,
+                "integral": 0
+              },
+              "proteins_unit": {
+                "kind": "string",
+                "count": 2,
+                "formats": [
+                  "plain"
+                ]
+              },
+              "proteins_value": {
+                "kind": "number",
+                "count": 2,
+                "integral": 0
+              },
+              "salt": {
+                "kind": "number",
+                "count": 2,
+                "integral": 0
+              },
+              "salt_100g": {
+                "kind": "number",
+                "count": 2,
+                "integral": 0
+              },
+              "salt_unit": {
+                "kind": "string",
+                "count": 2,
+                "formats": [
+                  "plain"
+                ]
+              },
+              "salt_value": {
+                "kind": "number",
+                "count": 2,
+                "integral": 0
+              },
+              "saturated-fat": {
+                "kind": "number",
+                "count": 2,
+                "integral": 0
+              },
+              "saturated-fat_100g": {
+                "kind": "number",
+                "count": 2,
+                "integral": 0
+              },
+              "saturated-fat_unit": {
+                "kind": "string",
+                "count": 2,
+                "formats": [
+                  "plain"
+                ]
+              },
+              "saturated-fat_value": {
+                "kind": "number",
+                "count": 2,
+                "integral": 0
+              },
+              "sodium": {
+                "kind": "number",
+                "count": 2,
+                "integral": 0
+              },
+              "sodium_100g": {
+                "kind": "number",
+                "count": 2,
+                "integral": 0
+              },
+              "sodium_unit": {
+                "kind": "string",
+                "count": 2,
+                "formats": [
+                  "plain"
+                ]
+              },
+              "sodium_value": {
+                "kind": "number",
+                "count": 2,
+                "integral": 0
+              },
+              "sugars": {
+                "kind": "number",
+                "count": 2,
+                "integral": 0
+              },
+              "sugars_100g": {
+                "kind": "number",
+                "count": 2,
+                "integral": 0
+              },
+              "sugars_unit": {
+                "kind": "string",
+                "count": 2,
+                "formats": [
+                  "plain"
+                ]
+              },
+              "sugars_value": {
+                "kind": "number",
+                "count": 2,
+                "integral": 0
+              }
+            }
+          },
+          "nutriscore_grade": {
+            "kind": "string",
+            "count": 2,
+            "formats": [
+              "plain"
+            ]
+          },
+          "nutrition_data": {
+            "kind": "string",
+            "count": 2,
+            "formats": [
+              "plain"
+            ]
+          },
+          "nutrition_data_prepared_per": {
+            "kind": "string",
+            "count": 2,
+            "formats": [
+              "plain"
+            ]
+          },
+          "product_name": {
+            "kind": "string",
+            "count": 2,
+            "formats": [
+              "plain"
+            ]
+          }
+        }
+      },
+      "status": {
+        "kind": "integer",
+        "count": 2
+      },
+      "status_verbose": {
+        "kind": "string",
+        "count": 2,
+        "formats": [
+          "plain"
+        ]
+      }
+    }
+  },
+  "fieldCount": 60,
+  "samples": 2,
+  "firstSeenAt": "2026-10-22T21:45:36.000Z",
+  "contractSince": "2026-10-22T22:15:40.000Z",
+  "weather": {
+    "condition": "sunny",
+    "headline": "Clear skies",
+    "reason": "Contract unchanged and responding normally.",
+    "since": "2026-10-22T21:45:36.000Z"
+  },
+  "stats": {
+    "d1": {
+      "checks": 5,
+      "ok": 5,
+      "uptime": 1,
+      "p50": 473,
+      "p95": 476
+    },
+    "d7": {
+      "checks": 5,
+      "ok": 5,
+      "uptime": 1,
+      "p50": 473,
+      "p95": 476
+    },
+    "d30": {
+      "checks": 5,
+      "ok": 5,
+      "uptime": 1,
+      "p50": 473,
+      "p95": 476
+    }
+  }
+}

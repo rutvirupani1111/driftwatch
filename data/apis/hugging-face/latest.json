@@ -1,0 +1,517 @@
+{
+  "id": "hugging-face",
+  "name": "Hugging Face Hub: model",
+  "category": "Knowledge",
+  "url": "https://huggingface.co/api/models/google-bert/bert-base-uncased",
+  "host": "huggingface.co",
+  "method": "GET",
+  "docs": "https://huggingface.co/docs/hub/api",
+  "description": "Model card metadata for bert-base-uncased.",
+  "checkedAt": "2026-10-22T22:22:39.000Z",
+  "ok": true,
+  "status": 200,
+  "latencyMs": 322,
+  "sizeBytes": 4501,
+  "contentType": "application/json; charset=utf-8",
+  "error": null,
+  "engine": "api-drift/shape@1",
+  "fingerprint": "1841aa5718ef7a32",
+  "contract": {
+    "type": "object",
+    "properties": {
+      "_id": {
+        "type": "string"
+      },
+      "author": {
+        "type": "string"
+      },
+      "cardData": {
+        "type": "object",
+        "properties": {
+          "datasets": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "language": {
+            "type": "string"
+          },
+          "license": {
+            "type": "string"
+          },
+          "tags": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      },
+      "config": {
+        "type": "object",
+        "properties": {
+          "architectures": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "model_type": {
+            "type": "string"
+          },
+          "tokenizer_config": {
+            "type": "object",
+            "properties": {}
+          }
+        }
+      },
+      "createdAt": {
+        "type": "string",
+        "format": "date-time"
+      },
+      "disabled": {
+        "type": "boolean"
+      },
+      "downloads": {
+        "type": "integer"
+      },
+      "gated": {
+        "type": "boolean"
+      },
+      "id": {
+        "type": "string"
+      },
+      "inference": {
+        "type": "string"
+      },
+      "lastModified": {
+        "type": "string",
+        "format": "date-time"
+      },
+      "library_name": {
+        "type": "string"
+      },
+      "likes": {
+        "type": "integer"
+      },
+      "mask_token": {
+        "type": "string"
+      },
+      "model-index": {
+        "type": "null"
+      },
+      "modelId": {
+        "type": "string"
+      },
+      "pipeline_tag": {
+        "type": "string"
+      },
+      "private": {
+        "type": "boolean"
+      },
+      "safetensors": {
+        "type": "object",
+        "properties": {
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "F32": {
+                "type": "integer"
+              }
+            }
+          },
+          "total": {
+            "type": "integer"
+          }
+        }
+      },
+      "sha": {
+        "type": "string"
+      },
+      "siblings": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "rfilename": {
+              "type": "string"
+            }
+          }
+        }
+      },
+      "spaces": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      },
+      "tags": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      },
+      "transformersInfo": {
+        "type": "object",
+        "properties": {
+          "auto_model": {
+            "type": "string"
+          },
+          "pipeline_tag": {
+            "type": "string"
+          },
+          "processor": {
+            "type": "string"
+          }
+        }
+      },
+      "usedStorage": {
+        "type": "integer"
+      },
+      "widgetData": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "text": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    }
+  },
+  "shape": {
+    "kind": "object",
+    "count": 2,
+    "properties": {
+      "_id": {
+        "kind": "string",
+        "count": 2,
+        "formats": [
+          "plain"
+        ]
+      },
+      "author": {
+        "kind": "string",
+        "count": 2,
+        "formats": [
+          "plain"
+        ]
+      },
+      "cardData": {
+        "kind": "object",
+        "count": 2,
+        "properties": {
+          "datasets": {
+            "kind": "array",
+            "count": 2,
+            "minItems": 2,
+            "maxItems": 2,
+            "items": {
+              "kind": "string",
+              "count": 4,
+              "formats": [
+                "plain"
+              ]
+            }
+          },
+          "language": {
+            "kind": "string",
+            "count": 2,
+            "formats": [
+              "plain"
+            ]
+          },
+          "license": {
+            "kind": "string",
+            "count": 2,
+            "formats": [
+              "plain"
+            ]
+          },
+          "tags": {
+            "kind": "array",
+            "count": 2,
+            "minItems": 1,
+            "maxItems": 1,
+            "items": {
+              "kind": "string",
+              "count": 2,
+              "formats": [
+                "plain"
+              ]
+            }
+          }
+        }
+      },
+      "config": {
+        "kind": "object",
+        "count": 2,
+        "properties": {
+          "architectures": {
+            "kind": "array",
+            "count": 2,
+            "minItems": 1,
+            "maxItems": 1,
+            "items": {
+              "kind": "string",
+              "count": 2,
+              "formats": [
+                "plain"
+              ]
+            }
+          },
+          "model_type": {
+            "kind": "string",
+            "count": 2,
+            "formats": [
+              "plain"
+            ]
+          },
+          "tokenizer_config": {
+            "kind": "object",
+            "count": 2,
+            "properties": {}
+          }
+        }
+      },
+      "createdAt": {
+        "kind": "string",
+        "count": 2,
+        "formats": [
+          "date-time"
+        ]
+      },
+      "disabled": {
+        "kind": "boolean",
+        "count": 2
+      },
+      "downloads": {
+        "kind": "integer",
+        "count": 2
+      },
+      "gated": {
+        "kind": "boolean",
+        "count": 2
+      },
+      "id": {
+        "kind": "string",
+        "count": 2,
+        "formats": [
+          "plain"
+        ]
+      },
+      "inference": {
+        "kind": "string",
+        "count": 2,
+        "formats": [
+          "plain"
+        ]
+      },
+      "lastModified": {
+        "kind": "string",
+        "count": 2,
+        "formats": [
+          "date-time"
+        ]
+      },
+      "library_name": {
+        "kind": "string",
+        "count": 2,
+        "formats": [
+          "plain"
+        ]
+      },
+      "likes": {
+        "kind": "integer",
+        "count": 2
+      },
+      "mask_token": {
+        "kind": "string",
+        "count": 2,
+        "formats": [
+          "plain"
+        ]
+      },
+      "model-index": {
+        "kind": "null",
+        "count": 2
+      },
+      "modelId": {
+        "kind": "string",
+        "count": 2,
+        "formats": [
+          "plain"
+        ]
+      },
+      "pipeline_tag": {
+        "kind": "string",
+        "count": 2,
+        "formats": [
+          "plain"
+        ]
+      },
+      "private": {
+        "kind": "boolean",
+        "count": 2
+      },
+      "safetensors": {
+        "kind": "object",
+        "count": 2,
+        "properties": {
+          "parameters": {
+            "kind": "object",
+            "count": 2,
+            "properties": {
+              "F32": {
+                "kind": "integer",
+                "count": 2
+              }
+            }
+          },
+          "total": {
+            "kind": "integer",
+            "count": 2
+          }
+        }
+      },
+      "sha": {
+        "kind": "string",
+        "count": 2,
+        "formats": [
+          "plain"
+        ]
+      },
+      "siblings": {
+        "kind": "array",
+        "count": 2,
+        "minItems": 16,
+        "maxItems": 16,
+        "items": {
+          "kind": "object",
+          "count": 32,
+          "properties": {
+            "rfilename": {
+              "kind": "string",
+              "count": 32,
+              "formats": [
+                "plain"
+              ]
+            }
+          }
+        }
+      },
+      "spaces": {
+        "kind": "array",
+        "count": 2,
+        "minItems": 100,
+        "maxItems": 100,
+        "items": {
+          "kind": "string",
+          "count": 100,
+          "formats": [
+            "plain"
+          ]
+        }
+      },
+      "tags": {
+        "kind": "array",
+        "count": 2,
+        "minItems": 20,
+        "maxItems": 20,
+        "items": {
+          "kind": "string",
+          "count": 40,
+          "formats": [
+            "plain"
+          ]
+        }
+      },
+      "transformersInfo": {
+        "kind": "object",
+        "count": 2,
+        "properties": {
+          "auto_model": {
+            "kind": "string",
+            "count": 2,
+            "formats": [
+              "plain"
+            ]
+          },
+          "pipeline_tag": {
+            "kind": "string",
+            "count": 2,
+            "formats": [
+              "plain"
+            ]
+          },
+          "processor": {
+            "kind": "string",
+            "count": 2,
+            "formats": [
+              "plain"
+            ]
+          }
+        }
+      },
+      "usedStorage": {
+        "kind": "integer",
+        "count": 2
+      },
+      "widgetData": {
+        "kind": "array",
+        "count": 2,
+        "minItems": 2,
+        "maxItems": 2,
+        "items": {
+          "kind": "object",
+          "count": 4,
+          "properties": {
+            "text": {
+              "kind": "string",
+              "count": 4,
+              "formats": [
+                "plain"
+              ]
+            }
+          }
+        }
+      }
+    }
+  },
+  "fieldCount": 41,
+  "samples": 2,
+  "firstSeenAt": "2026-10-22T21:45:35.000Z",
+  "contractSince": "2026-10-22T22:15:39.000Z",
+  "weather": {
+    "condition": "sunny",
+    "headline": "Clear skies",
+    "reason": "Contract unchanged and responding normally.",
+    "since": "2026-10-22T21:45:35.000Z"
+  },
+  "stats": {
+    "d1": {
+      "checks": 5,
+      "ok": 5,
+      "uptime": 1,
+      "p50": 322,
+      "p95": 351
+    },
+    "d7": {
+      "checks": 5,
+      "ok": 5,
+      "uptime": 1,
+      "p50": 322,
+      "p95": 351
+    },
+    "d30": {
+      "checks": 5,
+      "ok": 5,
+      "uptime": 1,
+      "p50": 322,
+      "p95": 351
+    }
+  }
+}

@@ -1,0 +1,517 @@
+{
+  "id": "osv-query",
+  "name": "OSV: vulnerability query",
+  "category": "Security & supply chain",
+  "url": "https://api.osv.dev/v1/query",
+  "host": "api.osv.dev",
+  "method": "POST",
+  "docs": "https://google.github.io/osv.dev/post-v1-query/",
+  "description": "Known vulnerabilities for lodash 4.17.20 (a POST endpoint).",
+  "checkedAt": "2026-10-22T22:22:38.000Z",
+  "ok": true,
+  "status": 200,
+  "latencyMs": 577,
+  "sizeBytes": 18737,
+  "contentType": "application/json",
+  "error": null,
+  "engine": "api-drift/shape@1",
+  "fingerprint": "a5c5a4802394814d",
+  "contract": {
+    "type": "object",
+    "properties": {
+      "vulns": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "affected": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "database_specific": {
+                    "type": "object",
+                    "properties": {
+                      "last_known_affected_version_range": {
+                        "type": "string",
+                        "optional": true
+                      },
+                      "source": {
+                        "type": "string",
+                        "format": "uri"
+                      }
+                    }
+                  },
+                  "package": {
+                    "type": "object",
+                    "properties": {
+                      "ecosystem": {
+                        "type": "string"
+                      },
+                      "name": {
+                        "type": "string"
+                      },
+                      "purl": {
+                        "type": "string"
+                      }
+                    }
+                  },
+                  "ranges": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "events": {
+                          "type": "array",
+                          "items": {
+                            "type": "object",
+                            "properties": {
+                              "fixed": {
+                                "type": "string",
+                                "format": "semver",
+                                "optional": true
+                              },
+                              "introduced": {
+                                "type": "string",
+                                "optional": true
+                              },
+                              "last_affected": {
+                                "type": "string",
+                                "format": "semver",
+                                "optional": true
+                              }
+                            }
+                          }
+                        },
+                        "type": {
+                          "type": "string"
+                        }
+                      }
+                    }
+                  },
+                  "versions": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    },
+                    "optional": true
+                  }
+                }
+              }
+            },
+            "aliases": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "database_specific": {
+              "type": "object",
+              "properties": {
+                "cwe_ids": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "github_reviewed": {
+                  "type": "boolean"
+                },
+                "github_reviewed_at": {
+                  "type": "string",
+                  "format": "date-time"
+                },
+                "nvd_published_at": {
+                  "type": "string",
+                  "format": "date-time"
+                },
+                "severity": {
+                  "type": "string"
+                }
+              }
+            },
+            "details": {
+              "type": "string"
+            },
+            "id": {
+              "type": "string"
+            },
+            "modified": {
+              "type": "string",
+              "format": "date-time"
+            },
+            "published": {
+              "type": "string",
+              "format": "date-time"
+            },
+            "references": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "type": {
+                    "type": "string"
+                  },
+                  "url": {
+                    "type": "string",
+                    "format": "uri"
+                  }
+                }
+              }
+            },
+            "schema_version": {
+              "type": "string",
+              "format": "semver"
+            },
+            "severity": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "score": {
+                    "type": "string"
+                  },
+                  "type": {
+                    "type": "string"
+                  }
+                }
+              }
+            },
+            "summary": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    }
+  },
+  "shape": {
+    "kind": "object",
+    "count": 2,
+    "properties": {
+      "vulns": {
+        "kind": "array",
+        "count": 2,
+        "minItems": 5,
+        "maxItems": 5,
+        "items": {
+          "kind": "object",
+          "count": 10,
+          "properties": {
+            "affected": {
+              "kind": "array",
+              "count": 10,
+              "minItems": 4,
+              "maxItems": 5,
+              "items": {
+                "kind": "object",
+                "count": 44,
+                "properties": {
+                  "database_specific": {
+                    "kind": "object",
+                    "count": 44,
+                    "properties": {
+                      "last_known_affected_version_range": {
+                        "kind": "string",
+                        "count": 18,
+                        "formats": [
+                          "plain"
+                        ]
+                      },
+                      "source": {
+                        "kind": "string",
+                        "count": 44,
+                        "formats": [
+                          "uri"
+                        ]
+                      }
+                    }
+                  },
+                  "package": {
+                    "kind": "object",
+                    "count": 44,
+                    "properties": {
+                      "ecosystem": {
+                        "kind": "string",
+                        "count": 44,
+                        "formats": [
+                          "plain"
+                        ]
+                      },
+                      "name": {
+                        "kind": "string",
+                        "count": 44,
+                        "formats": [
+                          "plain"
+                        ]
+                      },
+                      "purl": {
+                        "kind": "string",
+                        "count": 44,
+                        "formats": [
+                          "plain"
+                        ]
+                      }
+                    }
+                  },
+                  "ranges": {
+                    "kind": "array",
+                    "count": 44,
+                    "minItems": 1,
+                    "maxItems": 1,
+                    "items": {
+                      "kind": "object",
+                      "count": 44,
+                      "properties": {
+                        "events": {
+                          "kind": "array",
+                          "count": 44,
+                          "minItems": 2,
+                          "maxItems": 2,
+                          "items": {
+                            "kind": "object",
+                            "count": 88,
+                            "properties": {
+                              "fixed": {
+                                "kind": "string",
+                                "count": 34,
+                                "formats": [
+                                  "semver"
+                                ]
+                              },
+                              "introduced": {
+                                "kind": "string",
+                                "count": 44,
+                                "formats": [
+                                  "numeric-string",
+                                  "semver"
+                                ]
+                              },
+                              "last_affected": {
+                                "kind": "string",
+                                "count": 10,
+                                "formats": [
+                                  "semver"
+                                ]
+                              }
+                            }
+                          }
+                        },
+                        "type": {
+                          "kind": "string",
+                          "count": 44,
+                          "formats": [
+                            "plain"
+                          ]
+                        }
+                      }
+                    }
+                  },
+                  "versions": {
+                    "kind": "array",
+                    "count": 4,
+                    "minItems": 20,
+                    "maxItems": 55,
+                    "items": {
+                      "kind": "string",
+                      "count": 140,
+                      "formats": [
+                        "ipv4",
+                        "plain",
+                        "semver"
+                      ]
+                    }
+                  }
+                }
+              }
+            },
+            "aliases": {
+              "kind": "array",
+              "count": 10,
+              "minItems": 1,
+              "maxItems": 1,
+              "items": {
+                "kind": "string",
+                "count": 10,
+                "formats": [
+                  "plain"
+                ]
+              }
+            },
+            "database_specific": {
+              "kind": "object",
+              "count": 10,
+              "properties": {
+                "cwe_ids": {
+                  "kind": "array",
+                  "count": 10,
+                  "minItems": 1,
+                  "maxItems": 2,
+                  "items": {
+                    "kind": "string",
+                    "count": 14,
+                    "formats": [
+                      "plain"
+                    ]
+                  }
+                },
+                "github_reviewed": {
+                  "kind": "boolean",
+                  "count": 10
+                },
+                "github_reviewed_at": {
+                  "kind": "string",
+                  "count": 10,
+                  "formats": [
+                    "date-time"
+                  ]
+                },
+                "nvd_published_at": {
+                  "kind": "string",
+                  "count": 10,
+                  "formats": [
+                    "date-time"
+                  ]
+                },
+                "severity": {
+                  "kind": "string",
+                  "count": 10,
+                  "formats": [
+                    "plain"
+                  ]
+                }
+              }
+            },
+            "details": {
+              "kind": "string",
+              "count": 10,
+              "formats": [
+                "plain"
+              ]
+            },
+            "id": {
+              "kind": "string",
+              "count": 10,
+              "formats": [
+                "plain"
+              ]
+            },
+            "modified": {
+              "kind": "string",
+              "count": 10,
+              "formats": [
+                "date-time"
+              ]
+            },
+            "published": {
+              "kind": "string",
+              "count": 10,
+              "formats": [
+                "date-time"
+              ]
+            },
+            "references": {
+              "kind": "array",
+              "count": 10,
+              "minItems": 4,
+              "maxItems": 20,
+              "items": {
+                "kind": "object",
+                "count": 104,
+                "properties": {
+                  "type": {
+                    "kind": "string",
+                    "count": 104,
+                    "formats": [
+                      "plain"
+                    ]
+                  },
+                  "url": {
+                    "kind": "string",
+                    "count": 104,
+                    "formats": [
+                      "uri"
+                    ]
+                  }
+                }
+              }
+            },
+            "schema_version": {
+              "kind": "string",
+              "count": 10,
+              "formats": [
+                "semver"
+              ]
+            },
+            "severity": {
+              "kind": "array",
+              "count": 10,
+              "minItems": 1,
+              "maxItems": 2,
+              "items": {
+                "kind": "object",
+                "count": 12,
+                "properties": {
+                  "score": {
+                    "kind": "string",
+                    "count": 12,
+                    "formats": [
+                      "plain"
+                    ]
+                  },
+                  "type": {
+                    "kind": "string",
+                    "count": 12,
+                    "formats": [
+                      "plain"
+                    ]
+                  }
+                }
+              }
+            },
+            "summary": {
+              "kind": "string",
+              "count": 10,
+              "formats": [
+                "plain"
+              ]
+            }
+          }
+        }
+      }
+    }
+  },
+  "fieldCount": 35,
+  "samples": 2,
+  "firstSeenAt": "2026-10-22T21:45:35.000Z",
+  "contractSince": "2026-10-22T22:15:38.000Z",
+  "weather": {
+    "condition": "sunny",
+    "headline": "Clear skies",
+    "reason": "Contract unchanged and responding normally.",
+    "since": "2026-10-22T21:45:35.000Z"
+  },
+  "stats": {
+    "d1": {
+      "checks": 5,
+      "ok": 5,
+      "uptime": 1,
+      "p50": 609,
+      "p95": 930
+    },
+    "d7": {
+      "checks": 5,
+      "ok": 5,
+      "uptime": 1,
+      "p50": 609,
+      "p95": 930
+    },
+    "d30": {
+      "checks": 5,
+      "ok": 5,
+      "uptime": 1,
+      "p50": 609,
+      "p95": 930
+    }
+  }
+}
