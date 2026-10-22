@@ -1,0 +1,10 @@
+node_modules/
+dist/
+.tmp/
+.driftwatch-cache/
+test-results/
+playwright-report/
+*.log
+.DS_Store
+.env
+.env.*

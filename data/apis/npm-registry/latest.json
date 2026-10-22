@@ -1,0 +1,710 @@
+{
+  "id": "npm-registry",
+  "name": "npm registry: react@latest",
+  "category": "Package registries",
+  "url": "https://registry.npmjs.org/react/latest",
+  "host": "registry.npmjs.org",
+  "method": "GET",
+  "docs": "https://github.com/npm/registry/blob/main/docs/REGISTRY-API.md",
+  "description": "The packument of the latest react release.",
+  "checkedAt": "2026-10-22T22:22:38.000Z",
+  "ok": true,
+  "status": 200,
+  "latencyMs": 221,
+  "sizeBytes": 2150,
+  "contentType": "application/json",
+  "error": null,
+  "engine": "api-drift/shape@1",
+  "fingerprint": "2dd8b4f3720de9ba",
+  "contract": {
+    "type": "object",
+    "properties": {
+      "_hasShrinkwrap": {
+        "type": "boolean"
+      },
+      "_id": {
+        "type": "string"
+      },
+      "_nodeVersion": {
+        "type": "string",
+        "format": "semver"
+      },
+      "_npmOperationalInternal": {
+        "type": "object",
+        "properties": {
+          "host": {
+            "type": "string",
+            "format": "uri"
+          },
+          "tmp": {
+            "type": "string"
+          }
+        }
+      },
+      "_npmUser": {
+        "type": "object",
+        "properties": {
+          "email": {
+            "type": "string",
+            "format": "email"
+          },
+          "name": {
+            "type": "string"
+          },
+          "trustedPublisher": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "oidcConfigId": {
+                "type": "string",
+                "format": "uuid"
+              }
+            }
+          }
+        }
+      },
+      "_npmVersion": {
+        "type": "string",
+        "format": "semver"
+      },
+      "bugs": {
+        "type": "object",
+        "properties": {
+          "url": {
+            "type": "string",
+            "format": "uri"
+          }
+        }
+      },
+      "description": {
+        "type": "string"
+      },
+      "directories": {
+        "type": "object",
+        "properties": {}
+      },
+      "dist": {
+        "type": "object",
+        "properties": {
+          "attestations": {
+            "type": "object",
+            "properties": {
+              "provenance": {
+                "type": "object",
+                "properties": {
+                  "predicateType": {
+                    "type": "string",
+                    "format": "uri"
+                  }
+                }
+              },
+              "url": {
+                "type": "string",
+                "format": "uri"
+              }
+            }
+          },
+          "fileCount": {
+            "type": "integer"
+          },
+          "integrity": {
+            "type": "string"
+          },
+          "shasum": {
+            "type": "string"
+          },
+          "signatures": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "keyid": {
+                  "type": "string"
+                },
+                "sig": {
+                  "type": "string",
+                  "format": "base64"
+                }
+              }
+            }
+          },
+          "tarball": {
+            "type": "string",
+            "format": "uri"
+          },
+          "unpackedSize": {
+            "type": "integer"
+          }
+        }
+      },
+      "engines": {
+        "type": "object",
+        "properties": {
+          "node": {
+            "type": "string"
+          }
+        }
+      },
+      "exports": {
+        "type": "object",
+        "properties": {
+          ".": {
+            "type": "object",
+            "properties": {
+              "default": {
+                "type": "string"
+              },
+              "react-server": {
+                "type": "string"
+              }
+            }
+          },
+          "./compiler-runtime": {
+            "type": "object",
+            "properties": {
+              "default": {
+                "type": "string"
+              },
+              "react-server": {
+                "type": "string"
+              }
+            }
+          },
+          "./jsx-dev-runtime": {
+            "type": "object",
+            "properties": {
+              "default": {
+                "type": "string"
+              },
+              "react-server": {
+                "type": "string"
+              }
+            }
+          },
+          "./jsx-runtime": {
+            "type": "object",
+            "properties": {
+              "default": {
+                "type": "string"
+              },
+              "react-server": {
+                "type": "string"
+              }
+            }
+          },
+          "./package.json": {
+            "type": "string"
+          }
+        }
+      },
+      "gitHead": {
+        "type": "string"
+      },
+      "homepage": {
+        "type": "string",
+        "format": "uri"
+      },
+      "keywords": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      },
+      "license": {
+        "type": "string"
+      },
+      "main": {
+        "type": "string"
+      },
+      "maintainers": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "email": {
+              "type": "string",
+              "format": "email"
+            },
+            "name": {
+              "type": "string"
+            }
+          }
+        }
+      },
+      "name": {
+        "type": "string"
+      },
+      "repository": {
+        "type": "object",
+        "properties": {
+          "directory": {
+            "type": "string"
+          },
+          "type": {
+            "type": "string"
+          },
+          "url": {
+            "type": "string",
+            "format": "uri"
+          }
+        }
+      },
+      "version": {
+        "type": "string",
+        "format": "semver"
+      }
+    }
+  },
+  "shape": {
+    "kind": "object",
+    "count": 2,
+    "properties": {
+      "_hasShrinkwrap": {
+        "kind": "boolean",
+        "count": 2
+      },
+      "_id": {
+        "kind": "string",
+        "count": 2,
+        "formats": [
+          "plain"
+        ]
+      },
+      "_nodeVersion": {
+        "kind": "string",
+        "count": 2,
+        "formats": [
+          "semver"
+        ]
+      },
+      "_npmOperationalInternal": {
+        "kind": "object",
+        "count": 2,
+        "properties": {
+          "host": {
+            "kind": "string",
+            "count": 2,
+            "formats": [
+              "uri"
+            ]
+          },
+          "tmp": {
+            "kind": "string",
+            "count": 2,
+            "formats": [
+              "plain"
+            ]
+          }
+        }
+      },
+      "_npmUser": {
+        "kind": "object",
+        "count": 2,
+        "properties": {
+          "email": {
+            "kind": "string",
+            "count": 2,
+            "formats": [
+              "email"
+            ]
+          },
+          "name": {
+            "kind": "string",
+            "count": 2,
+            "formats": [
+              "plain"
+            ]
+          },
+          "trustedPublisher": {
+            "kind": "object",
+            "count": 2,
+            "properties": {
+              "id": {
+                "kind": "string",
+                "count": 2,
+                "formats": [
+                  "plain"
+                ]
+              },
+              "oidcConfigId": {
+                "kind": "string",
+                "count": 2,
+                "formats": [
+                  "uuid"
+                ]
+              }
+            }
+          }
+        }
+      },
+      "_npmVersion": {
+        "kind": "string",
+        "count": 2,
+        "formats": [
+          "semver"
+        ]
+      },
+      "bugs": {
+        "kind": "object",
+        "count": 2,
+        "properties": {
+          "url": {
+            "kind": "string",
+            "count": 2,
+            "formats": [
+              "uri"
+            ]
+          }
+        }
+      },
+      "description": {
+        "kind": "string",
+        "count": 2,
+        "formats": [
+          "plain"
+        ]
+      },
+      "directories": {
+        "kind": "object",
+        "count": 2,
+        "properties": {}
+      },
+      "dist": {
+        "kind": "object",
+        "count": 2,
+        "properties": {
+          "attestations": {
+            "kind": "object",
+            "count": 2,
+            "properties": {
+              "provenance": {
+                "kind": "object",
+                "count": 2,
+                "properties": {
+                  "predicateType": {
+                    "kind": "string",
+                    "count": 2,
+                    "formats": [
+                      "uri"
+                    ]
+                  }
+                }
+              },
+              "url": {
+                "kind": "string",
+                "count": 2,
+                "formats": [
+                  "uri"
+                ]
+              }
+            }
+          },
+          "fileCount": {
+            "kind": "integer",
+            "count": 2
+          },
+          "integrity": {
+            "kind": "string",
+            "count": 2,
+            "formats": [
+              "plain"
+            ]
+          },
+          "shasum": {
+            "kind": "string",
+            "count": 2,
+            "formats": [
+              "plain"
+            ]
+          },
+          "signatures": {
+            "kind": "array",
+            "count": 2,
+            "minItems": 2,
+            "maxItems": 2,
+            "items": {
+              "kind": "object",
+              "count": 4,
+              "properties": {
+                "keyid": {
+                  "kind": "string",
+                  "count": 4,
+                  "formats": [
+                    "plain"
+                  ]
+                },
+                "sig": {
+                  "kind": "string",
+                  "count": 4,
+                  "formats": [
+                    "base64"
+                  ]
+                }
+              }
+            }
+          },
+          "tarball": {
+            "kind": "string",
+            "count": 2,
+            "formats": [
+              "uri"
+            ]
+          },
+          "unpackedSize": {
+            "kind": "integer",
+            "count": 2
+          }
+        }
+      },
+      "engines": {
+        "kind": "object",
+        "count": 2,
+        "properties": {
+          "node": {
+            "kind": "string",
+            "count": 2,
+            "formats": [
+              "plain"
+            ]
+          }
+        }
+      },
+      "exports": {
+        "kind": "object",
+        "count": 2,
+        "properties": {
+          ".": {
+            "kind": "object",
+            "count": 2,
+            "properties": {
+              "default": {
+                "kind": "string",
+                "count": 2,
+                "formats": [
+                  "plain"
+                ]
+              },
+              "react-server": {
+                "kind": "string",
+                "count": 2,
+                "formats": [
+                  "plain"
+                ]
+              }
+            }
+          },
+          "./compiler-runtime": {
+            "kind": "object",
+            "count": 2,
+            "properties": {
+              "default": {
+                "kind": "string",
+                "count": 2,
+                "formats": [
+                  "plain"
+                ]
+              },
+              "react-server": {
+                "kind": "string",
+                "count": 2,
+                "formats": [
+                  "plain"
+                ]
+              }
+            }
+          },
+          "./jsx-dev-runtime": {
+            "kind": "object",
+            "count": 2,
+            "properties": {
+              "default": {
+                "kind": "string",
+                "count": 2,
+                "formats": [
+                  "plain"
+                ]
+              },
+              "react-server": {
+                "kind": "string",
+                "count": 2,
+                "formats": [
+                  "plain"
+                ]
+              }
+            }
+          },
+          "./jsx-runtime": {
+            "kind": "object",
+            "count": 2,
+            "properties": {
+              "default": {
+                "kind": "string",
+                "count": 2,
+                "formats": [
+                  "plain"
+                ]
+              },
+              "react-server": {
+                "kind": "string",
+                "count": 2,
+                "formats": [
+                  "plain"
+                ]
+              }
+            }
+          },
+          "./package.json": {
+            "kind": "string",
+            "count": 2,
+            "formats": [
+              "plain"
+            ]
+          }
+        }
+      },
+      "gitHead": {
+        "kind": "string",
+        "count": 2,
+        "formats": [
+          "plain"
+        ]
+      },
+      "homepage": {
+        "kind": "string",
+        "count": 2,
+        "formats": [
+          "uri"
+        ]
+      },
+      "keywords": {
+        "kind": "array",
+        "count": 2,
+        "minItems": 1,
+        "maxItems": 1,
+        "items": {
+          "kind": "string",
+          "count": 2,
+          "formats": [
+            "plain"
+          ]
+        }
+      },
+      "license": {
+        "kind": "string",
+        "count": 2,
+        "formats": [
+          "plain"
+        ]
+      },
+      "main": {
+        "kind": "string",
+        "count": 2,
+        "formats": [
+          "plain"
+        ]
+      },
+      "maintainers": {
+        "kind": "array",
+        "count": 2,
+        "minItems": 2,
+        "maxItems": 2,
+        "items": {
+          "kind": "object",
+          "count": 4,
+          "properties": {
+            "email": {
+              "kind": "string",
+              "count": 4,
+              "formats": [
+                "email"
+              ]
+            },
+            "name": {
+              "kind": "string",
+              "count": 4,
+              "formats": [
+                "plain"
+              ]
+            }
+          }
+        }
+      },
+      "name": {
+        "kind": "string",
+        "count": 2,
+        "formats": [
+          "plain"
+        ]
+      },
+      "repository": {
+        "kind": "object",
+        "count": 2,
+        "properties": {
+          "directory": {
+            "kind": "string",
+            "count": 2,
+            "formats": [
+              "plain"
+            ]
+          },
+          "type": {
+            "kind": "string",
+            "count": 2,
+            "formats": [
+              "plain"
+            ]
+          },
+          "url": {
+            "kind": "string",
+            "count": 2,
+            "formats": [
+              "uri"
+            ]
+          }
+        }
+      },
+      "version": {
+        "kind": "string",
+        "count": 2,
+        "formats": [
+          "semver"
+        ]
+      }
+    }
+  },
+  "fieldCount": 60,
+  "samples": 2,
+  "firstSeenAt": "2026-10-22T21:45:34.000Z",
+  "contractSince": "2026-10-22T22:15:37.000Z",
+  "weather": {
+    "condition": "sunny",
+    "headline": "Clear skies",
+    "reason": "Contract unchanged and responding normally.",
+    "since": "2026-10-22T21:45:34.000Z"
+  },
+  "stats": {
+    "d1": {
+      "checks": 5,
+      "ok": 5,
+      "uptime": 1,
+      "p50": 394,
+      "p95": 477
+    },
+    "d7": {
+      "checks": 5,
+      "ok": 5,
+      "uptime": 1,
+      "p50": 394,
+      "p95": 477
+    },
+    "d30": {
+      "checks": 5,
+      "ok": 5,
+      "uptime": 1,
+      "p50": 394,
+      "p95": 477
+    }
+  }
+}

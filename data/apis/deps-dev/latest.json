@@ -1,0 +1,309 @@
+{
+  "id": "deps-dev",
+  "name": "deps.dev: package version",
+  "category": "Security & supply chain",
+  "url": "https://api.deps.dev/v3/systems/npm/packages/react/versions/18.3.1",
+  "host": "api.deps.dev",
+  "method": "GET",
+  "docs": "https://docs.deps.dev/api/v3/",
+  "description": "Open Source Insights data for react 18.3.1.",
+  "checkedAt": "2026-10-22T22:22:38.000Z",
+  "ok": true,
+  "status": 200,
+  "latencyMs": 170,
+  "sizeBytes": 826,
+  "contentType": "application/json; charset=utf-8",
+  "error": null,
+  "engine": "api-drift/shape@1",
+  "fingerprint": "0e455e832c9bb2e6",
+  "contract": {
+    "type": "object",
+    "properties": {
+      "advisoryKeys": {
+        "type": "array"
+      },
+      "attestations": {
+        "type": "array"
+      },
+      "deprecatedReason": {
+        "type": "string",
+        "format": "empty"
+      },
+      "isDefault": {
+        "type": "boolean"
+      },
+      "isDeprecated": {
+        "type": "boolean"
+      },
+      "licenses": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      },
+      "links": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "label": {
+              "type": "string"
+            },
+            "url": {
+              "type": "string",
+              "format": "uri"
+            }
+          }
+        }
+      },
+      "publishedAt": {
+        "type": "string",
+        "format": "date-time"
+      },
+      "registries": {
+        "type": "array",
+        "items": {
+          "type": "string",
+          "format": "uri"
+        }
+      },
+      "relatedProjects": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "projectKey": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                }
+              }
+            },
+            "relationProvenance": {
+              "type": "string"
+            },
+            "relationType": {
+              "type": "string"
+            }
+          }
+        }
+      },
+      "slsaProvenances": {
+        "type": "array"
+      },
+      "versionKey": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "system": {
+            "type": "string"
+          },
+          "version": {
+            "type": "string",
+            "format": "semver"
+          }
+        }
+      }
+    }
+  },
+  "shape": {
+    "kind": "object",
+    "count": 2,
+    "properties": {
+      "advisoryKeys": {
+        "kind": "array",
+        "count": 2,
+        "minItems": 0,
+        "maxItems": 0
+      },
+      "attestations": {
+        "kind": "array",
+        "count": 2,
+        "minItems": 0,
+        "maxItems": 0
+      },
+      "deprecatedReason": {
+        "kind": "string",
+        "count": 2,
+        "formats": [
+          "empty"
+        ]
+      },
+      "isDefault": {
+        "kind": "boolean",
+        "count": 2
+      },
+      "isDeprecated": {
+        "kind": "boolean",
+        "count": 2
+      },
+      "licenses": {
+        "kind": "array",
+        "count": 2,
+        "minItems": 1,
+        "maxItems": 1,
+        "items": {
+          "kind": "string",
+          "count": 2,
+          "formats": [
+            "plain"
+          ]
+        }
+      },
+      "links": {
+        "kind": "array",
+        "count": 2,
+        "minItems": 4,
+        "maxItems": 4,
+        "items": {
+          "kind": "object",
+          "count": 8,
+          "properties": {
+            "label": {
+              "kind": "string",
+              "count": 8,
+              "formats": [
+                "plain"
+              ]
+            },
+            "url": {
+              "kind": "string",
+              "count": 8,
+              "formats": [
+                "uri"
+              ]
+            }
+          }
+        }
+      },
+      "publishedAt": {
+        "kind": "string",
+        "count": 2,
+        "formats": [
+          "date-time"
+        ]
+      },
+      "registries": {
+        "kind": "array",
+        "count": 2,
+        "minItems": 1,
+        "maxItems": 1,
+        "items": {
+          "kind": "string",
+          "count": 2,
+          "formats": [
+            "uri"
+          ]
+        }
+      },
+      "relatedProjects": {
+        "kind": "array",
+        "count": 2,
+        "minItems": 2,
+        "maxItems": 2,
+        "items": {
+          "kind": "object",
+          "count": 4,
+          "properties": {
+            "projectKey": {
+              "kind": "object",
+              "count": 4,
+              "properties": {
+                "id": {
+                  "kind": "string",
+                  "count": 4,
+                  "formats": [
+                    "plain"
+                  ]
+                }
+              }
+            },
+            "relationProvenance": {
+              "kind": "string",
+              "count": 4,
+              "formats": [
+                "plain"
+              ]
+            },
+            "relationType": {
+              "kind": "string",
+              "count": 4,
+              "formats": [
+                "plain"
+              ]
+            }
+          }
+        }
+      },
+      "slsaProvenances": {
+        "kind": "array",
+        "count": 2,
+        "minItems": 0,
+        "maxItems": 0
+      },
+      "versionKey": {
+        "kind": "object",
+        "count": 2,
+        "properties": {
+          "name": {
+            "kind": "string",
+            "count": 2,
+            "formats": [
+              "plain"
+            ]
+          },
+          "system": {
+            "kind": "string",
+            "count": 2,
+            "formats": [
+              "plain"
+            ]
+          },
+          "version": {
+            "kind": "string",
+            "count": 2,
+            "formats": [
+              "semver"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "fieldCount": 21,
+  "samples": 2,
+  "firstSeenAt": "2026-10-22T21:45:35.000Z",
+  "contractSince": "2026-10-22T22:15:38.000Z",
+  "weather": {
+    "condition": "sunny",
+    "headline": "Clear skies",
+    "reason": "Contract unchanged and responding normally.",
+    "since": "2026-10-22T21:45:35.000Z"
+  },
+  "stats": {
+    "d1": {
+      "checks": 5,
+      "ok": 5,
+      "uptime": 1,
+      "p50": 179,
+      "p95": 366
+    },
+    "d7": {
+      "checks": 5,
+      "ok": 5,
+      "uptime": 1,
+      "p50": 179,
+      "p95": 366
+    },
+    "d30": {
+      "checks": 5,
+      "ok": 5,
+      "uptime": 1,
+      "p50": 179,
+      "p95": 366
+    }
+  }
+}

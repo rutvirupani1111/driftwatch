@@ -1,0 +1,260 @@
+{
+  "id": "jsdelivr",
+  "name": "jsDelivr: package stats",
+  "category": "Package registries",
+  "url": "https://data.jsdelivr.com/v1/stats/packages/npm/react?period=month",
+  "host": "data.jsdelivr.com",
+  "method": "GET",
+  "docs": "https://www.jsdelivr.com/docs/data.jsdelivr.com",
+  "description": "Monthly CDN hits and bandwidth for react. Daily keys are collapsed into a <date> map.",
+  "checkedAt": "2026-10-22T22:22:38.000Z",
+  "ok": true,
+  "status": 200,
+  "latencyMs": 611,
+  "sizeBytes": 2183,
+  "contentType": "application/json; charset=utf-8",
+  "error": null,
+  "engine": "api-drift/shape@1",
+  "fingerprint": "7258265de717a904",
+  "contract": {
+    "type": "object",
+    "properties": {
+      "bandwidth": {
+        "type": "object",
+        "properties": {
+          "dates": {
+            "type": "object",
+            "properties": {
+              "<date>": {
+                "type": "integer"
+              }
+            }
+          },
+          "prev": {
+            "type": "object",
+            "properties": {
+              "rank": {
+                "type": "integer"
+              },
+              "total": {
+                "type": "integer"
+              },
+              "typeRank": {
+                "type": "integer"
+              }
+            }
+          },
+          "rank": {
+            "type": "integer"
+          },
+          "total": {
+            "type": "integer"
+          },
+          "typeRank": {
+            "type": "integer"
+          }
+        }
+      },
+      "hits": {
+        "type": "object",
+        "properties": {
+          "dates": {
+            "type": "object",
+            "properties": {
+              "<date>": {
+                "type": "integer"
+              }
+            }
+          },
+          "prev": {
+            "type": "object",
+            "properties": {
+              "rank": {
+                "type": "integer"
+              },
+              "total": {
+                "type": "integer"
+              },
+              "typeRank": {
+                "type": "integer"
+              }
+            }
+          },
+          "rank": {
+            "type": "integer"
+          },
+          "total": {
+            "type": "integer"
+          },
+          "typeRank": {
+            "type": "integer"
+          }
+        }
+      },
+      "links": {
+        "type": "object",
+        "properties": {
+          "self": {
+            "type": "string",
+            "format": "uri"
+          },
+          "versions": {
+            "type": "string",
+            "format": "uri"
+          }
+        }
+      }
+    }
+  },
+  "shape": {
+    "kind": "object",
+    "count": 2,
+    "properties": {
+      "bandwidth": {
+        "kind": "object",
+        "count": 2,
+        "properties": {
+          "dates": {
+            "kind": "object",
+            "count": 2,
+            "properties": {
+              "<date>": {
+                "kind": "integer",
+                "count": 2
+              }
+            }
+          },
+          "prev": {
+            "kind": "object",
+            "count": 2,
+            "properties": {
+              "rank": {
+                "kind": "integer",
+                "count": 2
+              },
+              "total": {
+                "kind": "integer",
+                "count": 2
+              },
+              "typeRank": {
+                "kind": "integer",
+                "count": 2
+              }
+            }
+          },
+          "rank": {
+            "kind": "integer",
+            "count": 2
+          },
+          "total": {
+            "kind": "integer",
+            "count": 2
+          },
+          "typeRank": {
+            "kind": "integer",
+            "count": 2
+          }
+        }
+      },
+      "hits": {
+        "kind": "object",
+        "count": 2,
+        "properties": {
+          "dates": {
+            "kind": "object",
+            "count": 2,
+            "properties": {
+              "<date>": {
+                "kind": "integer",
+                "count": 2
+              }
+            }
+          },
+          "prev": {
+            "kind": "object",
+            "count": 2,
+            "properties": {
+              "rank": {
+                "kind": "integer",
+                "count": 2
+              },
+              "total": {
+                "kind": "integer",
+                "count": 2
+              },
+              "typeRank": {
+                "kind": "integer",
+                "count": 2
+              }
+            }
+          },
+          "rank": {
+            "kind": "integer",
+            "count": 2
+          },
+          "total": {
+            "kind": "integer",
+            "count": 2
+          },
+          "typeRank": {
+            "kind": "integer",
+            "count": 2
+          }
+        }
+      },
+      "links": {
+        "kind": "object",
+        "count": 2,
+        "properties": {
+          "self": {
+            "kind": "string",
+            "count": 2,
+            "formats": [
+              "uri"
+            ]
+          },
+          "versions": {
+            "kind": "string",
+            "count": 2,
+            "formats": [
+              "uri"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "fieldCount": 23,
+  "samples": 2,
+  "firstSeenAt": "2026-10-22T21:45:34.000Z",
+  "contractSince": "2026-10-22T22:15:38.000Z",
+  "weather": {
+    "condition": "sunny",
+    "headline": "Clear skies",
+    "reason": "Contract unchanged and responding normally.",
+    "since": "2026-10-22T21:45:34.000Z"
+  },
+  "stats": {
+    "d1": {
+      "checks": 5,
+      "ok": 5,
+      "uptime": 1,
+      "p50": 611,
+      "p95": 982
+    },
+    "d7": {
+      "checks": 5,
+      "ok": 5,
+      "uptime": 1,
+      "p50": 611,
+      "p95": 982
+    },
+    "d30": {
+      "checks": 5,
+      "ok": 5,
+      "uptime": 1,
+      "p50": 611,
+      "p95": 982
+    }
+  }
+}

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Wikipedia REST: random summary: contract changes (Driftwatch)</title>
+  <subtitle>Shape changes observed in GET https://en.wikipedia.org/api/rest_v1/page/random/summary</subtitle>
+  <id>https://rutvirupani1111.github.io/driftwatch/feeds/wikipedia-random.xml</id>
+  <link rel="self" type="application/atom+xml" href="https://rutvirupani1111.github.io/driftwatch/feeds/wikipedia-random.xml"/>
+  <link rel="alternate" type="text/html" href="https://rutvirupani1111.github.io/driftwatch/api/wikipedia-random"/>
+  <updated>2026-10-22T22:09:00.000Z</updated>
+  <author><name>Driftwatch</name></author>
+  <generator uri="https://github.com/rutvirupani1111/driftwatch">Driftwatch</generator>
+  <entry>
+    <title>[breaking] Wikipedia REST: random summary: $.coordinates was removed (1 breaking)</title>
+    <id>https://rutvirupani1111.github.io/driftwatch/feeds/wikipedia-random#wikipedia-random@2026-10-22T22:09:00.000Z</id>
+    <link rel="alternate" type="text/html" href="https://rutvirupani1111.github.io/driftwatch/api/wikipedia-random#wikipedia-random%402026-10-22T22%3A09%3A00.000Z"/>
+    <updated>2026-10-22T22:09:00.000Z</updated>
+    <published>2026-10-22T22:09:00.000Z</published>
+    <category term="breaking" label="breaking"/>
+    <category term="wikipedia-random"/>
+    <summary>$.coordinates was removed (1 breaking)</summary>
+    <content type="html">&lt;p&gt;$.coordinates was removed (1 breaking)&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;strong&gt;breaking&lt;/strong&gt; $.coordinates was removed &lt;code&gt;{ lat, lon }&lt;/code&gt; → &lt;code&gt;missing&lt;/code&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;Fingerprint 1bfd0dd2d027a5cf → a160383cfee096dd&lt;/p&gt;</content>
+  </entry>
+</feed>
