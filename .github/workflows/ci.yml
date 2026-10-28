@@ -1,0 +1,66 @@
+# Typecheck, unit tests and a production build on every pull request,
+# plus a Playwright smoke test of the built site.
+name: CI
+
+on:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  check:
+    name: Typecheck, test, build
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - name: Make api-drift available
+        run: |
+          if [ -d node_modules/api-drift ]; then
+            echo "Using api-drift from node_modules"
+          else
+            git clone --depth 1 https://github.com/rutvirupani1111/api-drift.git ../api-drift
+          fi
+      - run: npm run typecheck
+      - run: npm test
+      - run: npm run build
+        env:
+          BASE_PATH: /${{ github.event.repository.name }}/
+      - uses: actions/upload-artifact@v4
+        with:
+          name: site
+          path: dist
+          retention-days: 3
+
+  smoke:
+    name: Smoke test (Playwright)
+    needs: check
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      BASE_PATH: /${{ github.event.repository.name }}/
+      PW_CHANNEL: chromium
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - uses: actions/download-artifact@v4
+        with:
+          name: site
+          path: dist
+      - run: npx playwright install --with-deps chromium
+      - run: npm run e2e
