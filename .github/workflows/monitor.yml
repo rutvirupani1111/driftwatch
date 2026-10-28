@@ -1,0 +1,150 @@
+# Driftwatch: check every API on a schedule, keep the history in the repo,
+# publish the dashboard to GitHub Pages.
+#
+#  - Runs every 3 hours at :17 (off the hour: GitHub's scheduler is busiest on
+#    the hour and delays or drops runs there), on demand, and on pushes to main
+#    (pushes only rebuild and redeploy the site; they do not call the APIs).
+#  - Between runs the full state rides along in the Actions cache, so data is
+#    committed only when something meaningful changed (a contract fingerprint,
+#    an HTTP status, a new API) or once a week as a heartbeat.
+name: Monitor
+
+on:
+  schedule:
+    - cron: '17 */3 * * *'
+  workflow_dispatch:
+    inputs:
+      rebaseline:
+        description: 'Forget the learned contract for these monitor ids (comma separated), or "all"'
+        required: false
+        default: ''
+  push:
+    branches: [main]
+    paths-ignore:
+      - 'data/**'
+      - 'public/badges/**'
+      - 'public/feeds/**'
+      - 'public/feed.xml'
+      - '**/*.md'
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: driftwatch-monitor
+  cancel-in-progress: false
+
+jobs:
+  monitor:
+    name: Check APIs and build the site
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install
+        run: npm ci
+
+      # Driftwatch imports api-drift. With the package installed (dependency in
+      # package.json) nothing happens here; otherwise its public source is
+      # checked out next to this repo, exactly like the local layout.
+      - name: Make api-drift available
+        run: |
+          if [ -d node_modules/api-drift ]; then
+            echo "Using api-drift from node_modules"
+          else
+            git clone --depth 1 https://github.com/rutvirupani1111/api-drift.git ../api-drift
+          fi
+
+      - name: Configure Pages
+        id: pages
+        uses: actions/configure-pages@v5
+
+      - name: Restore monitor state
+        if: github.event_name != 'push'
+        uses: actions/cache/restore@v4
+        with:
+          path: .driftwatch-cache
+          key: driftwatch-state-${{ github.run_id }}
+          restore-keys: driftwatch-state-
+
+      - name: Run the monitor
+        id: monitor
+        if: github.event_name != 'push'
+        env:
+          SITE_URL: ${{ steps.pages.outputs.base_url }}/
+          REBASELINE: ${{ inputs.rebaseline }}
+          # Used by the GitHub monitor for a higher rate limit. Add your own secrets
+          # here and reference them as ${NAME} in driftwatch.config.json.
+          GITHUB_TOKEN: ${{ github.token }}
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+        run: |
+          args=(--restore .driftwatch-cache/data)
+          if [ -n "$REBASELINE" ]; then args+=(--rebaseline "$REBASELINE"); fi
+          npm run monitor -- "${args[@]}"
+
+      - name: Save monitor state
+        if: github.event_name != 'push' && steps.monitor.outcome == 'success'
+        run: |
+          rm -rf .driftwatch-cache
+          mkdir -p .driftwatch-cache
+          cp -r data .driftwatch-cache/data
+
+      - uses: actions/cache/save@v4
+        if: github.event_name != 'push' && steps.monitor.outcome == 'success'
+        with:
+          path: .driftwatch-cache
+          key: driftwatch-state-${{ github.run_id }}
+
+      - name: Commit data when something changed
+        if: github.event_name != 'push' && steps.monitor.outcome == 'success'
+        env:
+          CHANGED: ${{ steps.monitor.outputs.changed }}
+          HEADLINE: ${{ steps.monitor.outputs.headline }}
+          EVENTS: ${{ steps.monitor.outputs.events }}
+        run: |
+          last=$(git log -1 --format=%ct -- data/index.json 2>/dev/null || true)
+          age=$(( $(date +%s) - ${last:-0} ))
+          if [ "$CHANGED" != "true" ] && [ "$age" -lt 518400 ]; then
+            echo "Nothing meaningful changed; state stays in the Actions cache."
+            exit 0
+          fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data public/badges public/feeds public/feed.xml
+          if git diff --cached --quiet; then
+            echo "No file changes to commit."
+            exit 0
+          fi
+          if [ "$CHANGED" = "true" ]; then msg="data: $HEADLINE ($EVENTS new change events)"; else msg="data: weekly heartbeat"; fi
+          git commit -m "$msg"
+          git pull --rebase --autostash origin "${GITHUB_REF_NAME}"
+          git push origin "HEAD:${GITHUB_REF_NAME}"
+
+      - name: Build the site
+        env:
+          BASE_PATH: ${{ steps.pages.outputs.base_path }}/
+        run: npm run build
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+
+  deploy:
+    name: Deploy to GitHub Pages
+    needs: monitor
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
