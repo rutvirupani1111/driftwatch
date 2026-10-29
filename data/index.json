@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-29T05:45:44.101Z",
-  "durationMs": 1987,
+  "generatedAt": "2026-10-29T12:58:27.203Z",
+  "durationMs": 2507,
   "engine": "api-drift/shape@1",
   "site": {
     "title": "Driftwatch",
@@ -42,8 +42,8 @@
       "since": "2026-10-29T05:45:42.000Z",
       "ok": true,
       "status": 200,
-      "checkedAt": "2026-10-29T05:45:42.000Z",
-      "latencyMs": 391,
+      "checkedAt": "2026-10-29T12:58:24.000Z",
+      "latencyMs": 376,
       "uptime7d": 1,
       "uptime30d": 1,
       "p50_7d": 547,
@@ -54,7 +54,8 @@
         530,
         578,
         610,
-        391
+        391,
+        376
       ],
       "lastChange": {
         "id": "github-repo@2026-10-29T05:45:42.000Z",
@@ -81,8 +82,8 @@
       "since": "2026-10-22T21:45:34.000Z",
       "ok": true,
       "status": 200,
-      "checkedAt": "2026-10-29T05:45:42.000Z",
-      "latencyMs": 266,
+      "checkedAt": "2026-10-29T12:58:24.000Z",
+      "latencyMs": 234,
       "uptime7d": 1,
       "uptime30d": 1,
       "p50_7d": 514,
@@ -93,7 +94,8 @@
         525,
         708,
         584,
-        266
+        266,
+        234
       ],
       "changes7d": 0,
       "changes30d": 0,
@@ -114,8 +116,8 @@
       "since": "2026-10-22T21:45:34.000Z",
       "ok": true,
       "status": 200,
-      "checkedAt": "2026-10-29T05:45:42.000Z",
-      "latencyMs": 139,
+      "checkedAt": "2026-10-29T12:58:24.000Z",
+      "latencyMs": 129,
       "uptime7d": 1,
       "uptime30d": 1,
       "p50_7d": 386,
@@ -126,7 +128,8 @@
         386,
         440,
         412,
-        139
+        139,
+        129
       ],
       "changes7d": 0,
       "changes30d": 0,
@@ -147,8 +150,8 @@
       "since": "2026-10-22T21:45:34.000Z",
       "ok": true,
       "status": 200,
-      "checkedAt": "2026-10-29T05:45:42.000Z",
-      "latencyMs": 173,
+      "checkedAt": "2026-10-29T12:58:24.000Z",
+      "latencyMs": 156,
       "uptime7d": 1,
       "uptime30d": 1,
       "p50_7d": 353,
@@ -159,7 +162,8 @@
         352,
         770,
         377,
-        173
+        173,
+        156
       ],
       "changes7d": 0,
       "changes30d": 0,
@@ -180,8 +184,8 @@
       "since": "2026-10-22T21:45:34.000Z",
       "ok": true,
       "status": 200,
-      "checkedAt": "2026-10-29T05:45:42.000Z",
-      "latencyMs": 50,
+      "checkedAt": "2026-10-29T12:58:24.000Z",
+      "latencyMs": 43,
       "uptime7d": 1,
       "uptime30d": 1,
       "p50_7d": 221,
@@ -192,7 +196,8 @@
         477,
         394,
         221,
-        50
+        50,
+        43
       ],
       "changes7d": 0,
       "changes30d": 0,
@@ -213,8 +218,8 @@
       "since": "2026-10-22T21:45:34.000Z",
       "ok": true,
       "status": 200,
-      "checkedAt": "2026-10-29T05:45:42.000Z",
-      "latencyMs": 66,
+      "checkedAt": "2026-10-29T12:58:24.000Z",
+      "latencyMs": 27,
       "uptime7d": 1,
       "uptime30d": 1,
       "p50_7d": 81,
@@ -225,7 +230,8 @@
         276,
         81,
         93,
-        66
+        66,
+        27
       ],
       "changes7d": 0,
       "changes30d": 0,
@@ -246,8 +252,8 @@
       "since": "2026-10-22T21:45:34.000Z",
       "ok": true,
       "status": 200,
-      "checkedAt": "2026-10-29T05:45:42.000Z",
-      "latencyMs": 187,
+      "checkedAt": "2026-10-29T12:58:24.000Z",
+      "latencyMs": 86,
       "uptime7d": 1,
       "uptime30d": 1,
       "p50_7d": 923,
@@ -258,7 +264,8 @@
         1362,
         921,
         1080,
-        187
+        187,
+        86
       ],
       "changes7d": 0,
       "changes30d": 0,
@@ -279,8 +286,8 @@
       "since": "2026-10-22T21:45:34.000Z",
       "ok": true,
       "status": 200,
-      "checkedAt": "2026-10-29T05:45:42.000Z",
-      "latencyMs": 310,
+      "checkedAt": "2026-10-29T12:58:24.000Z",
+      "latencyMs": 235,
       "uptime7d": 1,
       "uptime30d": 1,
       "p50_7d": 307,
@@ -291,7 +298,8 @@
         348,
         280,
         307,
-        310
+        310,
+        235
       ],
       "changes7d": 0,
       "changes30d": 0,
@@ -312,8 +320,8 @@
       "since": "2026-10-22T21:45:34.000Z",
       "ok": true,
       "status": 200,
-      "checkedAt": "2026-10-29T05:45:42.000Z",
-      "latencyMs": 227,
+      "checkedAt": "2026-10-29T12:58:24.000Z",
+      "latencyMs": 579,
       "uptime7d": 1,
       "uptime30d": 1,
       "p50_7d": 584,
@@ -324,7 +332,8 @@
         982,
         471,
         611,
-        227
+        227,
+        579
       ],
       "changes7d": 0,
       "changes30d": 0,
@@ -345,11 +354,11 @@
       "since": "2026-10-22T21:45:35.000Z",
       "ok": true,
       "status": 200,
-      "checkedAt": "2026-10-29T05:45:42.000Z",
-      "latencyMs": 188,
+      "checkedAt": "2026-10-29T12:58:25.000Z",
+      "latencyMs": 221,
       "uptime7d": 1,
       "uptime30d": 1,
-      "p50_7d": 179,
+      "p50_7d": 188,
       "p95_7d": 366,
       "spark": [
         366,
@@ -357,7 +366,8 @@
         354,
         165,
         170,
-        188
+        188,
+        221
       ],
       "changes7d": 0,
       "changes30d": 0,
@@ -378,8 +388,8 @@
       "since": "2026-10-22T21:45:35.000Z",
       "ok": true,
       "status": 200,
-      "checkedAt": "2026-10-29T05:45:42.000Z",
-      "latencyMs": 261,
+      "checkedAt": "2026-10-29T12:58:25.000Z",
+      "latencyMs": 254,
       "uptime7d": 1,
       "uptime30d": 1,
       "p50_7d": 583,
@@ -390,7 +400,8 @@
         803,
         609,
         577,
-        261
+        261,
+        254
       ],
       "changes7d": 0,
       "changes30d": 0,
@@ -411,29 +422,30 @@
       "since": "2026-10-22T22:09:00.000Z",
       "ok": true,
       "status": 200,
-      "checkedAt": "2026-10-29T05:45:42.000Z",
-      "latencyMs": 203,
+      "checkedAt": "2026-10-29T12:58:25.000Z",
+      "latencyMs": 476,
       "uptime7d": 1,
       "uptime30d": 1,
-      "p50_7d": 1101,
+      "p50_7d": 1076,
       "p95_7d": 1761,
       "spark": [
         1101,
         1761,
         1076,
         1124,
-        203
+        203,
+        476
       ],
       "lastChange": {
-        "id": "wikipedia-random@2026-10-22T22:09:00.000Z",
-        "at": "2026-10-22T22:09:00.000Z",
-        "severity": "breaking",
-        "summary": "$.coordinates was removed (1 breaking)"
+        "id": "wikipedia-random@2026-10-29T12:58:25.000Z",
+        "at": "2026-10-29T12:58:25.000Z",
+        "severity": "info",
+        "summary": "$.coordinates: new field (object) (1 info)"
       },
-      "changes7d": 1,
-      "changes30d": 1,
-      "fieldCount": 40,
-      "fingerprint": "0288cfd41b459c45"
+      "changes7d": 2,
+      "changes30d": 2,
+      "fieldCount": 43,
+      "fingerprint": "a160383cfee096dd"
     },
     {
       "id": "open-library",
@@ -449,8 +461,8 @@
       "since": "2026-10-22T21:45:35.000Z",
       "ok": true,
       "status": 200,
-      "checkedAt": "2026-10-29T05:45:42.000Z",
-      "latencyMs": 449,
+      "checkedAt": "2026-10-29T12:58:25.000Z",
+      "latencyMs": 468,
       "uptime7d": 1,
       "uptime30d": 1,
       "p50_7d": 901,
@@ -461,7 +473,8 @@
         1607,
         901,
         909,
-        449
+        449,
+        468
       ],
       "changes7d": 0,
       "changes30d": 0,
@@ -482,8 +495,8 @@
       "since": "2026-10-22T21:45:35.000Z",
       "ok": true,
       "status": 200,
-      "checkedAt": "2026-10-29T05:45:42.000Z",
-      "latencyMs": 135,
+      "checkedAt": "2026-10-29T12:58:25.000Z",
+      "latencyMs": 180,
       "uptime7d": 1,
       "uptime30d": 1,
       "p50_7d": 661,
@@ -494,7 +507,8 @@
         1187,
         627,
         661,
-        135
+        135,
+        180
       ],
       "changes7d": 0,
       "changes30d": 0,
@@ -515,8 +529,8 @@
       "since": "2026-10-22T21:45:35.000Z",
       "ok": true,
       "status": 200,
-      "checkedAt": "2026-10-29T05:45:42.000Z",
-      "latencyMs": 101,
+      "checkedAt": "2026-10-29T12:58:25.000Z",
+      "latencyMs": 102,
       "uptime7d": 1,
       "uptime30d": 1,
       "p50_7d": 305,
@@ -527,7 +541,8 @@
         325,
         291,
         322,
-        101
+        101,
+        102
       ],
       "changes7d": 0,
       "changes30d": 0,
@@ -548,8 +563,8 @@
       "since": "2026-10-22T21:45:35.000Z",
       "ok": true,
       "status": 200,
-      "checkedAt": "2026-10-29T05:45:42.000Z",
-      "latencyMs": 507,
+      "checkedAt": "2026-10-29T12:58:25.000Z",
+      "latencyMs": 363,
       "uptime7d": 1,
       "uptime30d": 1,
       "p50_7d": 609,
@@ -560,7 +575,8 @@
         659,
         690,
         609,
-        507
+        507,
+        363
       ],
       "changes7d": 0,
       "changes30d": 0,
@@ -581,8 +597,8 @@
       "since": "2026-10-22T21:45:36.000Z",
       "ok": true,
       "status": 200,
-      "checkedAt": "2026-10-29T05:45:42.000Z",
-      "latencyMs": 188,
+      "checkedAt": "2026-10-29T12:58:25.000Z",
+      "latencyMs": 495,
       "uptime7d": 1,
       "uptime30d": 1,
       "p50_7d": 523,
@@ -593,7 +609,8 @@
         523,
         738,
         530,
-        188
+        188,
+        495
       ],
       "changes7d": 0,
       "changes30d": 0,
@@ -614,8 +631,8 @@
       "since": "2026-10-22T21:45:36.000Z",
       "ok": true,
       "status": 200,
-      "checkedAt": "2026-10-29T05:45:42.000Z",
-      "latencyMs": 365,
+      "checkedAt": "2026-10-29T12:58:25.000Z",
+      "latencyMs": 784,
       "uptime7d": 1,
       "uptime30d": 1,
       "p50_7d": 1221,
@@ -626,7 +643,8 @@
         1246,
         1278,
         1412,
-        365
+        365,
+        784
       ],
       "changes7d": 0,
       "changes30d": 0,
@@ -647,19 +665,20 @@
       "since": "2026-10-22T21:45:36.000Z",
       "ok": true,
       "status": 200,
-      "checkedAt": "2026-10-29T05:45:43.000Z",
-      "latencyMs": 374,
+      "checkedAt": "2026-10-29T12:58:25.000Z",
+      "latencyMs": 577,
       "uptime7d": 1,
       "uptime30d": 1,
-      "p50_7d": 120,
-      "p95_7d": 407,
+      "p50_7d": 138,
+      "p95_7d": 577,
       "spark": [
         407,
         67,
         102,
         120,
         138,
-        374
+        374,
+        577
       ],
       "changes7d": 0,
       "changes30d": 0,
@@ -680,8 +699,8 @@
       "since": "2026-10-22T21:45:36.000Z",
       "ok": true,
       "status": 200,
-      "checkedAt": "2026-10-29T05:45:43.000Z",
-      "latencyMs": 170,
+      "checkedAt": "2026-10-29T12:58:25.000Z",
+      "latencyMs": 166,
       "uptime7d": 1,
       "uptime30d": 1,
       "p50_7d": 367,
@@ -692,7 +711,8 @@
         503,
         332,
         444,
-        170
+        170,
+        166
       ],
       "changes7d": 0,
       "changes30d": 0,
@@ -713,8 +733,8 @@
       "since": "2026-10-22T21:45:36.000Z",
       "ok": true,
       "status": 200,
-      "checkedAt": "2026-10-29T05:45:43.000Z",
-      "latencyMs": 59,
+      "checkedAt": "2026-10-29T12:58:26.000Z",
+      "latencyMs": 81,
       "uptime7d": 1,
       "uptime30d": 1,
       "p50_7d": 262,
@@ -725,7 +745,8 @@
         262,
         388,
         857,
-        59
+        59,
+        81
       ],
       "changes7d": 0,
       "changes30d": 0,
@@ -746,19 +767,20 @@
       "since": "2026-10-22T21:45:36.000Z",
       "ok": true,
       "status": 200,
-      "checkedAt": "2026-10-29T05:45:43.000Z",
-      "latencyMs": 784,
+      "checkedAt": "2026-10-29T12:58:26.000Z",
+      "latencyMs": 1086,
       "uptime7d": 1,
       "uptime30d": 1,
       "p50_7d": 473,
-      "p95_7d": 784,
+      "p95_7d": 1086,
       "spark": [
         473,
         454,
         438,
         476,
         473,
-        784
+        784,
+        1086
       ],
       "changes7d": 0,
       "changes30d": 0,
@@ -779,8 +801,8 @@
       "since": "2026-10-22T21:45:36.000Z",
       "ok": true,
       "status": 200,
-      "checkedAt": "2026-10-29T05:45:43.000Z",
-      "latencyMs": 92,
+      "checkedAt": "2026-10-29T12:58:26.000Z",
+      "latencyMs": 39,
       "uptime7d": 1,
       "uptime30d": 1,
       "p50_7d": 261,
@@ -791,7 +813,8 @@
         268,
         420,
         355,
-        92
+        92,
+        39
       ],
       "changes7d": 0,
       "changes30d": 0,
@@ -812,8 +835,8 @@
       "since": "2026-10-22T21:45:37.000Z",
       "ok": true,
       "status": 200,
-      "checkedAt": "2026-10-29T05:45:43.000Z",
-      "latencyMs": 102,
+      "checkedAt": "2026-10-29T12:58:26.000Z",
+      "latencyMs": 70,
       "uptime7d": 1,
       "uptime30d": 1,
       "p50_7d": 237,
@@ -824,7 +847,8 @@
         269,
         292,
         315,
-        102
+        102,
+        70
       ],
       "changes7d": 0,
       "changes30d": 0,
@@ -845,8 +869,8 @@
       "since": "2026-10-22T21:45:37.000Z",
       "ok": true,
       "status": 200,
-      "checkedAt": "2026-10-29T05:45:43.000Z",
-      "latencyMs": 429,
+      "checkedAt": "2026-10-29T12:58:26.000Z",
+      "latencyMs": 340,
       "uptime7d": 1,
       "uptime30d": 1,
       "p50_7d": 596,
@@ -857,7 +881,8 @@
         597,
         629,
         622,
-        429
+        429,
+        340
       ],
       "changes7d": 0,
       "changes30d": 0,
@@ -880,7 +905,7 @@
       "jsdelivr": "......................c......c",
       "deps-dev": "......................c......c",
       "osv-query": "......................c......c",
-      "wikipedia-random": "......................b......c",
+      "wikipedia-random": "......................b......i",
       "open-library": "......................c......c",
       "hacker-news": "......................c......c",
       "hugging-face": "......................c......c",
@@ -897,6 +922,21 @@
     }
   },
   "recent": [
+    {
+      "id": "wikipedia-random@2026-10-29T12:58:25.000Z",
+      "apiId": "wikipedia-random",
+      "apiName": "Wikipedia REST: random summary",
+      "at": "2026-10-29T12:58:25.000Z",
+      "severity": "info",
+      "summary": "$.coordinates: new field (object) (1 info)",
+      "fingerprintBefore": "0288cfd41b459c45",
+      "fingerprintAfter": "a160383cfee096dd",
+      "counts": {
+        "breaking": 0,
+        "risky": 0,
+        "info": 1
+      }
+    },
     {
       "id": "github-repo@2026-10-29T05:45:42.000Z",
       "apiId": "github-repo",

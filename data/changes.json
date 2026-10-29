@@ -1,6 +1,36 @@
 {
-  "generatedAt": "2026-10-29T05:45:44.101Z",
+  "generatedAt": "2026-10-29T12:58:27.203Z",
   "events": [
+    {
+      "id": "wikipedia-random@2026-10-29T12:58:25.000Z",
+      "apiId": "wikipedia-random",
+      "apiName": "Wikipedia REST: random summary",
+      "at": "2026-10-29T12:58:25.000Z",
+      "severity": "info",
+      "summary": "$.coordinates: new field (object) (1 info)",
+      "fingerprintBefore": "0288cfd41b459c45",
+      "fingerprintAfter": "a160383cfee096dd",
+      "changes": [
+        {
+          "path": "$.coordinates",
+          "kind": "added",
+          "severity": "info",
+          "message": "new field (object)",
+          "after": "object",
+          "afterNode": {
+            "type": "object",
+            "properties": {
+              "lat": {
+                "type": "number"
+              },
+              "lon": {
+                "type": "number"
+              }
+            }
+          }
+        }
+      ]
+    },
     {
       "id": "github-repo@2026-10-29T05:45:42.000Z",
       "apiId": "github-repo",
