@@ -7,10 +7,10 @@
   "method": "GET",
   "docs": "https://formulae.brew.sh/docs/api/",
   "description": "Formula metadata, bottles and dependencies for wget.",
-  "checkedAt": "2026-10-29T05:45:42.000Z",
+  "checkedAt": "2026-10-29T12:58:24.000Z",
   "ok": true,
   "status": 200,
-  "latencyMs": 310,
+  "latencyMs": 235,
   "sizeBytes": 4925,
   "contentType": "application/json; charset=utf-8",
   "error": null,
@@ -614,33 +614,33 @@
   },
   "shape": {
     "kind": "object",
-    "count": 3,
+    "count": 4,
     "properties": {
       "aliases": {
         "kind": "array",
-        "count": 3,
+        "count": 4,
         "minItems": 0,
         "maxItems": 0
       },
       "analytics": {
         "kind": "object",
-        "count": 3,
+        "count": 4,
         "properties": {
           "build_error": {
             "kind": "object",
-            "count": 3,
+            "count": 4,
             "properties": {
               "30d": {
                 "kind": "object",
-                "count": 3,
+                "count": 4,
                 "properties": {
                   "wget": {
                     "kind": "integer",
-                    "count": 3
+                    "count": 4
                   },
                   "wget --HEAD": {
                     "kind": "integer",
-                    "count": 3
+                    "count": 4
                   }
                 }
               }
@@ -648,47 +648,47 @@
           },
           "install": {
             "kind": "object",
-            "count": 3,
+            "count": 4,
             "properties": {
               "30d": {
                 "kind": "object",
-                "count": 3,
+                "count": 4,
                 "properties": {
                   "wget": {
                     "kind": "integer",
-                    "count": 3
+                    "count": 4
                   },
                   "wget --HEAD": {
                     "kind": "integer",
-                    "count": 3
+                    "count": 4
                   }
                 }
               },
               "365d": {
                 "kind": "object",
-                "count": 3,
+                "count": 4,
                 "properties": {
                   "wget": {
                     "kind": "integer",
-                    "count": 3
+                    "count": 4
                   },
                   "wget --HEAD": {
                     "kind": "integer",
-                    "count": 3
+                    "count": 4
                   }
                 }
               },
               "90d": {
                 "kind": "object",
-                "count": 3,
+                "count": 4,
                 "properties": {
                   "wget": {
                     "kind": "integer",
-                    "count": 3
+                    "count": 4
                   },
                   "wget --HEAD": {
                     "kind": "integer",
-                    "count": 3
+                    "count": 4
                   }
                 }
               }
@@ -696,47 +696,47 @@
           },
           "install_on_request": {
             "kind": "object",
-            "count": 3,
+            "count": 4,
             "properties": {
               "30d": {
                 "kind": "object",
-                "count": 3,
+                "count": 4,
                 "properties": {
                   "wget": {
                     "kind": "integer",
-                    "count": 3
+                    "count": 4
                   },
                   "wget --HEAD": {
                     "kind": "integer",
-                    "count": 3
+                    "count": 4
                   }
                 }
               },
               "365d": {
                 "kind": "object",
-                "count": 3,
+                "count": 4,
                 "properties": {
                   "wget": {
                     "kind": "integer",
-                    "count": 3
+                    "count": 4
                   },
                   "wget --HEAD": {
                     "kind": "integer",
-                    "count": 3
+                    "count": 4
                   }
                 }
               },
               "90d": {
                 "kind": "object",
-                "count": 3,
+                "count": 4,
                 "properties": {
                   "wget": {
                     "kind": "integer",
-                    "count": 3
+                    "count": 4
                   },
                   "wget --HEAD": {
                     "kind": "integer",
-                    "count": 3
+                    "count": 4
                   }
                 }
               }
@@ -746,41 +746,41 @@
       },
       "autobump": {
         "kind": "boolean",
-        "count": 3
+        "count": 4
       },
       "bottle": {
         "kind": "object",
-        "count": 3,
+        "count": 4,
         "properties": {
           "stable": {
             "kind": "object",
-            "count": 3,
+            "count": 4,
             "properties": {
               "files": {
                 "kind": "object",
-                "count": 3,
+                "count": 4,
                 "properties": {
                   "arm64_golden_gate": {
                     "kind": "object",
-                    "count": 3,
+                    "count": 4,
                     "properties": {
                       "cellar": {
                         "kind": "string",
-                        "count": 3,
+                        "count": 4,
                         "formats": [
                           "plain"
                         ]
                       },
                       "sha256": {
                         "kind": "string",
-                        "count": 3,
+                        "count": 4,
                         "formats": [
                           "plain"
                         ]
                       },
                       "url": {
                         "kind": "string",
-                        "count": 3,
+                        "count": 4,
                         "formats": [
                           "uri"
                         ]
@@ -789,25 +789,25 @@
                   },
                   "arm64_linux": {
                     "kind": "object",
-                    "count": 3,
+                    "count": 4,
                     "properties": {
                       "cellar": {
                         "kind": "string",
-                        "count": 3,
+                        "count": 4,
                         "formats": [
                           "plain"
                         ]
                       },
                       "sha256": {
                         "kind": "string",
-                        "count": 3,
+                        "count": 4,
                         "formats": [
                           "plain"
                         ]
                       },
                       "url": {
                         "kind": "string",
-                        "count": 3,
+                        "count": 4,
                         "formats": [
                           "uri"
                         ]
@@ -816,25 +816,25 @@
                   },
                   "arm64_sequoia": {
                     "kind": "object",
-                    "count": 3,
+                    "count": 4,
                     "properties": {
                       "cellar": {
                         "kind": "string",
-                        "count": 3,
+                        "count": 4,
                         "formats": [
                           "plain"
                         ]
                       },
                       "sha256": {
                         "kind": "string",
-                        "count": 3,
+                        "count": 4,
                         "formats": [
                           "plain"
                         ]
                       },
                       "url": {
                         "kind": "string",
-                        "count": 3,
+                        "count": 4,
                         "formats": [
                           "uri"
                         ]
@@ -843,25 +843,25 @@
                   },
                   "arm64_tahoe": {
                     "kind": "object",
-                    "count": 3,
+                    "count": 4,
                     "properties": {
                       "cellar": {
                         "kind": "string",
-                        "count": 3,
+                        "count": 4,
                         "formats": [
                           "plain"
                         ]
                       },
                       "sha256": {
                         "kind": "string",
-                        "count": 3,
+                        "count": 4,
                         "formats": [
                           "plain"
                         ]
                       },
                       "url": {
                         "kind": "string",
-                        "count": 3,
+                        "count": 4,
                         "formats": [
                           "uri"
                         ]
@@ -870,25 +870,25 @@
                   },
                   "x86_64_linux": {
                     "kind": "object",
-                    "count": 3,
+                    "count": 4,
                     "properties": {
                       "cellar": {
                         "kind": "string",
-                        "count": 3,
+                        "count": 4,
                         "formats": [
                           "plain"
                         ]
                       },
                       "sha256": {
                         "kind": "string",
-                        "count": 3,
+                        "count": 4,
                         "formats": [
                           "plain"
                         ]
                       },
                       "url": {
                         "kind": "string",
-                        "count": 3,
+                        "count": 4,
                         "formats": [
                           "uri"
                         ]
@@ -899,11 +899,11 @@
               },
               "rebuild": {
                 "kind": "integer",
-                "count": 3
+                "count": 4
               },
               "root_url": {
                 "kind": "string",
-                "count": 3,
+                "count": 4,
                 "formats": [
                   "uri"
                 ]
@@ -914,12 +914,12 @@
       },
       "build_dependencies": {
         "kind": "array",
-        "count": 3,
+        "count": 4,
         "minItems": 1,
         "maxItems": 1,
         "items": {
           "kind": "string",
-          "count": 3,
+          "count": 4,
           "formats": [
             "plain"
           ]
@@ -927,32 +927,32 @@
       },
       "caveats": {
         "kind": "null",
-        "count": 3
+        "count": 4
       },
       "compatibility_version": {
         "kind": "integer",
-        "count": 3
+        "count": 4
       },
       "conflicts_with": {
         "kind": "array",
-        "count": 3,
+        "count": 4,
         "minItems": 0,
         "maxItems": 0
       },
       "conflicts_with_reasons": {
         "kind": "array",
-        "count": 3,
+        "count": 4,
         "minItems": 0,
         "maxItems": 0
       },
       "dependencies": {
         "kind": "array",
-        "count": 3,
+        "count": 4,
         "minItems": 5,
         "maxItems": 5,
         "items": {
           "kind": "string",
-          "count": 15,
+          "count": 20,
           "formats": [
             "plain"
           ]
@@ -960,67 +960,67 @@
       },
       "deprecate_args": {
         "kind": "null",
-        "count": 3
+        "count": 4
       },
       "deprecated": {
         "kind": "boolean",
-        "count": 3
+        "count": 4
       },
       "deprecation_date": {
         "kind": "null",
-        "count": 3
+        "count": 4
       },
       "deprecation_reason": {
         "kind": "null",
-        "count": 3
+        "count": 4
       },
       "deprecation_replacement_cask": {
         "kind": "null",
-        "count": 3
+        "count": 4
       },
       "deprecation_replacement_formula": {
         "kind": "null",
-        "count": 3
+        "count": 4
       },
       "desc": {
         "kind": "string",
-        "count": 3,
+        "count": 4,
         "formats": [
           "plain"
         ]
       },
       "disable_args": {
         "kind": "null",
-        "count": 3
+        "count": 4
       },
       "disable_date": {
         "kind": "null",
-        "count": 3
+        "count": 4
       },
       "disable_reason": {
         "kind": "null",
-        "count": 3
+        "count": 4
       },
       "disable_replacement_cask": {
         "kind": "null",
-        "count": 3
+        "count": 4
       },
       "disable_replacement_formula": {
         "kind": "null",
-        "count": 3
+        "count": 4
       },
       "disabled": {
         "kind": "boolean",
-        "count": 3
+        "count": 4
       },
       "executables": {
         "kind": "array",
-        "count": 3,
+        "count": 4,
         "minItems": 1,
         "maxItems": 1,
         "items": {
           "kind": "string",
-          "count": 3,
+          "count": 4,
           "formats": [
             "plain"
           ]
@@ -1028,30 +1028,30 @@
       },
       "full_name": {
         "kind": "string",
-        "count": 3,
+        "count": 4,
         "formats": [
           "plain"
         ]
       },
       "generated_date": {
         "kind": "string",
-        "count": 3,
+        "count": 4,
         "formats": [
           "date"
         ]
       },
       "head_dependencies": {
         "kind": "object",
-        "count": 3,
+        "count": 4,
         "properties": {
           "build_dependencies": {
             "kind": "array",
-            "count": 3,
+            "count": 4,
             "minItems": 4,
             "maxItems": 4,
             "items": {
               "kind": "string",
-              "count": 12,
+              "count": 16,
               "formats": [
                 "plain"
               ]
@@ -1059,12 +1059,12 @@
           },
           "dependencies": {
             "kind": "array",
-            "count": 3,
+            "count": 4,
             "minItems": 5,
             "maxItems": 5,
             "items": {
               "kind": "string",
-              "count": 15,
+              "count": 20,
               "formats": [
                 "plain"
               ]
@@ -1072,37 +1072,37 @@
           },
           "no_linkage_dependencies": {
             "kind": "array",
-            "count": 3,
+            "count": 4,
             "minItems": 0,
             "maxItems": 0
           },
           "optional_dependencies": {
             "kind": "array",
-            "count": 3,
+            "count": 4,
             "minItems": 0,
             "maxItems": 0
           },
           "recommended_dependencies": {
             "kind": "array",
-            "count": 3,
+            "count": 4,
             "minItems": 0,
             "maxItems": 0
           },
           "test_dependencies": {
             "kind": "array",
-            "count": 3,
+            "count": 4,
             "minItems": 0,
             "maxItems": 0
           },
           "uses_from_macos": {
             "kind": "array",
-            "count": 3,
+            "count": 4,
             "minItems": 0,
             "maxItems": 0
           },
           "uses_from_macos_bounds": {
             "kind": "array",
-            "count": 3,
+            "count": 4,
             "minItems": 0,
             "maxItems": 0
           }
@@ -1110,119 +1110,119 @@
       },
       "homepage": {
         "kind": "string",
-        "count": 3,
+        "count": 4,
         "formats": [
           "uri"
         ]
       },
       "installed": {
         "kind": "array",
-        "count": 3,
+        "count": 4,
         "minItems": 0,
         "maxItems": 0
       },
       "keg_only": {
         "kind": "boolean",
-        "count": 3
+        "count": 4
       },
       "keg_only_reason": {
         "kind": "null",
-        "count": 3
+        "count": 4
       },
       "license": {
         "kind": "string",
-        "count": 3,
+        "count": 4,
         "formats": [
           "plain"
         ]
       },
       "link_overwrite": {
         "kind": "array",
-        "count": 3,
+        "count": 4,
         "minItems": 0,
         "maxItems": 0
       },
       "linked_keg": {
         "kind": "null",
-        "count": 3
+        "count": 4
       },
       "local_patch_checksums": {
         "kind": "object",
-        "count": 3,
+        "count": 4,
         "properties": {}
       },
       "name": {
         "kind": "string",
-        "count": 3,
+        "count": 4,
         "formats": [
           "plain"
         ]
       },
       "no_autobump_message": {
         "kind": "null",
-        "count": 3
+        "count": 4
       },
       "no_linkage_dependencies": {
         "kind": "array",
-        "count": 3,
+        "count": 4,
         "minItems": 0,
         "maxItems": 0
       },
       "oldnames": {
         "kind": "array",
-        "count": 3,
+        "count": 4,
         "minItems": 0,
         "maxItems": 0
       },
       "optional_dependencies": {
         "kind": "array",
-        "count": 3,
+        "count": 4,
         "minItems": 0,
         "maxItems": 0
       },
       "options": {
         "kind": "array",
-        "count": 3,
+        "count": 4,
         "minItems": 0,
         "maxItems": 0
       },
       "outdated": {
         "kind": "boolean",
-        "count": 3
+        "count": 4
       },
       "patches": {
         "kind": "array",
-        "count": 3,
+        "count": 4,
         "minItems": 1,
         "maxItems": 1,
         "items": {
           "kind": "object",
-          "count": 3,
+          "count": 4,
           "properties": {
             "sha256": {
               "kind": "string",
-              "count": 3,
+              "count": 4,
               "formats": [
                 "plain"
               ]
             },
             "strip": {
               "kind": "string",
-              "count": 3,
+              "count": 4,
               "formats": [
                 "plain"
               ]
             },
             "type": {
               "kind": "string",
-              "count": 3,
+              "count": 4,
               "formats": [
                 "plain"
               ]
             },
             "url": {
               "kind": "string",
-              "count": 3,
+              "count": 4,
               "formats": [
                 "uri"
               ]
@@ -1232,45 +1232,45 @@
       },
       "pinned": {
         "kind": "boolean",
-        "count": 3
+        "count": 4
       },
       "post_install_defined": {
         "kind": "boolean",
-        "count": 3
+        "count": 4
       },
       "post_install_steps": {
         "kind": "array",
-        "count": 3,
+        "count": 4,
         "minItems": 0,
         "maxItems": 0
       },
       "pour_bottle_only_if": {
         "kind": "null",
-        "count": 3
+        "count": 4
       },
       "recommended_dependencies": {
         "kind": "array",
-        "count": 3,
+        "count": 4,
         "minItems": 0,
         "maxItems": 0
       },
       "requirements": {
         "kind": "array",
-        "count": 3,
+        "count": 4,
         "minItems": 0,
         "maxItems": 0
       },
       "revision": {
         "kind": "integer",
-        "count": 3
+        "count": 4
       },
       "ruby_source_checksum": {
         "kind": "object",
-        "count": 3,
+        "count": 4,
         "properties": {
           "sha256": {
             "kind": "string",
-            "count": 3,
+            "count": 4,
             "formats": [
               "plain"
             ]
@@ -1279,96 +1279,96 @@
       },
       "ruby_source_path": {
         "kind": "string",
-        "count": 3,
+        "count": 4,
         "formats": [
           "plain"
         ]
       },
       "service": {
         "kind": "null",
-        "count": 3
+        "count": 4
       },
       "skip_livecheck": {
         "kind": "boolean",
-        "count": 3
+        "count": 4
       },
       "tap": {
         "kind": "string",
-        "count": 3,
+        "count": 4,
         "formats": [
           "plain"
         ]
       },
       "tap_git_head": {
         "kind": "string",
-        "count": 3,
+        "count": 4,
         "formats": [
           "plain"
         ]
       },
       "test_dependencies": {
         "kind": "array",
-        "count": 3,
+        "count": 4,
         "minItems": 0,
         "maxItems": 0
       },
       "urls": {
         "kind": "object",
-        "count": 3,
+        "count": 4,
         "properties": {
           "head": {
             "kind": "object",
-            "count": 3,
+            "count": 4,
             "properties": {
               "branch": {
                 "kind": "string",
-                "count": 3,
+                "count": 4,
                 "formats": [
                   "plain"
                 ]
               },
               "url": {
                 "kind": "string",
-                "count": 3,
+                "count": 4,
                 "formats": [
                   "uri"
                 ]
               },
               "using": {
                 "kind": "null",
-                "count": 3
+                "count": 4
               }
             }
           },
           "stable": {
             "kind": "object",
-            "count": 3,
+            "count": 4,
             "properties": {
               "checksum": {
                 "kind": "string",
-                "count": 3,
+                "count": 4,
                 "formats": [
                   "plain"
                 ]
               },
               "revision": {
                 "kind": "null",
-                "count": 3
+                "count": 4
               },
               "tag": {
                 "kind": "null",
-                "count": 3
+                "count": 4
               },
               "url": {
                 "kind": "string",
-                "count": 3,
+                "count": 4,
                 "formats": [
                   "uri"
                 ]
               },
               "using": {
                 "kind": "null",
-                "count": 3
+                "count": 4
               }
             }
           }
@@ -1376,32 +1376,32 @@
       },
       "uses_from_macos": {
         "kind": "array",
-        "count": 3,
+        "count": 4,
         "minItems": 0,
         "maxItems": 0
       },
       "uses_from_macos_bounds": {
         "kind": "array",
-        "count": 3,
+        "count": 4,
         "minItems": 0,
         "maxItems": 0
       },
       "variations": {
         "kind": "object",
-        "count": 3,
+        "count": 4,
         "properties": {
           "arm64_linux": {
             "kind": "object",
-            "count": 3,
+            "count": 4,
             "properties": {
               "dependencies": {
                 "kind": "array",
-                "count": 3,
+                "count": 4,
                 "minItems": 5,
                 "maxItems": 5,
                 "items": {
                   "kind": "string",
-                  "count": 15,
+                  "count": 20,
                   "formats": [
                     "plain"
                   ]
@@ -1409,16 +1409,16 @@
               },
               "head_dependencies": {
                 "kind": "object",
-                "count": 3,
+                "count": 4,
                 "properties": {
                   "build_dependencies": {
                     "kind": "array",
-                    "count": 3,
+                    "count": 4,
                     "minItems": 4,
                     "maxItems": 4,
                     "items": {
                       "kind": "string",
-                      "count": 12,
+                      "count": 16,
                       "formats": [
                         "plain"
                       ]
@@ -1426,12 +1426,12 @@
                   },
                   "dependencies": {
                     "kind": "array",
-                    "count": 3,
+                    "count": 4,
                     "minItems": 5,
                     "maxItems": 5,
                     "items": {
                       "kind": "string",
-                      "count": 15,
+                      "count": 20,
                       "formats": [
                         "plain"
                       ]
@@ -1439,37 +1439,37 @@
                   },
                   "no_linkage_dependencies": {
                     "kind": "array",
-                    "count": 3,
+                    "count": 4,
                     "minItems": 0,
                     "maxItems": 0
                   },
                   "optional_dependencies": {
                     "kind": "array",
-                    "count": 3,
+                    "count": 4,
                     "minItems": 0,
                     "maxItems": 0
                   },
                   "recommended_dependencies": {
                     "kind": "array",
-                    "count": 3,
+                    "count": 4,
                     "minItems": 0,
                     "maxItems": 0
                   },
                   "test_dependencies": {
                     "kind": "array",
-                    "count": 3,
+                    "count": 4,
                     "minItems": 0,
                     "maxItems": 0
                   },
                   "uses_from_macos": {
                     "kind": "array",
-                    "count": 3,
+                    "count": 4,
                     "minItems": 0,
                     "maxItems": 0
                   },
                   "uses_from_macos_bounds": {
                     "kind": "array",
-                    "count": 3,
+                    "count": 4,
                     "minItems": 0,
                     "maxItems": 0
                   }
@@ -1479,16 +1479,16 @@
           },
           "x86_64_linux": {
             "kind": "object",
-            "count": 3,
+            "count": 4,
             "properties": {
               "dependencies": {
                 "kind": "array",
-                "count": 3,
+                "count": 4,
                 "minItems": 5,
                 "maxItems": 5,
                 "items": {
                   "kind": "string",
-                  "count": 15,
+                  "count": 20,
                   "formats": [
                     "plain"
                   ]
@@ -1496,16 +1496,16 @@
               },
               "head_dependencies": {
                 "kind": "object",
-                "count": 3,
+                "count": 4,
                 "properties": {
                   "build_dependencies": {
                     "kind": "array",
-                    "count": 3,
+                    "count": 4,
                     "minItems": 4,
                     "maxItems": 4,
                     "items": {
                       "kind": "string",
-                      "count": 12,
+                      "count": 16,
                       "formats": [
                         "plain"
                       ]
@@ -1513,12 +1513,12 @@
                   },
                   "dependencies": {
                     "kind": "array",
-                    "count": 3,
+                    "count": 4,
                     "minItems": 5,
                     "maxItems": 5,
                     "items": {
                       "kind": "string",
-                      "count": 15,
+                      "count": 20,
                       "formats": [
                         "plain"
                       ]
@@ -1526,37 +1526,37 @@
                   },
                   "no_linkage_dependencies": {
                     "kind": "array",
-                    "count": 3,
+                    "count": 4,
                     "minItems": 0,
                     "maxItems": 0
                   },
                   "optional_dependencies": {
                     "kind": "array",
-                    "count": 3,
+                    "count": 4,
                     "minItems": 0,
                     "maxItems": 0
                   },
                   "recommended_dependencies": {
                     "kind": "array",
-                    "count": 3,
+                    "count": 4,
                     "minItems": 0,
                     "maxItems": 0
                   },
                   "test_dependencies": {
                     "kind": "array",
-                    "count": 3,
+                    "count": 4,
                     "minItems": 0,
                     "maxItems": 0
                   },
                   "uses_from_macos": {
                     "kind": "array",
-                    "count": 3,
+                    "count": 4,
                     "minItems": 0,
                     "maxItems": 0
                   },
                   "uses_from_macos_bounds": {
                     "kind": "array",
-                    "count": 3,
+                    "count": 4,
                     "minItems": 0,
                     "maxItems": 0
                   }
@@ -1568,32 +1568,32 @@
       },
       "version_scheme": {
         "kind": "integer",
-        "count": 3
+        "count": 4
       },
       "versioned_formulae": {
         "kind": "array",
-        "count": 3,
+        "count": 4,
         "minItems": 0,
         "maxItems": 0
       },
       "versions": {
         "kind": "object",
-        "count": 3,
+        "count": 4,
         "properties": {
           "bottle": {
             "kind": "boolean",
-            "count": 3
+            "count": 4
           },
           "head": {
             "kind": "string",
-            "count": 3,
+            "count": 4,
             "formats": [
               "plain"
             ]
           },
           "stable": {
             "kind": "string",
-            "count": 3,
+            "count": 4,
             "formats": [
               "semver"
             ]
@@ -1603,7 +1603,7 @@
     }
   },
   "fieldCount": 160,
-  "samples": 3,
+  "samples": 4,
   "firstSeenAt": "2026-10-22T21:45:34.000Z",
   "contractSince": "2026-10-22T22:15:38.000Z",
   "weather": {
@@ -1614,22 +1614,22 @@
   },
   "stats": {
     "d1": {
-      "checks": 1,
-      "ok": 1,
+      "checks": 2,
+      "ok": 2,
       "uptime": 1,
-      "p50": 310,
+      "p50": 235,
       "p95": 310
     },
     "d7": {
-      "checks": 6,
-      "ok": 6,
+      "checks": 7,
+      "ok": 7,
       "uptime": 1,
       "p50": 307,
       "p95": 348
     },
     "d30": {
-      "checks": 6,
-      "ok": 6,
+      "checks": 7,
+      "ok": 7,
       "uptime": 1,
       "p50": 307,
       "p95": 348

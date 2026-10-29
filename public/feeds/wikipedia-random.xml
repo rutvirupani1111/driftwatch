@@ -5,9 +5,20 @@
   <id>https://rutvirupani1111.github.io/driftwatch/feeds/wikipedia-random.xml</id>
   <link rel="self" type="application/atom+xml" href="https://rutvirupani1111.github.io/driftwatch/feeds/wikipedia-random.xml"/>
   <link rel="alternate" type="text/html" href="https://rutvirupani1111.github.io/driftwatch/api/wikipedia-random"/>
-  <updated>2026-10-22T22:09:00.000Z</updated>
+  <updated>2026-10-29T12:58:25.000Z</updated>
   <author><name>Driftwatch</name></author>
   <generator uri="https://github.com/rutvirupani1111/driftwatch">Driftwatch</generator>
+  <entry>
+    <title>[info] Wikipedia REST: random summary: $.coordinates: new field (object) (1 info)</title>
+    <id>https://rutvirupani1111.github.io/driftwatch/feeds/wikipedia-random#wikipedia-random@2026-10-29T12:58:25.000Z</id>
+    <link rel="alternate" type="text/html" href="https://rutvirupani1111.github.io/driftwatch/api/wikipedia-random#wikipedia-random%402026-10-29T12%3A58%3A25.000Z"/>
+    <updated>2026-10-29T12:58:25.000Z</updated>
+    <published>2026-10-29T12:58:25.000Z</published>
+    <category term="info" label="info"/>
+    <category term="wikipedia-random"/>
+    <summary>$.coordinates: new field (object) (1 info)</summary>
+    <content type="html">&lt;p&gt;$.coordinates: new field (object) (1 info)&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;strong&gt;info&lt;/strong&gt; new field (object) &lt;code&gt;missing&lt;/code&gt; → &lt;code&gt;object&lt;/code&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;Fingerprint 0288cfd41b459c45 → a160383cfee096dd&lt;/p&gt;</content>
+  </entry>
   <entry>
     <title>[breaking] Wikipedia REST: random summary: $.coordinates was removed (1 breaking)</title>
     <id>https://rutvirupani1111.github.io/driftwatch/feeds/wikipedia-random#wikipedia-random@2026-10-22T22:09:00.000Z</id>
