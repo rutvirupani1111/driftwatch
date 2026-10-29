@@ -7,15 +7,15 @@
   "method": "GET",
   "docs": "https://open-meteo.com/en/docs",
   "description": "Today's forecast for Mumbai. A real weather API, watched for weather.",
-  "checkedAt": "2026-10-22T22:22:39.000Z",
+  "checkedAt": "2026-10-29T05:45:42.000Z",
   "ok": true,
   "status": 200,
-  "latencyMs": 609,
+  "latencyMs": 507,
   "sizeBytes": 1154,
   "contentType": "application/json; charset=utf-8",
   "error": null,
   "engine": "api-drift/shape@1",
-  "fingerprint": "ee2828aae1e73b1b",
+  "fingerprint": "a6b030fd07eb9f5a",
   "contract": {
     "type": "object",
     "properties": {
@@ -29,7 +29,7 @@
             "type": "integer"
           },
           "temperature_2m": {
-            "type": "integer"
+            "type": "number"
           },
           "time": {
             "type": "string",
@@ -120,84 +120,85 @@
   },
   "shape": {
     "kind": "object",
-    "count": 2,
+    "count": 3,
     "properties": {
       "current": {
         "kind": "object",
-        "count": 2,
+        "count": 3,
         "properties": {
           "interval": {
             "kind": "integer",
-            "count": 2
+            "count": 3
           },
           "relative_humidity_2m": {
             "kind": "integer",
-            "count": 2
+            "count": 3
           },
           "temperature_2m": {
-            "kind": "integer",
-            "count": 2
+            "kind": "number",
+            "count": 3,
+            "integral": 2
           },
           "time": {
             "kind": "string",
-            "count": 2,
+            "count": 3,
             "formats": [
               "date-time"
             ]
           },
           "weather_code": {
             "kind": "integer",
-            "count": 2
+            "count": 3
           },
           "wind_speed_10m": {
             "kind": "number",
-            "count": 2,
+            "count": 3,
             "integral": 0
           }
         }
       },
       "current_units": {
         "kind": "object",
-        "count": 2,
+        "count": 3,
         "properties": {
           "interval": {
             "kind": "string",
-            "count": 2,
+            "count": 3,
             "formats": [
               "plain"
             ]
           },
           "relative_humidity_2m": {
             "kind": "string",
-            "count": 2,
+            "count": 3,
             "formats": [
               "plain"
             ]
           },
           "temperature_2m": {
             "kind": "string",
-            "count": 2,
+            "count": 3,
             "formats": [
               "plain"
             ]
           },
           "time": {
             "kind": "string",
-            "count": 2,
+            "count": 3,
             "formats": [
               "plain"
             ]
           },
           "weather_code": {
             "kind": "string",
-            "count": 2,
+            "count": 3,
             "formats": [
               "plain"
             ]
           },
           "wind_speed_10m": {
             "kind": "string",
-            "count": 2,
+            "count": 3,
             "formats": [
               "plain"
             ]
@@ -206,36 +207,36 @@
       },
       "elevation": {
         "kind": "integer",
-        "count": 2
+        "count": 3
       },
       "generationtime_ms": {
         "kind": "number",
-        "count": 2,
+        "count": 3,
         "integral": 0
       },
       "hourly": {
         "kind": "object",
-        "count": 2,
+        "count": 3,
         "properties": {
           "temperature_2m": {
             "kind": "array",
-            "count": 2,
+            "count": 3,
             "minItems": 24,
             "maxItems": 24,
             "items": {
               "kind": "number",
-              "count": 48,
-              "integral": 2
+              "count": 72,
+              "integral": 6
             }
           },
           "time": {
             "kind": "array",
-            "count": 2,
+            "count": 3,
             "minItems": 24,
             "maxItems": 24,
             "items": {
               "kind": "string",
-              "count": 48,
+              "count": 72,
               "formats": [
                 "date-time"
               ]
@@ -245,18 +246,18 @@
       },
       "hourly_units": {
         "kind": "object",
-        "count": 2,
+        "count": 3,
         "properties": {
           "temperature_2m": {
             "kind": "string",
-            "count": 2,
+            "count": 3,
             "formats": [
               "plain"
             ]
           },
           "time": {
             "kind": "string",
-            "count": 2,
+            "count": 3,
             "formats": [
               "plain"
             ]
@@ -265,38 +266,38 @@
       },
       "latitude": {
         "kind": "number",
-        "count": 2,
+        "count": 3,
         "integral": 0
       },
       "longitude": {
         "kind": "number",
-        "count": 2,
+        "count": 3,
         "integral": 0
       },
       "timezone": {
         "kind": "string",
-        "count": 2,
+        "count": 3,
         "formats": [
           "plain"
         ]
       },
       "timezone_abbreviation": {
         "kind": "string",
-        "count": 2,
+        "count": 3,
         "formats": [
           "plain"
         ]
       },
       "utc_offset_seconds": {
         "kind": "integer",
-        "count": 2
+        "count": 3
       }
     }
   },
   "fieldCount": 27,
-  "samples": 2,
+  "samples": 3,
   "firstSeenAt": "2026-10-22T21:45:35.000Z",
-  "contractSince": "2026-10-22T22:15:39.000Z",
+  "contractSince": "2026-10-29T05:45:42.000Z",
   "weather": {
     "condition": "sunny",
     "headline": "Clear skies",
@@ -305,24 +306,24 @@
   },
   "stats": {
     "d1": {
-      "checks": 5,
-      "ok": 5,
+      "checks": 1,
+      "ok": 1,
       "uptime": 1,
-      "p50": 635,
-      "p95": 690
+      "p50": 507,
+      "p95": 507
     },
     "d7": {
-      "checks": 5,
-      "ok": 5,
+      "checks": 6,
+      "ok": 6,
       "uptime": 1,
-      "p50": 635,
+      "p50": 609,
       "p95": 690
     },
     "d30": {
-      "checks": 5,
-      "ok": 5,
+      "checks": 6,
+      "ok": 6,
       "uptime": 1,
-      "p50": 635,
+      "p50": 609,
       "p95": 690
     }
   }

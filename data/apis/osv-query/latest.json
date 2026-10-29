@@ -7,10 +7,10 @@
   "method": "POST",
   "docs": "https://google.github.io/osv.dev/post-v1-query/",
   "description": "Known vulnerabilities for lodash 4.17.20 (a POST endpoint).",
-  "checkedAt": "2026-10-22T22:22:38.000Z",
+  "checkedAt": "2026-10-29T05:45:42.000Z",
   "ok": true,
   "status": 200,
-  "latencyMs": 577,
+  "latencyMs": 261,
   "sizeBytes": 18737,
   "contentType": "application/json",
   "error": null,
@@ -187,40 +187,40 @@
   },
   "shape": {
     "kind": "object",
-    "count": 2,
+    "count": 3,
     "properties": {
       "vulns": {
         "kind": "array",
-        "count": 2,
+        "count": 3,
         "minItems": 5,
         "maxItems": 5,
         "items": {
           "kind": "object",
-          "count": 10,
+          "count": 15,
           "properties": {
             "affected": {
               "kind": "array",
-              "count": 10,
+              "count": 15,
               "minItems": 4,
               "maxItems": 5,
               "items": {
                 "kind": "object",
-                "count": 44,
+                "count": 66,
                 "properties": {
                   "database_specific": {
                     "kind": "object",
-                    "count": 44,
+                    "count": 66,
                     "properties": {
                       "last_known_affected_version_range": {
                         "kind": "string",
-                        "count": 18,
+                        "count": 27,
                         "formats": [
                           "plain"
                         ]
                       },
                       "source": {
                         "kind": "string",
-                        "count": 44,
+                        "count": 66,
                         "formats": [
                           "uri"
                         ]
@@ -229,25 +229,25 @@
                   },
                   "package": {
                     "kind": "object",
-                    "count": 44,
+                    "count": 66,
                     "properties": {
                       "ecosystem": {
                         "kind": "string",
-                        "count": 44,
+                        "count": 66,
                         "formats": [
                           "plain"
                         ]
                       },
                       "name": {
                         "kind": "string",
-                        "count": 44,
+                        "count": 66,
                         "formats": [
                           "plain"
                         ]
                       },
                       "purl": {
                         "kind": "string",
-                        "count": 44,
+                        "count": 66,
                         "formats": [
                           "plain"
                         ]
@@ -256,32 +256,32 @@
                   },
                   "ranges": {
                     "kind": "array",
-                    "count": 44,
+                    "count": 66,
                     "minItems": 1,
                     "maxItems": 1,
                     "items": {
                       "kind": "object",
-                      "count": 44,
+                      "count": 66,
                       "properties": {
                         "events": {
                           "kind": "array",
-                          "count": 44,
+                          "count": 66,
                           "minItems": 2,
                           "maxItems": 2,
                           "items": {
                             "kind": "object",
-                            "count": 88,
+                            "count": 132,
                             "properties": {
                               "fixed": {
                                 "kind": "string",
-                                "count": 34,
+                                "count": 51,
                                 "formats": [
                                   "semver"
                                 ]
                               },
                               "introduced": {
                                 "kind": "string",
-                                "count": 44,
+                                "count": 66,
                                 "formats": [
                                   "numeric-string",
                                   "semver"
@@ -289,7 +289,7 @@
                               },
                               "last_affected": {
                                 "kind": "string",
-                                "count": 10,
+                                "count": 15,
                                 "formats": [
                                   "semver"
                                 ]
@@ -299,7 +299,7 @@
                         },
                         "type": {
                           "kind": "string",
-                          "count": 44,
+                          "count": 66,
                           "formats": [
                             "plain"
                           ]
@@ -309,12 +309,12 @@
                   },
                   "versions": {
                     "kind": "array",
-                    "count": 4,
+                    "count": 6,
                     "minItems": 20,
                     "maxItems": 55,
                     "items": {
                       "kind": "string",
-                      "count": 140,
+                      "count": 210,
                       "formats": [
                         "ipv4",
                         "plain",
@@ -327,12 +327,12 @@
             },
             "aliases": {
               "kind": "array",
-              "count": 10,
+              "count": 15,
               "minItems": 1,
               "maxItems": 1,
               "items": {
                 "kind": "string",
-                "count": 10,
+                "count": 15,
                 "formats": [
                   "plain"
                 ]
@@ -340,16 +340,16 @@
             },
             "database_specific": {
               "kind": "object",
-              "count": 10,
+              "count": 15,
               "properties": {
                 "cwe_ids": {
                   "kind": "array",
-                  "count": 10,
+                  "count": 15,
                   "minItems": 1,
                   "maxItems": 2,
                   "items": {
                     "kind": "string",
-                    "count": 14,
+                    "count": 21,
                     "formats": [
                       "plain"
                     ]
@@ -357,25 +357,25 @@
                 },
                 "github_reviewed": {
                   "kind": "boolean",
-                  "count": 10
+                  "count": 15
                 },
                 "github_reviewed_at": {
                   "kind": "string",
-                  "count": 10,
+                  "count": 15,
                   "formats": [
                     "date-time"
                   ]
                 },
                 "nvd_published_at": {
                   "kind": "string",
-                  "count": 10,
+                  "count": 15,
                   "formats": [
                     "date-time"
                   ]
                 },
                 "severity": {
                   "kind": "string",
-                  "count": 10,
+                  "count": 15,
                   "formats": [
                     "plain"
                   ]
@@ -384,51 +384,51 @@
             },
             "details": {
               "kind": "string",
-              "count": 10,
+              "count": 15,
               "formats": [
                 "plain"
               ]
             },
             "id": {
               "kind": "string",
-              "count": 10,
+              "count": 15,
               "formats": [
                 "plain"
               ]
             },
             "modified": {
               "kind": "string",
-              "count": 10,
+              "count": 15,
               "formats": [
                 "date-time"
               ]
             },
             "published": {
               "kind": "string",
-              "count": 10,
+              "count": 15,
               "formats": [
                 "date-time"
               ]
             },
             "references": {
               "kind": "array",
-              "count": 10,
+              "count": 15,
               "minItems": 4,
               "maxItems": 20,
               "items": {
                 "kind": "object",
-                "count": 104,
+                "count": 156,
                 "properties": {
                   "type": {
                     "kind": "string",
-                    "count": 104,
+                    "count": 156,
                     "formats": [
                       "plain"
                     ]
                   },
                   "url": {
                     "kind": "string",
-                    "count": 104,
+                    "count": 156,
                     "formats": [
                       "uri"
                     ]
@@ -438,30 +438,30 @@
             },
             "schema_version": {
               "kind": "string",
-              "count": 10,
+              "count": 15,
               "formats": [
                 "semver"
               ]
             },
             "severity": {
               "kind": "array",
-              "count": 10,
+              "count": 15,
               "minItems": 1,
               "maxItems": 2,
               "items": {
                 "kind": "object",
-                "count": 12,
+                "count": 18,
                 "properties": {
                   "score": {
                     "kind": "string",
-                    "count": 12,
+                    "count": 18,
                     "formats": [
                       "plain"
                     ]
                   },
                   "type": {
                     "kind": "string",
-                    "count": 12,
+                    "count": 18,
                     "formats": [
                       "plain"
                     ]
@@ -471,7 +471,7 @@
             },
             "summary": {
               "kind": "string",
-              "count": 10,
+              "count": 15,
               "formats": [
                 "plain"
               ]
@@ -482,7 +482,7 @@
     }
   },
   "fieldCount": 35,
-  "samples": 2,
+  "samples": 3,
   "firstSeenAt": "2026-10-22T21:45:35.000Z",
   "contractSince": "2026-10-22T22:15:38.000Z",
   "weather": {
@@ -493,24 +493,24 @@
   },
   "stats": {
     "d1": {
-      "checks": 5,
-      "ok": 5,
+      "checks": 1,
+      "ok": 1,
       "uptime": 1,
-      "p50": 609,
-      "p95": 930
+      "p50": 261,
+      "p95": 261
     },
     "d7": {
-      "checks": 5,
-      "ok": 5,
+      "checks": 6,
+      "ok": 6,
       "uptime": 1,
-      "p50": 609,
+      "p50": 583,
       "p95": 930
     },
     "d30": {
-      "checks": 5,
-      "ok": 5,
+      "checks": 6,
+      "ok": 6,
       "uptime": 1,
-      "p50": 609,
+      "p50": 583,
       "p95": 930
     }
   }
