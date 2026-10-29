@@ -7,10 +7,10 @@
   "method": "GET",
   "docs": "https://frankfurter.dev/",
   "description": "ECB reference rates for USD against INR, EUR and GBP.",
-  "checkedAt": "2026-10-22T22:22:40.000Z",
+  "checkedAt": "2026-10-29T05:45:43.000Z",
   "ok": true,
   "status": 200,
-  "latencyMs": 138,
+  "latencyMs": 374,
   "sizeBytes": 97,
   "contentType": "application/json; charset=utf-8",
   "error": null,
@@ -47,43 +47,43 @@
   },
   "shape": {
     "kind": "object",
-    "count": 2,
+    "count": 3,
     "properties": {
       "amount": {
         "kind": "integer",
-        "count": 2
+        "count": 3
       },
       "base": {
         "kind": "string",
-        "count": 2,
+        "count": 3,
         "formats": [
           "plain"
         ]
       },
       "date": {
         "kind": "string",
-        "count": 2,
+        "count": 3,
         "formats": [
           "date"
         ]
       },
       "rates": {
         "kind": "object",
-        "count": 2,
+        "count": 3,
         "properties": {
           "EUR": {
             "kind": "number",
-            "count": 2,
+            "count": 3,
             "integral": 0
           },
           "GBP": {
             "kind": "number",
-            "count": 2,
+            "count": 3,
             "integral": 0
           },
           "INR": {
             "kind": "number",
-            "count": 2,
+            "count": 3,
             "integral": 0
           }
         }
@@ -91,7 +91,7 @@
     }
   },
   "fieldCount": 7,
-  "samples": 2,
+  "samples": 3,
   "firstSeenAt": "2026-10-22T21:45:36.000Z",
   "contractSince": "2026-10-22T22:15:39.000Z",
   "weather": {
@@ -102,22 +102,22 @@
   },
   "stats": {
     "d1": {
-      "checks": 5,
-      "ok": 5,
+      "checks": 1,
+      "ok": 1,
       "uptime": 1,
-      "p50": 120,
-      "p95": 407
+      "p50": 374,
+      "p95": 374
     },
     "d7": {
-      "checks": 5,
-      "ok": 5,
+      "checks": 6,
+      "ok": 6,
       "uptime": 1,
       "p50": 120,
       "p95": 407
     },
     "d30": {
-      "checks": 5,
-      "ok": 5,
+      "checks": 6,
+      "ok": 6,
       "uptime": 1,
       "p50": 120,
       "p95": 407

@@ -1,6 +1,60 @@
 {
-  "generatedAt": "2026-10-22T22:22:41.814Z",
+  "generatedAt": "2026-10-29T05:45:44.101Z",
   "events": [
+    {
+      "id": "github-repo@2026-10-29T05:45:42.000Z",
+      "apiId": "github-repo",
+      "apiName": "GitHub REST: repository",
+      "at": "2026-10-29T05:45:42.000Z",
+      "severity": "info",
+      "summary": "$.permissions: new field (object); +1 more (2 info)",
+      "fingerprintBefore": "d4a0ceff6c08396a",
+      "fingerprintAfter": "2d6df62b97bff50f",
+      "changes": [
+        {
+          "path": "$.permissions",
+          "kind": "added",
+          "severity": "info",
+          "message": "new field (object)",
+          "after": "object",
+          "afterNode": {
+            "type": "object",
+            "properties": {
+              "admin": {
+                "type": "boolean"
+              },
+              "maintain": {
+                "type": "boolean"
+              },
+              "pull": {
+                "type": "boolean"
+              },
+              "push": {
+                "type": "boolean"
+              },
+              "triage": {
+                "type": "boolean"
+              }
+            }
+          }
+        },
+        {
+          "path": "$.temp_clone_token",
+          "kind": "type-learned",
+          "severity": "info",
+          "message": "now string<empty> (baseline only saw null)",
+          "before": "null",
+          "after": "string<empty>",
+          "beforeNode": {
+            "type": "null"
+          },
+          "afterNode": {
+            "type": "string",
+            "format": "empty"
+          }
+        }
+      ]
+    },
     {
       "id": "wikipedia-random@2026-10-22T22:09:00.000Z",
       "apiId": "wikipedia-random",
