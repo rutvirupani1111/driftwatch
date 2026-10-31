@@ -1,1 +1,62 @@
-[]
+[
+  {
+    "id": "homebrew@2026-10-31T12:25:20.000Z",
+    "apiId": "homebrew",
+    "apiName": "Homebrew formula: wget",
+    "at": "2026-10-31T12:25:20.000Z",
+    "severity": "info",
+    "summary": "$.github_packages_downloads: new field (object) (1 info)",
+    "fingerprintBefore": "70472c128e6e2854",
+    "fingerprintAfter": "49898dc6050eadfc",
+    "changes": [
+      {
+        "path": "$.github_packages_downloads",
+        "kind": "added",
+        "severity": "info",
+        "message": "new field (object)",
+        "after": "object",
+        "afterNode": {
+          "type": "object",
+          "properties": {
+            "all_time": {
+              "type": "integer"
+            },
+            "analytics_30d": {
+              "type": "integer"
+            },
+            "analytics_end_date": {
+              "type": "string",
+              "format": "date"
+            },
+            "analytics_ratio": {
+              "type": "number"
+            },
+            "analytics_start_date": {
+              "type": "string",
+              "format": "date"
+            },
+            "end_date": {
+              "type": "string",
+              "format": "date"
+            },
+            "fetched_at": {
+              "type": "string",
+              "format": "date-time"
+            },
+            "last_30_days": {
+              "type": "integer"
+            },
+            "source": {
+              "type": "string",
+              "format": "uri"
+            },
+            "start_date": {
+              "type": "string",
+              "format": "date"
+            }
+          }
+        }
+      }
+    ]
+  }
+]
