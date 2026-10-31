@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="155" height="20" role="img" aria-label="schema: changed 7h ago">
-  <title>schema: changed 7h ago</title>
+<svg xmlns="http://www.w3.org/2000/svg" width="155" height="20" role="img" aria-label="schema: changed 2d ago">
+  <title>schema: changed 2d ago</title>
   <linearGradient id="s" x2="0" y2="100%"><stop offset="0" stop-color="#bbb" stop-opacity=".1"/><stop offset="1" stop-opacity=".1"/></linearGradient>
   <clipPath id="r"><rect width="155" height="20" rx="3" fill="#fff"/></clipPath>
   <g clip-path="url(#r)">
@@ -10,7 +10,7 @@
   <g fill="#fff" text-anchor="middle" font-family="Verdana,Geneva,DejaVu Sans,sans-serif" text-rendering="geometricPrecision" font-size="11">
     <text x="28" y="15" fill="#010101" fill-opacity=".3">schema</text>
     <text x="28" y="14">schema</text>
-    <text x="105.5" y="15" fill="#010101" fill-opacity=".3">changed 7h ago</text>
-    <text x="105.5" y="14">changed 7h ago</text>
+    <text x="105.5" y="15" fill="#010101" fill-opacity=".3">changed 2d ago</text>
+    <text x="105.5" y="14">changed 2d ago</text>
   </g>
 </svg>

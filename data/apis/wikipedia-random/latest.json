@@ -7,11 +7,11 @@
   "method": "GET",
   "docs": "https://en.wikipedia.org/api/rest_v1/",
   "description": "A different article on every call, so optional fields (coordinates, thumbnails) come and go: the learned contract has to cope.",
-  "checkedAt": "2026-10-29T12:58:25.000Z",
+  "checkedAt": "2026-10-31T12:25:20.000Z",
   "ok": true,
   "status": 200,
-  "latencyMs": 476,
-  "sizeBytes": 2521,
+  "latencyMs": 332,
+  "sizeBytes": 2964,
   "contentType": "application/json; charset=utf-8; profile=\"https://www.mediawiki.org/wiki/Specs/Summary/1.5.0\"",
   "error": null,
   "engine": "api-drift/shape@1",
@@ -183,40 +183,40 @@
   },
   "shape": {
     "kind": "object",
-    "count": 4,
+    "count": 11,
     "properties": {
       "content_urls": {
         "kind": "object",
-        "count": 4,
+        "count": 11,
         "properties": {
           "desktop": {
             "kind": "object",
-            "count": 4,
+            "count": 11,
             "properties": {
               "edit": {
                 "kind": "string",
-                "count": 4,
+                "count": 11,
                 "formats": [
                   "uri"
                 ]
               },
               "page": {
                 "kind": "string",
-                "count": 4,
+                "count": 11,
                 "formats": [
                   "uri"
                 ]
               },
               "revisions": {
                 "kind": "string",
-                "count": 4,
+                "count": 11,
                 "formats": [
                   "uri"
                 ]
               },
               "talk": {
                 "kind": "string",
-                "count": 4,
+                "count": 11,
                 "formats": [
                   "uri"
                 ]
@@ -225,32 +225,32 @@
           },
           "mobile": {
             "kind": "object",
-            "count": 4,
+            "count": 11,
             "properties": {
               "edit": {
                 "kind": "string",
-                "count": 4,
+                "count": 11,
                 "formats": [
                   "uri"
                 ]
               },
               "page": {
                 "kind": "string",
-                "count": 4,
+                "count": 11,
                 "formats": [
                   "uri"
                 ]
               },
               "revisions": {
                 "kind": "string",
-                "count": 4,
+                "count": 11,
                 "formats": [
                   "uri"
                 ]
               },
               "talk": {
                 "kind": "string",
-                "count": 4,
+                "count": 11,
                 "formats": [
                   "uri"
                 ]
@@ -278,64 +278,64 @@
       },
       "description": {
         "kind": "string",
-        "count": 4,
+        "count": 11,
         "formats": [
           "plain"
         ]
       },
       "description_source": {
         "kind": "string",
-        "count": 4,
+        "count": 11,
         "formats": [
           "plain"
         ]
       },
       "dir": {
         "kind": "string",
-        "count": 4,
+        "count": 11,
         "formats": [
           "plain"
         ]
       },
       "displaytitle": {
         "kind": "string",
-        "count": 4,
+        "count": 11,
         "formats": [
           "plain"
         ]
       },
       "extract": {
         "kind": "string",
-        "count": 4,
+        "count": 11,
         "formats": [
           "plain"
         ]
       },
       "extract_html": {
         "kind": "string",
-        "count": 4,
+        "count": 11,
         "formats": [
           "plain"
         ]
       },
       "lang": {
         "kind": "string",
-        "count": 4,
+        "count": 11,
         "formats": [
           "plain"
         ]
       },
       "namespace": {
         "kind": "object",
-        "count": 4,
+        "count": 11,
         "properties": {
           "id": {
             "kind": "integer",
-            "count": 4
+            "count": 11
           },
           "text": {
             "kind": "string",
-            "count": 4,
+            "count": 11,
             "formats": [
               "empty"
             ]
@@ -344,99 +344,99 @@
       },
       "originalimage": {
         "kind": "object",
-        "count": 4,
+        "count": 11,
         "properties": {
           "height": {
             "kind": "integer",
-            "count": 4
+            "count": 11
           },
           "source": {
             "kind": "string",
-            "count": 4,
+            "count": 11,
             "formats": [
               "uri"
             ]
           },
           "width": {
             "kind": "integer",
-            "count": 4
+            "count": 11
           }
         }
       },
       "pageid": {
         "kind": "integer",
-        "count": 4
+        "count": 11
       },
       "revision": {
         "kind": "string",
-        "count": 4,
+        "count": 11,
         "formats": [
           "numeric-string"
         ]
       },
       "thumbnail": {
         "kind": "object",
-        "count": 4,
+        "count": 11,
         "properties": {
           "height": {
             "kind": "integer",
-            "count": 4
+            "count": 11
           },
           "source": {
             "kind": "string",
-            "count": 4,
+            "count": 11,
             "formats": [
               "uri"
             ]
           },
           "width": {
             "kind": "integer",
-            "count": 4
+            "count": 11
           }
         }
       },
       "tid": {
         "kind": "string",
-        "count": 4,
+        "count": 11,
         "formats": [
           "uuid"
         ]
       },
       "timestamp": {
         "kind": "string",
-        "count": 4,
+        "count": 11,
         "formats": [
           "date-time"
         ]
       },
       "title": {
         "kind": "string",
-        "count": 4,
+        "count": 11,
         "formats": [
           "plain"
         ]
       },
       "titles": {
         "kind": "object",
-        "count": 4,
+        "count": 11,
         "properties": {
           "canonical": {
             "kind": "string",
-            "count": 4,
+            "count": 11,
             "formats": [
               "plain"
             ]
           },
           "display": {
             "kind": "string",
-            "count": 4,
+            "count": 11,
             "formats": [
               "plain"
             ]
           },
           "normalized": {
             "kind": "string",
-            "count": 4,
+            "count": 11,
             "formats": [
               "plain"
             ]
@@ -445,14 +445,14 @@
       },
       "type": {
         "kind": "string",
-        "count": 4,
+        "count": 11,
         "formats": [
           "plain"
         ]
       },
       "wikibase_item": {
         "kind": "string",
-        "count": 4,
+        "count": 11,
         "formats": [
           "plain"
         ]
@@ -460,7 +460,7 @@
     }
   },
   "fieldCount": 43,
-  "samples": 4,
+  "samples": 11,
   "firstSeenAt": "2026-10-22T21:50:47.000Z",
   "contractSince": "2026-10-29T12:58:25.000Z",
   "lastChange": {
@@ -470,29 +470,29 @@
     "summary": "$.coordinates: new field (object) (1 info)"
   },
   "weather": {
-    "condition": "storm",
-    "headline": "Storm",
-    "reason": "$.coordinates was removed (1 breaking)",
-    "since": "2026-10-22T22:09:00.000Z"
+    "condition": "partly-cloudy",
+    "headline": "Partly cloudy",
+    "reason": "$.coordinates: new field (object) (1 info)",
+    "since": "2026-10-29T12:58:25.000Z"
   },
   "stats": {
     "d1": {
-      "checks": 2,
-      "ok": 2,
+      "checks": 4,
+      "ok": 4,
       "uptime": 1,
-      "p50": 203,
-      "p95": 476
+      "p50": 462,
+      "p95": 1447
     },
     "d7": {
-      "checks": 6,
-      "ok": 6,
+      "checks": 9,
+      "ok": 9,
       "uptime": 1,
-      "p50": 1076,
-      "p95": 1761
+      "p50": 476,
+      "p95": 1447
     },
     "d30": {
-      "checks": 6,
-      "ok": 6,
+      "checks": 13,
+      "ok": 13,
       "uptime": 1,
       "p50": 1076,
       "p95": 1761
