@@ -7,11 +7,11 @@
   "method": "GET",
   "docs": "https://dog.ceo/dog-api/documentation/",
   "description": "A random dog photo URL, the friendliest envelope on the web.",
-  "checkedAt": "2026-11-01T06:00:03.000Z",
+  "checkedAt": "2026-11-01T13:20:43.000Z",
   "ok": true,
   "status": 200,
-  "latencyMs": 673,
-  "sizeBytes": 105,
+  "latencyMs": 421,
+  "sizeBytes": 91,
   "contentType": "application/json",
   "error": null,
   "engine": "api-drift/shape@1",
@@ -30,18 +30,18 @@
   },
   "shape": {
     "kind": "object",
-    "count": 14,
+    "count": 15,
     "properties": {
       "message": {
         "kind": "string",
-        "count": 14,
+        "count": 15,
         "formats": [
           "uri"
         ]
       },
       "status": {
         "kind": "string",
-        "count": 14,
+        "count": 15,
         "formats": [
           "plain"
         ]
@@ -49,7 +49,7 @@
     }
   },
   "fieldCount": 2,
-  "samples": 14,
+  "samples": 15,
   "firstSeenAt": "2026-10-22T21:45:37.000Z",
   "contractSince": "2026-10-22T22:15:40.000Z",
   "weather": {
@@ -63,21 +63,21 @@
       "checks": 4,
       "ok": 4,
       "uptime": 1,
-      "p50": 208,
+      "p50": 268,
       "p95": 673
     },
     "d7": {
-      "checks": 12,
-      "ok": 12,
+      "checks": 13,
+      "ok": 13,
       "uptime": 1,
-      "p50": 340,
+      "p50": 374,
       "p95": 673
     },
     "d30": {
-      "checks": 17,
-      "ok": 17,
+      "checks": 18,
+      "ok": 18,
       "uptime": 1,
-      "p50": 502,
+      "p50": 429,
       "p95": 673
     }
   }
