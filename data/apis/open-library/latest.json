@@ -7,13 +7,15 @@
   "method": "GET",
   "docs": "https://openlibrary.org/dev/docs/api/books",
   "description": "The work record for Fantastic Mr Fox.",
-  "checkedAt": "2026-11-01T13:20:43.000Z",
-  "ok": true,
-  "status": 200,
-  "latencyMs": 55,
-  "sizeBytes": 2660,
-  "contentType": "application/json",
-  "error": null,
+  "checkedAt": "2026-11-03T17:02:02.000Z",
+  "ok": false,
+  "status": 0,
+  "latencyMs": 63,
+  "sizeBytes": 0,
+  "error": {
+    "code": "network",
+    "message": "Connection reset"
+  },
   "engine": "api-drift/shape@1",
   "fingerprint": "330a32edc3a34001",
   "contract": {
@@ -133,24 +135,24 @@
   },
   "shape": {
     "kind": "object",
-    "count": 15,
+    "count": 20,
     "properties": {
       "authors": {
         "kind": "array",
-        "count": 15,
+        "count": 20,
         "minItems": 1,
         "maxItems": 1,
         "items": {
           "kind": "object",
-          "count": 15,
+          "count": 20,
           "properties": {
             "author": {
               "kind": "object",
-              "count": 15,
+              "count": 20,
               "properties": {
                 "key": {
                   "kind": "string",
-                  "count": 15,
+                  "count": 20,
                   "formats": [
                     "plain"
                   ]
@@ -159,11 +161,11 @@
             },
             "type": {
               "kind": "object",
-              "count": 15,
+              "count": 20,
               "properties": {
                 "key": {
                   "kind": "string",
-                  "count": 15,
+                  "count": 20,
                   "formats": [
                     "plain"
                   ]
@@ -175,29 +177,29 @@
       },
       "covers": {
         "kind": "array",
-        "count": 15,
+        "count": 20,
         "minItems": 36,
         "maxItems": 36,
         "items": {
           "kind": "integer",
-          "count": 540,
+          "count": 720,
           "negative": true
         }
       },
       "created": {
         "kind": "object",
-        "count": 15,
+        "count": 20,
         "properties": {
           "type": {
             "kind": "string",
-            "count": 15,
+            "count": 20,
             "formats": [
               "plain"
             ]
           },
           "value": {
             "kind": "string",
-            "count": 15,
+            "count": 20,
             "formats": [
               "date-time"
             ]
@@ -206,19 +208,19 @@
       },
       "description": {
         "kind": "string",
-        "count": 15,
+        "count": 20,
         "formats": [
           "plain"
         ]
       },
       "genres": {
         "kind": "array",
-        "count": 15,
+        "count": 20,
         "minItems": 1,
         "maxItems": 1,
         "items": {
           "kind": "string",
-          "count": 15,
+          "count": 20,
           "formats": [
             "plain"
           ]
@@ -226,25 +228,25 @@
       },
       "key": {
         "kind": "string",
-        "count": 15,
+        "count": 20,
         "formats": [
           "plain"
         ]
       },
       "last_modified": {
         "kind": "object",
-        "count": 15,
+        "count": 20,
         "properties": {
           "type": {
             "kind": "string",
-            "count": 15,
+            "count": 20,
             "formats": [
               "plain"
             ]
           },
           "value": {
             "kind": "string",
-            "count": 15,
+            "count": 20,
             "formats": [
               "date-time"
             ]
@@ -253,27 +255,27 @@
       },
       "latest_revision": {
         "kind": "integer",
-        "count": 15
+        "count": 20
       },
       "location": {
         "kind": "string",
-        "count": 15,
+        "count": 20,
         "formats": [
           "plain"
         ]
       },
       "revision": {
         "kind": "integer",
-        "count": 15
+        "count": 20
       },
       "subject_people": {
         "kind": "array",
-        "count": 15,
+        "count": 20,
         "minItems": 4,
         "maxItems": 4,
         "items": {
           "kind": "string",
-          "count": 60,
+          "count": 80,
           "formats": [
             "plain"
           ]
@@ -281,12 +283,12 @@
       },
       "subject_places": {
         "kind": "array",
-        "count": 15,
+        "count": 20,
         "minItems": 1,
         "maxItems": 1,
         "items": {
           "kind": "string",
-          "count": 15,
+          "count": 20,
           "formats": [
             "plain"
           ]
@@ -294,12 +296,12 @@
       },
       "subject_times": {
         "kind": "array",
-        "count": 15,
+        "count": 20,
         "minItems": 1,
         "maxItems": 1,
         "items": {
           "kind": "string",
-          "count": 15,
+          "count": 20,
           "formats": [
             "plain"
           ]
@@ -307,12 +309,12 @@
       },
       "subjects": {
         "kind": "array",
-        "count": 15,
+        "count": 20,
         "minItems": 31,
         "maxItems": 31,
         "items": {
           "kind": "string",
-          "count": 465,
+          "count": 620,
           "formats": [
             "plain"
           ]
@@ -320,18 +322,18 @@
       },
       "title": {
         "kind": "string",
-        "count": 15,
+        "count": 20,
         "formats": [
           "plain"
         ]
       },
       "type": {
         "kind": "object",
-        "count": 15,
+        "count": 20,
         "properties": {
           "key": {
             "kind": "string",
-            "count": 15,
+            "count": 20,
             "formats": [
               "plain"
             ]
@@ -341,36 +343,35 @@
     }
   },
   "fieldCount": 25,
-  "samples": 15,
+  "samples": 20,
   "firstSeenAt": "2026-10-22T21:45:35.000Z",
   "contractSince": "2026-10-22T22:15:38.000Z",
   "weather": {
-    "condition": "sunny",
-    "headline": "Clear skies",
-    "reason": "Contract unchanged and responding normally.",
-    "since": "2026-10-22T21:45:35.000Z"
+    "condition": "fog",
+    "headline": "Fog",
+    "reason": "Connection reset."
   },
   "stats": {
     "d1": {
-      "checks": 4,
-      "ok": 4,
-      "uptime": 1,
-      "p50": 329,
-      "p95": 664
+      "checks": 3,
+      "ok": 2,
+      "uptime": 0.6666666666666666,
+      "p50": 504,
+      "p95": 1549
     },
     "d7": {
-      "checks": 13,
-      "ok": 13,
-      "uptime": 1,
-      "p50": 468,
+      "checks": 19,
+      "ok": 18,
+      "uptime": 0.9473684210526315,
+      "p50": 504,
       "p95": 3226
     },
     "d30": {
-      "checks": 18,
-      "ok": 18,
-      "uptime": 1,
-      "p50": 548,
-      "p95": 3226
+      "checks": 24,
+      "ok": 23,
+      "uptime": 0.9583333333333334,
+      "p50": 664,
+      "p95": 1607
     }
   }
 }
