@@ -23,8 +23,7 @@
     "noEmit": true,
     "paths": {
       "api-drift/core": [
-        "../api-drift/src/core/index.ts",
-        "./node_modules/api-drift/dist/core.d.ts"
+        "./src/vendor/api-drift/core/index.ts"
       ]
     }
   },

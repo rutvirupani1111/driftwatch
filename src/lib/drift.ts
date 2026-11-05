@@ -4,7 +4,7 @@
  * Everything Driftwatch needs from the contract engine goes through the
  * functions exported here: infer, merge, diff, the display contract tree,
  * TypeScript / Zod generation, endpoint keys and HAR import. Swapping how
- * api-drift is resolved (sibling source today, the GitHub/npm package later)
+ * api-drift is resolved (vendored copy in src/vendor today, a package later)
  * never touches this file: `api-drift/core` is mapped by the Vite alias, the
  * tsconfig `paths` and, once installed, node_modules. See DEPLOY.md.
  *

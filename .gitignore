@@ -8,3 +8,7 @@ playwright-report/
 .DS_Store
 .env
 .env.*
+
+# vercel
+.vercel
+.env*.local
