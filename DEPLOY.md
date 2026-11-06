@@ -15,37 +15,19 @@ gh repo create rutvirupani1111/driftwatch --public --source . --push
 `data/`, `public/badges/`, `public/feeds/` and `public/feed.xml` contain real observations seeded on
 2026-10-23. Commit them: the site shows them until the first scheduled run adds more.
 
-## 2. Provide api-drift to CI
+## 2. api-drift needs no setup
 
-Locally Driftwatch imports api-drift **from source** in the sibling folder `../api-drift`
-(Vite alias, vitest alias and tsconfig `paths`; see `build/api-drift.ts`). Every call goes through
-`src/lib/drift.ts`, so the source of the package never matters to the rest of the code.
-
-CI has no sibling folder. Two ways to fix that; pick one:
-
-**A. Nothing to do (works as soon as api-drift is pushed).** Both workflows run a
-"Make api-drift available" step: when `node_modules/api-drift` is missing they
-`git clone --depth 1 https://github.com/rutvirupani1111/api-drift.git ../api-drift`, which recreates
-the local layout. Requires the api-drift repository to be **public**.
-
-**B. Depend on the package (the planned switch, recommended).** api-drift is published at
-https://github.com/rutvirupani1111/api-drift and builds itself on install:
-
-```bash
-npm install github:rutvirupani1111/api-drift
-git add package.json package-lock.json && git commit -m "Depend on api-drift from GitHub"
-```
-
-Once installed, the workflows skip the clone step automatically, the Vite alias falls back to
-`node_modules` (no sibling `src/core/index.ts`), and TypeScript resolves
-`./node_modules/api-drift/dist/core.d.ts` through the second `paths` entry. No code changes:
-Driftwatch only imports `api-drift/core`, and only from `src/lib/drift.ts`.
-
-If the sibling folder also exists locally, the source copy wins (handy while developing both).
+api-drift's browser-safe core is vendored into `src/vendor/api-drift` (each file names its upstream
+commit) and `api-drift/core` resolves to it in Vite, Vitest and TypeScript (see `build/api-drift.ts`).
+Every build, local, in Actions or on Vercel, works without a sibling checkout. Every call goes
+through `src/lib/drift.ts`, so switching to a published package later touches only the resolution.
 
 ## 3. Turn on GitHub Pages
 
-Settings → Pages → Build and deployment → **Source: GitHub Actions**.
+Settings → Pages → Build and deployment → **Source: Deploy from a branch**, branch `gh-pages`, folder `/`.
+The Monitor workflow commits the built site to `gh-pages` on every run; GitHub's own Pages build
+then publishes it. (`actions/deploy-pages` is not used: the `github-pages` environment only accepts
+deployments from `gh-pages`.)
 
 The workflow reads the Pages URL and base path from `actions/configure-pages`, so the site is built
 for `/driftwatch/` (or whatever the repository is called, or `/` for a custom domain) and feed / badge

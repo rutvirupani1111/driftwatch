@@ -25,13 +25,6 @@ jobs:
           node-version: 22
           cache: npm
       - run: npm ci
-      - name: Make api-drift available
-        run: |
-          if [ -d node_modules/api-drift ]; then
-            echo "Using api-drift from node_modules"
-          else
-            git clone --depth 1 https://github.com/rutvirupani1111/api-drift.git ../api-drift
-          fi
       - run: npm run typecheck
       - run: npm test
       - run: npm run build

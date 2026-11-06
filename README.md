@@ -143,8 +143,8 @@ The dashboard's *Watch your own* page builds the config for you.
 
 - **Monitor** (`.github/workflows/monitor.yml`): every 3 hours at :17, on demand and on push. Restores
   state from the Actions cache, runs the monitor, commits data **only when a fingerprint or status
-  changed** (plus a weekly heartbeat), builds the site with the right base path and deploys it with
-  `actions/deploy-pages`.
+  changed** (plus a weekly heartbeat), builds the site with the right base path and publishes it to the
+  `gh-pages` branch.
 - **CI** (`.github/workflows/ci.yml`): typecheck, tests and a production build on every pull request,
   then a Playwright smoke test of that build.
 

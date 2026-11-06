@@ -1,5 +1,5 @@
 # Driftwatch: check every API on a schedule, keep the history in the repo,
-# publish the dashboard to GitHub Pages.
+# publish the dashboard to GitHub Pages (the gh-pages branch).
 #
 #  - Runs every 3 hours at :17 (off the hour: GitHub's scheduler is busiest on
 #    the hour and delays or drops runs there), on demand, and on pushes to main
@@ -29,8 +29,6 @@ on:
 
 permissions:
   contents: write
-  pages: write
-  id-token: write
 
 concurrency:
   group: driftwatch-monitor
@@ -51,17 +49,6 @@ jobs:
 
       - name: Install
         run: npm ci
-
-      # Driftwatch imports api-drift. With the package installed (dependency in
-      # package.json) nothing happens here; otherwise its public source is
-      # checked out next to this repo, exactly like the local layout.
-      - name: Make api-drift available
-        run: |
-          if [ -d node_modules/api-drift ]; then
-            echo "Using api-drift from node_modules"
-          else
-            git clone --depth 1 https://github.com/rutvirupani1111/api-drift.git ../api-drift
-          fi
 
       - name: Configure Pages
         id: pages
@@ -113,7 +100,8 @@ jobs:
         run: |
           last=$(git log -1 --format=%ct -- data/index.json 2>/dev/null || true)
           age=$(( $(date +%s) - ${last:-0} ))
-          if [ "$CHANGED" != "true" ] && [ "$age" -lt 518400 ]; then
+          # A manual run always commits, so the published data is refreshed on demand.
+          if [ "$CHANGED" != "true" ] && [ "$age" -lt 518400 ] && [ "$GITHUB_EVENT_NAME" != "workflow_dispatch" ]; then
             echo "Nothing meaningful changed; state stays in the Actions cache."
             exit 0
           fi
@@ -124,7 +112,9 @@ jobs:
             echo "No file changes to commit."
             exit 0
           fi
-          if [ "$CHANGED" = "true" ]; then msg="data: $HEADLINE ($EVENTS new change events)"; else msg="data: weekly heartbeat"; fi
+          if [ "$CHANGED" = "true" ]; then msg="data: $HEADLINE ($EVENTS new change events)"
+          elif [ "$GITHUB_EVENT_NAME" = "workflow_dispatch" ]; then msg="data: $HEADLINE (manual run)"
+          else msg="data: weekly heartbeat"; fi
           git commit -m "$msg"
           git pull --rebase --autostash origin "${GITHUB_REF_NAME}"
           git push origin "HEAD:${GITHUB_REF_NAME}"
@@ -134,17 +124,21 @@ jobs:
           BASE_PATH: ${{ steps.pages.outputs.base_path }}/
         run: npm run build
 
-      - uses: actions/upload-pages-artifact@v3
-        with:
-          path: dist
-
-  deploy:
-    name: Deploy to GitHub Pages
-    needs: monitor
-    runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    steps:
-      - id: deployment
-        uses: actions/deploy-pages@v4
+      # Pages serves the gh-pages branch (Settings > Pages > Deploy from a branch),
+      # so the built site is committed there. The github-pages environment only
+      # accepts gh-pages, which is why actions/deploy-pages from main was rejected.
+      - name: Publish to GitHub Pages
+        run: |
+          git fetch --depth 1 origin gh-pages
+          git worktree add --detach "$RUNNER_TEMP/gh-pages" FETCH_HEAD
+          cd "$RUNNER_TEMP/gh-pages"
+          git rm -rq --ignore-unmatch .
+          cp -r "$GITHUB_WORKSPACE/dist/." .
+          touch .nojekyll
+          git add -A
+          if git diff --cached --quiet; then
+            echo "Site unchanged; nothing to publish."
+            exit 0
+          fi
+          git -c user.name='github-actions[bot]' -c user.email='41898282+github-actions[bot]@users.noreply.github.com' commit -qm "Deploy Driftwatch site from ${GITHUB_SHA::7}"
+          git push origin HEAD:gh-pages
