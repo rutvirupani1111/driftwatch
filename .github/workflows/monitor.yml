@@ -135,10 +135,12 @@ jobs:
           git rm -rq --ignore-unmatch .
           cp -r "$GITHUB_WORKSPACE/dist/." .
           touch .nojekyll
+          # gh-pages holds built files only; keep Vercel from trying to build it.
+          echo '{ "git": { "deploymentEnabled": false } }' > vercel.json
           git add -A
           if git diff --cached --quiet; then
             echo "Site unchanged; nothing to publish."
             exit 0
           fi
-          git -c user.name='github-actions[bot]' -c user.email='41898282+github-actions[bot]@users.noreply.github.com' commit -qm "Deploy Driftwatch site from ${GITHUB_SHA::7}"
+          git -c user.name='github-actions[bot]' -c user.email='41898282+github-actions[bot]@users.noreply.github.com' commit -qm "Deploy Driftwatch site from $(git -C "$GITHUB_WORKSPACE" rev-parse --short HEAD)"
           git push origin HEAD:gh-pages
