@@ -1,6 +1,150 @@
 {
-  "generatedAt": "2026-10-22T22:22:41.814Z",
+  "generatedAt": "2026-11-03T23:21:40.999Z",
   "events": [
+    {
+      "id": "homebrew@2026-10-31T12:25:20.000Z",
+      "apiId": "homebrew",
+      "apiName": "Homebrew formula: wget",
+      "at": "2026-10-31T12:25:20.000Z",
+      "severity": "info",
+      "summary": "$.github_packages_downloads: new field (object) (1 info)",
+      "fingerprintBefore": "70472c128e6e2854",
+      "fingerprintAfter": "49898dc6050eadfc",
+      "changes": [
+        {
+          "path": "$.github_packages_downloads",
+          "kind": "added",
+          "severity": "info",
+          "message": "new field (object)",
+          "after": "object",
+          "afterNode": {
+            "type": "object",
+            "properties": {
+              "all_time": {
+                "type": "integer"
+              },
+              "analytics_30d": {
+                "type": "integer"
+              },
+              "analytics_end_date": {
+                "type": "string",
+                "format": "date"
+              },
+              "analytics_ratio": {
+                "type": "number"
+              },
+              "analytics_start_date": {
+                "type": "string",
+                "format": "date"
+              },
+              "end_date": {
+                "type": "string",
+                "format": "date"
+              },
+              "fetched_at": {
+                "type": "string",
+                "format": "date-time"
+              },
+              "last_30_days": {
+                "type": "integer"
+              },
+              "source": {
+                "type": "string",
+                "format": "uri"
+              },
+              "start_date": {
+                "type": "string",
+                "format": "date"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "wikipedia-random@2026-10-29T12:58:25.000Z",
+      "apiId": "wikipedia-random",
+      "apiName": "Wikipedia REST: random summary",
+      "at": "2026-10-29T12:58:25.000Z",
+      "severity": "info",
+      "summary": "$.coordinates: new field (object) (1 info)",
+      "fingerprintBefore": "0288cfd41b459c45",
+      "fingerprintAfter": "a160383cfee096dd",
+      "changes": [
+        {
+          "path": "$.coordinates",
+          "kind": "added",
+          "severity": "info",
+          "message": "new field (object)",
+          "after": "object",
+          "afterNode": {
+            "type": "object",
+            "properties": {
+              "lat": {
+                "type": "number"
+              },
+              "lon": {
+                "type": "number"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "github-repo@2026-10-29T05:45:42.000Z",
+      "apiId": "github-repo",
+      "apiName": "GitHub REST: repository",
+      "at": "2026-10-29T05:45:42.000Z",
+      "severity": "info",
+      "summary": "$.permissions: new field (object); +1 more (2 info)",
+      "fingerprintBefore": "d4a0ceff6c08396a",
+      "fingerprintAfter": "2d6df62b97bff50f",
+      "changes": [
+        {
+          "path": "$.permissions",
+          "kind": "added",
+          "severity": "info",
+          "message": "new field (object)",
+          "after": "object",
+          "afterNode": {
+            "type": "object",
+            "properties": {
+              "admin": {
+                "type": "boolean"
+              },
+              "maintain": {
+                "type": "boolean"
+              },
+              "pull": {
+                "type": "boolean"
+              },
+              "push": {
+                "type": "boolean"
+              },
+              "triage": {
+                "type": "boolean"
+              }
+            }
+          }
+        },
+        {
+          "path": "$.temp_clone_token",
+          "kind": "type-learned",
+          "severity": "info",
+          "message": "now string<empty> (baseline only saw null)",
+          "before": "null",
+          "after": "string<empty>",
+          "beforeNode": {
+            "type": "null"
+          },
+          "afterNode": {
+            "type": "string",
+            "format": "empty"
+          }
+        }
+      ]
+    },
     {
       "id": "wikipedia-random@2026-10-22T22:09:00.000Z",
       "apiId": "wikipedia-random",

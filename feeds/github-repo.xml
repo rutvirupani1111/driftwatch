@@ -5,7 +5,18 @@
   <id>https://rutvirupani1111.github.io/driftwatch/feeds/github-repo.xml</id>
   <link rel="self" type="application/atom+xml" href="https://rutvirupani1111.github.io/driftwatch/feeds/github-repo.xml"/>
   <link rel="alternate" type="text/html" href="https://rutvirupani1111.github.io/driftwatch/api/github-repo"/>
-  <updated>2026-10-22T22:22:41.814Z</updated>
+  <updated>2026-10-29T05:45:42.000Z</updated>
   <author><name>Driftwatch</name></author>
   <generator uri="https://github.com/rutvirupani1111/driftwatch">Driftwatch</generator>
+  <entry>
+    <title>[info] GitHub REST: repository: $.permissions: new field (object); +1 more (2 info)</title>
+    <id>https://rutvirupani1111.github.io/driftwatch/feeds/github-repo#github-repo@2026-10-29T05:45:42.000Z</id>
+    <link rel="alternate" type="text/html" href="https://rutvirupani1111.github.io/driftwatch/api/github-repo#github-repo%402026-10-29T05%3A45%3A42.000Z"/>
+    <updated>2026-10-29T05:45:42.000Z</updated>
+    <published>2026-10-29T05:45:42.000Z</published>
+    <category term="info" label="info"/>
+    <category term="github-repo"/>
+    <summary>$.permissions: new field (object); +1 more (2 info)</summary>
+    <content type="html">&lt;p&gt;$.permissions: new field (object); +1 more (2 info)&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;strong&gt;info&lt;/strong&gt; new field (object) &lt;code&gt;missing&lt;/code&gt; → &lt;code&gt;object&lt;/code&gt;&lt;/li&gt;&lt;li&gt;&lt;strong&gt;info&lt;/strong&gt; now string&amp;lt;empty&amp;gt; (baseline only saw null) &lt;code&gt;null&lt;/code&gt; → &lt;code&gt;string&amp;lt;empty&amp;gt;&lt;/code&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;Fingerprint d4a0ceff6c08396a → 2d6df62b97bff50f&lt;/p&gt;</content>
+  </entry>
 </feed>
