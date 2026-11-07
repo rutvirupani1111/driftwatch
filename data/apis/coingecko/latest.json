@@ -7,11 +7,11 @@
   "method": "GET",
   "docs": "https://docs.coingecko.com/reference/simple-price",
   "description": "Bitcoin and Ether prices in USD and INR from the keyless public API.",
-  "checkedAt": "2026-11-07T12:58:01.000Z",
+  "checkedAt": "2026-11-07T19:25:38.000Z",
   "ok": true,
   "status": 200,
-  "latencyMs": 463,
-  "sizeBytes": 286,
+  "latencyMs": 184,
+  "sizeBytes": 283,
   "contentType": "application/json; charset=utf-8",
   "error": null,
   "engine": "api-drift/shape@1",
@@ -63,33 +63,33 @@
   },
   "shape": {
     "kind": "object",
-    "count": 35,
+    "count": 36,
     "properties": {
       "bitcoin": {
         "kind": "object",
-        "count": 35,
+        "count": 36,
         "properties": {
           "inr": {
             "kind": "integer",
-            "count": 35
+            "count": 36
           },
           "inr_24h_change": {
             "kind": "number",
-            "count": 35,
+            "count": 36,
             "integral": 0,
             "negative": true
           },
           "last_updated_at": {
             "kind": "integer",
-            "count": 35
+            "count": 36
           },
           "usd": {
             "kind": "integer",
-            "count": 35
+            "count": 36
           },
           "usd_24h_change": {
             "kind": "number",
-            "count": 35,
+            "count": 36,
             "integral": 0,
             "negative": true
           }
@@ -97,30 +97,30 @@
       },
       "ethereum": {
         "kind": "object",
-        "count": 35,
+        "count": 36,
         "properties": {
           "inr": {
             "kind": "integer",
-            "count": 35
+            "count": 36
           },
           "inr_24h_change": {
             "kind": "number",
-            "count": 35,
+            "count": 36,
             "integral": 0,
             "negative": true
           },
           "last_updated_at": {
             "kind": "integer",
-            "count": 35
+            "count": 36
           },
           "usd": {
             "kind": "number",
-            "count": 35,
+            "count": 36,
             "integral": 0
           },
           "usd_24h_change": {
             "kind": "number",
-            "count": 35,
+            "count": 36,
             "integral": 0,
             "negative": true
           }
@@ -129,7 +129,7 @@
     }
   },
   "fieldCount": 12,
-  "samples": 35,
+  "samples": 36,
   "firstSeenAt": "2026-10-22T21:45:36.000Z",
   "contractSince": "2026-10-22T22:15:39.000Z",
   "weather": {
@@ -140,8 +140,8 @@
   },
   "stats": {
     "d1": {
-      "checks": 7,
-      "ok": 7,
+      "checks": 4,
+      "ok": 4,
       "uptime": 1,
       "p50": 205,
       "p95": 463
@@ -154,9 +154,9 @@
       "p95": 463
     },
     "d30": {
-      "checks": 39,
-      "ok": 38,
-      "uptime": 0.9743589743589743,
+      "checks": 40,
+      "ok": 39,
+      "uptime": 0.975,
       "p50": 194,
       "p95": 503
     }
