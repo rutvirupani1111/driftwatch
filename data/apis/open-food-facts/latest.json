@@ -7,10 +7,10 @@
   "method": "GET",
   "docs": "https://openfoodfacts.github.io/openfoodfacts-server/api/",
   "description": "A selected set of fields for one well-known product.",
-  "checkedAt": "2026-11-06T23:06:45.000Z",
+  "checkedAt": "2026-11-07T05:56:03.000Z",
   "ok": true,
   "status": 200,
-  "latencyMs": 902,
+  "latencyMs": 850,
   "sizeBytes": 1551,
   "contentType": "application/json; charset=utf-8",
   "error": null,
@@ -213,34 +213,34 @@
   },
   "shape": {
     "kind": "object",
-    "count": 34,
+    "count": 35,
     "properties": {
       "code": {
         "kind": "string",
-        "count": 34,
+        "count": 35,
         "formats": [
           "numeric-string"
         ]
       },
       "product": {
         "kind": "object",
-        "count": 34,
+        "count": 35,
         "properties": {
           "brands": {
             "kind": "string",
-            "count": 34,
+            "count": 35,
             "formats": [
               "plain"
             ]
           },
           "categories_tags": {
             "kind": "array",
-            "count": 34,
+            "count": 35,
             "minItems": 8,
             "maxItems": 8,
             "items": {
               "kind": "string",
-              "count": 272,
+              "count": 280,
               "formats": [
                 "plain"
               ]
@@ -248,293 +248,293 @@
           },
           "code": {
             "kind": "string",
-            "count": 34,
+            "count": 35,
             "formats": [
               "numeric-string"
             ]
           },
           "image_url": {
             "kind": "string",
-            "count": 34,
+            "count": 35,
             "formats": [
               "uri"
             ]
           },
           "nutriments": {
             "kind": "object",
-            "count": 34,
+            "count": 35,
             "properties": {
               "added-sugars": {
                 "kind": "integer",
-                "count": 34
+                "count": 35
               },
               "added-sugars_100g": {
                 "kind": "integer",
-                "count": 34
+                "count": 35
               },
               "added-sugars_modifier": {
                 "kind": "string",
-                "count": 34,
+                "count": 35,
                 "formats": [
                   "plain"
                 ]
               },
               "added-sugars_unit": {
                 "kind": "string",
-                "count": 34,
+                "count": 35,
                 "formats": [
                   "plain"
                 ]
               },
               "added-sugars_value": {
                 "kind": "integer",
-                "count": 34
+                "count": 35
               },
               "carbohydrates": {
                 "kind": "number",
-                "count": 34,
+                "count": 35,
                 "integral": 0
               },
               "carbohydrates_100g": {
                 "kind": "number",
-                "count": 34,
+                "count": 35,
                 "integral": 0
               },
               "carbohydrates_unit": {
                 "kind": "string",
-                "count": 34,
+                "count": 35,
                 "formats": [
                   "plain"
                 ]
               },
               "carbohydrates_value": {
                 "kind": "number",
-                "count": 34,
+                "count": 35,
                 "integral": 0
               },
               "energy": {
                 "kind": "integer",
-                "count": 34
+                "count": 35
               },
               "energy-kcal": {
                 "kind": "integer",
-                "count": 34
+                "count": 35
               },
               "energy-kcal_100g": {
                 "kind": "integer",
-                "count": 34
+                "count": 35
               },
               "energy-kcal_unit": {
                 "kind": "string",
-                "count": 34,
+                "count": 35,
                 "formats": [
                   "plain"
                 ]
               },
               "energy-kcal_value": {
                 "kind": "integer",
-                "count": 34
+                "count": 35
               },
               "energy-kj": {
                 "kind": "integer",
-                "count": 34
+                "count": 35
               },
               "energy-kj_100g": {
                 "kind": "integer",
-                "count": 34
+                "count": 35
               },
               "energy-kj_unit": {
                 "kind": "string",
-                "count": 34,
+                "count": 35,
                 "formats": [
                   "plain"
                 ]
               },
               "energy-kj_value": {
                 "kind": "integer",
-                "count": 34
+                "count": 35
               },
               "energy_100g": {
                 "kind": "integer",
-                "count": 34
+                "count": 35
               },
               "energy_unit": {
                 "kind": "string",
-                "count": 34,
+                "count": 35,
                 "formats": [
                   "plain"
                 ]
               },
               "energy_value": {
                 "kind": "integer",
-                "count": 34
+                "count": 35
               },
               "fat": {
                 "kind": "number",
-                "count": 34,
+                "count": 35,
                 "integral": 0
               },
               "fat_100g": {
                 "kind": "number",
-                "count": 34,
+                "count": 35,
                 "integral": 0
               },
               "fat_unit": {
                 "kind": "string",
-                "count": 34,
+                "count": 35,
                 "formats": [
                   "plain"
                 ]
               },
               "fat_value": {
                 "kind": "number",
-                "count": 34,
+                "count": 35,
                 "integral": 0
               },
               "fruits-vegetables-legumes-estimate-from-ingredients_100g": {
                 "kind": "integer",
-                "count": 34
+                "count": 35
               },
               "fruits-vegetables-nuts-estimate-from-ingredients_100g": {
                 "kind": "integer",
-                "count": 34
+                "count": 35
               },
               "proteins": {
                 "kind": "number",
-                "count": 34,
+                "count": 35,
                 "integral": 0
               },
               "proteins_100g": {
                 "kind": "number",
-                "count": 34,
+                "count": 35,
                 "integral": 0
               },
               "proteins_unit": {
                 "kind": "string",
-                "count": 34,
+                "count": 35,
                 "formats": [
                   "plain"
                 ]
               },
               "proteins_value": {
                 "kind": "number",
-                "count": 34,
+                "count": 35,
                 "integral": 0
               },
               "salt": {
                 "kind": "number",
-                "count": 34,
+                "count": 35,
                 "integral": 0
               },
               "salt_100g": {
                 "kind": "number",
-                "count": 34,
+                "count": 35,
                 "integral": 0
               },
               "salt_unit": {
                 "kind": "string",
-                "count": 34,
+                "count": 35,
                 "formats": [
                   "plain"
                 ]
               },
               "salt_value": {
                 "kind": "number",
-                "count": 34,
+                "count": 35,
                 "integral": 0
               },
               "saturated-fat": {
                 "kind": "number",
-                "count": 34,
+                "count": 35,
                 "integral": 0
               },
               "saturated-fat_100g": {
                 "kind": "number",
-                "count": 34,
+                "count": 35,
                 "integral": 0
               },
               "saturated-fat_unit": {
                 "kind": "string",
-                "count": 34,
+                "count": 35,
                 "formats": [
                   "plain"
                 ]
               },
               "saturated-fat_value": {
                 "kind": "number",
-                "count": 34,
+                "count": 35,
                 "integral": 0
               },
               "sodium": {
                 "kind": "number",
-                "count": 34,
+                "count": 35,
                 "integral": 0
               },
               "sodium_100g": {
                 "kind": "number",
-                "count": 34,
+                "count": 35,
                 "integral": 0
               },
               "sodium_unit": {
                 "kind": "string",
-                "count": 34,
+                "count": 35,
                 "formats": [
                   "plain"
                 ]
               },
               "sodium_value": {
                 "kind": "number",
-                "count": 34,
+                "count": 35,
                 "integral": 0
               },
               "sugars": {
                 "kind": "number",
-                "count": 34,
+                "count": 35,
                 "integral": 0
               },
               "sugars_100g": {
                 "kind": "number",
-                "count": 34,
+                "count": 35,
                 "integral": 0
               },
               "sugars_unit": {
                 "kind": "string",
-                "count": 34,
+                "count": 35,
                 "formats": [
                   "plain"
                 ]
               },
               "sugars_value": {
                 "kind": "number",
-                "count": 34,
+                "count": 35,
                 "integral": 0
               }
             }
           },
           "nutriscore_grade": {
             "kind": "string",
-            "count": 34,
+            "count": 35,
             "formats": [
               "plain"
             ]
           },
           "nutrition_data": {
             "kind": "string",
-            "count": 34,
+            "count": 35,
             "formats": [
               "plain"
             ]
           },
           "nutrition_data_prepared_per": {
             "kind": "string",
-            "count": 34,
+            "count": 35,
             "formats": [
               "plain"
             ]
           },
           "product_name": {
             "kind": "string",
-            "count": 34,
+            "count": 35,
             "formats": [
               "plain"
             ]
@@ -543,11 +543,11 @@
       },
       "status": {
         "kind": "integer",
-        "count": 34
+        "count": 35
       },
       "status_verbose": {
         "kind": "string",
-        "count": 34,
+        "count": 35,
         "formats": [
           "plain"
         ]
@@ -555,7 +555,7 @@
     }
   },
   "fieldCount": 60,
-  "samples": 34,
+  "samples": 35,
   "firstSeenAt": "2026-10-22T21:45:36.000Z",
   "contractSince": "2026-10-22T22:15:40.000Z",
   "weather": {
@@ -569,8 +569,8 @@
       "checks": 7,
       "ok": 7,
       "uptime": 1,
-      "p50": 885,
-      "p95": 1199
+      "p50": 850,
+      "p95": 934
     },
     "d7": {
       "checks": 25,
@@ -580,8 +580,8 @@
       "p95": 1207
     },
     "d30": {
-      "checks": 37,
-      "ok": 37,
+      "checks": 38,
+      "ok": 38,
       "uptime": 1,
       "p50": 817,
       "p95": 1207

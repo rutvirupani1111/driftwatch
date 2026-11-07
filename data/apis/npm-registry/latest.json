@@ -7,10 +7,10 @@
   "method": "GET",
   "docs": "https://github.com/npm/registry/blob/main/docs/REGISTRY-API.md",
   "description": "The packument of the latest react release.",
-  "checkedAt": "2026-11-06T23:06:44.000Z",
+  "checkedAt": "2026-11-07T05:56:02.000Z",
   "ok": true,
   "status": 200,
-  "latencyMs": 62,
+  "latencyMs": 30,
   "sizeBytes": 2150,
   "contentType": "application/json",
   "error": null,
@@ -259,40 +259,40 @@
   },
   "shape": {
     "kind": "object",
-    "count": 34,
+    "count": 35,
     "properties": {
       "_hasShrinkwrap": {
         "kind": "boolean",
-        "count": 34
+        "count": 35
       },
       "_id": {
         "kind": "string",
-        "count": 34,
+        "count": 35,
         "formats": [
           "plain"
         ]
       },
       "_nodeVersion": {
         "kind": "string",
-        "count": 34,
+        "count": 35,
         "formats": [
           "semver"
         ]
       },
       "_npmOperationalInternal": {
         "kind": "object",
-        "count": 34,
+        "count": 35,
         "properties": {
           "host": {
             "kind": "string",
-            "count": 34,
+            "count": 35,
             "formats": [
               "uri"
             ]
           },
           "tmp": {
             "kind": "string",
-            "count": 34,
+            "count": 35,
             "formats": [
               "plain"
             ]
@@ -301,36 +301,36 @@
       },
       "_npmUser": {
         "kind": "object",
-        "count": 34,
+        "count": 35,
         "properties": {
           "email": {
             "kind": "string",
-            "count": 34,
+            "count": 35,
             "formats": [
               "email"
             ]
           },
           "name": {
             "kind": "string",
-            "count": 34,
+            "count": 35,
             "formats": [
               "plain"
             ]
           },
           "trustedPublisher": {
             "kind": "object",
-            "count": 34,
+            "count": 35,
             "properties": {
               "id": {
                 "kind": "string",
-                "count": 34,
+                "count": 35,
                 "formats": [
                   "plain"
                 ]
               },
               "oidcConfigId": {
                 "kind": "string",
-                "count": 34,
+                "count": 35,
                 "formats": [
                   "uuid"
                 ]
@@ -341,18 +341,18 @@
       },
       "_npmVersion": {
         "kind": "string",
-        "count": 34,
+        "count": 35,
         "formats": [
           "semver"
         ]
       },
       "bugs": {
         "kind": "object",
-        "count": 34,
+        "count": 35,
         "properties": {
           "url": {
             "kind": "string",
-            "count": 34,
+            "count": 35,
             "formats": [
               "uri"
             ]
@@ -361,31 +361,31 @@
       },
       "description": {
         "kind": "string",
-        "count": 34,
+        "count": 35,
         "formats": [
           "plain"
         ]
       },
       "directories": {
         "kind": "object",
-        "count": 34,
+        "count": 35,
         "properties": {}
       },
       "dist": {
         "kind": "object",
-        "count": 34,
+        "count": 35,
         "properties": {
           "attestations": {
             "kind": "object",
-            "count": 34,
+            "count": 35,
             "properties": {
               "provenance": {
                 "kind": "object",
-                "count": 34,
+                "count": 35,
                 "properties": {
                   "predicateType": {
                     "kind": "string",
-                    "count": 34,
+                    "count": 35,
                     "formats": [
                       "uri"
                     ]
@@ -394,7 +394,7 @@
               },
               "url": {
                 "kind": "string",
-                "count": 34,
+                "count": 35,
                 "formats": [
                   "uri"
                 ]
@@ -403,41 +403,41 @@
           },
           "fileCount": {
             "kind": "integer",
-            "count": 34
+            "count": 35
           },
           "integrity": {
             "kind": "string",
-            "count": 34,
+            "count": 35,
             "formats": [
               "plain"
             ]
           },
           "shasum": {
             "kind": "string",
-            "count": 34,
+            "count": 35,
             "formats": [
               "plain"
             ]
           },
           "signatures": {
             "kind": "array",
-            "count": 34,
+            "count": 35,
             "minItems": 2,
             "maxItems": 2,
             "items": {
               "kind": "object",
-              "count": 68,
+              "count": 70,
               "properties": {
                 "keyid": {
                   "kind": "string",
-                  "count": 68,
+                  "count": 70,
                   "formats": [
                     "plain"
                   ]
                 },
                 "sig": {
                   "kind": "string",
-                  "count": 68,
+                  "count": 70,
                   "formats": [
                     "base64"
                   ]
@@ -447,24 +447,24 @@
           },
           "tarball": {
             "kind": "string",
-            "count": 34,
+            "count": 35,
             "formats": [
               "uri"
             ]
           },
           "unpackedSize": {
             "kind": "integer",
-            "count": 34
+            "count": 35
           }
         }
       },
       "engines": {
         "kind": "object",
-        "count": 34,
+        "count": 35,
         "properties": {
           "node": {
             "kind": "string",
-            "count": 34,
+            "count": 35,
             "formats": [
               "plain"
             ]
@@ -473,22 +473,22 @@
       },
       "exports": {
         "kind": "object",
-        "count": 34,
+        "count": 35,
         "properties": {
           ".": {
             "kind": "object",
-            "count": 34,
+            "count": 35,
             "properties": {
               "default": {
                 "kind": "string",
-                "count": 34,
+                "count": 35,
                 "formats": [
                   "plain"
                 ]
               },
               "react-server": {
                 "kind": "string",
-                "count": 34,
+                "count": 35,
                 "formats": [
                   "plain"
                 ]
@@ -497,18 +497,18 @@
           },
           "./compiler-runtime": {
             "kind": "object",
-            "count": 34,
+            "count": 35,
             "properties": {
               "default": {
                 "kind": "string",
-                "count": 34,
+                "count": 35,
                 "formats": [
                   "plain"
                 ]
               },
               "react-server": {
                 "kind": "string",
-                "count": 34,
+                "count": 35,
                 "formats": [
                   "plain"
                 ]
@@ -517,18 +517,18 @@
           },
           "./jsx-dev-runtime": {
             "kind": "object",
-            "count": 34,
+            "count": 35,
             "properties": {
               "default": {
                 "kind": "string",
-                "count": 34,
+                "count": 35,
                 "formats": [
                   "plain"
                 ]
               },
               "react-server": {
                 "kind": "string",
-                "count": 34,
+                "count": 35,
                 "formats": [
                   "plain"
                 ]
@@ -537,18 +537,18 @@
           },
           "./jsx-runtime": {
             "kind": "object",
-            "count": 34,
+            "count": 35,
             "properties": {
               "default": {
                 "kind": "string",
-                "count": 34,
+                "count": 35,
                 "formats": [
                   "plain"
                 ]
               },
               "react-server": {
                 "kind": "string",
-                "count": 34,
+                "count": 35,
                 "formats": [
                   "plain"
                 ]
@@ -557,7 +557,7 @@
           },
           "./package.json": {
             "kind": "string",
-            "count": 34,
+            "count": 35,
             "formats": [
               "plain"
             ]
@@ -566,26 +566,26 @@
       },
       "gitHead": {
         "kind": "string",
-        "count": 34,
+        "count": 35,
         "formats": [
           "plain"
         ]
       },
       "homepage": {
         "kind": "string",
-        "count": 34,
+        "count": 35,
         "formats": [
           "uri"
         ]
       },
       "keywords": {
         "kind": "array",
-        "count": 34,
+        "count": 35,
         "minItems": 1,
         "maxItems": 1,
         "items": {
           "kind": "string",
-          "count": 34,
+          "count": 35,
           "formats": [
             "plain"
           ]
@@ -593,37 +593,37 @@
       },
       "license": {
         "kind": "string",
-        "count": 34,
+        "count": 35,
         "formats": [
           "plain"
         ]
       },
       "main": {
         "kind": "string",
-        "count": 34,
+        "count": 35,
         "formats": [
           "plain"
         ]
       },
       "maintainers": {
         "kind": "array",
-        "count": 34,
+        "count": 35,
         "minItems": 2,
         "maxItems": 2,
         "items": {
           "kind": "object",
-          "count": 68,
+          "count": 70,
           "properties": {
             "email": {
               "kind": "string",
-              "count": 68,
+              "count": 70,
               "formats": [
                 "email"
               ]
             },
             "name": {
               "kind": "string",
-              "count": 68,
+              "count": 70,
               "formats": [
                 "plain"
               ]
@@ -633,32 +633,32 @@
       },
       "name": {
         "kind": "string",
-        "count": 34,
+        "count": 35,
         "formats": [
           "plain"
         ]
       },
       "repository": {
         "kind": "object",
-        "count": 34,
+        "count": 35,
         "properties": {
           "directory": {
             "kind": "string",
-            "count": 34,
+            "count": 35,
             "formats": [
               "plain"
             ]
           },
           "type": {
             "kind": "string",
-            "count": 34,
+            "count": 35,
             "formats": [
               "plain"
             ]
           },
           "url": {
             "kind": "string",
-            "count": 34,
+            "count": 35,
             "formats": [
               "uri"
             ]
@@ -667,7 +667,7 @@
       },
       "version": {
         "kind": "string",
-        "count": 34,
+        "count": 35,
         "formats": [
           "semver"
         ]
@@ -675,7 +675,7 @@
     }
   },
   "fieldCount": 60,
-  "samples": 34,
+  "samples": 35,
   "firstSeenAt": "2026-10-22T21:45:34.000Z",
   "contractSince": "2026-10-22T22:15:37.000Z",
   "weather": {
@@ -689,8 +689,8 @@
       "checks": 7,
       "ok": 7,
       "uptime": 1,
-      "p50": 71,
-      "p95": 84
+      "p50": 62,
+      "p95": 82
     },
     "d7": {
       "checks": 25,
@@ -700,8 +700,8 @@
       "p95": 97
     },
     "d30": {
-      "checks": 37,
-      "ok": 37,
+      "checks": 38,
+      "ok": 38,
       "uptime": 1,
       "p50": 58,
       "p95": 408
