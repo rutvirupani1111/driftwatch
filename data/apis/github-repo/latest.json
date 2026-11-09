@@ -7,10 +7,10 @@
   "method": "GET",
   "docs": "https://docs.github.com/en/rest/repos/repos#get-a-repository",
   "description": "Repository metadata for react/react. Uses the workflow token when available.",
-  "checkedAt": "2026-11-08T22:02:02.000Z",
+  "checkedAt": "2026-11-09T06:23:29.000Z",
   "ok": true,
   "status": 200,
-  "latencyMs": 329,
+  "latencyMs": 281,
   "sizeBytes": 6038,
   "contentType": "application/json; charset=utf-8",
   "error": null,
@@ -515,339 +515,339 @@
   },
   "shape": {
     "kind": "object",
-    "count": 41,
+    "count": 42,
     "properties": {
       "allow_forking": {
         "kind": "boolean",
-        "count": 41
+        "count": 42
       },
       "archive_url": {
         "kind": "string",
-        "count": 41,
+        "count": 42,
         "formats": [
           "uri"
         ]
       },
       "archived": {
         "kind": "boolean",
-        "count": 41
+        "count": 42
       },
       "assignees_url": {
         "kind": "string",
-        "count": 41,
+        "count": 42,
         "formats": [
           "uri"
         ]
       },
       "blobs_url": {
         "kind": "string",
-        "count": 41,
+        "count": 42,
         "formats": [
           "uri"
         ]
       },
       "branches_url": {
         "kind": "string",
-        "count": 41,
+        "count": 42,
         "formats": [
           "uri"
         ]
       },
       "clone_url": {
         "kind": "string",
-        "count": 41,
+        "count": 42,
         "formats": [
           "uri"
         ]
       },
       "collaborators_url": {
         "kind": "string",
-        "count": 41,
+        "count": 42,
         "formats": [
           "uri"
         ]
       },
       "comments_url": {
         "kind": "string",
-        "count": 41,
+        "count": 42,
         "formats": [
           "uri"
         ]
       },
       "commits_url": {
         "kind": "string",
-        "count": 41,
+        "count": 42,
         "formats": [
           "uri"
         ]
       },
       "compare_url": {
         "kind": "string",
-        "count": 41,
+        "count": 42,
         "formats": [
           "uri"
         ]
       },
       "contents_url": {
         "kind": "string",
-        "count": 41,
+        "count": 42,
         "formats": [
           "uri"
         ]
       },
       "contributors_url": {
         "kind": "string",
-        "count": 41,
+        "count": 42,
         "formats": [
           "uri"
         ]
       },
       "created_at": {
         "kind": "string",
-        "count": 41,
+        "count": 42,
         "formats": [
           "date-time"
         ]
       },
       "custom_properties": {
         "kind": "object",
-        "count": 41,
+        "count": 42,
         "properties": {}
       },
       "default_branch": {
         "kind": "string",
-        "count": 41,
+        "count": 42,
         "formats": [
           "plain"
         ]
       },
       "deployments_url": {
         "kind": "string",
-        "count": 41,
+        "count": 42,
         "formats": [
           "uri"
         ]
       },
       "description": {
         "kind": "string",
-        "count": 41,
+        "count": 42,
         "formats": [
           "plain"
         ]
       },
       "disabled": {
         "kind": "boolean",
-        "count": 41
+        "count": 42
       },
       "downloads_url": {
         "kind": "string",
-        "count": 41,
+        "count": 42,
         "formats": [
           "uri"
         ]
       },
       "events_url": {
         "kind": "string",
-        "count": 41,
+        "count": 42,
         "formats": [
           "uri"
         ]
       },
       "fork": {
         "kind": "boolean",
-        "count": 41
+        "count": 42
       },
       "forks": {
         "kind": "integer",
-        "count": 41
+        "count": 42
       },
       "forks_count": {
         "kind": "integer",
-        "count": 41
+        "count": 42
       },
       "forks_url": {
         "kind": "string",
-        "count": 41,
+        "count": 42,
         "formats": [
           "uri"
         ]
       },
       "full_name": {
         "kind": "string",
-        "count": 41,
+        "count": 42,
         "formats": [
           "plain"
         ]
       },
       "git_commits_url": {
         "kind": "string",
-        "count": 41,
+        "count": 42,
         "formats": [
           "uri"
         ]
       },
       "git_refs_url": {
         "kind": "string",
-        "count": 41,
+        "count": 42,
         "formats": [
           "uri"
         ]
       },
       "git_tags_url": {
         "kind": "string",
-        "count": 41,
+        "count": 42,
         "formats": [
           "uri"
         ]
       },
       "git_url": {
         "kind": "string",
-        "count": 41,
+        "count": 42,
         "formats": [
           "uri"
         ]
       },
       "has_discussions": {
         "kind": "boolean",
-        "count": 41
+        "count": 42
       },
       "has_downloads": {
         "kind": "boolean",
-        "count": 41
+        "count": 42
       },
       "has_issues": {
         "kind": "boolean",
-        "count": 41
+        "count": 42
       },
       "has_pages": {
         "kind": "boolean",
-        "count": 41
+        "count": 42
       },
       "has_projects": {
         "kind": "boolean",
-        "count": 41
+        "count": 42
       },
       "has_pull_requests": {
         "kind": "boolean",
-        "count": 41
+        "count": 42
       },
       "has_wiki": {
         "kind": "boolean",
-        "count": 41
+        "count": 42
       },
       "homepage": {
         "kind": "string",
-        "count": 41,
+        "count": 42,
         "formats": [
           "uri"
         ]
       },
       "hooks_url": {
         "kind": "string",
-        "count": 41,
+        "count": 42,
         "formats": [
           "uri"
         ]
       },
       "html_url": {
         "kind": "string",
-        "count": 41,
+        "count": 42,
         "formats": [
           "uri"
         ]
       },
       "id": {
         "kind": "integer",
-        "count": 41
+        "count": 42
       },
       "is_template": {
         "kind": "boolean",
-        "count": 41
+        "count": 42
       },
       "issue_comment_url": {
         "kind": "string",
-        "count": 41,
+        "count": 42,
         "formats": [
           "uri"
         ]
       },
       "issue_events_url": {
         "kind": "string",
-        "count": 41,
+        "count": 42,
         "formats": [
           "uri"
         ]
       },
       "issues_url": {
         "kind": "string",
-        "count": 41,
+        "count": 42,
         "formats": [
           "uri"
         ]
       },
       "keys_url": {
         "kind": "string",
-        "count": 41,
+        "count": 42,
         "formats": [
           "uri"
         ]
       },
       "labels_url": {
         "kind": "string",
-        "count": 41,
+        "count": 42,
         "formats": [
           "uri"
         ]
       },
       "language": {
         "kind": "string",
-        "count": 41,
+        "count": 42,
         "formats": [
           "plain"
         ]
       },
       "languages_url": {
         "kind": "string",
-        "count": 41,
+        "count": 42,
         "formats": [
           "uri"
         ]
       },
       "license": {
         "kind": "object",
-        "count": 41,
+        "count": 42,
         "properties": {
           "key": {
             "kind": "string",
-            "count": 41,
+            "count": 42,
             "formats": [
               "plain"
             ]
           },
           "name": {
             "kind": "string",
-            "count": 41,
+            "count": 42,
             "formats": [
               "plain"
             ]
           },
           "node_id": {
             "kind": "string",
-            "count": 41,
+            "count": 42,
             "formats": [
               "plain"
             ]
           },
           "spdx_id": {
             "kind": "string",
-            "count": 41,
+            "count": 42,
             "formats": [
               "plain"
             ]
           },
           "url": {
             "kind": "string",
-            "count": 41,
+            "count": 42,
             "formats": [
               "uri"
             ]
@@ -856,182 +856,182 @@
       },
       "merges_url": {
         "kind": "string",
-        "count": 41,
+        "count": 42,
         "formats": [
           "uri"
         ]
       },
       "milestones_url": {
         "kind": "string",
-        "count": 41,
+        "count": 42,
         "formats": [
           "uri"
         ]
       },
       "mirror_url": {
         "kind": "null",
-        "count": 41
+        "count": 42
       },
       "name": {
         "kind": "string",
-        "count": 41,
+        "count": 42,
         "formats": [
           "plain"
         ]
       },
       "network_count": {
         "kind": "integer",
-        "count": 41
+        "count": 42
       },
       "node_id": {
         "kind": "string",
-        "count": 41,
+        "count": 42,
         "formats": [
           "plain"
         ]
       },
       "notifications_url": {
         "kind": "string",
-        "count": 41,
+        "count": 42,
         "formats": [
           "uri"
         ]
       },
       "open_issues": {
         "kind": "integer",
-        "count": 41
+        "count": 42
       },
       "open_issues_count": {
         "kind": "integer",
-        "count": 41
+        "count": 42
       },
       "organization": {
         "kind": "object",
-        "count": 41,
+        "count": 42,
         "properties": {
           "avatar_url": {
             "kind": "string",
-            "count": 41,
+            "count": 42,
             "formats": [
               "uri"
             ]
           },
           "events_url": {
             "kind": "string",
-            "count": 41,
+            "count": 42,
             "formats": [
               "uri"
             ]
           },
           "followers_url": {
             "kind": "string",
-            "count": 41,
+            "count": 42,
             "formats": [
               "uri"
             ]
           },
           "following_url": {
             "kind": "string",
-            "count": 41,
+            "count": 42,
             "formats": [
               "uri"
             ]
           },
           "gists_url": {
             "kind": "string",
-            "count": 41,
+            "count": 42,
             "formats": [
               "uri"
             ]
           },
           "gravatar_id": {
             "kind": "string",
-            "count": 41,
+            "count": 42,
             "formats": [
               "empty"
             ]
           },
           "html_url": {
             "kind": "string",
-            "count": 41,
+            "count": 42,
             "formats": [
               "uri"
             ]
           },
           "id": {
             "kind": "integer",
-            "count": 41
+            "count": 42
           },
           "login": {
             "kind": "string",
-            "count": 41,
+            "count": 42,
             "formats": [
               "plain"
             ]
           },
           "node_id": {
             "kind": "string",
-            "count": 41,
+            "count": 42,
             "formats": [
               "plain"
             ]
           },
           "organizations_url": {
             "kind": "string",
-            "count": 41,
+            "count": 42,
             "formats": [
               "uri"
             ]
           },
           "received_events_url": {
             "kind": "string",
-            "count": 41,
+            "count": 42,
             "formats": [
               "uri"
             ]
           },
           "repos_url": {
             "kind": "string",
-            "count": 41,
+            "count": 42,
             "formats": [
               "uri"
             ]
           },
           "site_admin": {
             "kind": "boolean",
-            "count": 41
+            "count": 42
           },
           "starred_url": {
             "kind": "string",
-            "count": 41,
+            "count": 42,
             "formats": [
               "uri"
             ]
           },
           "subscriptions_url": {
             "kind": "string",
-            "count": 41,
+            "count": 42,
             "formats": [
               "uri"
             ]
           },
           "type": {
             "kind": "string",
-            "count": 41,
+            "count": 42,
             "formats": [
               "plain"
             ]
           },
           "url": {
             "kind": "string",
-            "count": 41,
+            "count": 42,
             "formats": [
               "uri"
             ]
           },
           "user_view_type": {
             "kind": "string",
-            "count": 41,
+            "count": 42,
             "formats": [
               "plain"
             ]
@@ -1040,131 +1040,131 @@
       },
       "owner": {
         "kind": "object",
-        "count": 41,
+        "count": 42,
         "properties": {
           "avatar_url": {
             "kind": "string",
-            "count": 41,
+            "count": 42,
             "formats": [
               "uri"
             ]
           },
           "events_url": {
             "kind": "string",
-            "count": 41,
+            "count": 42,
             "formats": [
               "uri"
             ]
           },
           "followers_url": {
             "kind": "string",
-            "count": 41,
+            "count": 42,
             "formats": [
               "uri"
             ]
           },
           "following_url": {
             "kind": "string",
-            "count": 41,
+            "count": 42,
             "formats": [
               "uri"
             ]
           },
           "gists_url": {
             "kind": "string",
-            "count": 41,
+            "count": 42,
             "formats": [
               "uri"
             ]
           },
           "gravatar_id": {
             "kind": "string",
-            "count": 41,
+            "count": 42,
             "formats": [
               "empty"
             ]
           },
           "html_url": {
             "kind": "string",
-            "count": 41,
+            "count": 42,
             "formats": [
               "uri"
             ]
           },
           "id": {
             "kind": "integer",
-            "count": 41
+            "count": 42
           },
           "login": {
             "kind": "string",
-            "count": 41,
+            "count": 42,
             "formats": [
               "plain"
             ]
           },
           "node_id": {
             "kind": "string",
-            "count": 41,
+            "count": 42,
             "formats": [
               "plain"
             ]
           },
           "organizations_url": {
             "kind": "string",
-            "count": 41,
+            "count": 42,
             "formats": [
               "uri"
             ]
           },
           "received_events_url": {
             "kind": "string",
-            "count": 41,
+            "count": 42,
             "formats": [
               "uri"
             ]
           },
           "repos_url": {
             "kind": "string",
-            "count": 41,
+            "count": 42,
             "formats": [
               "uri"
             ]
           },
           "site_admin": {
             "kind": "boolean",
-            "count": 41
+            "count": 42
           },
           "starred_url": {
             "kind": "string",
-            "count": 41,
+            "count": 42,
             "formats": [
               "uri"
             ]
           },
           "subscriptions_url": {
             "kind": "string",
-            "count": 41,
+            "count": 42,
             "formats": [
               "uri"
             ]
           },
           "type": {
             "kind": "string",
-            "count": 41,
+            "count": 42,
             "formats": [
               "plain"
             ]
           },
           "url": {
             "kind": "string",
-            "count": 41,
+            "count": 42,
             "formats": [
               "uri"
             ]
           },
           "user_view_type": {
             "kind": "string",
-            "count": 41,
+            "count": 42,
             "formats": [
               "plain"
             ]
@@ -1173,126 +1173,126 @@
       },
       "permissions": {
         "kind": "object",
-        "count": 39,
+        "count": 40,
         "properties": {
           "admin": {
             "kind": "boolean",
-            "count": 39
+            "count": 40
           },
           "maintain": {
             "kind": "boolean",
-            "count": 39
+            "count": 40
           },
           "pull": {
             "kind": "boolean",
-            "count": 39
+            "count": 40
           },
           "push": {
             "kind": "boolean",
-            "count": 39
+            "count": 40
           },
           "triage": {
             "kind": "boolean",
-            "count": 39
+            "count": 40
           }
         }
       },
       "private": {
         "kind": "boolean",
-        "count": 41
+        "count": 42
       },
       "pull_request_creation_policy": {
         "kind": "string",
-        "count": 41,
+        "count": 42,
         "formats": [
           "plain"
         ]
       },
       "pulls_url": {
         "kind": "string",
-        "count": 41,
+        "count": 42,
         "formats": [
           "uri"
         ]
       },
       "pushed_at": {
         "kind": "string",
-        "count": 41,
+        "count": 42,
         "formats": [
           "date-time"
         ]
       },
       "releases_url": {
         "kind": "string",
-        "count": 41,
+        "count": 42,
         "formats": [
           "uri"
         ]
       },
       "size": {
         "kind": "integer",
-        "count": 41
+        "count": 42
       },
       "ssh_url": {
         "kind": "string",
-        "count": 41,
+        "count": 42,
         "formats": [
           "plain"
         ]
       },
       "stargazers_count": {
         "kind": "integer",
-        "count": 41
+        "count": 42
       },
       "stargazers_url": {
         "kind": "string",
-        "count": 41,
+        "count": 42,
         "formats": [
           "uri"
         ]
       },
       "statuses_url": {
         "kind": "string",
-        "count": 41,
+        "count": 42,
         "formats": [
           "uri"
         ]
       },
       "subscribers_count": {
         "kind": "integer",
-        "count": 41
+        "count": 42
       },
       "subscribers_url": {
         "kind": "string",
-        "count": 41,
+        "count": 42,
         "formats": [
           "uri"
         ]
       },
       "subscription_url": {
         "kind": "string",
-        "count": 41,
+        "count": 42,
         "formats": [
           "uri"
         ]
       },
       "svn_url": {
         "kind": "string",
-        "count": 41,
+        "count": 42,
         "formats": [
           "uri"
         ]
       },
       "tags_url": {
         "kind": "string",
-        "count": 41,
+        "count": 42,
         "formats": [
           "uri"
         ]
       },
       "teams_url": {
         "kind": "string",
-        "count": 41,
+        "count": 42,
         "formats": [
           "uri"
         ]
@@ -1306,7 +1306,7 @@
           },
           {
             "kind": "string",
-            "count": 39,
+            "count": 40,
             "formats": [
               "empty"
             ]
@@ -1315,12 +1315,12 @@
       },
       "topics": {
         "kind": "array",
-        "count": 41,
+        "count": 42,
         "minItems": 6,
         "maxItems": 6,
         "items": {
           "kind": "string",
-          "count": 246,
+          "count": 252,
           "formats": [
             "plain"
           ]
@@ -1328,48 +1328,48 @@
       },
       "trees_url": {
         "kind": "string",
-        "count": 41,
+        "count": 42,
         "formats": [
           "uri"
         ]
       },
       "updated_at": {
         "kind": "string",
-        "count": 41,
+        "count": 42,
         "formats": [
           "date-time"
         ]
       },
       "url": {
         "kind": "string",
-        "count": 41,
+        "count": 42,
         "formats": [
           "uri"
         ]
       },
       "visibility": {
         "kind": "string",
-        "count": 41,
+        "count": 42,
         "formats": [
           "plain"
         ]
       },
       "watchers": {
         "kind": "integer",
-        "count": 41
+        "count": 42
       },
       "watchers_count": {
         "kind": "integer",
-        "count": 41
+        "count": 42
       },
       "web_commit_signoff_required": {
         "kind": "boolean",
-        "count": 41
+        "count": 42
       }
     }
   },
   "fieldCount": 135,
-  "samples": 41,
+  "samples": 42,
   "firstSeenAt": "2026-10-22T21:45:34.000Z",
   "contractSince": "2026-10-29T05:45:42.000Z",
   "lastChange": {
@@ -1400,8 +1400,8 @@
       "p95": 527
     },
     "d30": {
-      "checks": 44,
-      "ok": 44,
+      "checks": 45,
+      "ok": 45,
       "uptime": 1,
       "p50": 383,
       "p95": 578
