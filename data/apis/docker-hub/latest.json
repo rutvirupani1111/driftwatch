@@ -7,10 +7,10 @@
   "method": "GET",
   "docs": "https://docs.docker.com/reference/api/hub/latest/",
   "description": "The official node image repository.",
-  "checkedAt": "2026-11-10T14:51:47.000Z",
+  "checkedAt": "2026-11-10T21:17:24.000Z",
   "ok": true,
   "status": 200,
-  "latencyMs": 242,
+  "latencyMs": 241,
   "sizeBytes": 12408,
   "contentType": "application/json",
   "error": null,
@@ -143,31 +143,31 @@
   },
   "shape": {
     "kind": "object",
-    "count": 45,
+    "count": 46,
     "properties": {
       "affiliation": {
         "kind": "null",
-        "count": 45
+        "count": 46
       },
       "categories": {
         "kind": "array",
-        "count": 45,
+        "count": 46,
         "minItems": 1,
         "maxItems": 1,
         "items": {
           "kind": "object",
-          "count": 45,
+          "count": 46,
           "properties": {
             "name": {
               "kind": "string",
-              "count": 45,
+              "count": 46,
               "formats": [
                 "plain"
               ]
             },
             "slug": {
               "kind": "string",
-              "count": 45,
+              "count": 46,
               "formats": [
                 "plain"
               ]
@@ -177,16 +177,16 @@
       },
       "collaborator_count": {
         "kind": "integer",
-        "count": 45
+        "count": 46
       },
       "content_types": {
         "kind": "array",
-        "count": 45,
+        "count": 46,
         "minItems": 2,
         "maxItems": 2,
         "items": {
           "kind": "string",
-          "count": 90,
+          "count": 92,
           "formats": [
             "plain"
           ]
@@ -194,52 +194,52 @@
       },
       "date_registered": {
         "kind": "string",
-        "count": 45,
+        "count": 46,
         "formats": [
           "date-time"
         ]
       },
       "description": {
         "kind": "string",
-        "count": 45,
+        "count": 46,
         "formats": [
           "plain"
         ]
       },
       "full_description": {
         "kind": "string",
-        "count": 45,
+        "count": 46,
         "formats": [
           "plain"
         ]
       },
       "has_starred": {
         "kind": "boolean",
-        "count": 45
+        "count": 46
       },
       "hub_user": {
         "kind": "string",
-        "count": 45,
+        "count": 46,
         "formats": [
           "plain"
         ]
       },
       "immutable_tags_settings": {
         "kind": "object",
-        "count": 45,
+        "count": 46,
         "properties": {
           "enabled": {
             "kind": "boolean",
-            "count": 45
+            "count": 46
           },
           "rules": {
             "kind": "array",
-            "count": 45,
+            "count": 46,
             "minItems": 1,
             "maxItems": 1,
             "items": {
               "kind": "string",
-              "count": 45,
+              "count": 46,
               "formats": [
                 "plain"
               ]
@@ -249,34 +249,34 @@
       },
       "is_automated": {
         "kind": "boolean",
-        "count": 45
+        "count": 46
       },
       "is_private": {
         "kind": "boolean",
-        "count": 45
+        "count": 46
       },
       "last_modified": {
         "kind": "string",
-        "count": 45,
+        "count": 46,
         "formats": [
           "date-time"
         ]
       },
       "last_updated": {
         "kind": "string",
-        "count": 45,
+        "count": 46,
         "formats": [
           "date-time"
         ]
       },
       "media_types": {
         "kind": "array",
-        "count": 45,
+        "count": 46,
         "minItems": 5,
         "maxItems": 5,
         "items": {
           "kind": "string",
-          "count": 225,
+          "count": 230,
           "formats": [
             "plain"
           ]
@@ -284,73 +284,73 @@
       },
       "name": {
         "kind": "string",
-        "count": 45,
+        "count": 46,
         "formats": [
           "plain"
         ]
       },
       "namespace": {
         "kind": "string",
-        "count": 45,
+        "count": 46,
         "formats": [
           "plain"
         ]
       },
       "permissions": {
         "kind": "object",
-        "count": 45,
+        "count": 46,
         "properties": {
           "admin": {
             "kind": "boolean",
-            "count": 45
+            "count": 46
           },
           "read": {
             "kind": "boolean",
-            "count": 45
+            "count": 46
           },
           "write": {
             "kind": "boolean",
-            "count": 45
+            "count": 46
           }
         }
       },
       "pull_count": {
         "kind": "integer",
-        "count": 45
+        "count": 46
       },
       "repository_type": {
         "kind": "string",
-        "count": 45,
+        "count": 46,
         "formats": [
           "plain"
         ]
       },
       "source": {
         "kind": "null",
-        "count": 45
+        "count": 46
       },
       "star_count": {
         "kind": "integer",
-        "count": 45
+        "count": 46
       },
       "status": {
         "kind": "integer",
-        "count": 45
+        "count": 46
       },
       "status_description": {
         "kind": "string",
-        "count": 45,
+        "count": 46,
         "formats": [
           "plain"
         ]
       },
       "storage_size": {
         "kind": "integer",
-        "count": 45
+        "count": 46
       },
       "user": {
         "kind": "string",
-        "count": 45,
+        "count": 46,
         "formats": [
           "plain"
         ]
@@ -358,7 +358,7 @@
     }
   },
   "fieldCount": 33,
-  "samples": 45,
+  "samples": 46,
   "firstSeenAt": "2026-10-22T21:45:34.000Z",
   "contractSince": "2026-10-22T22:15:37.000Z",
   "weather": {
@@ -372,19 +372,19 @@
       "checks": 3,
       "ok": 3,
       "uptime": 1,
-      "p50": 213,
+      "p50": 241,
       "p95": 242
     },
     "d7": {
       "checks": 25,
       "ok": 25,
       "uptime": 1,
-      "p50": 174,
+      "p50": 179,
       "p95": 242
     },
     "d30": {
-      "checks": 48,
-      "ok": 48,
+      "checks": 49,
+      "ok": 49,
       "uptime": 1,
       "p50": 169,
       "p95": 377
