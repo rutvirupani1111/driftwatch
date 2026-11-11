@@ -7,10 +7,10 @@
   "method": "GET",
   "docs": "https://www.jsdelivr.com/docs/data.jsdelivr.com",
   "description": "Monthly CDN hits and bandwidth for react. Daily keys are collapsed into a <date> map.",
-  "checkedAt": "2026-11-11T06:13:31.000Z",
+  "checkedAt": "2026-11-11T14:23:07.000Z",
   "ok": true,
   "status": 200,
-  "latencyMs": 676,
+  "latencyMs": 146,
   "sizeBytes": 2183,
   "contentType": "application/json; charset=utf-8",
   "error": null,
@@ -108,114 +108,114 @@
   },
   "shape": {
     "kind": "object",
-    "count": 47,
+    "count": 48,
     "properties": {
       "bandwidth": {
         "kind": "object",
-        "count": 47,
+        "count": 48,
         "properties": {
           "dates": {
             "kind": "object",
-            "count": 47,
+            "count": 48,
             "properties": {
               "<date>": {
                 "kind": "integer",
-                "count": 47
+                "count": 48
               }
             }
           },
           "prev": {
             "kind": "object",
-            "count": 47,
+            "count": 48,
             "properties": {
               "rank": {
                 "kind": "integer",
-                "count": 47
+                "count": 48
               },
               "total": {
                 "kind": "integer",
-                "count": 47
+                "count": 48
               },
               "typeRank": {
                 "kind": "integer",
-                "count": 47
+                "count": 48
               }
             }
           },
           "rank": {
             "kind": "integer",
-            "count": 47
+            "count": 48
           },
           "total": {
             "kind": "integer",
-            "count": 47
+            "count": 48
           },
           "typeRank": {
             "kind": "integer",
-            "count": 47
+            "count": 48
           }
         }
       },
       "hits": {
         "kind": "object",
-        "count": 47,
+        "count": 48,
         "properties": {
           "dates": {
             "kind": "object",
-            "count": 47,
+            "count": 48,
             "properties": {
               "<date>": {
                 "kind": "integer",
-                "count": 47
+                "count": 48
               }
             }
           },
           "prev": {
             "kind": "object",
-            "count": 47,
+            "count": 48,
             "properties": {
               "rank": {
                 "kind": "integer",
-                "count": 47
+                "count": 48
               },
               "total": {
                 "kind": "integer",
-                "count": 47
+                "count": 48
               },
               "typeRank": {
                 "kind": "integer",
-                "count": 47
+                "count": 48
               }
             }
           },
           "rank": {
             "kind": "integer",
-            "count": 47
+            "count": 48
           },
           "total": {
             "kind": "integer",
-            "count": 47
+            "count": 48
           },
           "typeRank": {
             "kind": "integer",
-            "count": 47
+            "count": 48
           }
         }
       },
       "links": {
         "kind": "object",
-        "count": 47,
+        "count": 48,
         "properties": {
           "self": {
             "kind": "string",
-            "count": 47,
+            "count": 48,
             "formats": [
               "uri"
             ]
           },
           "versions": {
             "kind": "string",
-            "count": 47,
+            "count": 48,
             "formats": [
               "uri"
             ]
@@ -225,7 +225,7 @@
     }
   },
   "fieldCount": 23,
-  "samples": 47,
+  "samples": 48,
   "firstSeenAt": "2026-10-22T21:45:34.000Z",
   "contractSince": "2026-10-22T22:15:38.000Z",
   "weather": {
@@ -236,22 +236,22 @@
   },
   "stats": {
     "d1": {
-      "checks": 3,
-      "ok": 3,
+      "checks": 4,
+      "ok": 4,
       "uptime": 1,
-      "p50": 676,
+      "p50": 489,
       "p95": 757
     },
     "d7": {
       "checks": 25,
       "ok": 25,
       "uptime": 1,
-      "p50": 274,
+      "p50": 270,
       "p95": 789
     },
     "d30": {
-      "checks": 50,
-      "ok": 50,
+      "checks": 51,
+      "ok": 51,
       "uptime": 1,
       "p50": 471,
       "p95": 789
