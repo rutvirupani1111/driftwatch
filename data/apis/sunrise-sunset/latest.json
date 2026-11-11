@@ -7,10 +7,10 @@
   "method": "GET",
   "docs": "https://sunrise-sunset.org/api",
   "description": "Sunrise, sunset and twilight times for Mumbai.",
-  "checkedAt": "2026-11-11T14:23:08.000Z",
+  "checkedAt": "2026-11-11T21:56:15.000Z",
   "ok": true,
   "status": 200,
-  "latencyMs": 232,
+  "latencyMs": 206,
   "sizeBytes": 495,
   "contentType": "application/json",
   "error": null,
@@ -73,75 +73,75 @@
   },
   "shape": {
     "kind": "object",
-    "count": 48,
+    "count": 49,
     "properties": {
       "results": {
         "kind": "object",
-        "count": 48,
+        "count": 49,
         "properties": {
           "astronomical_twilight_begin": {
             "kind": "string",
-            "count": 48,
+            "count": 49,
             "formats": [
               "date-time"
             ]
           },
           "astronomical_twilight_end": {
             "kind": "string",
-            "count": 48,
+            "count": 49,
             "formats": [
               "date-time"
             ]
           },
           "civil_twilight_begin": {
             "kind": "string",
-            "count": 48,
+            "count": 49,
             "formats": [
               "date-time"
             ]
           },
           "civil_twilight_end": {
             "kind": "string",
-            "count": 48,
+            "count": 49,
             "formats": [
               "date-time"
             ]
           },
           "day_length": {
             "kind": "integer",
-            "count": 48
+            "count": 49
           },
           "nautical_twilight_begin": {
             "kind": "string",
-            "count": 48,
+            "count": 49,
             "formats": [
               "date-time"
             ]
           },
           "nautical_twilight_end": {
             "kind": "string",
-            "count": 48,
+            "count": 49,
             "formats": [
               "date-time"
             ]
           },
           "solar_noon": {
             "kind": "string",
-            "count": 48,
+            "count": 49,
             "formats": [
               "date-time"
             ]
           },
           "sunrise": {
             "kind": "string",
-            "count": 48,
+            "count": 49,
             "formats": [
               "date-time"
             ]
           },
           "sunset": {
             "kind": "string",
-            "count": 48,
+            "count": 49,
             "formats": [
               "date-time"
             ]
@@ -150,14 +150,14 @@
       },
       "status": {
         "kind": "string",
-        "count": 48,
+        "count": 49,
         "formats": [
           "plain"
         ]
       },
       "tzid": {
         "kind": "string",
-        "count": 48,
+        "count": 49,
         "formats": [
           "plain"
         ]
@@ -165,7 +165,7 @@
     }
   },
   "fieldCount": 13,
-  "samples": 48,
+  "samples": 49,
   "firstSeenAt": "2026-10-22T21:45:36.000Z",
   "contractSince": "2026-10-22T22:15:39.000Z",
   "weather": {
@@ -176,10 +176,10 @@
   },
   "stats": {
     "d1": {
-      "checks": 4,
-      "ok": 4,
+      "checks": 3,
+      "ok": 3,
       "uptime": 1,
-      "p50": 162,
+      "p50": 206,
       "p95": 232
     },
     "d7": {
@@ -187,11 +187,11 @@
       "ok": 25,
       "uptime": 1,
       "p50": 162,
-      "p95": 346
+      "p95": 264
     },
     "d30": {
-      "checks": 51,
-      "ok": 51,
+      "checks": 52,
+      "ok": 52,
       "uptime": 1,
       "p50": 205,
       "p95": 530
