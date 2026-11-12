@@ -7,10 +7,10 @@
   "method": "GET",
   "docs": "https://api.stackexchange.com/docs/info",
   "description": "Totals and rates for Stack Overflow, wrapped in the Stack Exchange envelope.",
-  "checkedAt": "2026-11-11T21:56:14.000Z",
+  "checkedAt": "2026-11-12T07:08:05.000Z",
   "ok": true,
   "status": 200,
-  "latencyMs": 240,
+  "latencyMs": 98,
   "sizeBytes": 404,
   "contentType": "application/json; charset=utf-8",
   "error": null,
@@ -80,94 +80,94 @@
   },
   "shape": {
     "kind": "object",
-    "count": 49,
+    "count": 50,
     "properties": {
       "has_more": {
         "kind": "boolean",
-        "count": 49
+        "count": 50
       },
       "items": {
         "kind": "array",
-        "count": 49,
+        "count": 50,
         "minItems": 1,
         "maxItems": 1,
         "items": {
           "kind": "object",
-          "count": 49,
+          "count": 50,
           "properties": {
             "answers_per_minute": {
               "kind": "number",
-              "count": 49,
+              "count": 50,
               "integral": 0
             },
             "api_revision": {
               "kind": "string",
-              "count": 49,
+              "count": 50,
               "formats": [
                 "phone"
               ]
             },
             "badges_per_minute": {
               "kind": "number",
-              "count": 49,
+              "count": 50,
               "integral": 0
             },
             "new_active_users": {
               "kind": "integer",
-              "count": 49
+              "count": 50
             },
             "questions_per_minute": {
               "kind": "number",
-              "count": 49,
+              "count": 50,
               "integral": 0
             },
             "total_accepted": {
               "kind": "integer",
-              "count": 49
+              "count": 50
             },
             "total_answers": {
               "kind": "integer",
-              "count": 49
+              "count": 50
             },
             "total_badges": {
               "kind": "integer",
-              "count": 49
+              "count": 50
             },
             "total_comments": {
               "kind": "integer",
-              "count": 49
+              "count": 50
             },
             "total_questions": {
               "kind": "integer",
-              "count": 49
+              "count": 50
             },
             "total_unanswered": {
               "kind": "integer",
-              "count": 49
+              "count": 50
             },
             "total_users": {
               "kind": "integer",
-              "count": 49
+              "count": 50
             },
             "total_votes": {
               "kind": "integer",
-              "count": 49
+              "count": 50
             }
           }
         }
       },
       "quota_max": {
         "kind": "integer",
-        "count": 49
+        "count": 50
       },
       "quota_remaining": {
         "kind": "integer",
-        "count": 49
+        "count": 50
       }
     }
   },
   "fieldCount": 17,
-  "samples": 49,
+  "samples": 50,
   "firstSeenAt": "2026-10-22T21:45:34.000Z",
   "contractSince": "2026-10-22T22:15:37.000Z",
   "weather": {
@@ -181,19 +181,19 @@
       "checks": 3,
       "ok": 3,
       "uptime": 1,
-      "p50": 175,
+      "p50": 116,
       "p95": 240
     },
     "d7": {
-      "checks": 25,
-      "ok": 25,
+      "checks": 24,
+      "ok": 24,
       "uptime": 1,
-      "p50": 175,
+      "p50": 174,
       "p95": 505
     },
     "d30": {
-      "checks": 52,
-      "ok": 52,
+      "checks": 53,
+      "ok": 53,
       "uptime": 1,
       "p50": 164,
       "p95": 440
