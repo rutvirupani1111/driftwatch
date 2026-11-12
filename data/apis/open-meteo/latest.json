@@ -7,13 +7,15 @@
   "method": "GET",
   "docs": "https://open-meteo.com/en/docs",
   "description": "Today's forecast for Mumbai. A real weather API, watched for weather.",
-  "checkedAt": "2026-11-12T17:35:02.000Z",
-  "ok": true,
-  "status": 200,
-  "latencyMs": 617,
-  "sizeBytes": 1154,
-  "contentType": "application/json; charset=utf-8",
-  "error": null,
+  "checkedAt": "2026-11-12T23:37:35.000Z",
+  "ok": false,
+  "status": 0,
+  "latencyMs": 10147,
+  "sizeBytes": 0,
+  "error": {
+    "code": "network",
+    "message": "Connect Timeout Error (attempted addresses: 51.81.167.44:443, timeout: 10000ms)"
+  },
   "engine": "api-drift/shape@1",
   "fingerprint": "a6b030fd07eb9f5a",
   "contract": {
@@ -299,30 +301,29 @@
   "firstSeenAt": "2026-10-22T21:45:35.000Z",
   "contractSince": "2026-10-29T05:45:42.000Z",
   "weather": {
-    "condition": "sunny",
-    "headline": "Clear skies",
-    "reason": "Contract unchanged and responding normally.",
-    "since": "2026-10-22T21:45:35.000Z"
+    "condition": "fog",
+    "headline": "Fog",
+    "reason": "Connect Timeout Error (attempted addresses: 51.81.167.44:443, timeout: 10000ms)."
   },
   "stats": {
     "d1": {
       "checks": 3,
-      "ok": 3,
-      "uptime": 1,
-      "p50": 602,
+      "ok": 2,
+      "uptime": 0.6666666666666666,
+      "p50": 117,
       "p95": 617
     },
     "d7": {
-      "checks": 24,
+      "checks": 25,
       "ok": 24,
-      "uptime": 1,
+      "uptime": 0.96,
       "p50": 534,
       "p95": 799
     },
     "d30": {
-      "checks": 54,
+      "checks": 55,
       "ok": 53,
-      "uptime": 0.9814814814814815,
+      "uptime": 0.9636363636363636,
       "p50": 395,
       "p95": 799
     }
