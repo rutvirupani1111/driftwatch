@@ -7,14 +7,14 @@
   "method": "GET",
   "docs": "https://open-meteo.com/en/docs",
   "description": "Today's forecast for Mumbai. A real weather API, watched for weather.",
-  "checkedAt": "2026-11-12T23:37:35.000Z",
+  "checkedAt": "2026-11-13T06:42:41.000Z",
   "ok": false,
   "status": 0,
-  "latencyMs": 10147,
+  "latencyMs": 10081,
   "sizeBytes": 0,
   "error": {
     "code": "network",
-    "message": "Connect Timeout Error (attempted addresses: 51.81.167.44:443, timeout: 10000ms)"
+    "message": "Connect Timeout Error (attempted address: api.open-meteo.com:443, timeout: 10000ms)"
   },
   "engine": "api-drift/shape@1",
   "fingerprint": "a6b030fd07eb9f5a",
@@ -303,27 +303,27 @@
   "weather": {
     "condition": "fog",
     "headline": "Fog",
-    "reason": "Connect Timeout Error (attempted addresses: 51.81.167.44:443, timeout: 10000ms)."
+    "reason": "Connect Timeout Error (attempted address: api.open-meteo.com:443, timeout: 10000ms)."
   },
   "stats": {
     "d1": {
-      "checks": 3,
+      "checks": 4,
       "ok": 2,
-      "uptime": 0.6666666666666666,
+      "uptime": 0.5,
       "p50": 117,
       "p95": 617
     },
     "d7": {
-      "checks": 25,
-      "ok": 24,
-      "uptime": 0.96,
-      "p50": 534,
+      "checks": 24,
+      "ok": 22,
+      "uptime": 0.9166666666666666,
+      "p50": 541,
       "p95": 799
     },
     "d30": {
-      "checks": 55,
+      "checks": 56,
       "ok": 53,
-      "uptime": 0.9636363636363636,
+      "uptime": 0.9464285714285714,
       "p50": 395,
       "p95": 799
     }
