@@ -7,10 +7,10 @@
   "method": "GET",
   "docs": "https://date.nager.at/Api",
   "description": "Upcoming UK public holidays. Nager.Date has no data for India (it answers 204), so the UK stands in.",
-  "checkedAt": "2026-11-13T06:42:42.000Z",
+  "checkedAt": "2026-11-13T17:11:51.000Z",
   "ok": true,
   "status": 200,
-  "latencyMs": 235,
+  "latencyMs": 79,
   "sizeBytes": 2448,
   "contentType": "application/json; charset=utf-8",
   "error": null,
@@ -61,28 +61,28 @@
   },
   "shape": {
     "kind": "array",
-    "count": 53,
+    "count": 54,
     "minItems": 13,
     "maxItems": 13,
     "items": {
       "kind": "object",
-      "count": 689,
+      "count": 702,
       "properties": {
         "counties": {
           "kind": "union",
           "variants": [
             {
               "kind": "null",
-              "count": 265
+              "count": 270
             },
             {
               "kind": "array",
-              "count": 424,
+              "count": 432,
               "minItems": 1,
               "maxItems": 4,
               "items": {
                 "kind": "string",
-                "count": 795,
+                "count": 810,
                 "formats": [
                   "plain"
                 ]
@@ -92,52 +92,52 @@
         },
         "countryCode": {
           "kind": "string",
-          "count": 689,
+          "count": 702,
           "formats": [
             "plain"
           ]
         },
         "date": {
           "kind": "string",
-          "count": 689,
+          "count": 702,
           "formats": [
             "date"
           ]
         },
         "fixed": {
           "kind": "boolean",
-          "count": 689
+          "count": 702
         },
         "global": {
           "kind": "boolean",
-          "count": 689
+          "count": 702
         },
         "launchYear": {
           "kind": "null",
-          "count": 689
+          "count": 702
         },
         "localName": {
           "kind": "string",
-          "count": 689,
+          "count": 702,
           "formats": [
             "plain"
           ]
         },
         "name": {
           "kind": "string",
-          "count": 689,
+          "count": 702,
           "formats": [
             "plain"
           ]
         },
         "types": {
           "kind": "array",
-          "count": 689,
+          "count": 702,
           "minItems": 1,
           "maxItems": 1,
           "items": {
             "kind": "string",
-            "count": 689,
+            "count": 702,
             "formats": [
               "plain"
             ]
@@ -147,7 +147,7 @@
     }
   },
   "fieldCount": 9,
-  "samples": 53,
+  "samples": 54,
   "firstSeenAt": "2026-10-22T21:45:36.000Z",
   "contractSince": "2026-10-22T22:15:40.000Z",
   "weather": {
@@ -172,8 +172,8 @@
       "p95": 426
     },
     "d30": {
-      "checks": 56,
-      "ok": 56,
+      "checks": 57,
+      "ok": 57,
       "uptime": 1,
       "p50": 234,
       "p95": 3323
