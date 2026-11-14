@@ -7,11 +7,11 @@
   "method": "GET",
   "docs": "https://huggingface.co/docs/hub/api",
   "description": "Model card metadata for bert-base-uncased.",
-  "checkedAt": "2026-11-13T17:11:51.000Z",
+  "checkedAt": "2026-11-14T06:19:23.000Z",
   "ok": true,
   "status": 200,
-  "latencyMs": 54,
-  "sizeBytes": 4524,
+  "latencyMs": 156,
+  "sizeBytes": 4560,
   "contentType": "application/json; charset=utf-8",
   "error": null,
   "engine": "api-drift/shape@1",
@@ -184,34 +184,34 @@
   },
   "shape": {
     "kind": "object",
-    "count": 54,
+    "count": 56,
     "properties": {
       "_id": {
         "kind": "string",
-        "count": 54,
+        "count": 56,
         "formats": [
           "plain"
         ]
       },
       "author": {
         "kind": "string",
-        "count": 54,
+        "count": 56,
         "formats": [
           "plain"
         ]
       },
       "cardData": {
         "kind": "object",
-        "count": 54,
+        "count": 56,
         "properties": {
           "datasets": {
             "kind": "array",
-            "count": 54,
+            "count": 56,
             "minItems": 2,
             "maxItems": 2,
             "items": {
               "kind": "string",
-              "count": 108,
+              "count": 112,
               "formats": [
                 "plain"
               ]
@@ -219,26 +219,26 @@
           },
           "language": {
             "kind": "string",
-            "count": 54,
+            "count": 56,
             "formats": [
               "plain"
             ]
           },
           "license": {
             "kind": "string",
-            "count": 54,
+            "count": 56,
             "formats": [
               "plain"
             ]
           },
           "tags": {
             "kind": "array",
-            "count": 54,
+            "count": 56,
             "minItems": 1,
             "maxItems": 1,
             "items": {
               "kind": "string",
-              "count": 54,
+              "count": 56,
               "formats": [
                 "plain"
               ]
@@ -248,16 +248,16 @@
       },
       "config": {
         "kind": "object",
-        "count": 54,
+        "count": 56,
         "properties": {
           "architectures": {
             "kind": "array",
-            "count": 54,
+            "count": 56,
             "minItems": 1,
             "maxItems": 1,
             "items": {
               "kind": "string",
-              "count": 54,
+              "count": 56,
               "formats": [
                 "plain"
               ]
@@ -265,137 +265,137 @@
           },
           "model_type": {
             "kind": "string",
-            "count": 54,
+            "count": 56,
             "formats": [
               "plain"
             ]
           },
           "tokenizer_config": {
             "kind": "object",
-            "count": 54,
+            "count": 56,
             "properties": {}
           }
         }
       },
       "createdAt": {
         "kind": "string",
-        "count": 54,
+        "count": 56,
         "formats": [
           "date-time"
         ]
       },
       "disabled": {
         "kind": "boolean",
-        "count": 54
+        "count": 56
       },
       "downloads": {
         "kind": "integer",
-        "count": 54
+        "count": 56
       },
       "gated": {
         "kind": "boolean",
-        "count": 54
+        "count": 56
       },
       "id": {
         "kind": "string",
-        "count": 54,
+        "count": 56,
         "formats": [
           "plain"
         ]
       },
       "inference": {
         "kind": "string",
-        "count": 54,
+        "count": 56,
         "formats": [
           "plain"
         ]
       },
       "lastModified": {
         "kind": "string",
-        "count": 54,
+        "count": 56,
         "formats": [
           "date-time"
         ]
       },
       "library_name": {
         "kind": "string",
-        "count": 54,
+        "count": 56,
         "formats": [
           "plain"
         ]
       },
       "likes": {
         "kind": "integer",
-        "count": 54
+        "count": 56
       },
       "mask_token": {
         "kind": "string",
-        "count": 54,
+        "count": 56,
         "formats": [
           "plain"
         ]
       },
       "model-index": {
         "kind": "null",
-        "count": 54
+        "count": 56
       },
       "modelId": {
         "kind": "string",
-        "count": 54,
+        "count": 56,
         "formats": [
           "plain"
         ]
       },
       "pipeline_tag": {
         "kind": "string",
-        "count": 54,
+        "count": 56,
         "formats": [
           "plain"
         ]
       },
       "private": {
         "kind": "boolean",
-        "count": 54
+        "count": 56
       },
       "safetensors": {
         "kind": "object",
-        "count": 54,
+        "count": 56,
         "properties": {
           "parameters": {
             "kind": "object",
-            "count": 54,
+            "count": 56,
             "properties": {
               "F32": {
                 "kind": "integer",
-                "count": 54
+                "count": 56
               }
             }
           },
           "total": {
             "kind": "integer",
-            "count": 54
+            "count": 56
           }
         }
       },
       "sha": {
         "kind": "string",
-        "count": 54,
+        "count": 56,
         "formats": [
           "plain"
         ]
       },
       "siblings": {
         "kind": "array",
-        "count": 54,
+        "count": 56,
         "minItems": 16,
         "maxItems": 16,
         "items": {
           "kind": "object",
-          "count": 864,
+          "count": 896,
           "properties": {
             "rfilename": {
               "kind": "string",
-              "count": 864,
+              "count": 896,
               "formats": [
                 "plain"
               ]
@@ -405,12 +405,12 @@
       },
       "spaces": {
         "kind": "array",
-        "count": 54,
+        "count": 56,
         "minItems": 100,
         "maxItems": 100,
         "items": {
           "kind": "string",
-          "count": 2700,
+          "count": 2800,
           "formats": [
             "plain"
           ]
@@ -418,12 +418,12 @@
       },
       "tags": {
         "kind": "array",
-        "count": 54,
+        "count": 56,
         "minItems": 20,
         "maxItems": 20,
         "items": {
           "kind": "string",
-          "count": 1080,
+          "count": 1120,
           "formats": [
             "plain"
           ]
@@ -431,25 +431,25 @@
       },
       "transformersInfo": {
         "kind": "object",
-        "count": 54,
+        "count": 56,
         "properties": {
           "auto_model": {
             "kind": "string",
-            "count": 54,
+            "count": 56,
             "formats": [
               "plain"
             ]
           },
           "pipeline_tag": {
             "kind": "string",
-            "count": 54,
+            "count": 56,
             "formats": [
               "plain"
             ]
           },
           "processor": {
             "kind": "string",
-            "count": 54,
+            "count": 56,
             "formats": [
               "plain"
             ]
@@ -458,20 +458,20 @@
       },
       "usedStorage": {
         "kind": "integer",
-        "count": 54
+        "count": 56
       },
       "widgetData": {
         "kind": "array",
-        "count": 54,
+        "count": 56,
         "minItems": 2,
         "maxItems": 2,
         "items": {
           "kind": "object",
-          "count": 108,
+          "count": 112,
           "properties": {
             "text": {
               "kind": "string",
-              "count": 108,
+              "count": 112,
               "formats": [
                 "plain"
               ]
@@ -482,7 +482,7 @@
     }
   },
   "fieldCount": 41,
-  "samples": 54,
+  "samples": 56,
   "firstSeenAt": "2026-10-22T21:45:35.000Z",
   "contractSince": "2026-10-22T22:15:39.000Z",
   "weather": {
@@ -496,21 +496,21 @@
       "checks": 4,
       "ok": 4,
       "uptime": 1,
-      "p50": 102,
-      "p95": 174
+      "p50": 127,
+      "p95": 156
     },
     "d7": {
-      "checks": 24,
-      "ok": 24,
+      "checks": 21,
+      "ok": 21,
       "uptime": 1,
-      "p50": 94,
-      "p95": 150
+      "p50": 102,
+      "p95": 156
     },
     "d30": {
-      "checks": 57,
-      "ok": 57,
+      "checks": 59,
+      "ok": 59,
       "uptime": 1,
-      "p50": 106,
+      "p50": 107,
       "p95": 322
     }
   }
