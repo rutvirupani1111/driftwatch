@@ -7,10 +7,10 @@
   "method": "GET",
   "docs": "https://jsonplaceholder.typicode.com/guide/",
   "description": "The fake REST API everyone has used in a tutorial.",
-  "checkedAt": "2026-11-15T16:20:30.000Z",
+  "checkedAt": "2026-11-15T22:47:53.000Z",
   "ok": true,
   "status": 200,
-  "latencyMs": 442,
+  "latencyMs": 113,
   "sizeBytes": 292,
   "contentType": "application/json; charset=utf-8",
   "error": null,
@@ -35,34 +35,34 @@
   },
   "shape": {
     "kind": "object",
-    "count": 60,
+    "count": 61,
     "properties": {
       "body": {
         "kind": "string",
-        "count": 60,
+        "count": 61,
         "formats": [
           "plain"
         ]
       },
       "id": {
         "kind": "integer",
-        "count": 60
+        "count": 61
       },
       "title": {
         "kind": "string",
-        "count": 60,
+        "count": 61,
         "formats": [
           "plain"
         ]
       },
       "userId": {
         "kind": "integer",
-        "count": 60
+        "count": 61
       }
     }
   },
   "fieldCount": 4,
-  "samples": 60,
+  "samples": 61,
   "firstSeenAt": "2026-10-22T21:45:37.000Z",
   "contractSince": "2026-10-22T22:15:40.000Z",
   "weather": {
@@ -76,19 +76,19 @@
       "checks": 3,
       "ok": 3,
       "uptime": 1,
-      "p50": 75,
+      "p50": 113,
       "p95": 442
     },
     "d7": {
-      "checks": 21,
-      "ok": 21,
+      "checks": 20,
+      "ok": 20,
       "uptime": 1,
-      "p50": 93,
+      "p50": 96,
       "p95": 442
     },
     "d30": {
-      "checks": 63,
-      "ok": 63,
+      "checks": 64,
+      "ok": 64,
       "uptime": 1,
       "p50": 96,
       "p95": 513
