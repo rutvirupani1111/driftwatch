@@ -7,10 +7,10 @@
   "method": "GET",
   "docs": "https://crates.io/data-access",
   "description": "Crate metadata for serde (crates.io requires a User-Agent).",
-  "checkedAt": "2026-11-14T22:22:28.000Z",
+  "checkedAt": "2026-11-15T06:27:14.000Z",
   "ok": true,
   "status": 200,
-  "latencyMs": 373,
+  "latencyMs": 119,
   "sizeBytes": 1948,
   "contentType": "application/json",
   "error": null,
@@ -182,52 +182,52 @@
   },
   "shape": {
     "kind": "object",
-    "count": 58,
+    "count": 59,
     "properties": {
       "categories": {
         "kind": "array",
-        "count": 58,
+        "count": 59,
         "minItems": 3,
         "maxItems": 3,
         "items": {
           "kind": "object",
-          "count": 174,
+          "count": 177,
           "properties": {
             "category": {
               "kind": "string",
-              "count": 174,
+              "count": 177,
               "formats": [
                 "plain"
               ]
             },
             "crates_cnt": {
               "kind": "integer",
-              "count": 174
+              "count": 177
             },
             "created_at": {
               "kind": "string",
-              "count": 174,
+              "count": 177,
               "formats": [
                 "date-time"
               ]
             },
             "description": {
               "kind": "string",
-              "count": 174,
+              "count": 177,
               "formats": [
                 "plain"
               ]
             },
             "id": {
               "kind": "string",
-              "count": 174,
+              "count": 177,
               "formats": [
                 "plain"
               ]
             },
             "slug": {
               "kind": "string",
-              "count": 174,
+              "count": 177,
               "formats": [
                 "plain"
               ]
@@ -237,22 +237,22 @@
       },
       "crate": {
         "kind": "object",
-        "count": 58,
+        "count": 59,
         "properties": {
           "badges": {
             "kind": "array",
-            "count": 58,
+            "count": 59,
             "minItems": 0,
             "maxItems": 0
           },
           "categories": {
             "kind": "array",
-            "count": 58,
+            "count": 59,
             "minItems": 3,
             "maxItems": 3,
             "items": {
               "kind": "string",
-              "count": 174,
+              "count": 177,
               "formats": [
                 "plain"
               ]
@@ -260,62 +260,62 @@
           },
           "created_at": {
             "kind": "string",
-            "count": 58,
+            "count": 59,
             "formats": [
               "date-time"
             ]
           },
           "default_version": {
             "kind": "string",
-            "count": 58,
+            "count": 59,
             "formats": [
               "semver"
             ]
           },
           "description": {
             "kind": "string",
-            "count": 58,
+            "count": 59,
             "formats": [
               "plain"
             ]
           },
           "documentation": {
             "kind": "string",
-            "count": 58,
+            "count": 59,
             "formats": [
               "uri"
             ]
           },
           "downloads": {
             "kind": "integer",
-            "count": 58
+            "count": 59
           },
           "exact_match": {
             "kind": "boolean",
-            "count": 58
+            "count": 59
           },
           "homepage": {
             "kind": "string",
-            "count": 58,
+            "count": 59,
             "formats": [
               "uri"
             ]
           },
           "id": {
             "kind": "string",
-            "count": 58,
+            "count": 59,
             "formats": [
               "plain"
             ]
           },
           "keywords": {
             "kind": "array",
-            "count": 58,
+            "count": 59,
             "minItems": 3,
             "maxItems": 3,
             "items": {
               "kind": "string",
-              "count": 174,
+              "count": 177,
               "formats": [
                 "plain"
               ]
@@ -323,46 +323,46 @@
           },
           "links": {
             "kind": "object",
-            "count": 58,
+            "count": 59,
             "properties": {
               "owner_team": {
                 "kind": "string",
-                "count": 58,
+                "count": 59,
                 "formats": [
                   "plain"
                 ]
               },
               "owner_user": {
                 "kind": "string",
-                "count": 58,
+                "count": 59,
                 "formats": [
                   "plain"
                 ]
               },
               "owners": {
                 "kind": "string",
-                "count": 58,
+                "count": 59,
                 "formats": [
                   "plain"
                 ]
               },
               "reverse_dependencies": {
                 "kind": "string",
-                "count": 58,
+                "count": 59,
                 "formats": [
                   "plain"
                 ]
               },
               "version_downloads": {
                 "kind": "string",
-                "count": 58,
+                "count": 59,
                 "formats": [
                   "plain"
                 ]
               },
               "versions": {
                 "kind": "string",
-                "count": 58,
+                "count": 59,
                 "formats": [
                   "plain"
                 ]
@@ -371,95 +371,95 @@
           },
           "max_stable_version": {
             "kind": "null",
-            "count": 58
+            "count": 59
           },
           "max_version": {
             "kind": "string",
-            "count": 58,
+            "count": 59,
             "formats": [
               "semver"
             ]
           },
           "name": {
             "kind": "string",
-            "count": 58,
+            "count": 59,
             "formats": [
               "plain"
             ]
           },
           "newest_version": {
             "kind": "string",
-            "count": 58,
+            "count": 59,
             "formats": [
               "semver"
             ]
           },
           "num_versions": {
             "kind": "integer",
-            "count": 58
+            "count": 59
           },
           "recent_downloads": {
             "kind": "null",
-            "count": 58
+            "count": 59
           },
           "repository": {
             "kind": "string",
-            "count": 58,
+            "count": 59,
             "formats": [
               "uri"
             ]
           },
           "trustpub_only": {
             "kind": "boolean",
-            "count": 58
+            "count": 59
           },
           "updated_at": {
             "kind": "string",
-            "count": 58,
+            "count": 59,
             "formats": [
               "date-time"
             ]
           },
           "versions": {
             "kind": "null",
-            "count": 58
+            "count": 59
           },
           "yanked": {
             "kind": "boolean",
-            "count": 58
+            "count": 59
           }
         }
       },
       "keywords": {
         "kind": "array",
-        "count": 58,
+        "count": 59,
         "minItems": 3,
         "maxItems": 3,
         "items": {
           "kind": "object",
-          "count": 174,
+          "count": 177,
           "properties": {
             "crates_cnt": {
               "kind": "integer",
-              "count": 174
+              "count": 177
             },
             "created_at": {
               "kind": "string",
-              "count": 174,
+              "count": 177,
               "formats": [
                 "date-time"
               ]
             },
             "id": {
               "kind": "string",
-              "count": 174,
+              "count": 177,
               "formats": [
                 "plain"
               ]
             },
             "keyword": {
               "kind": "string",
-              "count": 174,
+              "count": 177,
               "formats": [
                 "plain"
               ]
@@ -469,12 +469,12 @@
       },
       "versions": {
         "kind": "null",
-        "count": 58
+        "count": 59
       }
     }
   },
   "fieldCount": 43,
-  "samples": 58,
+  "samples": 59,
   "firstSeenAt": "2026-10-22T21:45:34.000Z",
   "contractSince": "2026-10-22T22:15:38.000Z",
   "weather": {
@@ -485,24 +485,24 @@
   },
   "stats": {
     "d1": {
-      "checks": 4,
-      "ok": 4,
+      "checks": 3,
+      "ok": 3,
       "uptime": 1,
-      "p50": 161,
+      "p50": 119,
       "p95": 373
     },
     "d7": {
       "checks": 21,
       "ok": 21,
       "uptime": 1,
-      "p50": 139,
+      "p50": 123,
       "p95": 355
     },
     "d30": {
-      "checks": 61,
-      "ok": 61,
+      "checks": 62,
+      "ok": 62,
       "uptime": 1,
-      "p50": 161,
+      "p50": 156,
       "p95": 923
     }
   }
