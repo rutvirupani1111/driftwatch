@@ -7,10 +7,10 @@
   "method": "GET",
   "docs": "https://open-meteo.com/en/docs",
   "description": "Today's forecast for Mumbai. A real weather API, watched for weather.",
-  "checkedAt": "2026-11-16T06:25:27.000Z",
+  "checkedAt": "2026-11-16T19:35:11.000Z",
   "ok": false,
   "status": 0,
-  "latencyMs": 10338,
+  "latencyMs": 10253,
   "sizeBytes": 0,
   "error": {
     "code": "network",
@@ -307,23 +307,23 @@
   },
   "stats": {
     "d1": {
-      "checks": 4,
-      "ok": 3,
-      "uptime": 0.75,
-      "p50": 215,
-      "p95": 219
+      "checks": 3,
+      "ok": 1,
+      "uptime": 0.3333333333333333,
+      "p50": 149,
+      "p95": 149
     },
     "d7": {
-      "checks": 20,
+      "checks": 21,
       "ok": 16,
-      "uptime": 0.8,
+      "uptime": 0.7619047619047619,
       "p50": 215,
       "p95": 661
     },
     "d30": {
-      "checks": 65,
+      "checks": 66,
       "ok": 60,
-      "uptime": 0.9230769230769231,
+      "uptime": 0.9090909090909091,
       "p50": 301,
       "p95": 798
     }
