@@ -1,6 +1,28 @@
 {
-  "generatedAt": "2026-11-16T06:25:37.637Z",
+  "generatedAt": "2026-11-17T15:58:08.447Z",
   "events": [
+    {
+      "id": "pokeapi@2026-11-17T15:57:59.000Z",
+      "apiId": "pokeapi",
+      "apiName": "PokeAPI: pokemon",
+      "at": "2026-11-17T15:57:59.000Z",
+      "severity": "info",
+      "summary": "$.moves[].version_group_details[].enhancement_level: new field (null) (1 info)",
+      "fingerprintBefore": "0494a8d17e52d6bc",
+      "fingerprintAfter": "4fdad737b511a54d",
+      "changes": [
+        {
+          "path": "$.moves[].version_group_details[].enhancement_level",
+          "kind": "added",
+          "severity": "info",
+          "message": "new field (null)",
+          "after": "null",
+          "afterNode": {
+            "type": "null"
+          }
+        }
+      ]
+    },
     {
       "id": "homebrew@2026-10-31T12:25:20.000Z",
       "apiId": "homebrew",
