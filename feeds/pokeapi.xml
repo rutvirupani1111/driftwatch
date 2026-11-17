@@ -5,7 +5,18 @@
   <id>https://rutvirupani1111.github.io/driftwatch/feeds/pokeapi.xml</id>
   <link rel="self" type="application/atom+xml" href="https://rutvirupani1111.github.io/driftwatch/feeds/pokeapi.xml"/>
   <link rel="alternate" type="text/html" href="https://rutvirupani1111.github.io/driftwatch/api/pokeapi"/>
-  <updated>2026-11-17T03:51:26.860Z</updated>
+  <updated>2026-11-17T15:57:59.000Z</updated>
   <author><name>Driftwatch</name></author>
   <generator uri="https://github.com/rutvirupani1111/driftwatch">Driftwatch</generator>
+  <entry>
+    <title>[info] PokeAPI: pokemon: $.moves[].version_group_details[].enhancement_level: new field (null) (1 info)</title>
+    <id>https://rutvirupani1111.github.io/driftwatch/feeds/pokeapi#pokeapi@2026-11-17T15:57:59.000Z</id>
+    <link rel="alternate" type="text/html" href="https://rutvirupani1111.github.io/driftwatch/api/pokeapi#pokeapi%402026-11-17T15%3A57%3A59.000Z"/>
+    <updated>2026-11-17T15:57:59.000Z</updated>
+    <published>2026-11-17T15:57:59.000Z</published>
+    <category term="info" label="info"/>
+    <category term="pokeapi"/>
+    <summary>$.moves[].version_group_details[].enhancement_level: new field (null) (1 info)</summary>
+    <content type="html">&lt;p&gt;$.moves[].version_group_details[].enhancement_level: new field (null) (1 info)&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;strong&gt;info&lt;/strong&gt; new field (null) &lt;code&gt;missing&lt;/code&gt; → &lt;code&gt;null&lt;/code&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;Fingerprint 0494a8d17e52d6bc → 4fdad737b511a54d&lt;/p&gt;</content>
+  </entry>
 </feed>

@@ -7,13 +7,15 @@
   "method": "GET",
   "docs": "https://openlibrary.org/dev/docs/api/books",
   "description": "The work record for Fantastic Mr Fox.",
-  "checkedAt": "2026-11-17T03:51:16.000Z",
-  "ok": true,
-  "status": 200,
-  "latencyMs": 5659,
-  "sizeBytes": 2660,
-  "contentType": "application/json",
-  "error": null,
+  "checkedAt": "2026-11-17T15:57:58.000Z",
+  "ok": false,
+  "status": 0,
+  "latencyMs": 10115,
+  "sizeBytes": 0,
+  "error": {
+    "code": "network",
+    "message": "Connect Timeout Error (attempted address: openlibrary.org:443, timeout: 10000ms)"
+  },
   "engine": "api-drift/shape@1",
   "fingerprint": "330a32edc3a34001",
   "contract": {
@@ -345,30 +347,29 @@
   "firstSeenAt": "2026-10-22T21:45:35.000Z",
   "contractSince": "2026-10-22T22:15:38.000Z",
   "weather": {
-    "condition": "sunny",
-    "headline": "Clear skies",
-    "reason": "Contract unchanged and responding normally.",
-    "since": "2026-10-22T21:45:35.000Z"
+    "condition": "fog",
+    "headline": "Fog",
+    "reason": "Connect Timeout Error (attempted address: openlibrary.org:443, timeout: 10000ms)."
   },
   "stats": {
     "d1": {
       "checks": 3,
-      "ok": 3,
-      "uptime": 1,
+      "ok": 2,
+      "uptime": 0.6666666666666666,
       "p50": 319,
       "p95": 5659
     },
     "d7": {
       "checks": 20,
-      "ok": 20,
-      "uptime": 1,
-      "p50": 274,
-      "p95": 517
+      "ok": 19,
+      "uptime": 0.95,
+      "p50": 288,
+      "p95": 5659
     },
     "d30": {
-      "checks": 67,
+      "checks": 68,
       "ok": 66,
-      "uptime": 0.9850746268656716,
+      "uptime": 0.9705882352941176,
       "p50": 337,
       "p95": 1589
     }
