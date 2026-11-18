@@ -1,1 +1,32 @@
-[]
+[
+  {
+    "id": "open-library@2026-11-18T00:56:32.000Z",
+    "apiId": "open-library",
+    "apiName": "Open Library: work",
+    "at": "2026-11-18T00:56:32.000Z",
+    "severity": "info",
+    "summary": "$.literary_forms: new field (object[]) (1 info)",
+    "fingerprintBefore": "330a32edc3a34001",
+    "fingerprintAfter": "c5122811b61cb2af",
+    "changes": [
+      {
+        "path": "$.literary_forms",
+        "kind": "added",
+        "severity": "info",
+        "message": "new field (object[])",
+        "after": "object[]",
+        "afterNode": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "key": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    ]
+  }
+]

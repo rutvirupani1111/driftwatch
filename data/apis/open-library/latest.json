@@ -7,17 +7,15 @@
   "method": "GET",
   "docs": "https://openlibrary.org/dev/docs/api/books",
   "description": "The work record for Fantastic Mr Fox.",
-  "checkedAt": "2026-11-17T15:57:58.000Z",
-  "ok": false,
-  "status": 0,
-  "latencyMs": 10115,
-  "sizeBytes": 0,
-  "error": {
-    "code": "network",
-    "message": "Connect Timeout Error (attempted address: openlibrary.org:443, timeout: 10000ms)"
-  },
+  "checkedAt": "2026-11-18T00:56:32.000Z",
+  "ok": true,
+  "status": 200,
+  "latencyMs": 367,
+  "sizeBytes": 2705,
+  "contentType": "application/json",
+  "error": null,
   "engine": "api-drift/shape@1",
-  "fingerprint": "330a32edc3a34001",
+  "fingerprint": "c5122811b61cb2af",
   "contract": {
     "type": "object",
     "properties": {
@@ -90,6 +88,18 @@
       "latest_revision": {
         "type": "integer"
       },
+      "literary_forms": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "key": {
+              "type": "string"
+            }
+          }
+        },
+        "optional": true
+      },
       "location": {
         "type": "string"
       },
@@ -135,24 +145,24 @@
   },
   "shape": {
     "kind": "object",
-    "count": 63,
+    "count": 64,
     "properties": {
       "authors": {
         "kind": "array",
-        "count": 63,
+        "count": 64,
         "minItems": 1,
         "maxItems": 1,
         "items": {
           "kind": "object",
-          "count": 63,
+          "count": 64,
           "properties": {
             "author": {
               "kind": "object",
-              "count": 63,
+              "count": 64,
               "properties": {
                 "key": {
                   "kind": "string",
-                  "count": 63,
+                  "count": 64,
                   "formats": [
                     "plain"
                   ]
@@ -161,11 +171,11 @@
             },
             "type": {
               "kind": "object",
-              "count": 63,
+              "count": 64,
               "properties": {
                 "key": {
                   "kind": "string",
-                  "count": 63,
+                  "count": 64,
                   "formats": [
                     "plain"
                   ]
@@ -177,29 +187,29 @@
       },
       "covers": {
         "kind": "array",
-        "count": 63,
+        "count": 64,
         "minItems": 36,
         "maxItems": 36,
         "items": {
           "kind": "integer",
-          "count": 2268,
+          "count": 2304,
           "negative": true
         }
       },
       "created": {
         "kind": "object",
-        "count": 63,
+        "count": 64,
         "properties": {
           "type": {
             "kind": "string",
-            "count": 63,
+            "count": 64,
             "formats": [
               "plain"
             ]
           },
           "value": {
             "kind": "string",
-            "count": 63,
+            "count": 64,
             "formats": [
               "date-time"
             ]
@@ -208,19 +218,19 @@
       },
       "description": {
         "kind": "string",
-        "count": 63,
+        "count": 64,
         "formats": [
           "plain"
         ]
       },
       "genres": {
         "kind": "array",
-        "count": 63,
+        "count": 64,
         "minItems": 1,
         "maxItems": 1,
         "items": {
           "kind": "string",
-          "count": 63,
+          "count": 64,
           "formats": [
             "plain"
           ]
@@ -228,25 +238,25 @@
       },
       "key": {
         "kind": "string",
-        "count": 63,
+        "count": 64,
         "formats": [
           "plain"
         ]
       },
       "last_modified": {
         "kind": "object",
-        "count": 63,
+        "count": 64,
         "properties": {
           "type": {
             "kind": "string",
-            "count": 63,
+            "count": 64,
             "formats": [
               "plain"
             ]
           },
           "value": {
             "kind": "string",
-            "count": 63,
+            "count": 64,
             "formats": [
               "date-time"
             ]
@@ -255,27 +265,46 @@
       },
       "latest_revision": {
         "kind": "integer",
-        "count": 63
+        "count": 64
+      },
+      "literary_forms": {
+        "kind": "array",
+        "count": 1,
+        "minItems": 1,
+        "maxItems": 1,
+        "items": {
+          "kind": "object",
+          "count": 1,
+          "properties": {
+            "key": {
+              "kind": "string",
+              "count": 1,
+              "formats": [
+                "plain"
+              ]
+            }
+          }
+        }
       },
       "location": {
         "kind": "string",
-        "count": 63,
+        "count": 64,
         "formats": [
           "plain"
         ]
       },
       "revision": {
         "kind": "integer",
-        "count": 63
+        "count": 64
       },
       "subject_people": {
         "kind": "array",
-        "count": 63,
+        "count": 64,
         "minItems": 4,
         "maxItems": 4,
         "items": {
           "kind": "string",
-          "count": 252,
+          "count": 256,
           "formats": [
             "plain"
           ]
@@ -283,12 +312,12 @@
       },
       "subject_places": {
         "kind": "array",
-        "count": 63,
+        "count": 64,
         "minItems": 1,
         "maxItems": 1,
         "items": {
           "kind": "string",
-          "count": 63,
+          "count": 64,
           "formats": [
             "plain"
           ]
@@ -296,12 +325,12 @@
       },
       "subject_times": {
         "kind": "array",
-        "count": 63,
+        "count": 64,
         "minItems": 1,
         "maxItems": 1,
         "items": {
           "kind": "string",
-          "count": 63,
+          "count": 64,
           "formats": [
             "plain"
           ]
@@ -309,12 +338,12 @@
       },
       "subjects": {
         "kind": "array",
-        "count": 63,
+        "count": 64,
         "minItems": 31,
         "maxItems": 31,
         "items": {
           "kind": "string",
-          "count": 1953,
+          "count": 1984,
           "formats": [
             "plain"
           ]
@@ -322,18 +351,18 @@
       },
       "title": {
         "kind": "string",
-        "count": 63,
+        "count": 64,
         "formats": [
           "plain"
         ]
       },
       "type": {
         "kind": "object",
-        "count": 63,
+        "count": 64,
         "properties": {
           "key": {
             "kind": "string",
-            "count": 63,
+            "count": 64,
             "formats": [
               "plain"
             ]
@@ -342,21 +371,28 @@
       }
     }
   },
-  "fieldCount": 25,
-  "samples": 63,
+  "fieldCount": 27,
+  "samples": 64,
   "firstSeenAt": "2026-10-22T21:45:35.000Z",
-  "contractSince": "2026-10-22T22:15:38.000Z",
+  "contractSince": "2026-11-18T00:56:32.000Z",
+  "lastChange": {
+    "id": "open-library@2026-11-18T00:56:32.000Z",
+    "at": "2026-11-18T00:56:32.000Z",
+    "severity": "info",
+    "summary": "$.literary_forms: new field (object[]) (1 info)"
+  },
   "weather": {
-    "condition": "fog",
-    "headline": "Fog",
-    "reason": "Connect Timeout Error (attempted address: openlibrary.org:443, timeout: 10000ms)."
+    "condition": "partly-cloudy",
+    "headline": "Partly cloudy",
+    "reason": "$.literary_forms: new field (object[]) (1 info)",
+    "since": "2026-11-18T00:56:32.000Z"
   },
   "stats": {
     "d1": {
       "checks": 3,
       "ok": 2,
       "uptime": 0.6666666666666666,
-      "p50": 319,
+      "p50": 367,
       "p95": 5659
     },
     "d7": {
@@ -367,10 +403,10 @@
       "p95": 5659
     },
     "d30": {
-      "checks": 68,
-      "ok": 66,
-      "uptime": 0.9705882352941176,
-      "p50": 337,
+      "checks": 69,
+      "ok": 67,
+      "uptime": 0.9710144927536232,
+      "p50": 355,
       "p95": 1589
     }
   }
