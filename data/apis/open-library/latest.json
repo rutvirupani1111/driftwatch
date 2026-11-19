@@ -7,10 +7,10 @@
   "method": "GET",
   "docs": "https://openlibrary.org/dev/docs/api/books",
   "description": "The work record for Fantastic Mr Fox.",
-  "checkedAt": "2026-11-19T11:36:40.000Z",
+  "checkedAt": "2026-11-19T20:34:02.000Z",
   "ok": true,
   "status": 200,
-  "latencyMs": 306,
+  "latencyMs": 1572,
   "sizeBytes": 2705,
   "contentType": "application/json",
   "error": null,
@@ -145,24 +145,24 @@
   },
   "shape": {
     "kind": "object",
-    "count": 68,
+    "count": 69,
     "properties": {
       "authors": {
         "kind": "array",
-        "count": 68,
+        "count": 69,
         "minItems": 1,
         "maxItems": 1,
         "items": {
           "kind": "object",
-          "count": 68,
+          "count": 69,
           "properties": {
             "author": {
               "kind": "object",
-              "count": 68,
+              "count": 69,
               "properties": {
                 "key": {
                   "kind": "string",
-                  "count": 68,
+                  "count": 69,
                   "formats": [
                     "plain"
                   ]
@@ -171,11 +171,11 @@
             },
             "type": {
               "kind": "object",
-              "count": 68,
+              "count": 69,
               "properties": {
                 "key": {
                   "kind": "string",
-                  "count": 68,
+                  "count": 69,
                   "formats": [
                     "plain"
                   ]
@@ -187,29 +187,29 @@
       },
       "covers": {
         "kind": "array",
-        "count": 68,
+        "count": 69,
         "minItems": 36,
         "maxItems": 36,
         "items": {
           "kind": "integer",
-          "count": 2448,
+          "count": 2484,
           "negative": true
         }
       },
       "created": {
         "kind": "object",
-        "count": 68,
+        "count": 69,
         "properties": {
           "type": {
             "kind": "string",
-            "count": 68,
+            "count": 69,
             "formats": [
               "plain"
             ]
           },
           "value": {
             "kind": "string",
-            "count": 68,
+            "count": 69,
             "formats": [
               "date-time"
             ]
@@ -218,19 +218,19 @@
       },
       "description": {
         "kind": "string",
-        "count": 68,
+        "count": 69,
         "formats": [
           "plain"
         ]
       },
       "genres": {
         "kind": "array",
-        "count": 68,
+        "count": 69,
         "minItems": 1,
         "maxItems": 1,
         "items": {
           "kind": "string",
-          "count": 68,
+          "count": 69,
           "formats": [
             "plain"
           ]
@@ -238,25 +238,25 @@
       },
       "key": {
         "kind": "string",
-        "count": 68,
+        "count": 69,
         "formats": [
           "plain"
         ]
       },
       "last_modified": {
         "kind": "object",
-        "count": 68,
+        "count": 69,
         "properties": {
           "type": {
             "kind": "string",
-            "count": 68,
+            "count": 69,
             "formats": [
               "plain"
             ]
           },
           "value": {
             "kind": "string",
-            "count": 68,
+            "count": 69,
             "formats": [
               "date-time"
             ]
@@ -265,20 +265,20 @@
       },
       "latest_revision": {
         "kind": "integer",
-        "count": 68
+        "count": 69
       },
       "literary_forms": {
         "kind": "array",
-        "count": 5,
+        "count": 6,
         "minItems": 1,
         "maxItems": 1,
         "items": {
           "kind": "object",
-          "count": 5,
+          "count": 6,
           "properties": {
             "key": {
               "kind": "string",
-              "count": 5,
+              "count": 6,
               "formats": [
                 "plain"
               ]
@@ -288,23 +288,23 @@
       },
       "location": {
         "kind": "string",
-        "count": 68,
+        "count": 69,
         "formats": [
           "plain"
         ]
       },
       "revision": {
         "kind": "integer",
-        "count": 68
+        "count": 69
       },
       "subject_people": {
         "kind": "array",
-        "count": 68,
+        "count": 69,
         "minItems": 4,
         "maxItems": 4,
         "items": {
           "kind": "string",
-          "count": 272,
+          "count": 276,
           "formats": [
             "plain"
           ]
@@ -312,12 +312,12 @@
       },
       "subject_places": {
         "kind": "array",
-        "count": 68,
+        "count": 69,
         "minItems": 1,
         "maxItems": 1,
         "items": {
           "kind": "string",
-          "count": 68,
+          "count": 69,
           "formats": [
             "plain"
           ]
@@ -325,12 +325,12 @@
       },
       "subject_times": {
         "kind": "array",
-        "count": 68,
+        "count": 69,
         "minItems": 1,
         "maxItems": 1,
         "items": {
           "kind": "string",
-          "count": 68,
+          "count": 69,
           "formats": [
             "plain"
           ]
@@ -338,12 +338,12 @@
       },
       "subjects": {
         "kind": "array",
-        "count": 68,
+        "count": 69,
         "minItems": 31,
         "maxItems": 31,
         "items": {
           "kind": "string",
-          "count": 2108,
+          "count": 2139,
           "formats": [
             "plain"
           ]
@@ -351,18 +351,18 @@
       },
       "title": {
         "kind": "string",
-        "count": 68,
+        "count": 69,
         "formats": [
           "plain"
         ]
       },
       "type": {
         "kind": "object",
-        "count": 68,
+        "count": 69,
         "properties": {
           "key": {
             "kind": "string",
-            "count": 68,
+            "count": 69,
             "formats": [
               "plain"
             ]
@@ -372,7 +372,7 @@
     }
   },
   "fieldCount": 27,
-  "samples": 68,
+  "samples": 69,
   "firstSeenAt": "2026-10-22T21:45:35.000Z",
   "contractSince": "2026-11-18T00:56:32.000Z",
   "lastChange": {
@@ -389,23 +389,23 @@
   },
   "stats": {
     "d1": {
-      "checks": 4,
-      "ok": 4,
+      "checks": 3,
+      "ok": 3,
       "uptime": 1,
-      "p50": 306,
-      "p95": 316
+      "p50": 316,
+      "p95": 1572
     },
     "d7": {
       "checks": 20,
       "ok": 19,
       "uptime": 0.95,
-      "p50": 306,
+      "p50": 310,
       "p95": 5659
     },
     "d30": {
-      "checks": 73,
-      "ok": 71,
-      "uptime": 0.9726027397260274,
+      "checks": 74,
+      "ok": 72,
+      "uptime": 0.972972972972973,
       "p50": 333,
       "p95": 1589
     }

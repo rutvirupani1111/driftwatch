@@ -7,11 +7,11 @@
   "method": "GET",
   "docs": "https://frankfurter.dev/",
   "description": "ECB reference rates for USD against INR, EUR and GBP.",
-  "checkedAt": "2026-11-19T11:36:40.000Z",
+  "checkedAt": "2026-11-19T20:34:03.000Z",
   "ok": true,
   "status": 200,
-  "latencyMs": 339,
-  "sizeBytes": 97,
+  "latencyMs": 296,
+  "sizeBytes": 96,
   "contentType": "application/json; charset=utf-8",
   "error": null,
   "engine": "api-drift/shape@1",
@@ -47,43 +47,43 @@
   },
   "shape": {
     "kind": "object",
-    "count": 69,
+    "count": 70,
     "properties": {
       "amount": {
         "kind": "integer",
-        "count": 69
+        "count": 70
       },
       "base": {
         "kind": "string",
-        "count": 69,
+        "count": 70,
         "formats": [
           "plain"
         ]
       },
       "date": {
         "kind": "string",
-        "count": 69,
+        "count": 70,
         "formats": [
           "date"
         ]
       },
       "rates": {
         "kind": "object",
-        "count": 69,
+        "count": 70,
         "properties": {
           "EUR": {
             "kind": "number",
-            "count": 69,
+            "count": 70,
             "integral": 0
           },
           "GBP": {
             "kind": "number",
-            "count": 69,
+            "count": 70,
             "integral": 0
           },
           "INR": {
             "kind": "number",
-            "count": 69,
+            "count": 70,
             "integral": 0
           }
         }
@@ -91,7 +91,7 @@
     }
   },
   "fieldCount": 7,
-  "samples": 69,
+  "samples": 70,
   "firstSeenAt": "2026-10-22T21:45:36.000Z",
   "contractSince": "2026-10-22T22:15:39.000Z",
   "weather": {
@@ -102,23 +102,23 @@
   },
   "stats": {
     "d1": {
-      "checks": 4,
-      "ok": 4,
+      "checks": 3,
+      "ok": 3,
       "uptime": 1,
-      "p50": 297,
-      "p95": 398
+      "p50": 296,
+      "p95": 339
     },
     "d7": {
       "checks": 20,
       "ok": 20,
       "uptime": 1,
-      "p50": 398,
+      "p50": 394,
       "p95": 642
     },
     "d30": {
-      "checks": 73,
-      "ok": 72,
-      "uptime": 0.9863013698630136,
+      "checks": 74,
+      "ok": 73,
+      "uptime": 0.9864864864864865,
       "p50": 401,
       "p95": 642
     }

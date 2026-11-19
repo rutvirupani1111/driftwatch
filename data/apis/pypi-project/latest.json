@@ -7,10 +7,10 @@
   "method": "GET",
   "docs": "https://docs.pypi.org/api/json/",
   "description": "Project metadata, release files and vulnerabilities for requests. Release versions are collapsed into a <version> map.",
-  "checkedAt": "2026-11-19T11:36:40.000Z",
+  "checkedAt": "2026-11-19T20:34:02.000Z",
   "ok": true,
   "status": 200,
-  "latencyMs": 25,
+  "latencyMs": 74,
   "sizeBytes": 192973,
   "contentType": "application/json",
   "error": null,
@@ -358,35 +358,35 @@
   },
   "shape": {
     "kind": "object",
-    "count": 70,
+    "count": 71,
     "properties": {
       "info": {
         "kind": "object",
-        "count": 70,
+        "count": 71,
         "properties": {
           "author": {
             "kind": "null",
-            "count": 70
+            "count": 71
           },
           "author_email": {
             "kind": "string",
-            "count": 70,
+            "count": 71,
             "formats": [
               "plain"
             ]
           },
           "bugtrack_url": {
             "kind": "null",
-            "count": 70
+            "count": 71
           },
           "classifiers": {
             "kind": "array",
-            "count": 70,
+            "count": 71,
             "minItems": 20,
             "maxItems": 20,
             "items": {
               "kind": "string",
-              "count": 1400,
+              "count": 1420,
               "formats": [
                 "plain"
               ]
@@ -394,55 +394,55 @@
           },
           "description": {
             "kind": "string",
-            "count": 70,
+            "count": 71,
             "formats": [
               "plain"
             ]
           },
           "description_content_type": {
             "kind": "string",
-            "count": 70,
+            "count": 71,
             "formats": [
               "plain"
             ]
           },
           "docs_url": {
             "kind": "null",
-            "count": 70
+            "count": 71
           },
           "download_url": {
             "kind": "null",
-            "count": 70
+            "count": 71
           },
           "downloads": {
             "kind": "object",
-            "count": 70,
+            "count": 71,
             "properties": {
               "last_day": {
                 "kind": "integer",
-                "count": 70,
+                "count": 71,
                 "negative": true
               },
               "last_month": {
                 "kind": "integer",
-                "count": 70,
+                "count": 71,
                 "negative": true
               },
               "last_week": {
                 "kind": "integer",
-                "count": 70,
+                "count": 71,
                 "negative": true
               }
             }
           },
           "dynamic": {
             "kind": "array",
-            "count": 70,
+            "count": 71,
             "minItems": 1,
             "maxItems": 1,
             "items": {
               "kind": "string",
-              "count": 70,
+              "count": 71,
               "formats": [
                 "plain"
               ]
@@ -450,31 +450,31 @@
           },
           "home_page": {
             "kind": "null",
-            "count": 70
+            "count": 71
           },
           "keywords": {
             "kind": "null",
-            "count": 70
+            "count": 71
           },
           "license": {
             "kind": "string",
-            "count": 70,
+            "count": 71,
             "formats": [
               "plain"
             ]
           },
           "license_expression": {
             "kind": "null",
-            "count": 70
+            "count": 71
           },
           "license_files": {
             "kind": "array",
-            "count": 70,
+            "count": 71,
             "minItems": 2,
             "maxItems": 2,
             "items": {
               "kind": "string",
-              "count": 140,
+              "count": 142,
               "formats": [
                 "plain"
               ]
@@ -482,54 +482,54 @@
           },
           "maintainer": {
             "kind": "null",
-            "count": 70
+            "count": 71
           },
           "maintainer_email": {
             "kind": "string",
-            "count": 70,
+            "count": 71,
             "formats": [
               "plain"
             ]
           },
           "name": {
             "kind": "string",
-            "count": 70,
+            "count": 71,
             "formats": [
               "plain"
             ]
           },
           "package_url": {
             "kind": "string",
-            "count": 70,
+            "count": 71,
             "formats": [
               "uri"
             ]
           },
           "platform": {
             "kind": "null",
-            "count": 70
+            "count": 71
           },
           "project_url": {
             "kind": "string",
-            "count": 70,
+            "count": 71,
             "formats": [
               "uri"
             ]
           },
           "project_urls": {
             "kind": "object",
-            "count": 70,
+            "count": 71,
             "properties": {
               "Documentation": {
                 "kind": "string",
-                "count": 70,
+                "count": 71,
                 "formats": [
                   "uri"
                 ]
               },
               "Source": {
                 "kind": "string",
-                "count": 70,
+                "count": 71,
                 "formats": [
                   "uri"
                 ]
@@ -538,12 +538,12 @@
           },
           "provides_extra": {
             "kind": "array",
-            "count": 70,
+            "count": 71,
             "minItems": 3,
             "maxItems": 3,
             "items": {
               "kind": "string",
-              "count": 210,
+              "count": 213,
               "formats": [
                 "plain"
               ]
@@ -551,19 +551,19 @@
           },
           "release_url": {
             "kind": "string",
-            "count": 70,
+            "count": 71,
             "formats": [
               "uri"
             ]
           },
           "requires_dist": {
             "kind": "array",
-            "count": 70,
+            "count": 71,
             "minItems": 6,
             "maxItems": 6,
             "items": {
               "kind": "string",
-              "count": 420,
+              "count": 426,
               "formats": [
                 "plain"
               ]
@@ -571,66 +571,66 @@
           },
           "requires_python": {
             "kind": "string",
-            "count": 70,
+            "count": 71,
             "formats": [
               "plain"
             ]
           },
           "summary": {
             "kind": "string",
-            "count": 70,
+            "count": 71,
             "formats": [
               "plain"
             ]
           },
           "version": {
             "kind": "string",
-            "count": 70,
+            "count": 71,
             "formats": [
               "semver"
             ]
           },
           "yanked": {
             "kind": "boolean",
-            "count": 70
+            "count": 71
           },
           "yanked_reason": {
             "kind": "null",
-            "count": 70
+            "count": 71
           }
         }
       },
       "last_serial": {
         "kind": "integer",
-        "count": 70
+        "count": 71
       },
       "ownership": {
         "kind": "object",
-        "count": 70,
+        "count": 71,
         "properties": {
           "organization": {
             "kind": "null",
-            "count": 70
+            "count": 71
           },
           "roles": {
             "kind": "array",
-            "count": 70,
+            "count": 71,
             "minItems": 3,
             "maxItems": 3,
             "items": {
               "kind": "object",
-              "count": 210,
+              "count": 213,
               "properties": {
                 "role": {
                   "kind": "string",
-                  "count": 210,
+                  "count": 213,
                   "formats": [
                     "plain"
                   ]
                 },
                 "user": {
                   "kind": "string",
-                  "count": 210,
+                  "count": 213,
                   "formats": [
                     "plain"
                   ]
@@ -642,20 +642,20 @@
       },
       "releases": {
         "kind": "object",
-        "count": 70,
+        "count": 71,
         "properties": {
           "<version>": {
             "kind": "array",
-            "count": 70,
+            "count": 71,
             "minItems": 3,
             "maxItems": 3,
             "items": {
               "kind": "object",
-              "count": 210,
+              "count": 213,
               "properties": {
                 "comment_text": {
                   "kind": "string",
-                  "count": 210,
+                  "count": 213,
                   "formats": [
                     "empty"
                   ]
@@ -665,15 +665,15 @@
                   "variants": [
                     {
                       "kind": "boolean",
-                      "count": 140
+                      "count": 142
                     },
                     {
                       "kind": "object",
-                      "count": 70,
+                      "count": 71,
                       "properties": {
                         "sha256": {
                           "kind": "string",
-                          "count": 70,
+                          "count": 71,
                           "formats": [
                             "plain"
                           ]
@@ -684,25 +684,25 @@
                 },
                 "digests": {
                   "kind": "object",
-                  "count": 210,
+                  "count": 213,
                   "properties": {
                     "blake2b_256": {
                       "kind": "string",
-                      "count": 210,
+                      "count": 213,
                       "formats": [
                         "plain"
                       ]
                     },
                     "md5": {
                       "kind": "string",
-                      "count": 210,
+                      "count": 213,
                       "formats": [
                         "plain"
                       ]
                     },
                     "sha256": {
                       "kind": "string",
-                      "count": 210,
+                      "count": 213,
                       "formats": [
                         "plain"
                       ]
@@ -711,37 +711,37 @@
                 },
                 "downloads": {
                   "kind": "integer",
-                  "count": 210,
+                  "count": 213,
                   "negative": true
                 },
                 "filename": {
                   "kind": "string",
-                  "count": 210,
+                  "count": 213,
                   "formats": [
                     "plain"
                   ]
                 },
                 "has_sig": {
                   "kind": "boolean",
-                  "count": 210
+                  "count": 213
                 },
                 "md5_digest": {
                   "kind": "string",
-                  "count": 210,
+                  "count": 213,
                   "formats": [
                     "plain"
                   ]
                 },
                 "packagetype": {
                   "kind": "string",
-                  "count": 210,
+                  "count": 213,
                   "formats": [
                     "plain"
                   ]
                 },
                 "python_version": {
                   "kind": "string",
-                  "count": 210,
+                  "count": 213,
                   "formats": [
                     "numeric-string",
                     "plain"
@@ -749,43 +749,43 @@
                 },
                 "requires_python": {
                   "kind": "string",
-                  "count": 210,
+                  "count": 213,
                   "formats": [
                     "plain"
                   ]
                 },
                 "size": {
                   "kind": "integer",
-                  "count": 210
+                  "count": 213
                 },
                 "upload_time": {
                   "kind": "string",
-                  "count": 210,
+                  "count": 213,
                   "formats": [
                     "date-time"
                   ]
                 },
                 "upload_time_iso_8601": {
                   "kind": "string",
-                  "count": 210,
+                  "count": 213,
                   "formats": [
                     "date-time"
                   ]
                 },
                 "url": {
                   "kind": "string",
-                  "count": 210,
+                  "count": 213,
                   "formats": [
                     "uri"
                   ]
                 },
                 "yanked": {
                   "kind": "boolean",
-                  "count": 210
+                  "count": 213
                 },
                 "yanked_reason": {
                   "kind": "null",
-                  "count": 210
+                  "count": 213
                 }
               }
             }
@@ -794,31 +794,31 @@
       },
       "urls": {
         "kind": "array",
-        "count": 70,
+        "count": 71,
         "minItems": 2,
         "maxItems": 2,
         "items": {
           "kind": "object",
-          "count": 140,
+          "count": 142,
           "properties": {
             "comment_text": {
               "kind": "null",
-              "count": 140
+              "count": 142
             },
             "core-metadata": {
               "kind": "union",
               "variants": [
                 {
                   "kind": "boolean",
-                  "count": 70
+                  "count": 71
                 },
                 {
                   "kind": "object",
-                  "count": 70,
+                  "count": 71,
                   "properties": {
                     "sha256": {
                       "kind": "string",
-                      "count": 70,
+                      "count": 71,
                       "formats": [
                         "plain"
                       ]
@@ -829,25 +829,25 @@
             },
             "digests": {
               "kind": "object",
-              "count": 140,
+              "count": 142,
               "properties": {
                 "blake2b_256": {
                   "kind": "string",
-                  "count": 140,
+                  "count": 142,
                   "formats": [
                     "plain"
                   ]
                 },
                 "md5": {
                   "kind": "string",
-                  "count": 140,
+                  "count": 142,
                   "formats": [
                     "plain"
                   ]
                 },
                 "sha256": {
                   "kind": "string",
-                  "count": 140,
+                  "count": 142,
                   "formats": [
                     "plain"
                   ]
@@ -856,94 +856,94 @@
             },
             "downloads": {
               "kind": "integer",
-              "count": 140,
+              "count": 142,
               "negative": true
             },
             "filename": {
               "kind": "string",
-              "count": 140,
+              "count": 142,
               "formats": [
                 "plain"
               ]
             },
             "has_sig": {
               "kind": "boolean",
-              "count": 140
+              "count": 142
             },
             "md5_digest": {
               "kind": "string",
-              "count": 140,
+              "count": 142,
               "formats": [
                 "plain"
               ]
             },
             "packagetype": {
               "kind": "string",
-              "count": 140,
+              "count": 142,
               "formats": [
                 "plain"
               ]
             },
             "python_version": {
               "kind": "string",
-              "count": 140,
+              "count": 142,
               "formats": [
                 "plain"
               ]
             },
             "requires_python": {
               "kind": "string",
-              "count": 140,
+              "count": 142,
               "formats": [
                 "plain"
               ]
             },
             "size": {
               "kind": "integer",
-              "count": 140
+              "count": 142
             },
             "upload_time": {
               "kind": "string",
-              "count": 140,
+              "count": 142,
               "formats": [
                 "date-time"
               ]
             },
             "upload_time_iso_8601": {
               "kind": "string",
-              "count": 140,
+              "count": 142,
               "formats": [
                 "date-time"
               ]
             },
             "url": {
               "kind": "string",
-              "count": 140,
+              "count": 142,
               "formats": [
                 "uri"
               ]
             },
             "yanked": {
               "kind": "boolean",
-              "count": 140
+              "count": 142
             },
             "yanked_reason": {
               "kind": "null",
-              "count": 140
+              "count": 142
             }
           }
         }
       },
       "vulnerabilities": {
         "kind": "array",
-        "count": 70,
+        "count": 71,
         "minItems": 0,
         "maxItems": 0
       }
     }
   },
   "fieldCount": 86,
-  "samples": 70,
+  "samples": 71,
   "firstSeenAt": "2026-10-22T21:45:34.000Z",
   "contractSince": "2026-10-22T22:15:37.000Z",
   "weather": {
@@ -954,22 +954,22 @@
   },
   "stats": {
     "d1": {
-      "checks": 4,
-      "ok": 4,
+      "checks": 3,
+      "ok": 3,
       "uptime": 1,
-      "p50": 30,
+      "p50": 74,
       "p95": 244
     },
     "d7": {
       "checks": 20,
       "ok": 20,
       "uptime": 1,
-      "p50": 41,
+      "p50": 44,
       "p95": 83
     },
     "d30": {
-      "checks": 73,
-      "ok": 73,
+      "checks": 74,
+      "ok": 74,
       "uptime": 1,
       "p50": 53,
       "p95": 244

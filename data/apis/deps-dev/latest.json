@@ -7,10 +7,10 @@
   "method": "GET",
   "docs": "https://docs.deps.dev/api/v3/",
   "description": "Open Source Insights data for react 18.3.1.",
-  "checkedAt": "2026-11-19T11:36:40.000Z",
+  "checkedAt": "2026-11-19T20:34:02.000Z",
   "ok": true,
   "status": 200,
-  "latencyMs": 177,
+  "latencyMs": 121,
   "sizeBytes": 826,
   "contentType": "application/json; charset=utf-8",
   "error": null,
@@ -111,43 +111,43 @@
   },
   "shape": {
     "kind": "object",
-    "count": 70,
+    "count": 71,
     "properties": {
       "advisoryKeys": {
         "kind": "array",
-        "count": 70,
+        "count": 71,
         "minItems": 0,
         "maxItems": 0
       },
       "attestations": {
         "kind": "array",
-        "count": 70,
+        "count": 71,
         "minItems": 0,
         "maxItems": 0
       },
       "deprecatedReason": {
         "kind": "string",
-        "count": 70,
+        "count": 71,
         "formats": [
           "empty"
         ]
       },
       "isDefault": {
         "kind": "boolean",
-        "count": 70
+        "count": 71
       },
       "isDeprecated": {
         "kind": "boolean",
-        "count": 70
+        "count": 71
       },
       "licenses": {
         "kind": "array",
-        "count": 70,
+        "count": 71,
         "minItems": 1,
         "maxItems": 1,
         "items": {
           "kind": "string",
-          "count": 70,
+          "count": 71,
           "formats": [
             "plain"
           ]
@@ -155,23 +155,23 @@
       },
       "links": {
         "kind": "array",
-        "count": 70,
+        "count": 71,
         "minItems": 4,
         "maxItems": 4,
         "items": {
           "kind": "object",
-          "count": 280,
+          "count": 284,
           "properties": {
             "label": {
               "kind": "string",
-              "count": 280,
+              "count": 284,
               "formats": [
                 "plain"
               ]
             },
             "url": {
               "kind": "string",
-              "count": 280,
+              "count": 284,
               "formats": [
                 "uri"
               ]
@@ -181,19 +181,19 @@
       },
       "publishedAt": {
         "kind": "string",
-        "count": 70,
+        "count": 71,
         "formats": [
           "date-time"
         ]
       },
       "registries": {
         "kind": "array",
-        "count": 70,
+        "count": 71,
         "minItems": 1,
         "maxItems": 1,
         "items": {
           "kind": "string",
-          "count": 70,
+          "count": 71,
           "formats": [
             "uri"
           ]
@@ -201,20 +201,20 @@
       },
       "relatedProjects": {
         "kind": "array",
-        "count": 70,
+        "count": 71,
         "minItems": 2,
         "maxItems": 2,
         "items": {
           "kind": "object",
-          "count": 140,
+          "count": 142,
           "properties": {
             "projectKey": {
               "kind": "object",
-              "count": 140,
+              "count": 142,
               "properties": {
                 "id": {
                   "kind": "string",
-                  "count": 140,
+                  "count": 142,
                   "formats": [
                     "plain"
                   ]
@@ -223,14 +223,14 @@
             },
             "relationProvenance": {
               "kind": "string",
-              "count": 140,
+              "count": 142,
               "formats": [
                 "plain"
               ]
             },
             "relationType": {
               "kind": "string",
-              "count": 140,
+              "count": 142,
               "formats": [
                 "plain"
               ]
@@ -240,31 +240,31 @@
       },
       "slsaProvenances": {
         "kind": "array",
-        "count": 70,
+        "count": 71,
         "minItems": 0,
         "maxItems": 0
       },
       "versionKey": {
         "kind": "object",
-        "count": 70,
+        "count": 71,
         "properties": {
           "name": {
             "kind": "string",
-            "count": 70,
+            "count": 71,
             "formats": [
               "plain"
             ]
           },
           "system": {
             "kind": "string",
-            "count": 70,
+            "count": 71,
             "formats": [
               "plain"
             ]
           },
           "version": {
             "kind": "string",
-            "count": 70,
+            "count": 71,
             "formats": [
               "semver"
             ]
@@ -274,7 +274,7 @@
     }
   },
   "fieldCount": 21,
-  "samples": 70,
+  "samples": 71,
   "firstSeenAt": "2026-10-22T21:45:35.000Z",
   "contractSince": "2026-10-22T22:15:38.000Z",
   "weather": {
@@ -285,8 +285,8 @@
   },
   "stats": {
     "d1": {
-      "checks": 4,
-      "ok": 4,
+      "checks": 3,
+      "ok": 3,
       "uptime": 1,
       "p50": 128,
       "p95": 177
@@ -299,8 +299,8 @@
       "p95": 246
     },
     "d30": {
-      "checks": 73,
-      "ok": 73,
+      "checks": 74,
+      "ok": 74,
       "uptime": 1,
       "p50": 156,
       "p95": 274
