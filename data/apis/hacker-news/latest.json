@@ -7,10 +7,10 @@
   "method": "GET",
   "docs": "https://github.com/HackerNews/API",
   "description": "The canonical example item from the official Firebase API.",
-  "checkedAt": "2026-11-20T11:36:01.000Z",
+  "checkedAt": "2026-11-20T20:14:10.000Z",
   "ok": true,
   "status": 200,
-  "latencyMs": 145,
+  "latencyMs": 77,
   "sizeBytes": 375,
   "contentType": "application/json; charset=utf-8",
   "error": null,
@@ -54,58 +54,58 @@
   },
   "shape": {
     "kind": "object",
-    "count": 73,
+    "count": 74,
     "properties": {
       "by": {
         "kind": "string",
-        "count": 73,
+        "count": 74,
         "formats": [
           "plain"
         ]
       },
       "descendants": {
         "kind": "integer",
-        "count": 73
+        "count": 74
       },
       "id": {
         "kind": "integer",
-        "count": 73
+        "count": 74
       },
       "kids": {
         "kind": "array",
-        "count": 73,
+        "count": 74,
         "minItems": 33,
         "maxItems": 33,
         "items": {
           "kind": "integer",
-          "count": 2409
+          "count": 2442
         }
       },
       "score": {
         "kind": "integer",
-        "count": 73
+        "count": 74
       },
       "time": {
         "kind": "integer",
-        "count": 73
+        "count": 74
       },
       "title": {
         "kind": "string",
-        "count": 73,
+        "count": 74,
         "formats": [
           "plain"
         ]
       },
       "type": {
         "kind": "string",
-        "count": 73,
+        "count": 74,
         "formats": [
           "plain"
         ]
       },
       "url": {
         "kind": "string",
-        "count": 73,
+        "count": 74,
         "formats": [
           "uri"
         ]
@@ -113,7 +113,7 @@
     }
   },
   "fieldCount": 9,
-  "samples": 73,
+  "samples": 74,
   "firstSeenAt": "2026-10-22T21:45:35.000Z",
   "contractSince": "2026-10-22T22:15:38.000Z",
   "weather": {
@@ -138,8 +138,8 @@
       "p95": 276
     },
     "d30": {
-      "checks": 76,
-      "ok": 76,
+      "checks": 77,
+      "ok": 77,
       "uptime": 1,
       "p50": 168,
       "p95": 698
