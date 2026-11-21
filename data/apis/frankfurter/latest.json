@@ -7,10 +7,10 @@
   "method": "GET",
   "docs": "https://frankfurter.dev/",
   "description": "ECB reference rates for USD against INR, EUR and GBP.",
-  "checkedAt": "2026-11-20T20:14:10.000Z",
+  "checkedAt": "2026-11-21T02:12:14.000Z",
   "ok": true,
   "status": 200,
-  "latencyMs": 431,
+  "latencyMs": 193,
   "sizeBytes": 97,
   "contentType": "application/json; charset=utf-8",
   "error": null,
@@ -47,43 +47,43 @@
   },
   "shape": {
     "kind": "object",
-    "count": 73,
+    "count": 74,
     "properties": {
       "amount": {
         "kind": "integer",
-        "count": 73
+        "count": 74
       },
       "base": {
         "kind": "string",
-        "count": 73,
+        "count": 74,
         "formats": [
           "plain"
         ]
       },
       "date": {
         "kind": "string",
-        "count": 73,
+        "count": 74,
         "formats": [
           "date"
         ]
       },
       "rates": {
         "kind": "object",
-        "count": 73,
+        "count": 74,
         "properties": {
           "EUR": {
             "kind": "number",
-            "count": 73,
+            "count": 74,
             "integral": 0
           },
           "GBP": {
             "kind": "number",
-            "count": 73,
+            "count": 74,
             "integral": 0
           },
           "INR": {
             "kind": "number",
-            "count": 73,
+            "count": 74,
             "integral": 0
           }
         }
@@ -91,7 +91,7 @@
     }
   },
   "fieldCount": 7,
-  "samples": 73,
+  "samples": 74,
   "firstSeenAt": "2026-10-22T21:45:36.000Z",
   "contractSince": "2026-10-22T22:15:39.000Z",
   "weather": {
@@ -112,13 +112,13 @@
       "checks": 20,
       "ok": 20,
       "uptime": 1,
-      "p50": 391,
+      "p50": 381,
       "p95": 488
     },
     "d30": {
-      "checks": 77,
-      "ok": 76,
-      "uptime": 0.987012987012987,
+      "checks": 78,
+      "ok": 77,
+      "uptime": 0.9871794871794872,
       "p50": 399,
       "p95": 642
     }
