@@ -7,7 +7,7 @@
   "method": "GET",
   "docs": "https://github.com/HackerNews/API",
   "description": "The canonical example item from the official Firebase API.",
-  "checkedAt": "2026-11-18T20:29:06.000Z",
+  "checkedAt": "2026-11-22T01:17:10.000Z",
   "ok": true,
   "status": 200,
   "latencyMs": 149,
@@ -54,58 +54,58 @@
   },
   "shape": {
     "kind": "object",
-    "count": 68,
+    "count": 78,
     "properties": {
       "by": {
         "kind": "string",
-        "count": 68,
+        "count": 78,
         "formats": [
           "plain"
         ]
       },
       "descendants": {
         "kind": "integer",
-        "count": 68
+        "count": 78
       },
       "id": {
         "kind": "integer",
-        "count": 68
+        "count": 78
       },
       "kids": {
         "kind": "array",
-        "count": 68,
+        "count": 78,
         "minItems": 33,
         "maxItems": 33,
         "items": {
           "kind": "integer",
-          "count": 2244
+          "count": 2574
         }
       },
       "score": {
         "kind": "integer",
-        "count": 68
+        "count": 78
       },
       "time": {
         "kind": "integer",
-        "count": 68
+        "count": 78
       },
       "title": {
         "kind": "string",
-        "count": 68,
+        "count": 78,
         "formats": [
           "plain"
         ]
       },
       "type": {
         "kind": "string",
-        "count": 68,
+        "count": 78,
         "formats": [
           "plain"
         ]
       },
       "url": {
         "kind": "string",
-        "count": 68,
+        "count": 78,
         "formats": [
           "uri"
         ]
@@ -113,7 +113,7 @@
     }
   },
   "fieldCount": 9,
-  "samples": 68,
+  "samples": 78,
   "firstSeenAt": "2026-10-22T21:45:35.000Z",
   "contractSince": "2026-10-22T22:15:38.000Z",
   "weather": {
@@ -124,25 +124,25 @@
   },
   "stats": {
     "d1": {
-      "checks": 3,
-      "ok": 3,
+      "checks": 4,
+      "ok": 4,
       "uptime": 1,
-      "p50": 160,
-      "p95": 319
+      "p50": 151,
+      "p95": 241
     },
     "d7": {
       "checks": 20,
       "ok": 20,
       "uptime": 1,
-      "p50": 168,
-      "p95": 319
+      "p50": 149,
+      "p95": 276
     },
     "d30": {
-      "checks": 71,
-      "ok": 71,
+      "checks": 76,
+      "ok": 76,
       "uptime": 1,
-      "p50": 174,
-      "p95": 698
+      "p50": 160,
+      "p95": 492
     }
   }
 }
