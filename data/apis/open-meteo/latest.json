@@ -7,11 +7,11 @@
   "method": "GET",
   "docs": "https://open-meteo.com/en/docs",
   "description": "Today's forecast for Mumbai. A real weather API, watched for weather.",
-  "checkedAt": "2026-11-22T19:36:41.000Z",
+  "checkedAt": "2026-11-23T01:40:28.000Z",
   "ok": true,
   "status": 200,
-  "latencyMs": 69,
-  "sizeBytes": 1153,
+  "latencyMs": 90,
+  "sizeBytes": 1154,
   "contentType": "application/json; charset=utf-8",
   "error": null,
   "engine": "api-drift/shape@1",
@@ -120,85 +120,85 @@
   },
   "shape": {
     "kind": "object",
-    "count": 71,
+    "count": 72,
     "properties": {
       "current": {
         "kind": "object",
-        "count": 71,
+        "count": 72,
         "properties": {
           "interval": {
             "kind": "integer",
-            "count": 71
+            "count": 72
           },
           "relative_humidity_2m": {
             "kind": "integer",
-            "count": 71
+            "count": 72
           },
           "temperature_2m": {
             "kind": "number",
-            "count": 71,
+            "count": 72,
             "integral": 9
           },
           "time": {
             "kind": "string",
-            "count": 71,
+            "count": 72,
             "formats": [
               "date-time"
             ]
           },
           "weather_code": {
             "kind": "integer",
-            "count": 71
+            "count": 72
           },
           "wind_speed_10m": {
             "kind": "number",
-            "count": 71,
+            "count": 72,
             "integral": 8
           }
         }
       },
       "current_units": {
         "kind": "object",
-        "count": 71,
+        "count": 72,
         "properties": {
           "interval": {
             "kind": "string",
-            "count": 71,
+            "count": 72,
             "formats": [
               "plain"
             ]
           },
           "relative_humidity_2m": {
             "kind": "string",
-            "count": 71,
+            "count": 72,
             "formats": [
               "plain"
             ]
           },
           "temperature_2m": {
             "kind": "string",
-            "count": 71,
+            "count": 72,
             "formats": [
               "plain"
             ]
           },
           "time": {
             "kind": "string",
-            "count": 71,
+            "count": 72,
             "formats": [
               "plain"
             ]
           },
           "weather_code": {
             "kind": "string",
-            "count": 71,
+            "count": 72,
             "formats": [
               "plain"
             ]
           },
           "wind_speed_10m": {
             "kind": "string",
-            "count": 71,
+            "count": 72,
             "formats": [
               "plain"
             ]
@@ -207,36 +207,36 @@
       },
       "elevation": {
         "kind": "integer",
-        "count": 71
+        "count": 72
       },
       "generationtime_ms": {
         "kind": "number",
-        "count": 71,
+        "count": 72,
         "integral": 0
       },
       "hourly": {
         "kind": "object",
-        "count": 71,
+        "count": 72,
         "properties": {
           "temperature_2m": {
             "kind": "array",
-            "count": 71,
+            "count": 72,
             "minItems": 24,
             "maxItems": 24,
             "items": {
               "kind": "number",
-              "count": 1704,
-              "integral": 152
+              "count": 1728,
+              "integral": 157
             }
           },
           "time": {
             "kind": "array",
-            "count": 71,
+            "count": 72,
             "minItems": 24,
             "maxItems": 24,
             "items": {
               "kind": "string",
-              "count": 1704,
+              "count": 1728,
               "formats": [
                 "date-time"
               ]
@@ -246,18 +246,18 @@
       },
       "hourly_units": {
         "kind": "object",
-        "count": 71,
+        "count": 72,
         "properties": {
           "temperature_2m": {
             "kind": "string",
-            "count": 71,
+            "count": 72,
             "formats": [
               "plain"
             ]
           },
           "time": {
             "kind": "string",
-            "count": 71,
+            "count": 72,
             "formats": [
               "plain"
             ]
@@ -266,36 +266,36 @@
       },
       "latitude": {
         "kind": "number",
-        "count": 71,
+        "count": 72,
         "integral": 0
       },
       "longitude": {
         "kind": "number",
-        "count": 71,
+        "count": 72,
         "integral": 0
       },
       "timezone": {
         "kind": "string",
-        "count": 71,
+        "count": 72,
         "formats": [
           "plain"
         ]
       },
       "timezone_abbreviation": {
         "kind": "string",
-        "count": 71,
+        "count": 72,
         "formats": [
           "plain"
         ]
       },
       "utc_offset_seconds": {
         "kind": "integer",
-        "count": 71
+        "count": 72
       }
     }
   },
   "fieldCount": 27,
-  "samples": 71,
+  "samples": 72,
   "firstSeenAt": "2026-10-22T21:45:35.000Z",
   "contractSince": "2026-10-29T05:45:42.000Z",
   "weather": {
@@ -307,10 +307,10 @@
   "stats": {
     "d1": {
       "checks": 3,
-      "ok": 2,
-      "uptime": 0.6666666666666666,
-      "p50": 38,
-      "p95": 69
+      "ok": 3,
+      "uptime": 1,
+      "p50": 69,
+      "p95": 90
     },
     "d7": {
       "checks": 20,
@@ -320,10 +320,10 @@
       "p95": 378
     },
     "d30": {
-      "checks": 78,
-      "ok": 69,
-      "uptime": 0.8846153846153846,
-      "p50": 252,
+      "checks": 79,
+      "ok": 70,
+      "uptime": 0.8860759493670886,
+      "p50": 245,
       "p95": 798
     }
   }
