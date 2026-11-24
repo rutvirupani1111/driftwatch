@@ -7,10 +7,10 @@
   "method": "GET",
   "docs": "https://pokeapi.co/docs/v2",
   "description": "Ditto: the classic PokeAPI example resource.",
-  "checkedAt": "2026-11-24T02:12:11.000Z",
+  "checkedAt": "2026-11-24T23:53:15.000Z",
   "ok": true,
   "status": 200,
-  "latencyMs": 40,
+  "latencyMs": 107,
   "sizeBytes": 40261,
   "contentType": "application/json; charset=utf-8",
   "error": null,
@@ -1587,31 +1587,31 @@
   },
   "shape": {
     "kind": "object",
-    "count": 83,
+    "count": 85,
     "properties": {
       "abilities": {
         "kind": "array",
-        "count": 83,
+        "count": 85,
         "minItems": 2,
         "maxItems": 2,
         "items": {
           "kind": "object",
-          "count": 166,
+          "count": 170,
           "properties": {
             "ability": {
               "kind": "object",
-              "count": 166,
+              "count": 170,
               "properties": {
                 "name": {
                   "kind": "string",
-                  "count": 166,
+                  "count": 170,
                   "formats": [
                     "plain"
                   ]
                 },
                 "url": {
                   "kind": "string",
-                  "count": 166,
+                  "count": 170,
                   "formats": [
                     "uri"
                   ]
@@ -1620,33 +1620,33 @@
             },
             "is_hidden": {
               "kind": "boolean",
-              "count": 166
+              "count": 170
             },
             "slot": {
               "kind": "integer",
-              "count": 166
+              "count": 170
             }
           }
         }
       },
       "base_experience": {
         "kind": "integer",
-        "count": 83
+        "count": 85
       },
       "cries": {
         "kind": "object",
-        "count": 83,
+        "count": 85,
         "properties": {
           "latest": {
             "kind": "string",
-            "count": 83,
+            "count": 85,
             "formats": [
               "uri"
             ]
           },
           "legacy": {
             "kind": "string",
-            "count": 83,
+            "count": 85,
             "formats": [
               "uri"
             ]
@@ -1655,23 +1655,23 @@
       },
       "forms": {
         "kind": "array",
-        "count": 83,
+        "count": 85,
         "minItems": 1,
         "maxItems": 1,
         "items": {
           "kind": "object",
-          "count": 83,
+          "count": 85,
           "properties": {
             "name": {
               "kind": "string",
-              "count": 83,
+              "count": 85,
               "formats": [
                 "plain"
               ]
             },
             "url": {
               "kind": "string",
-              "count": 83,
+              "count": 85,
               "formats": [
                 "uri"
               ]
@@ -1681,31 +1681,31 @@
       },
       "game_indices": {
         "kind": "array",
-        "count": 83,
+        "count": 85,
         "minItems": 46,
         "maxItems": 46,
         "items": {
           "kind": "object",
-          "count": 3818,
+          "count": 3910,
           "properties": {
             "game_index": {
               "kind": "integer",
-              "count": 3818
+              "count": 3910
             },
             "version": {
               "kind": "object",
-              "count": 3818,
+              "count": 3910,
               "properties": {
                 "name": {
                   "kind": "string",
-                  "count": 3818,
+                  "count": 3910,
                   "formats": [
                     "plain"
                   ]
                 },
                 "url": {
                   "kind": "string",
-                  "count": 3818,
+                  "count": 3910,
                   "formats": [
                     "uri"
                   ]
@@ -1717,31 +1717,31 @@
       },
       "height": {
         "kind": "integer",
-        "count": 83
+        "count": 85
       },
       "held_items": {
         "kind": "array",
-        "count": 83,
+        "count": 85,
         "minItems": 2,
         "maxItems": 2,
         "items": {
           "kind": "object",
-          "count": 166,
+          "count": 170,
           "properties": {
             "item": {
               "kind": "object",
-              "count": 166,
+              "count": 170,
               "properties": {
                 "name": {
                   "kind": "string",
-                  "count": 166,
+                  "count": 170,
                   "formats": [
                     "plain"
                   ]
                 },
                 "url": {
                   "kind": "string",
-                  "count": 166,
+                  "count": 170,
                   "formats": [
                     "uri"
                   ]
@@ -1750,31 +1750,31 @@
             },
             "version_details": {
               "kind": "array",
-              "count": 166,
+              "count": 170,
               "minItems": 17,
               "maxItems": 22,
               "items": {
                 "kind": "object",
-                "count": 3237,
+                "count": 3315,
                 "properties": {
                   "rarity": {
                     "kind": "integer",
-                    "count": 3237
+                    "count": 3315
                   },
                   "version": {
                     "kind": "object",
-                    "count": 3237,
+                    "count": 3315,
                     "properties": {
                       "name": {
                         "kind": "string",
-                        "count": 3237,
+                        "count": 3315,
                         "formats": [
                           "plain"
                         ]
                       },
                       "url": {
                         "kind": "string",
-                        "count": 3237,
+                        "count": 3315,
                         "formats": [
                           "uri"
                         ]
@@ -1789,42 +1789,42 @@
       },
       "id": {
         "kind": "integer",
-        "count": 83
+        "count": 85
       },
       "is_default": {
         "kind": "boolean",
-        "count": 83
+        "count": 85
       },
       "location_area_encounters": {
         "kind": "string",
-        "count": 83,
+        "count": 85,
         "formats": [
           "uri"
         ]
       },
       "moves": {
         "kind": "array",
-        "count": 83,
+        "count": 85,
         "minItems": 1,
         "maxItems": 1,
         "items": {
           "kind": "object",
-          "count": 83,
+          "count": 85,
           "properties": {
             "move": {
               "kind": "object",
-              "count": 83,
+              "count": 85,
               "properties": {
                 "name": {
                   "kind": "string",
-                  "count": 83,
+                  "count": 85,
                   "formats": [
                     "plain"
                   ]
                 },
                 "url": {
                   "kind": "string",
-                  "count": 83,
+                  "count": 85,
                   "formats": [
                     "uri"
                   ]
@@ -1833,35 +1833,35 @@
             },
             "version_group_details": {
               "kind": "array",
-              "count": 83,
+              "count": 85,
               "minItems": 25,
               "maxItems": 25,
               "items": {
                 "kind": "object",
-                "count": 2075,
+                "count": 2125,
                 "properties": {
                   "enhancement_level": {
                     "kind": "null",
-                    "count": 475
+                    "count": 525
                   },
                   "level_learned_at": {
                     "kind": "integer",
-                    "count": 2075
+                    "count": 2125
                   },
                   "move_learn_method": {
                     "kind": "object",
-                    "count": 2075,
+                    "count": 2125,
                     "properties": {
                       "name": {
                         "kind": "string",
-                        "count": 2075,
+                        "count": 2125,
                         "formats": [
                           "plain"
                         ]
                       },
                       "url": {
                         "kind": "string",
-                        "count": 2075,
+                        "count": 2125,
                         "formats": [
                           "uri"
                         ]
@@ -1870,22 +1870,22 @@
                   },
                   "order": {
                     "kind": "null",
-                    "count": 2075
+                    "count": 2125
                   },
                   "version_group": {
                     "kind": "object",
-                    "count": 2075,
+                    "count": 2125,
                     "properties": {
                       "name": {
                         "kind": "string",
-                        "count": 2075,
+                        "count": 2125,
                         "formats": [
                           "plain"
                         ]
                       },
                       "url": {
                         "kind": "string",
-                        "count": 2075,
+                        "count": 2125,
                         "formats": [
                           "uri"
                         ]
@@ -1900,62 +1900,62 @@
       },
       "name": {
         "kind": "string",
-        "count": 83,
+        "count": 85,
         "formats": [
           "plain"
         ]
       },
       "order": {
         "kind": "integer",
-        "count": 83
+        "count": 85
       },
       "past_abilities": {
         "kind": "array",
-        "count": 83,
+        "count": 85,
         "minItems": 1,
         "maxItems": 1,
         "items": {
           "kind": "object",
-          "count": 83,
+          "count": 85,
           "properties": {
             "abilities": {
               "kind": "array",
-              "count": 83,
+              "count": 85,
               "minItems": 1,
               "maxItems": 1,
               "items": {
                 "kind": "object",
-                "count": 83,
+                "count": 85,
                 "properties": {
                   "ability": {
                     "kind": "null",
-                    "count": 83
+                    "count": 85
                   },
                   "is_hidden": {
                     "kind": "boolean",
-                    "count": 83
+                    "count": 85
                   },
                   "slot": {
                     "kind": "integer",
-                    "count": 83
+                    "count": 85
                   }
                 }
               }
             },
             "generation": {
               "kind": "object",
-              "count": 83,
+              "count": 85,
               "properties": {
                 "name": {
                   "kind": "string",
-                  "count": 83,
+                  "count": 85,
                   "formats": [
                     "plain"
                   ]
                 },
                 "url": {
                   "kind": "string",
-                  "count": 83,
+                  "count": 85,
                   "formats": [
                     "uri"
                   ]
@@ -1967,27 +1967,27 @@
       },
       "past_stats": {
         "kind": "array",
-        "count": 83,
+        "count": 85,
         "minItems": 1,
         "maxItems": 1,
         "items": {
           "kind": "object",
-          "count": 83,
+          "count": 85,
           "properties": {
             "generation": {
               "kind": "object",
-              "count": 83,
+              "count": 85,
               "properties": {
                 "name": {
                   "kind": "string",
-                  "count": 83,
+                  "count": 85,
                   "formats": [
                     "plain"
                   ]
                 },
                 "url": {
                   "kind": "string",
-                  "count": 83,
+                  "count": 85,
                   "formats": [
                     "uri"
                   ]
@@ -1996,35 +1996,35 @@
             },
             "stats": {
               "kind": "array",
-              "count": 83,
+              "count": 85,
               "minItems": 1,
               "maxItems": 1,
               "items": {
                 "kind": "object",
-                "count": 83,
+                "count": 85,
                 "properties": {
                   "base_stat": {
                     "kind": "integer",
-                    "count": 83
+                    "count": 85
                   },
                   "effort": {
                     "kind": "integer",
-                    "count": 83
+                    "count": 85
                   },
                   "stat": {
                     "kind": "object",
-                    "count": 83,
+                    "count": 85,
                     "properties": {
                       "name": {
                         "kind": "string",
-                        "count": 83,
+                        "count": 85,
                         "formats": [
                           "plain"
                         ]
                       },
                       "url": {
                         "kind": "string",
-                        "count": 83,
+                        "count": 85,
                         "formats": [
                           "uri"
                         ]
@@ -2039,24 +2039,24 @@
       },
       "past_types": {
         "kind": "array",
-        "count": 83,
+        "count": 85,
         "minItems": 0,
         "maxItems": 0
       },
       "species": {
         "kind": "object",
-        "count": 83,
+        "count": 85,
         "properties": {
           "name": {
             "kind": "string",
-            "count": 83,
+            "count": 85,
             "formats": [
               "plain"
             ]
           },
           "url": {
             "kind": "string",
-            "count": 83,
+            "count": 85,
             "formats": [
               "uri"
             ]
@@ -2065,134 +2065,134 @@
       },
       "sprites": {
         "kind": "object",
-        "count": 83,
+        "count": 85,
         "properties": {
           "back_default": {
             "kind": "string",
-            "count": 83,
+            "count": 85,
             "formats": [
               "uri"
             ]
           },
           "back_female": {
             "kind": "null",
-            "count": 83
+            "count": 85
           },
           "back_shiny": {
             "kind": "string",
-            "count": 83,
+            "count": 85,
             "formats": [
               "uri"
             ]
           },
           "back_shiny_female": {
             "kind": "null",
-            "count": 83
+            "count": 85
           },
           "front_default": {
             "kind": "string",
-            "count": 83,
+            "count": 85,
             "formats": [
               "uri"
             ]
           },
           "front_female": {
             "kind": "null",
-            "count": 83
+            "count": 85
           },
           "front_shiny": {
             "kind": "string",
-            "count": 83,
+            "count": 85,
             "formats": [
               "uri"
             ]
           },
           "front_shiny_female": {
             "kind": "null",
-            "count": 83
+            "count": 85
           },
           "other": {
             "kind": "object",
-            "count": 83,
+            "count": 85,
             "properties": {
               "dream_world": {
                 "kind": "object",
-                "count": 83,
+                "count": 85,
                 "properties": {
                   "front_default": {
                     "kind": "string",
-                    "count": 83,
+                    "count": 85,
                     "formats": [
                       "uri"
                     ]
                   },
                   "front_female": {
                     "kind": "null",
-                    "count": 83
+                    "count": 85
                   }
                 }
               },
               "home": {
                 "kind": "object",
-                "count": 83,
+                "count": 85,
                 "properties": {
                   "front_default": {
                     "kind": "string",
-                    "count": 83,
+                    "count": 85,
                     "formats": [
                       "uri"
                     ]
                   },
                   "front_female": {
                     "kind": "null",
-                    "count": 83
+                    "count": 85
                   },
                   "front_shiny": {
                     "kind": "string",
-                    "count": 83,
+                    "count": 85,
                     "formats": [
                       "uri"
                     ]
                   },
                   "front_shiny_female": {
                     "kind": "null",
-                    "count": 83
+                    "count": 85
                   }
                 }
               },
               "official-artwork": {
                 "kind": "object",
-                "count": 83,
+                "count": 85,
                 "properties": {
                   "front_default": {
                     "kind": "string",
-                    "count": 83,
+                    "count": 85,
                     "formats": [
                       "uri"
                     ]
                   },
                   "front_shiny": {
                     "kind": "string",
-                    "count": 83,
+                    "count": 85,
                     "formats": [
                       "uri"
                     ]
                   },
                   "versions": {
                     "kind": "object",
-                    "count": 83,
+                    "count": 85,
                     "properties": {
                       "generation-i": {
                         "kind": "object",
-                        "count": 83,
+                        "count": 85,
                         "properties": {
                           "red-and-blue": {
                             "kind": "object",
-                            "count": 83,
+                            "count": 85,
                             "properties": {
                               "front_default": {
                                 "kind": "string",
-                                "count": 83,
+                                "count": 85,
                                 "formats": [
                                   "uri"
                                 ]
@@ -2201,11 +2201,11 @@
                           },
                           "red-and-green": {
                             "kind": "object",
-                            "count": 83,
+                            "count": 85,
                             "properties": {
                               "front_default": {
                                 "kind": "string",
-                                "count": 83,
+                                "count": 85,
                                 "formats": [
                                   "uri"
                                 ]
@@ -2216,15 +2216,15 @@
                       },
                       "generation-ii": {
                         "kind": "object",
-                        "count": 83,
+                        "count": 85,
                         "properties": {
                           "gold-and-silver": {
                             "kind": "object",
-                            "count": 83,
+                            "count": 85,
                             "properties": {
                               "front_default": {
                                 "kind": "null",
-                                "count": 83
+                                "count": 85
                               }
                             }
                           }
@@ -2236,51 +2236,51 @@
               },
               "showdown": {
                 "kind": "object",
-                "count": 83,
+                "count": 85,
                 "properties": {
                   "back_default": {
                     "kind": "string",
-                    "count": 83,
+                    "count": 85,
                     "formats": [
                       "uri"
                     ]
                   },
                   "back_female": {
                     "kind": "null",
-                    "count": 83
+                    "count": 85
                   },
                   "back_shiny": {
                     "kind": "string",
-                    "count": 83,
+                    "count": 85,
                     "formats": [
                       "uri"
                     ]
                   },
                   "back_shiny_female": {
                     "kind": "null",
-                    "count": 83
+                    "count": 85
                   },
                   "front_default": {
                     "kind": "string",
-                    "count": 83,
+                    "count": 85,
                     "formats": [
                       "uri"
                     ]
                   },
                   "front_female": {
                     "kind": "null",
-                    "count": 83
+                    "count": 85
                   },
                   "front_shiny": {
                     "kind": "string",
-                    "count": 83,
+                    "count": 85,
                     "formats": [
                       "uri"
                     ]
                   },
                   "front_shiny_female": {
                     "kind": "null",
-                    "count": 83
+                    "count": 85
                   }
                 }
               }
@@ -2288,68 +2288,68 @@
           },
           "versions": {
             "kind": "object",
-            "count": 83,
+            "count": 85,
             "properties": {
               "generation-i": {
                 "kind": "object",
-                "count": 83,
+                "count": 85,
                 "properties": {
                   "red-blue": {
                     "kind": "object",
-                    "count": 83,
+                    "count": 85,
                     "properties": {
                       "back_default": {
                         "kind": "string",
-                        "count": 83,
+                        "count": 85,
                         "formats": [
                           "uri"
                         ]
                       },
                       "back_gray": {
                         "kind": "string",
-                        "count": 83,
+                        "count": 85,
                         "formats": [
                           "uri"
                         ]
                       },
                       "back_transparent": {
                         "kind": "string",
-                        "count": 83,
+                        "count": 85,
                         "formats": [
                           "uri"
                         ]
                       },
                       "back_transparent_gray": {
                         "kind": "string",
-                        "count": 83,
+                        "count": 85,
                         "formats": [
                           "uri"
                         ]
                       },
                       "front_default": {
                         "kind": "string",
-                        "count": 83,
+                        "count": 85,
                         "formats": [
                           "uri"
                         ]
                       },
                       "front_gray": {
                         "kind": "string",
-                        "count": 83,
+                        "count": 85,
                         "formats": [
                           "uri"
                         ]
                       },
                       "front_transparent": {
                         "kind": "string",
-                        "count": 83,
+                        "count": 85,
                         "formats": [
                           "uri"
                         ]
                       },
                       "front_transparent_gray": {
                         "kind": "string",
-                        "count": 83,
+                        "count": 85,
                         "formats": [
                           "uri"
                         ]
@@ -2358,32 +2358,32 @@
                   },
                   "red-green-japan": {
                     "kind": "object",
-                    "count": 83,
+                    "count": 85,
                     "properties": {
                       "back_default": {
                         "kind": "string",
-                        "count": 83,
+                        "count": 85,
                         "formats": [
                           "uri"
                         ]
                       },
                       "back_gray": {
                         "kind": "string",
-                        "count": 83,
+                        "count": 85,
                         "formats": [
                           "uri"
                         ]
                       },
                       "front_default": {
                         "kind": "string",
-                        "count": 83,
+                        "count": 85,
                         "formats": [
                           "uri"
                         ]
                       },
                       "front_gray": {
                         "kind": "string",
-                        "count": 83,
+                        "count": 85,
                         "formats": [
                           "uri"
                         ]
@@ -2392,74 +2392,74 @@
                   },
                   "yellow": {
                     "kind": "object",
-                    "count": 83,
+                    "count": 85,
                     "properties": {
                       "back_default": {
                         "kind": "string",
-                        "count": 83,
+                        "count": 85,
                         "formats": [
                           "uri"
                         ]
                       },
                       "back_gbc": {
                         "kind": "string",
-                        "count": 83,
+                        "count": 85,
                         "formats": [
                           "uri"
                         ]
                       },
                       "back_gray": {
                         "kind": "string",
-                        "count": 83,
+                        "count": 85,
                         "formats": [
                           "uri"
                         ]
                       },
                       "back_transparent": {
                         "kind": "string",
-                        "count": 83,
+                        "count": 85,
                         "formats": [
                           "uri"
                         ]
                       },
                       "back_transparent_gray": {
                         "kind": "string",
-                        "count": 83,
+                        "count": 85,
                         "formats": [
                           "uri"
                         ]
                       },
                       "front_default": {
                         "kind": "string",
-                        "count": 83,
+                        "count": 85,
                         "formats": [
                           "uri"
                         ]
                       },
                       "front_gbc": {
                         "kind": "string",
-                        "count": 83,
+                        "count": 85,
                         "formats": [
                           "uri"
                         ]
                       },
                       "front_gray": {
                         "kind": "string",
-                        "count": 83,
+                        "count": 85,
                         "formats": [
                           "uri"
                         ]
                       },
                       "front_transparent": {
                         "kind": "string",
-                        "count": 83,
+                        "count": 85,
                         "formats": [
                           "uri"
                         ]
                       },
                       "front_transparent_gray": {
                         "kind": "string",
-                        "count": 83,
+                        "count": 85,
                         "formats": [
                           "uri"
                         ]
@@ -2470,26 +2470,26 @@
               },
               "generation-ii": {
                 "kind": "object",
-                "count": 83,
+                "count": 85,
                 "properties": {
                   "crystal": {
                     "kind": "object",
-                    "count": 83,
+                    "count": 85,
                     "properties": {
                       "animated": {
                         "kind": "object",
-                        "count": 83,
+                        "count": 85,
                         "properties": {
                           "front_default": {
                             "kind": "string",
-                            "count": 83,
+                            "count": 85,
                             "formats": [
                               "uri"
                             ]
                           },
                           "front_shiny": {
                             "kind": "string",
-                            "count": 83,
+                            "count": 85,
                             "formats": [
                               "uri"
                             ]
@@ -2498,56 +2498,56 @@
                       },
                       "back_default": {
                         "kind": "string",
-                        "count": 83,
+                        "count": 85,
                         "formats": [
                           "uri"
                         ]
                       },
                       "back_shiny": {
                         "kind": "string",
-                        "count": 83,
+                        "count": 85,
                         "formats": [
                           "uri"
                         ]
                       },
                       "back_shiny_transparent": {
                         "kind": "string",
-                        "count": 83,
+                        "count": 85,
                         "formats": [
                           "uri"
                         ]
                       },
                       "back_transparent": {
                         "kind": "string",
-                        "count": 83,
+                        "count": 85,
                         "formats": [
                           "uri"
                         ]
                       },
                       "front_default": {
                         "kind": "string",
-                        "count": 83,
+                        "count": 85,
                         "formats": [
                           "uri"
                         ]
                       },
                       "front_shiny": {
                         "kind": "string",
-                        "count": 83,
+                        "count": 85,
                         "formats": [
                           "uri"
                         ]
                       },
                       "front_shiny_transparent": {
                         "kind": "string",
-                        "count": 83,
+                        "count": 85,
                         "formats": [
                           "uri"
                         ]
                       },
                       "front_transparent": {
                         "kind": "string",
-                        "count": 83,
+                        "count": 85,
                         "formats": [
                           "uri"
                         ]
@@ -2556,60 +2556,60 @@
                   },
                   "gold": {
                     "kind": "object",
-                    "count": 83,
+                    "count": 85,
                     "properties": {
                       "back_default": {
                         "kind": "string",
-                        "count": 83,
+                        "count": 85,
                         "formats": [
                           "uri"
                         ]
                       },
                       "back_shiny": {
                         "kind": "string",
-                        "count": 83,
+                        "count": 85,
                         "formats": [
                           "uri"
                         ]
                       },
                       "back_shiny_transparent": {
                         "kind": "string",
-                        "count": 83,
+                        "count": 85,
                         "formats": [
                           "uri"
                         ]
                       },
                       "back_transparent": {
                         "kind": "string",
-                        "count": 83,
+                        "count": 85,
                         "formats": [
                           "uri"
                         ]
                       },
                       "front_default": {
                         "kind": "string",
-                        "count": 83,
+                        "count": 85,
                         "formats": [
                           "uri"
                         ]
                       },
                       "front_shiny": {
                         "kind": "string",
-                        "count": 83,
+                        "count": 85,
                         "formats": [
                           "uri"
                         ]
                       },
                       "front_shiny_transparent": {
                         "kind": "string",
-                        "count": 83,
+                        "count": 85,
                         "formats": [
                           "uri"
                         ]
                       },
                       "front_transparent": {
                         "kind": "string",
-                        "count": 83,
+                        "count": 85,
                         "formats": [
                           "uri"
                         ]
@@ -2618,60 +2618,60 @@
                   },
                   "silver": {
                     "kind": "object",
-                    "count": 83,
+                    "count": 85,
                     "properties": {
                       "back_default": {
                         "kind": "string",
-                        "count": 83,
+                        "count": 85,
                         "formats": [
                           "uri"
                         ]
                       },
                       "back_shiny": {
                         "kind": "string",
-                        "count": 83,
+                        "count": 85,
                         "formats": [
                           "uri"
                         ]
                       },
                       "back_shiny_transparent": {
                         "kind": "string",
-                        "count": 83,
+                        "count": 85,
                         "formats": [
                           "uri"
                         ]
                       },
                       "back_transparent": {
                         "kind": "string",
-                        "count": 83,
+                        "count": 85,
                         "formats": [
                           "uri"
                         ]
                       },
                       "front_default": {
                         "kind": "string",
-                        "count": 83,
+                        "count": 85,
                         "formats": [
                           "uri"
                         ]
                       },
                       "front_shiny": {
                         "kind": "string",
-                        "count": 83,
+                        "count": 85,
                         "formats": [
                           "uri"
                         ]
                       },
                       "front_shiny_transparent": {
                         "kind": "string",
-                        "count": 83,
+                        "count": 85,
                         "formats": [
                           "uri"
                         ]
                       },
                       "front_transparent": {
                         "kind": "string",
-                        "count": 83,
+                        "count": 85,
                         "formats": [
                           "uri"
                         ]
@@ -2682,40 +2682,40 @@
               },
               "generation-iii": {
                 "kind": "object",
-                "count": 83,
+                "count": 85,
                 "properties": {
                   "emerald": {
                     "kind": "object",
-                    "count": 83,
+                    "count": 85,
                     "properties": {
                       "animated": {
                         "kind": "object",
-                        "count": 83,
+                        "count": 85,
                         "properties": {
                           "back_default": {
                             "kind": "string",
-                            "count": 83,
+                            "count": 85,
                             "formats": [
                               "uri"
                             ]
                           },
                           "back_shiny": {
                             "kind": "string",
-                            "count": 83,
+                            "count": 85,
                             "formats": [
                               "uri"
                             ]
                           },
                           "front_default": {
                             "kind": "string",
-                            "count": 83,
+                            "count": 85,
                             "formats": [
                               "uri"
                             ]
                           },
                           "front_shiny": {
                             "kind": "string",
-                            "count": 83,
+                            "count": 85,
                             "formats": [
                               "uri"
                             ]
@@ -2724,28 +2724,28 @@
                       },
                       "back_default": {
                         "kind": "string",
-                        "count": 83,
+                        "count": 85,
                         "formats": [
                           "uri"
                         ]
                       },
                       "back_shiny": {
                         "kind": "string",
-                        "count": 83,
+                        "count": 85,
                         "formats": [
                           "uri"
                         ]
                       },
                       "front_default": {
                         "kind": "string",
-                        "count": 83,
+                        "count": 85,
                         "formats": [
                           "uri"
                         ]
                       },
                       "front_shiny": {
                         "kind": "string",
-                        "count": 83,
+                        "count": 85,
                         "formats": [
                           "uri"
                         ]
@@ -2754,32 +2754,32 @@
                   },
                   "firered-leafgreen": {
                     "kind": "object",
-                    "count": 83,
+                    "count": 85,
                     "properties": {
                       "back_default": {
                         "kind": "string",
-                        "count": 83,
+                        "count": 85,
                         "formats": [
                           "uri"
                         ]
                       },
                       "back_shiny": {
                         "kind": "string",
-                        "count": 83,
+                        "count": 85,
                         "formats": [
                           "uri"
                         ]
                       },
                       "front_default": {
                         "kind": "string",
-                        "count": 83,
+                        "count": 85,
                         "formats": [
                           "uri"
                         ]
                       },
                       "front_shiny": {
                         "kind": "string",
-                        "count": 83,
+                        "count": 85,
                         "formats": [
                           "uri"
                         ]
@@ -2788,11 +2788,11 @@
                   },
                   "icons": {
                     "kind": "object",
-                    "count": 83,
+                    "count": 85,
                     "properties": {
                       "front_default": {
                         "kind": "string",
-                        "count": 83,
+                        "count": 85,
                         "formats": [
                           "uri"
                         ]
@@ -2801,32 +2801,32 @@
                   },
                   "ruby-sapphire": {
                     "kind": "object",
-                    "count": 83,
+                    "count": 85,
                     "properties": {
                       "back_default": {
                         "kind": "string",
-                        "count": 83,
+                        "count": 85,
                         "formats": [
                           "uri"
                         ]
                       },
                       "back_shiny": {
                         "kind": "string",
-                        "count": 83,
+                        "count": 85,
                         "formats": [
                           "uri"
                         ]
                       },
                       "front_default": {
                         "kind": "string",
-                        "count": 83,
+                        "count": 85,
                         "formats": [
                           "uri"
                         ]
                       },
                       "front_shiny": {
                         "kind": "string",
-                        "count": 83,
+                        "count": 85,
                         "formats": [
                           "uri"
                         ]
@@ -2837,171 +2837,171 @@
               },
               "generation-iv": {
                 "kind": "object",
-                "count": 83,
+                "count": 85,
                 "properties": {
                   "diamond-pearl": {
                     "kind": "object",
-                    "count": 83,
+                    "count": 85,
                     "properties": {
                       "animated": {
                         "kind": "object",
-                        "count": 83,
+                        "count": 85,
                         "properties": {
                           "front_default": {
                             "kind": "string",
-                            "count": 83,
+                            "count": 85,
                             "formats": [
                               "uri"
                             ]
                           },
                           "front_female": {
                             "kind": "null",
-                            "count": 83
+                            "count": 85
                           },
                           "front_shiny": {
                             "kind": "string",
-                            "count": 83,
+                            "count": 85,
                             "formats": [
                               "uri"
                             ]
                           },
                           "front_shiny_female": {
                             "kind": "null",
-                            "count": 83
+                            "count": 85
                           }
                         }
                       },
                       "back_default": {
                         "kind": "string",
-                        "count": 83,
+                        "count": 85,
                         "formats": [
                           "uri"
                         ]
                       },
                       "back_female": {
                         "kind": "null",
-                        "count": 83
+                        "count": 85
                       },
                       "back_shiny": {
                         "kind": "string",
-                        "count": 83,
+                        "count": 85,
                         "formats": [
                           "uri"
                         ]
                       },
                       "back_shiny_female": {
                         "kind": "null",
-                        "count": 83
+                        "count": 85
                       },
                       "front_default": {
                         "kind": "string",
-                        "count": 83,
+                        "count": 85,
                         "formats": [
                           "uri"
                         ]
                       },
                       "front_female": {
                         "kind": "null",
-                        "count": 83
+                        "count": 85
                       },
                       "front_shiny": {
                         "kind": "string",
-                        "count": 83,
+                        "count": 85,
                         "formats": [
                           "uri"
                         ]
                       },
                       "front_shiny_female": {
                         "kind": "null",
-                        "count": 83
+                        "count": 85
                       }
                     }
                   },
                   "heartgold-soulsilver": {
                     "kind": "object",
-                    "count": 83,
+                    "count": 85,
                     "properties": {
                       "animated": {
                         "kind": "object",
-                        "count": 83,
+                        "count": 85,
                         "properties": {
                           "front_default": {
                             "kind": "string",
-                            "count": 83,
+                            "count": 85,
                             "formats": [
                               "uri"
                             ]
                           },
                           "front_female": {
                             "kind": "null",
-                            "count": 83
+                            "count": 85
                           },
                           "front_shiny": {
                             "kind": "string",
-                            "count": 83,
+                            "count": 85,
                             "formats": [
                               "uri"
                             ]
                           },
                           "front_shiny_female": {
                             "kind": "null",
-                            "count": 83
+                            "count": 85
                           }
                         }
                       },
                       "back_default": {
                         "kind": "string",
-                        "count": 83,
+                        "count": 85,
                         "formats": [
                           "uri"
                         ]
                       },
                       "back_female": {
                         "kind": "null",
-                        "count": 83
+                        "count": 85
                       },
                       "back_shiny": {
                         "kind": "string",
-                        "count": 83,
+                        "count": 85,
                         "formats": [
                           "uri"
                         ]
                       },
                       "back_shiny_female": {
                         "kind": "null",
-                        "count": 83
+                        "count": 85
                       },
                       "front_default": {
                         "kind": "string",
-                        "count": 83,
+                        "count": 85,
                         "formats": [
                           "uri"
                         ]
                       },
                       "front_female": {
                         "kind": "null",
-                        "count": 83
+                        "count": 85
                       },
                       "front_shiny": {
                         "kind": "string",
-                        "count": 83,
+                        "count": 85,
                         "formats": [
                           "uri"
                         ]
                       },
                       "front_shiny_female": {
                         "kind": "null",
-                        "count": 83
+                        "count": 85
                       }
                     }
                   },
                   "icons": {
                     "kind": "object",
-                    "count": 83,
+                    "count": 85,
                     "properties": {
                       "front_default": {
                         "kind": "string",
-                        "count": 83,
+                        "count": 85,
                         "formats": [
                           "uri"
                         ]
@@ -3010,79 +3010,79 @@
                   },
                   "platinum": {
                     "kind": "object",
-                    "count": 83,
+                    "count": 85,
                     "properties": {
                       "animated": {
                         "kind": "object",
-                        "count": 83,
+                        "count": 85,
                         "properties": {
                           "front_default": {
                             "kind": "string",
-                            "count": 83,
+                            "count": 85,
                             "formats": [
                               "uri"
                             ]
                           },
                           "front_female": {
                             "kind": "null",
-                            "count": 83
+                            "count": 85
                           },
                           "front_shiny": {
                             "kind": "string",
-                            "count": 83,
+                            "count": 85,
                             "formats": [
                               "uri"
                             ]
                           },
                           "front_shiny_female": {
                             "kind": "null",
-                            "count": 83
+                            "count": 85
                           }
                         }
                       },
                       "back_default": {
                         "kind": "string",
-                        "count": 83,
+                        "count": 85,
                         "formats": [
                           "uri"
                         ]
                       },
                       "back_female": {
                         "kind": "null",
-                        "count": 83
+                        "count": 85
                       },
                       "back_shiny": {
                         "kind": "string",
-                        "count": 83,
+                        "count": 85,
                         "formats": [
                           "uri"
                         ]
                       },
                       "back_shiny_female": {
                         "kind": "null",
-                        "count": 83
+                        "count": 85
                       },
                       "front_default": {
                         "kind": "string",
-                        "count": 83,
+                        "count": 85,
                         "formats": [
                           "uri"
                         ]
                       },
                       "front_female": {
                         "kind": "null",
-                        "count": 83
+                        "count": 85
                       },
                       "front_shiny": {
                         "kind": "string",
-                        "count": 83,
+                        "count": 85,
                         "formats": [
                           "uri"
                         ]
                       },
                       "front_shiny_female": {
                         "kind": "null",
-                        "count": 83
+                        "count": 85
                       }
                     }
                   }
@@ -3090,70 +3090,70 @@
               },
               "generation-ix": {
                 "kind": "object",
-                "count": 83,
+                "count": 85,
                 "properties": {
                   "champions": {
                     "kind": "object",
-                    "count": 83,
+                    "count": 85,
                     "properties": {
                       "back_default": {
                         "kind": "string",
-                        "count": 83,
+                        "count": 85,
                         "formats": [
                           "uri"
                         ]
                       },
                       "back_female": {
                         "kind": "null",
-                        "count": 83
+                        "count": 85
                       },
                       "back_shiny": {
                         "kind": "string",
-                        "count": 83,
+                        "count": 85,
                         "formats": [
                           "uri"
                         ]
                       },
                       "back_shiny_female": {
                         "kind": "null",
-                        "count": 83
+                        "count": 85
                       },
                       "front_default": {
                         "kind": "string",
-                        "count": 83,
+                        "count": 85,
                         "formats": [
                           "uri"
                         ]
                       },
                       "front_female": {
                         "kind": "null",
-                        "count": 83
+                        "count": 85
                       },
                       "front_shiny": {
                         "kind": "string",
-                        "count": 83,
+                        "count": 85,
                         "formats": [
                           "uri"
                         ]
                       },
                       "front_shiny_female": {
                         "kind": "null",
-                        "count": 83
+                        "count": 85
                       },
                       "icons": {
                         "kind": "object",
-                        "count": 83,
+                        "count": 85,
                         "properties": {
                           "front_default": {
                             "kind": "string",
-                            "count": 83,
+                            "count": 85,
                             "formats": [
                               "uri"
                             ]
                           },
                           "front_shiny": {
                             "kind": "string",
-                            "count": 83,
+                            "count": 85,
                             "formats": [
                               "uri"
                             ]
@@ -3164,59 +3164,59 @@
                   },
                   "legends-za": {
                     "kind": "object",
-                    "count": 83,
+                    "count": 85,
                     "properties": {
                       "back_default": {
                         "kind": "null",
-                        "count": 83
+                        "count": 85
                       },
                       "back_female": {
                         "kind": "null",
-                        "count": 83
+                        "count": 85
                       },
                       "back_shiny": {
                         "kind": "null",
-                        "count": 83
+                        "count": 85
                       },
                       "back_shiny_female": {
                         "kind": "null",
-                        "count": 83
+                        "count": 85
                       },
                       "front_default": {
                         "kind": "null",
-                        "count": 83
+                        "count": 85
                       },
                       "front_female": {
                         "kind": "null",
-                        "count": 83
+                        "count": 85
                       },
                       "front_shiny": {
                         "kind": "null",
-                        "count": 83
+                        "count": 85
                       },
                       "front_shiny_female": {
                         "kind": "null",
-                        "count": 83
+                        "count": 85
                       },
                       "icons": {
                         "kind": "object",
-                        "count": 83,
+                        "count": 85,
                         "properties": {
                           "front_default": {
                             "kind": "null",
-                            "count": 83
+                            "count": 85
                           },
                           "front_female": {
                             "kind": "null",
-                            "count": 83
+                            "count": 85
                           },
                           "front_shiny": {
                             "kind": "null",
-                            "count": 83
+                            "count": 85
                           },
                           "front_shiny_female": {
                             "kind": "null",
-                            "count": 83
+                            "count": 85
                           }
                         }
                       }
@@ -3224,66 +3224,66 @@
                   },
                   "scarlet-violet": {
                     "kind": "object",
-                    "count": 83,
+                    "count": 85,
                     "properties": {
                       "back_default": {
                         "kind": "string",
-                        "count": 83,
+                        "count": 85,
                         "formats": [
                           "uri"
                         ]
                       },
                       "back_female": {
                         "kind": "null",
-                        "count": 83
+                        "count": 85
                       },
                       "back_shiny": {
                         "kind": "string",
-                        "count": 83,
+                        "count": 85,
                         "formats": [
                           "uri"
                         ]
                       },
                       "back_shiny_female": {
                         "kind": "null",
-                        "count": 83
+                        "count": 85
                       },
                       "front_default": {
                         "kind": "string",
-                        "count": 83,
+                        "count": 85,
                         "formats": [
                           "uri"
                         ]
                       },
                       "front_female": {
                         "kind": "null",
-                        "count": 83
+                        "count": 85
                       },
                       "front_shiny": {
                         "kind": "string",
-                        "count": 83,
+                        "count": 85,
                         "formats": [
                           "uri"
                         ]
                       },
                       "front_shiny_female": {
                         "kind": "null",
-                        "count": 83
+                        "count": 85
                       },
                       "icons": {
                         "kind": "object",
-                        "count": 83,
+                        "count": 85,
                         "properties": {
                           "front_default": {
                             "kind": "string",
-                            "count": 83,
+                            "count": 85,
                             "formats": [
                               "uri"
                             ]
                           },
                           "front_female": {
                             "kind": "null",
-                            "count": 83
+                            "count": 85
                           }
                         }
                       }
@@ -3293,119 +3293,119 @@
               },
               "generation-v": {
                 "kind": "object",
-                "count": 83,
+                "count": 85,
                 "properties": {
                   "black-white": {
                     "kind": "object",
-                    "count": 83,
+                    "count": 85,
                     "properties": {
                       "animated": {
                         "kind": "object",
-                        "count": 83,
+                        "count": 85,
                         "properties": {
                           "back_default": {
                             "kind": "string",
-                            "count": 83,
+                            "count": 85,
                             "formats": [
                               "uri"
                             ]
                           },
                           "back_female": {
                             "kind": "null",
-                            "count": 83
+                            "count": 85
                           },
                           "back_shiny": {
                             "kind": "string",
-                            "count": 83,
+                            "count": 85,
                             "formats": [
                               "uri"
                             ]
                           },
                           "back_shiny_female": {
                             "kind": "null",
-                            "count": 83
+                            "count": 85
                           },
                           "front_default": {
                             "kind": "string",
-                            "count": 83,
+                            "count": 85,
                             "formats": [
                               "uri"
                             ]
                           },
                           "front_female": {
                             "kind": "null",
-                            "count": 83
+                            "count": 85
                           },
                           "front_shiny": {
                             "kind": "string",
-                            "count": 83,
+                            "count": 85,
                             "formats": [
                               "uri"
                             ]
                           },
                           "front_shiny_female": {
                             "kind": "null",
-                            "count": 83
+                            "count": 85
                           }
                         }
                       },
                       "back_default": {
                         "kind": "string",
-                        "count": 83,
+                        "count": 85,
                         "formats": [
                           "uri"
                         ]
                       },
                       "back_female": {
                         "kind": "null",
-                        "count": 83
+                        "count": 85
                       },
                       "back_shiny": {
                         "kind": "string",
-                        "count": 83,
+                        "count": 85,
                         "formats": [
                           "uri"
                         ]
                       },
                       "back_shiny_female": {
                         "kind": "null",
-                        "count": 83
+                        "count": 85
                       },
                       "front_default": {
                         "kind": "string",
-                        "count": 83,
+                        "count": 85,
                         "formats": [
                           "uri"
                         ]
                       },
                       "front_female": {
                         "kind": "null",
-                        "count": 83
+                        "count": 85
                       },
                       "front_shiny": {
                         "kind": "string",
-                        "count": 83,
+                        "count": 85,
                         "formats": [
                           "uri"
                         ]
                       },
                       "front_shiny_female": {
                         "kind": "null",
-                        "count": 83
+                        "count": 85
                       }
                     }
                   },
                   "icons": {
                     "kind": "object",
-                    "count": 83,
+                    "count": 85,
                     "properties": {
                       "animated": {
                         "kind": "object",
-                        "count": 83,
+                        "count": 85,
                         "properties": {
                           "front_default": {
                             "kind": "string",
-                            "count": 83,
+                            "count": 85,
                             "formats": [
                               "uri"
                             ]
@@ -3414,7 +3414,7 @@
                       },
                       "front_default": {
                         "kind": "string",
-                        "count": 83,
+                        "count": 85,
                         "formats": [
                           "uri"
                         ]
@@ -3425,122 +3425,122 @@
               },
               "generation-vi": {
                 "kind": "object",
-                "count": 83,
+                "count": 85,
                 "properties": {
                   "icons": {
                     "kind": "object",
-                    "count": 83,
+                    "count": 85,
                     "properties": {
                       "front_default": {
                         "kind": "string",
-                        "count": 83,
+                        "count": 85,
                         "formats": [
                           "uri"
                         ]
                       },
                       "front_female": {
                         "kind": "null",
-                        "count": 83
+                        "count": 85
                       }
                     }
                   },
                   "omega-ruby-alpha-sapphire": {
                     "kind": "object",
-                    "count": 83,
+                    "count": 85,
                     "properties": {
                       "back_default": {
                         "kind": "string",
-                        "count": 83,
+                        "count": 85,
                         "formats": [
                           "uri"
                         ]
                       },
                       "back_female": {
                         "kind": "null",
-                        "count": 83
+                        "count": 85
                       },
                       "back_shiny": {
                         "kind": "string",
-                        "count": 83,
+                        "count": 85,
                         "formats": [
                           "uri"
                         ]
                       },
                       "back_shiny_female": {
                         "kind": "null",
-                        "count": 83
+                        "count": 85
                       },
                       "front_default": {
                         "kind": "string",
-                        "count": 83,
+                        "count": 85,
                         "formats": [
                           "uri"
                         ]
                       },
                       "front_female": {
                         "kind": "null",
-                        "count": 83
+                        "count": 85
                       },
                       "front_shiny": {
                         "kind": "string",
-                        "count": 83,
+                        "count": 85,
                         "formats": [
                           "uri"
                         ]
                       },
                       "front_shiny_female": {
                         "kind": "null",
-                        "count": 83
+                        "count": 85
                       }
                     }
                   },
                   "x-y": {
                     "kind": "object",
-                    "count": 83,
+                    "count": 85,
                     "properties": {
                       "back_default": {
                         "kind": "string",
-                        "count": 83,
+                        "count": 85,
                         "formats": [
                           "uri"
                         ]
                       },
                       "back_female": {
                         "kind": "null",
-                        "count": 83
+                        "count": 85
                       },
                       "back_shiny": {
                         "kind": "string",
-                        "count": 83,
+                        "count": 85,
                         "formats": [
                           "uri"
                         ]
                       },
                       "back_shiny_female": {
                         "kind": "null",
-                        "count": 83
+                        "count": 85
                       },
                       "front_default": {
                         "kind": "string",
-                        "count": 83,
+                        "count": 85,
                         "formats": [
                           "uri"
                         ]
                       },
                       "front_female": {
                         "kind": "null",
-                        "count": 83
+                        "count": 85
                       },
                       "front_shiny": {
                         "kind": "string",
-                        "count": 83,
+                        "count": 85,
                         "formats": [
                           "uri"
                         ]
                       },
                       "front_shiny_female": {
                         "kind": "null",
-                        "count": 83
+                        "count": 85
                       }
                     }
                   }
@@ -3548,80 +3548,80 @@
               },
               "generation-vii": {
                 "kind": "object",
-                "count": 83,
+                "count": 85,
                 "properties": {
                   "icons": {
                     "kind": "object",
-                    "count": 83,
+                    "count": 85,
                     "properties": {
                       "front_default": {
                         "kind": "string",
-                        "count": 83,
+                        "count": 85,
                         "formats": [
                           "uri"
                         ]
                       },
                       "front_female": {
                         "kind": "null",
-                        "count": 83
+                        "count": 85
                       }
                     }
                   },
                   "lets-go-pikachu-lets-go-eevee": {
                     "kind": "object",
-                    "count": 83,
+                    "count": 85,
                     "properties": {
                       "back_default": {
                         "kind": "string",
-                        "count": 83,
+                        "count": 85,
                         "formats": [
                           "uri"
                         ]
                       },
                       "back_female": {
                         "kind": "null",
-                        "count": 83
+                        "count": 85
                       },
                       "back_shiny": {
                         "kind": "string",
-                        "count": 83,
+                        "count": 85,
                         "formats": [
                           "uri"
                         ]
                       },
                       "back_shiny_female": {
                         "kind": "null",
-                        "count": 83
+                        "count": 85
                       },
                       "front_default": {
                         "kind": "string",
-                        "count": 83,
+                        "count": 85,
                         "formats": [
                           "uri"
                         ]
                       },
                       "front_female": {
                         "kind": "null",
-                        "count": 83
+                        "count": 85
                       },
                       "front_shiny": {
                         "kind": "string",
-                        "count": 83,
+                        "count": 85,
                         "formats": [
                           "uri"
                         ]
                       },
                       "front_shiny_female": {
                         "kind": "null",
-                        "count": 83
+                        "count": 85
                       },
                       "icons": {
                         "kind": "object",
-                        "count": 83,
+                        "count": 85,
                         "properties": {
                           "front_default": {
                             "kind": "string",
-                            "count": 83,
+                            "count": 85,
                             "formats": [
                               "uri"
                             ]
@@ -3632,51 +3632,51 @@
                   },
                   "ultra-sun-ultra-moon": {
                     "kind": "object",
-                    "count": 83,
+                    "count": 85,
                     "properties": {
                       "back_default": {
                         "kind": "string",
-                        "count": 83,
+                        "count": 85,
                         "formats": [
                           "uri"
                         ]
                       },
                       "back_female": {
                         "kind": "null",
-                        "count": 83
+                        "count": 85
                       },
                       "back_shiny": {
                         "kind": "string",
-                        "count": 83,
+                        "count": 85,
                         "formats": [
                           "uri"
                         ]
                       },
                       "back_shiny_female": {
                         "kind": "null",
-                        "count": 83
+                        "count": 85
                       },
                       "front_default": {
                         "kind": "string",
-                        "count": 83,
+                        "count": 85,
                         "formats": [
                           "uri"
                         ]
                       },
                       "front_female": {
                         "kind": "null",
-                        "count": 83
+                        "count": 85
                       },
                       "front_shiny": {
                         "kind": "string",
-                        "count": 83,
+                        "count": 85,
                         "formats": [
                           "uri"
                         ]
                       },
                       "front_shiny_female": {
                         "kind": "null",
-                        "count": 83
+                        "count": 85
                       }
                     }
                   }
@@ -3684,63 +3684,63 @@
               },
               "generation-viii": {
                 "kind": "object",
-                "count": 83,
+                "count": 85,
                 "properties": {
                   "brilliant-diamond-shining-pearl": {
                     "kind": "object",
-                    "count": 83,
+                    "count": 85,
                     "properties": {
                       "back_default": {
                         "kind": "string",
-                        "count": 83,
+                        "count": 85,
                         "formats": [
                           "uri"
                         ]
                       },
                       "back_female": {
                         "kind": "null",
-                        "count": 83
+                        "count": 85
                       },
                       "back_shiny": {
                         "kind": "string",
-                        "count": 83,
+                        "count": 85,
                         "formats": [
                           "uri"
                         ]
                       },
                       "back_shiny_female": {
                         "kind": "null",
-                        "count": 83
+                        "count": 85
                       },
                       "front_default": {
                         "kind": "string",
-                        "count": 83,
+                        "count": 85,
                         "formats": [
                           "uri"
                         ]
                       },
                       "front_female": {
                         "kind": "null",
-                        "count": 83
+                        "count": 85
                       },
                       "front_shiny": {
                         "kind": "string",
-                        "count": 83,
+                        "count": 85,
                         "formats": [
                           "uri"
                         ]
                       },
                       "front_shiny_female": {
                         "kind": "null",
-                        "count": 83
+                        "count": 85
                       },
                       "icons": {
                         "kind": "object",
-                        "count": 83,
+                        "count": 85,
                         "properties": {
                           "front_default": {
                             "kind": "string",
-                            "count": 83,
+                            "count": 85,
                             "formats": [
                               "uri"
                             ]
@@ -3751,59 +3751,59 @@
                   },
                   "legends-arceus": {
                     "kind": "object",
-                    "count": 83,
+                    "count": 85,
                     "properties": {
                       "back_default": {
                         "kind": "null",
-                        "count": 83
+                        "count": 85
                       },
                       "back_female": {
                         "kind": "null",
-                        "count": 83
+                        "count": 85
                       },
                       "back_shiny": {
                         "kind": "null",
-                        "count": 83
+                        "count": 85
                       },
                       "back_shiny_female": {
                         "kind": "null",
-                        "count": 83
+                        "count": 85
                       },
                       "front_default": {
                         "kind": "null",
-                        "count": 83
+                        "count": 85
                       },
                       "front_female": {
                         "kind": "null",
-                        "count": 83
+                        "count": 85
                       },
                       "front_shiny": {
                         "kind": "null",
-                        "count": 83
+                        "count": 85
                       },
                       "front_shiny_female": {
                         "kind": "null",
-                        "count": 83
+                        "count": 85
                       },
                       "icons": {
                         "kind": "object",
-                        "count": 83,
+                        "count": 85,
                         "properties": {
                           "front_default": {
                             "kind": "null",
-                            "count": 83
+                            "count": 85
                           },
                           "front_female": {
                             "kind": "null",
-                            "count": 83
+                            "count": 85
                           },
                           "front_shiny": {
                             "kind": "null",
-                            "count": 83
+                            "count": 85
                           },
                           "front_shiny_female": {
                             "kind": "null",
-                            "count": 83
+                            "count": 85
                           }
                         }
                       }
@@ -3811,66 +3811,66 @@
                   },
                   "sword-shield": {
                     "kind": "object",
-                    "count": 83,
+                    "count": 85,
                     "properties": {
                       "back_default": {
                         "kind": "string",
-                        "count": 83,
+                        "count": 85,
                         "formats": [
                           "uri"
                         ]
                       },
                       "back_female": {
                         "kind": "null",
-                        "count": 83
+                        "count": 85
                       },
                       "back_shiny": {
                         "kind": "string",
-                        "count": 83,
+                        "count": 85,
                         "formats": [
                           "uri"
                         ]
                       },
                       "back_shiny_female": {
                         "kind": "null",
-                        "count": 83
+                        "count": 85
                       },
                       "front_default": {
                         "kind": "string",
-                        "count": 83,
+                        "count": 85,
                         "formats": [
                           "uri"
                         ]
                       },
                       "front_female": {
                         "kind": "null",
-                        "count": 83
+                        "count": 85
                       },
                       "front_shiny": {
                         "kind": "string",
-                        "count": 83,
+                        "count": 85,
                         "formats": [
                           "uri"
                         ]
                       },
                       "front_shiny_female": {
                         "kind": "null",
-                        "count": 83
+                        "count": 85
                       },
                       "icons": {
                         "kind": "object",
-                        "count": 83,
+                        "count": 85,
                         "properties": {
                           "front_default": {
                             "kind": "string",
-                            "count": 83,
+                            "count": 85,
                             "formats": [
                               "uri"
                             ]
                           },
                           "front_female": {
                             "kind": "null",
-                            "count": 83
+                            "count": 85
                           }
                         }
                       }
@@ -3884,35 +3884,35 @@
       },
       "stats": {
         "kind": "array",
-        "count": 83,
+        "count": 85,
         "minItems": 6,
         "maxItems": 6,
         "items": {
           "kind": "object",
-          "count": 498,
+          "count": 510,
           "properties": {
             "base_stat": {
               "kind": "integer",
-              "count": 498
+              "count": 510
             },
             "effort": {
               "kind": "integer",
-              "count": 498
+              "count": 510
             },
             "stat": {
               "kind": "object",
-              "count": 498,
+              "count": 510,
               "properties": {
                 "name": {
                   "kind": "string",
-                  "count": 498,
+                  "count": 510,
                   "formats": [
                     "plain"
                   ]
                 },
                 "url": {
                   "kind": "string",
-                  "count": 498,
+                  "count": 510,
                   "formats": [
                     "uri"
                   ]
@@ -3924,31 +3924,31 @@
       },
       "types": {
         "kind": "array",
-        "count": 83,
+        "count": 85,
         "minItems": 1,
         "maxItems": 1,
         "items": {
           "kind": "object",
-          "count": 83,
+          "count": 85,
           "properties": {
             "slot": {
               "kind": "integer",
-              "count": 83
+              "count": 85
             },
             "type": {
               "kind": "object",
-              "count": 83,
+              "count": 85,
               "properties": {
                 "name": {
                   "kind": "string",
-                  "count": 83,
+                  "count": 85,
                   "formats": [
                     "plain"
                   ]
                 },
                 "url": {
                   "kind": "string",
-                  "count": 83,
+                  "count": 85,
                   "formats": [
                     "uri"
                   ]
@@ -3960,12 +3960,12 @@
       },
       "weight": {
         "kind": "integer",
-        "count": 83
+        "count": 85
       }
     }
   },
   "fieldCount": 392,
-  "samples": 83,
+  "samples": 85,
   "firstSeenAt": "2026-10-22T21:45:36.000Z",
   "contractSince": "2026-11-17T15:57:59.000Z",
   "lastChange": {
@@ -3975,32 +3975,32 @@
     "summary": "$.moves[].version_group_details[].enhancement_level: new field (null) (1 info)"
   },
   "weather": {
-    "condition": "partly-cloudy",
-    "headline": "Partly cloudy",
-    "reason": "$.moves[].version_group_details[].enhancement_level: new field (null) (1 info)",
+    "condition": "sunny",
+    "headline": "Clear skies",
+    "reason": "Contract unchanged and responding normally.",
     "since": "2026-11-17T15:57:59.000Z"
   },
   "stats": {
     "d1": {
-      "checks": 2,
-      "ok": 2,
+      "checks": 3,
+      "ok": 3,
       "uptime": 1,
-      "p50": 37,
-      "p95": 40
+      "p50": 107,
+      "p95": 516
     },
     "d7": {
       "checks": 20,
       "ok": 20,
       "uptime": 1,
-      "p50": 69,
-      "p95": 448
+      "p50": 74,
+      "p95": 492
     },
     "d30": {
-      "checks": 81,
-      "ok": 81,
+      "checks": 83,
+      "ok": 83,
       "uptime": 1,
-      "p50": 82,
-      "p95": 492
+      "p50": 83,
+      "p95": 516
     }
   }
 }
