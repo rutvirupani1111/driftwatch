@@ -7,13 +7,15 @@
   "method": "GET",
   "docs": "https://openlibrary.org/dev/docs/api/books",
   "description": "The work record for Fantastic Mr Fox.",
-  "checkedAt": "2026-11-24T23:53:14.000Z",
-  "ok": true,
-  "status": 200,
-  "latencyMs": 2992,
-  "sizeBytes": 2705,
-  "contentType": "application/json",
-  "error": null,
+  "checkedAt": "2026-11-25T08:29:34.000Z",
+  "ok": false,
+  "status": 0,
+  "latencyMs": 3525,
+  "sizeBytes": 0,
+  "error": {
+    "code": "network",
+    "message": "Connection reset"
+  },
   "engine": "api-drift/shape@1",
   "fingerprint": "c5122811b61cb2af",
   "contract": {
@@ -382,30 +384,29 @@
     "summary": "$.literary_forms: new field (object[]) (1 info)"
   },
   "weather": {
-    "condition": "partly-cloudy",
-    "headline": "Partly cloudy",
-    "reason": "$.literary_forms: new field (object[]) (1 info)",
-    "since": "2026-11-18T00:56:32.000Z"
+    "condition": "fog",
+    "headline": "Fog",
+    "reason": "Connection reset."
   },
   "stats": {
     "d1": {
       "checks": 3,
-      "ok": 3,
-      "uptime": 1,
-      "p50": 462,
+      "ok": 2,
+      "uptime": 0.6666666666666666,
+      "p50": 371,
       "p95": 2992
     },
     "d7": {
       "checks": 20,
-      "ok": 20,
-      "uptime": 1,
-      "p50": 367,
-      "p95": 4909
+      "ok": 19,
+      "uptime": 0.95,
+      "p50": 371,
+      "p95": 10373
     },
     "d30": {
-      "checks": 83,
+      "checks": 84,
       "ok": 81,
-      "uptime": 0.9759036144578314,
+      "uptime": 0.9642857142857143,
       "p50": 335,
       "p95": 3226
     }
