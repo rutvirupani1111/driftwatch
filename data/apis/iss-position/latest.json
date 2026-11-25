@@ -7,11 +7,11 @@
   "method": "GET",
   "docs": "https://wheretheiss.at/w/developer",
   "description": "Live position and velocity of the International Space Station.",
-  "checkedAt": "2026-11-25T08:29:35.000Z",
+  "checkedAt": "2026-11-25T19:14:29.000Z",
   "ok": true,
   "status": 200,
-  "latencyMs": 1406,
-  "sizeBytes": 311,
+  "latencyMs": 1803,
+  "sizeBytes": 312,
   "contentType": "application/json",
   "error": null,
   "engine": "api-drift/shape@1",
@@ -62,76 +62,76 @@
   },
   "shape": {
     "kind": "object",
-    "count": 86,
+    "count": 87,
     "properties": {
       "altitude": {
         "kind": "number",
-        "count": 86,
+        "count": 87,
         "integral": 0
       },
       "daynum": {
         "kind": "number",
-        "count": 86,
+        "count": 87,
         "integral": 0
       },
       "footprint": {
         "kind": "number",
-        "count": 86,
+        "count": 87,
         "integral": 0
       },
       "id": {
         "kind": "integer",
-        "count": 86
+        "count": 87
       },
       "latitude": {
         "kind": "number",
-        "count": 86,
+        "count": 87,
         "integral": 0,
         "negative": true
       },
       "longitude": {
         "kind": "number",
-        "count": 86,
+        "count": 87,
         "integral": 0,
         "negative": true
       },
       "name": {
         "kind": "string",
-        "count": 86,
+        "count": 87,
         "formats": [
           "plain"
         ]
       },
       "solar_lat": {
         "kind": "number",
-        "count": 86,
+        "count": 87,
         "integral": 0,
         "negative": true
       },
       "solar_lon": {
         "kind": "number",
-        "count": 86,
+        "count": 87,
         "integral": 0
       },
       "timestamp": {
         "kind": "integer",
-        "count": 86
+        "count": 87
       },
       "units": {
         "kind": "string",
-        "count": 86,
+        "count": 87,
         "formats": [
           "plain"
         ]
       },
       "velocity": {
         "kind": "number",
-        "count": 86,
+        "count": 87,
         "integral": 0
       },
       "visibility": {
         "kind": "string",
-        "count": 86,
+        "count": 87,
         "formats": [
           "plain"
         ]
@@ -139,7 +139,7 @@
     }
   },
   "fieldCount": 13,
-  "samples": 86,
+  "samples": 87,
   "firstSeenAt": "2026-10-22T21:45:36.000Z",
   "contractSince": "2026-10-22T22:15:39.000Z",
   "weather": {
@@ -154,20 +154,20 @@
       "ok": 3,
       "uptime": 1,
       "p50": 1406,
-      "p95": 1978
+      "p95": 1803
     },
     "d7": {
       "checks": 20,
       "ok": 20,
       "uptime": 1,
-      "p50": 1340,
+      "p50": 1366,
       "p95": 2486
     },
     "d30": {
-      "checks": 84,
-      "ok": 84,
+      "checks": 85,
+      "ok": 85,
       "uptime": 1,
-      "p50": 633,
+      "p50": 636,
       "p95": 2581
     }
   }
