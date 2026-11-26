@@ -7,11 +7,11 @@
   "method": "GET",
   "docs": "https://en.wikipedia.org/api/rest_v1/",
   "description": "A different article on every call, so optional fields (coordinates, thumbnails) come and go: the learned contract has to cope.",
-  "checkedAt": "2026-11-26T03:32:51.000Z",
+  "checkedAt": "2026-11-26T16:51:46.000Z",
   "ok": true,
   "status": 200,
-  "latencyMs": 313,
-  "sizeBytes": 2834,
+  "latencyMs": 454,
+  "sizeBytes": 2631,
   "contentType": "application/json; charset=utf-8; profile=\"https://www.mediawiki.org/wiki/Specs/Summary/1.5.0\"",
   "error": null,
   "engine": "api-drift/shape@1",
@@ -183,40 +183,40 @@
   },
   "shape": {
     "kind": "object",
-    "count": 88,
+    "count": 89,
     "properties": {
       "content_urls": {
         "kind": "object",
-        "count": 88,
+        "count": 89,
         "properties": {
           "desktop": {
             "kind": "object",
-            "count": 88,
+            "count": 89,
             "properties": {
               "edit": {
                 "kind": "string",
-                "count": 88,
+                "count": 89,
                 "formats": [
                   "uri"
                 ]
               },
               "page": {
                 "kind": "string",
-                "count": 88,
+                "count": 89,
                 "formats": [
                   "uri"
                 ]
               },
               "revisions": {
                 "kind": "string",
-                "count": 88,
+                "count": 89,
                 "formats": [
                   "uri"
                 ]
               },
               "talk": {
                 "kind": "string",
-                "count": 88,
+                "count": 89,
                 "formats": [
                   "uri"
                 ]
@@ -225,32 +225,32 @@
           },
           "mobile": {
             "kind": "object",
-            "count": 88,
+            "count": 89,
             "properties": {
               "edit": {
                 "kind": "string",
-                "count": 88,
+                "count": 89,
                 "formats": [
                   "uri"
                 ]
               },
               "page": {
                 "kind": "string",
-                "count": 88,
+                "count": 89,
                 "formats": [
                   "uri"
                 ]
               },
               "revisions": {
                 "kind": "string",
-                "count": 88,
+                "count": 89,
                 "formats": [
                   "uri"
                 ]
               },
               "talk": {
                 "kind": "string",
-                "count": 88,
+                "count": 89,
                 "formats": [
                   "uri"
                 ]
@@ -279,64 +279,64 @@
       },
       "description": {
         "kind": "string",
-        "count": 88,
+        "count": 89,
         "formats": [
           "plain"
         ]
       },
       "description_source": {
         "kind": "string",
-        "count": 88,
+        "count": 89,
         "formats": [
           "plain"
         ]
       },
       "dir": {
         "kind": "string",
-        "count": 88,
+        "count": 89,
         "formats": [
           "plain"
         ]
       },
       "displaytitle": {
         "kind": "string",
-        "count": 88,
+        "count": 89,
         "formats": [
           "plain"
         ]
       },
       "extract": {
         "kind": "string",
-        "count": 88,
+        "count": 89,
         "formats": [
           "plain"
         ]
       },
       "extract_html": {
         "kind": "string",
-        "count": 88,
+        "count": 89,
         "formats": [
           "plain"
         ]
       },
       "lang": {
         "kind": "string",
-        "count": 88,
+        "count": 89,
         "formats": [
           "plain"
         ]
       },
       "namespace": {
         "kind": "object",
-        "count": 88,
+        "count": 89,
         "properties": {
           "id": {
             "kind": "integer",
-            "count": 88
+            "count": 89
           },
           "text": {
             "kind": "string",
-            "count": 88,
+            "count": 89,
             "formats": [
               "empty"
             ]
@@ -345,99 +345,99 @@
       },
       "originalimage": {
         "kind": "object",
-        "count": 88,
+        "count": 89,
         "properties": {
           "height": {
             "kind": "integer",
-            "count": 88
+            "count": 89
           },
           "source": {
             "kind": "string",
-            "count": 88,
+            "count": 89,
             "formats": [
               "uri"
             ]
           },
           "width": {
             "kind": "integer",
-            "count": 88
+            "count": 89
           }
         }
       },
       "pageid": {
         "kind": "integer",
-        "count": 88
+        "count": 89
       },
       "revision": {
         "kind": "string",
-        "count": 88,
+        "count": 89,
         "formats": [
           "numeric-string"
         ]
       },
       "thumbnail": {
         "kind": "object",
-        "count": 88,
+        "count": 89,
         "properties": {
           "height": {
             "kind": "integer",
-            "count": 88
+            "count": 89
           },
           "source": {
             "kind": "string",
-            "count": 88,
+            "count": 89,
             "formats": [
               "uri"
             ]
           },
           "width": {
             "kind": "integer",
-            "count": 88
+            "count": 89
           }
         }
       },
       "tid": {
         "kind": "string",
-        "count": 88,
+        "count": 89,
         "formats": [
           "uuid"
         ]
       },
       "timestamp": {
         "kind": "string",
-        "count": 88,
+        "count": 89,
         "formats": [
           "date-time"
         ]
       },
       "title": {
         "kind": "string",
-        "count": 88,
+        "count": 89,
         "formats": [
           "plain"
         ]
       },
       "titles": {
         "kind": "object",
-        "count": 88,
+        "count": 89,
         "properties": {
           "canonical": {
             "kind": "string",
-            "count": 88,
+            "count": 89,
             "formats": [
               "plain"
             ]
           },
           "display": {
             "kind": "string",
-            "count": 88,
+            "count": 89,
             "formats": [
               "plain"
             ]
           },
           "normalized": {
             "kind": "string",
-            "count": 88,
+            "count": 89,
             "formats": [
               "plain"
             ]
@@ -446,14 +446,14 @@
       },
       "type": {
         "kind": "string",
-        "count": 88,
+        "count": 89,
         "formats": [
           "plain"
         ]
       },
       "wikibase_item": {
         "kind": "string",
-        "count": 88,
+        "count": 89,
         "formats": [
           "plain"
         ]
@@ -461,7 +461,7 @@
     }
   },
   "fieldCount": 43,
-  "samples": 88,
+  "samples": 89,
   "firstSeenAt": "2026-10-22T21:50:47.000Z",
   "contractSince": "2026-10-29T12:58:25.000Z",
   "lastChange": {
@@ -481,21 +481,21 @@
       "checks": 3,
       "ok": 3,
       "uptime": 1,
-      "p50": 222,
-      "p95": 313
+      "p50": 313,
+      "p95": 454
     },
     "d7": {
       "checks": 19,
       "ok": 19,
       "uptime": 1,
-      "p50": 245,
+      "p50": 280,
       "p95": 1332
     },
     "d30": {
-      "checks": 86,
-      "ok": 86,
+      "checks": 87,
+      "ok": 87,
       "uptime": 1,
-      "p50": 323,
+      "p50": 329,
       "p95": 1581
     }
   }
