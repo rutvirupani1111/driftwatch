@@ -7,10 +7,10 @@
   "method": "GET",
   "docs": "https://docs.gitlab.com/api/projects/#get-a-single-project",
   "description": "Public project metadata for gitlab-org/gitlab.",
-  "checkedAt": "2026-11-25T19:14:28.000Z",
+  "checkedAt": "2026-11-27T21:19:11.000Z",
   "ok": true,
   "status": 200,
-  "latencyMs": 209,
+  "latencyMs": 175,
   "sizeBytes": 1246,
   "contentType": "application/json",
   "error": null,
@@ -122,122 +122,122 @@
   },
   "shape": {
     "kind": "object",
-    "count": 87,
+    "count": 92,
     "properties": {
       "avatar_url": {
         "kind": "string",
-        "count": 87,
+        "count": 92,
         "formats": [
           "uri"
         ]
       },
       "created_at": {
         "kind": "string",
-        "count": 87,
+        "count": 92,
         "formats": [
           "date-time"
         ]
       },
       "default_branch": {
         "kind": "string",
-        "count": 87,
+        "count": 92,
         "formats": [
           "plain"
         ]
       },
       "description": {
         "kind": "string",
-        "count": 87,
+        "count": 92,
         "formats": [
           "plain"
         ]
       },
       "forks_count": {
         "kind": "integer",
-        "count": 87
+        "count": 92
       },
       "http_url_to_repo": {
         "kind": "string",
-        "count": 87,
+        "count": 92,
         "formats": [
           "uri"
         ]
       },
       "id": {
         "kind": "integer",
-        "count": 87
+        "count": 92
       },
       "last_activity_at": {
         "kind": "string",
-        "count": 87,
+        "count": 92,
         "formats": [
           "date-time"
         ]
       },
       "name": {
         "kind": "string",
-        "count": 87,
+        "count": 92,
         "formats": [
           "plain"
         ]
       },
       "name_with_namespace": {
         "kind": "string",
-        "count": 87,
+        "count": 92,
         "formats": [
           "plain"
         ]
       },
       "namespace": {
         "kind": "object",
-        "count": 87,
+        "count": 92,
         "properties": {
           "avatar_url": {
             "kind": "string",
-            "count": 87,
+            "count": 92,
             "formats": [
               "plain"
             ]
           },
           "full_path": {
             "kind": "string",
-            "count": 87,
+            "count": 92,
             "formats": [
               "plain"
             ]
           },
           "id": {
             "kind": "integer",
-            "count": 87
+            "count": 92
           },
           "kind": {
             "kind": "string",
-            "count": 87,
+            "count": 92,
             "formats": [
               "plain"
             ]
           },
           "name": {
             "kind": "string",
-            "count": 87,
+            "count": 92,
             "formats": [
               "plain"
             ]
           },
           "parent_id": {
             "kind": "null",
-            "count": 87
+            "count": 92
           },
           "path": {
             "kind": "string",
-            "count": 87,
+            "count": 92,
             "formats": [
               "plain"
             ]
           },
           "web_url": {
             "kind": "string",
-            "count": 87,
+            "count": 92,
             "formats": [
               "uri"
             ]
@@ -246,44 +246,44 @@
       },
       "path": {
         "kind": "string",
-        "count": 87,
+        "count": 92,
         "formats": [
           "plain"
         ]
       },
       "path_with_namespace": {
         "kind": "string",
-        "count": 87,
+        "count": 92,
         "formats": [
           "plain"
         ]
       },
       "readme_url": {
         "kind": "string",
-        "count": 87,
+        "count": 92,
         "formats": [
           "uri"
         ]
       },
       "ssh_url_to_repo": {
         "kind": "string",
-        "count": 87,
+        "count": 92,
         "formats": [
           "plain"
         ]
       },
       "star_count": {
         "kind": "integer",
-        "count": 87
+        "count": 92
       },
       "tag_list": {
         "kind": "array",
-        "count": 87,
+        "count": 92,
         "minItems": 4,
         "maxItems": 4,
         "items": {
           "kind": "string",
-          "count": 348,
+          "count": 368,
           "formats": [
             "plain"
           ]
@@ -291,12 +291,12 @@
       },
       "topics": {
         "kind": "array",
-        "count": 87,
+        "count": 92,
         "minItems": 4,
         "maxItems": 4,
         "items": {
           "kind": "string",
-          "count": 348,
+          "count": 368,
           "formats": [
             "plain"
           ]
@@ -304,14 +304,14 @@
       },
       "visibility": {
         "kind": "string",
-        "count": 87,
+        "count": 92,
         "formats": [
           "plain"
         ]
       },
       "web_url": {
         "kind": "string",
-        "count": 87,
+        "count": 92,
         "formats": [
           "uri"
         ]
@@ -319,7 +319,7 @@
     }
   },
   "fieldCount": 28,
-  "samples": 87,
+  "samples": 92,
   "firstSeenAt": "2026-10-22T21:45:34.000Z",
   "contractSince": "2026-10-22T22:15:37.000Z",
   "weather": {
@@ -333,21 +333,21 @@
       "checks": 3,
       "ok": 3,
       "uptime": 1,
-      "p50": 255,
-      "p95": 259
+      "p50": 175,
+      "p95": 230
     },
     "d7": {
-      "checks": 20,
-      "ok": 20,
+      "checks": 18,
+      "ok": 18,
       "uptime": 1,
-      "p50": 212,
+      "p50": 210,
       "p95": 277
     },
     "d30": {
-      "checks": 85,
-      "ok": 85,
+      "checks": 90,
+      "ok": 90,
       "uptime": 1,
-      "p50": 230,
+      "p50": 229,
       "p95": 367
     }
   }
