@@ -7,10 +7,10 @@
   "method": "GET",
   "docs": "https://frankfurter.dev/",
   "description": "ECB reference rates for USD against INR, EUR and GBP.",
-  "checkedAt": "2026-11-26T16:51:47.000Z",
+  "checkedAt": "2026-11-27T01:43:44.000Z",
   "ok": true,
   "status": 200,
-  "latencyMs": 674,
+  "latencyMs": 343,
   "sizeBytes": 97,
   "contentType": "application/json; charset=utf-8",
   "error": null,
@@ -47,43 +47,43 @@
   },
   "shape": {
     "kind": "object",
-    "count": 88,
+    "count": 89,
     "properties": {
       "amount": {
         "kind": "integer",
-        "count": 88
+        "count": 89
       },
       "base": {
         "kind": "string",
-        "count": 88,
+        "count": 89,
         "formats": [
           "plain"
         ]
       },
       "date": {
         "kind": "string",
-        "count": 88,
+        "count": 89,
         "formats": [
           "date"
         ]
       },
       "rates": {
         "kind": "object",
-        "count": 88,
+        "count": 89,
         "properties": {
           "EUR": {
             "kind": "number",
-            "count": 88,
+            "count": 89,
             "integral": 0
           },
           "GBP": {
             "kind": "number",
-            "count": 88,
+            "count": 89,
             "integral": 0
           },
           "INR": {
             "kind": "number",
-            "count": 88,
+            "count": 89,
             "integral": 0
           }
         }
@@ -91,7 +91,7 @@
     }
   },
   "fieldCount": 7,
-  "samples": 88,
+  "samples": 89,
   "firstSeenAt": "2026-10-22T21:45:36.000Z",
   "contractSince": "2026-10-22T22:15:39.000Z",
   "weather": {
@@ -105,7 +105,7 @@
       "checks": 3,
       "ok": 3,
       "uptime": 1,
-      "p50": 437,
+      "p50": 414,
       "p95": 674
     },
     "d7": {
@@ -116,9 +116,9 @@
       "p95": 674
     },
     "d30": {
-      "checks": 87,
-      "ok": 86,
-      "uptime": 0.9885057471264368,
+      "checks": 88,
+      "ok": 87,
+      "uptime": 0.9886363636363636,
       "p50": 414,
       "p95": 642
     }
