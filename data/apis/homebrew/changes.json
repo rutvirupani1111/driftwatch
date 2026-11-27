@@ -58,5 +58,27 @@
         }
       }
     ]
+  },
+  {
+    "id": "homebrew@2026-11-27T21:19:11.000Z",
+    "apiId": "homebrew",
+    "apiName": "Homebrew formula: wget",
+    "at": "2026-11-27T21:19:11.000Z",
+    "severity": "info",
+    "summary": "$.bottle.stable.manifest_sha256: new field (string) (1 info)",
+    "fingerprintBefore": "49898dc6050eadfc",
+    "fingerprintAfter": "f2e777bc0919fc47",
+    "changes": [
+      {
+        "path": "$.bottle.stable.manifest_sha256",
+        "kind": "added",
+        "severity": "info",
+        "message": "new field (string)",
+        "after": "string",
+        "afterNode": {
+          "type": "string"
+        }
+      }
+    ]
   }
 ]
