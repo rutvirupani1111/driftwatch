@@ -7,10 +7,10 @@
   "method": "GET",
   "docs": "https://github.com/HackerNews/API",
   "description": "The canonical example item from the official Firebase API.",
-  "checkedAt": "2026-11-27T21:19:12.000Z",
+  "checkedAt": "2026-11-28T07:45:40.000Z",
   "ok": true,
   "status": 200,
-  "latencyMs": 173,
+  "latencyMs": 165,
   "sizeBytes": 375,
   "contentType": "application/json; charset=utf-8",
   "error": null,
@@ -54,58 +54,58 @@
   },
   "shape": {
     "kind": "object",
-    "count": 92,
+    "count": 93,
     "properties": {
       "by": {
         "kind": "string",
-        "count": 92,
+        "count": 93,
         "formats": [
           "plain"
         ]
       },
       "descendants": {
         "kind": "integer",
-        "count": 92
+        "count": 93
       },
       "id": {
         "kind": "integer",
-        "count": 92
+        "count": 93
       },
       "kids": {
         "kind": "array",
-        "count": 92,
+        "count": 93,
         "minItems": 33,
         "maxItems": 33,
         "items": {
           "kind": "integer",
-          "count": 3036
+          "count": 3069
         }
       },
       "score": {
         "kind": "integer",
-        "count": 92
+        "count": 93
       },
       "time": {
         "kind": "integer",
-        "count": 92
+        "count": 93
       },
       "title": {
         "kind": "string",
-        "count": 92,
+        "count": 93,
         "formats": [
           "plain"
         ]
       },
       "type": {
         "kind": "string",
-        "count": 92,
+        "count": 93,
         "formats": [
           "plain"
         ]
       },
       "url": {
         "kind": "string",
-        "count": 92,
+        "count": 93,
         "formats": [
           "uri"
         ]
@@ -113,7 +113,7 @@
     }
   },
   "fieldCount": 9,
-  "samples": 92,
+  "samples": 93,
   "firstSeenAt": "2026-10-22T21:45:35.000Z",
   "contractSince": "2026-10-22T22:15:38.000Z",
   "weather": {
