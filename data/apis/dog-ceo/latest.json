@@ -7,11 +7,11 @@
   "method": "GET",
   "docs": "https://dog.ceo/dog-api/documentation/",
   "description": "A random dog photo URL, the friendliest envelope on the web.",
-  "checkedAt": "2026-11-28T07:45:41.000Z",
+  "checkedAt": "2026-11-28T17:31:29.000Z",
   "ok": true,
   "status": 200,
-  "latencyMs": 416,
-  "sizeBytes": 89,
+  "latencyMs": 115,
+  "sizeBytes": 104,
   "contentType": "application/json",
   "error": null,
   "engine": "api-drift/shape@1",
@@ -30,18 +30,18 @@
   },
   "shape": {
     "kind": "object",
-    "count": 93,
+    "count": 94,
     "properties": {
       "message": {
         "kind": "string",
-        "count": 93,
+        "count": 94,
         "formats": [
           "uri"
         ]
       },
       "status": {
         "kind": "string",
-        "count": 93,
+        "count": 94,
         "formats": [
           "plain"
         ]
@@ -49,7 +49,7 @@
     }
   },
   "fieldCount": 2,
-  "samples": 93,
+  "samples": 94,
   "firstSeenAt": "2026-10-22T21:45:37.000Z",
   "contractSince": "2026-10-22T22:15:40.000Z",
   "weather": {
@@ -63,14 +63,14 @@
       "checks": 3,
       "ok": 3,
       "uptime": 1,
-      "p50": 256,
+      "p50": 136,
       "p95": 416
     },
     "d7": {
       "checks": 18,
       "ok": 18,
       "uptime": 1,
-      "p50": 287,
+      "p50": 256,
       "p95": 631
     },
     "d30": {
